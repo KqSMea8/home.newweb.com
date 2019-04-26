@@ -768,6 +768,29 @@ class Page extends Common{
 	// 	    ]);
 		    return $this->fetch();
 		}
+		
+		/**
+			 * @function [百利4]
+			 * @Author   DingXuFeng
+			 * @DateTime 2019-03-01T16:28:14+0800
+			 * @return   [type]                   [description]
+			 */
+			public function yingxiao4()
+			{
+		// 	    //网址规范标签
+		// 	    $pc_url = $_SERVER['REQUEST_URI'];
+		// 	    $this->assign('pc_url',$pc_url);
+		// 	
+		// 	    //TDK
+		// 	    $column_tdk_res = $this->pagetdk->tdk_info(35,1);
+		// 	
+		// 	    $tutor_arr = $this->tui_info(53);
+		// 	    $this->assign([
+		// 	        'column_tdk_res'=>$column_tdk_res,
+		// 	        'tutor_arr'=>$tutor_arr
+		// 	    ]);
+			    return $this->fetch();
+			}
 	
 	
 }

@@ -1,14 +1,25 @@
 User-agent: *
 Disallow:/qa/*
-Disallow:/college/*
 Disallow:/zdhottop/*
 Disallow:/artguidan/*
 Disallow:/zdguide/*
 Disallow:/zdhotsch/*
-Disallow:/fmcontent/*
 Disallow:/acn/*
 Disallow:/member/*
 Disallow:/online/*
 Disallow:/tk/*
 Disallow:/jshottopic/*
 Disallow:/sat/*
+Disallow:/teacher/41.html
+Disallow:/teacher/43.html
+Disallow:/teacher/46.html
+Disallow:/teacher/47.html
+Disallow:/teacher/48.html
+Disallow:/teacher/57.html
+Disallow:/teacher/58.html
+Disallow:/teacher/59.html
+Disallow:/teacher/60.html
+Disallow:/sister/*
+Disallow:list_*.html
+Disallow:/adn/*
+Disallow:/page/hd_particulars.html?id=*

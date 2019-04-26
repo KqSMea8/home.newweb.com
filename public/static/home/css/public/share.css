@@ -229,3 +229,6 @@ label.error {
 input,select,textarea,button{background-color: transparent; border: none; outline: none;}
 textarea{resize: none;}/*右下角的小尾巴*/
 img{ border: none; }
+
+a.abchover { background-color: #FF7062 !important; border-color: #FF7062 !important; color: #FFFFFF !important; }
+a.abchover:hover { opacity: 0.8; }

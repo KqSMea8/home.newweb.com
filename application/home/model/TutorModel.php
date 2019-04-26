@@ -3,8 +3,8 @@
 /**
  * @Author: Administrator
  * @Date:   2019-01-31 11:36:31
- * @Last Modified by:   dingxufeng
- * @Last Modified time: 2019-04-03 14:52:43
+ * @Last Modified by:   Administrator
+ * @Last Modified time: 2019-02-14 16:37:33
  */
 namespace app\home\model;
 use think\Model;
@@ -22,7 +22,4 @@ class TutorModel extends Model
     public function sister_list( $type, $field="*" ){
     	$list = $this->field( $field )->where('open',1)->order('sort','desc')->select()->toArray();
     }
-
-
-
 }

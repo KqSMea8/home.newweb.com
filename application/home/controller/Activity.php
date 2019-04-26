@@ -4,7 +4,7 @@
  * @Author: Administrator
  * @Date:   2019-01-31 11:35:55
  * @Last Modified by:   dingxufeng
- * @Last Modified time: 2019-04-19 19:33:34
+ * @Last Modified time: 2019-04-19 15:30:12
  */
 namespace app\home\controller;
 use app\home\model\ActivityModel;			//活动模型
@@ -84,7 +84,7 @@ class Activity extends Common{
             ->field('a.id,a.title,a.type,a.thumbnail,a.end_time,a.lecture_time,a.lecture_venue,t.art_title,t.art_describe,t.art_keyword,t.rewrite')
             ->where('open',1)
             ->where($where)
-            ->order('sort desc,add_time desc')
+            ->order('add_time desc,sort desc')
             ->paginate(8,false,[
                 'page'=>$now_page,
                 // 'query' => request()->param(),//不丢失已存在的url参数
@@ -128,14 +128,14 @@ class Activity extends Common{
 
 
         //背景提升推荐
-    	$promote_info = $this->promote_model->where('open',1)->where('recommend_id','like','%48%')->field('id,title,thumbnail,type')->order('sort desc,add_time desc')->limit(3)->select();
+    	$promote_info = $this->promote_model->where('open',1)->where('recommend_id','like','%48%')->field('id,title,thumbnail,type')->order('add_time desc,sort desc')->limit(3)->select();
         foreach ($promote_info as $kk => &$vv) {
             $proType = $this->Promote_type_model->where('id',$vv['type'])->field('rewrite')->find();
             $vv['rewrite'] = $proType['rewrite']; 
         }
 
         // 成功案例列表
-        $case_list = $this->case_model->field('id,title')->where('tui_ids','like',"%21%")->order('sort desc,add_time desc')->select()->toArray();
+        $case_list = $this->case_model->field('id,title')->where('tui_ids','like',"%21%")->order('add_time desc,sort desc')->select()->toArray();
          //热门标签
         $label_list = Db::table('clt_new_label')->where('is_hot',1)->where('recommend_id','like','%42%')->field('title,href')->select();
 
@@ -207,14 +207,14 @@ class Activity extends Common{
         }
 
     	//热门活动讲座
-    	$popular_list = $this->activity_model->whereNotIn('id',$id)->where('recommend_id','like','%46%')->field('id,title,lecture_time,details_portrait,type')->order('sort desc,add_time desc')->limit(5)->select();
+    	$popular_list = $this->activity_model->whereNotIn('id',$id)->where('recommend_id','like','%46%')->field('id,title,lecture_time,details_portrait,type')->order('add_time desc,sort desc')->limit(5)->select();
 
         foreach ($popular_list as $k => &$v) {
             $popular_type = $this->activity_type_model->where('id',$v['type'])->field('rewrite')->find();
             $v['rewrite'] = $popular_type['rewrite'];
         }
     	//背景提升---推荐数据
-    	$promote_info = $this->promote_model->where('open',1)->where('phase','like','%'.$activity_info['phase'].'%')->where('recommend_id','like','%48%')->order('sort desc,add_time desc')->field('id,title,thumbnail,activity_time,target_object,add_time,type')->limit(3)->select();
+    	$promote_info = $this->promote_model->where('open',1)->where('phase','like','%'.$activity_info['phase'].'%')->where('recommend_id','like','%48%')->order('add_time desc,sort desc')->field('id,title,thumbnail,activity_time,target_object,add_time,type')->limit(3)->select();
     	foreach ($promote_info as $key => &$val) { 
             $proType = $this->Promote_type_model->where('id',$val['type'])->field('rewrite')->find();
             $val['rewrite'] = $proType['rewrite']; 

@@ -4,7 +4,7 @@
  * @Author: Administrator
  * @Date:   2019-02-01 11:50:41
  * @Last Modified by:   dingxufeng
- * @Last Modified time: 2019-04-19 19:34:14
+ * @Last Modified time: 2019-04-19 16:15:35
  */
 namespace app\home\controller;
 // 推荐位
@@ -100,7 +100,7 @@ class Apply extends Common{
         $gh_list['list1'] = array_slice($gh_list_tmp,0,5);
         $gh_list['list2'] = array_slice($gh_list_tmp,5);
         //活动推荐
-        $activity_list = $this->activity_model->where('open',1)->where('recommend_id','like','%32%')->field('id,title,lecture_time,name,lecture_venue,end_time,details_portrait,type')->order('sort desc,add_time desc')->limit(2)->select();
+        $activity_list = $this->activity_model->where('open',1)->where('recommend_id','like','%32%')->field('id,title,lecture_time,name,lecture_venue,end_time,details_portrait,type')->order('add_time desc,sort desc')->limit(2)->select();
 
         foreach ($activity_list as $k => &$v) {
             $activity_type = $this->activity_type_model->where('id',$v['type'])->field('rewrite')->find();
@@ -113,7 +113,7 @@ class Apply extends Common{
         $article_type_list = $this->article_type_model->applyStageId_get_articleType(1,'id,title,rewrite',6,'204,65,203,61,202,101');
         foreach ($article_type_list as $key => &$val) {
             if($val['id']==204){
-                $val['children'] = $this->case_model->where('apply_stage',1)->where('is_show',1)->limit(5)->order('sort desc,add_time desc')->select()->toArray();
+                $val['children'] = $this->case_model->where('apply_stage',1)->where('is_show',1)->limit(5)->order('add_time desc,sort desc')->select()->toArray();
             }else{
                 $val['children'] = $this->article_model->tuiId_to_list($val['id'],16,1);
             }
@@ -163,7 +163,7 @@ class Apply extends Common{
         // 成功案例
         $case_list = $this->case_model->type_to_list(2,'id,student_name,score,school_name,head_img,xx_offer,xx_name,tui_ids',10,17);
         //活动推荐
-        $activity_list = $this->activity_model->where('open',1)->where('recommend_id','like','%33%')->field('id,title,lecture_time,name,lecture_venue,end_time,details_portrait,type')->order('sort desc,add_time desc')->limit(2)->select();
+        $activity_list = $this->activity_model->where('open',1)->where('recommend_id','like','%33%')->field('id,title,lecture_time,name,lecture_venue,end_time,details_portrait,type')->order('add_time desc,sort desc')->limit(2)->select();
         foreach ($activity_list as $k => &$v) {
             $activity_type = $this->activity_type_model->where('id',$v['type'])->field('rewrite')->find();
             $v['rewrite'] = $activity_type['rewrite'];

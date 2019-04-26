@@ -118,7 +118,8 @@ img {
 .top_banner {
 	width: 100%;
 	height: 600px;
-	background: url(/static/home/img/page/dream/top_banner.jpg) center top no-repeat
+	background: url(/static/home/img/page/dream/top_banner.jpg) center top no-repeat;
+	background-size: cover;
 }
 
 .bg,
@@ -468,7 +469,8 @@ img {
 }
 
 .top_title img {
-	margin: 0 auto
+	margin: 0 auto;
+	display: block;
 }
 
 .main2 .main2_box,

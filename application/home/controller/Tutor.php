@@ -4,7 +4,7 @@
  * @Author: Administrator
  * @Date:   2019-02-01 11:50:41
  * @Last Modified by:   dingxufeng
- * @Last Modified time: 2019-04-19 19:36:53
+ * @Last Modified time: 2019-04-19 17:42:19
  */
 namespace app\home\controller;
 
@@ -40,17 +40,17 @@ class Tutor extends Common{
         $this->assign('pc_url',$pc_url);
 
     	//全程咨询导师
-	    	$consultation = $this->model->where(['open'=>1,'type'=>1])->field('id,title,thumbnail,adept')->order('sort desc,add_time desc')->limit(6)->select();
+	    	$consultation = $this->model->where(['open'=>1,'type'=>1])->field('id,title,thumbnail,adept')->order('add_time desc,sort desc')->limit(6)->select();
     	//全能主申请导师
-	    	$apply = $this->model->where(['open'=>1,'type'=>2])->field('id,title,thumbnail,adept')->order('sort desc,add_time desc')->select();
+	    	$apply = $this->model->where(['open'=>1,'type'=>2])->field('id,title,thumbnail,adept')->order('add_time desc,sort desc')->select();
     	//海外同专业导师
-	    	$major = $this->model->where(['open'=>1,'type'=>3])->field('id,title,thumbnail,school,major')->order('sort desc,add_time desc')->select();
+	    	$major = $this->model->where(['open'=>1,'type'=>3])->field('id,title,thumbnail,school,major')->order('add_time desc,sort desc')->select();
     	//资深流程导师
-	    	$senior_process = $this->model->where(['open'=>1,'type'=>4])->field('id,title,thumbnail,major')->order('sort desc,add_time desc')->limit(6)->select();
+	    	$senior_process = $this->model->where(['open'=>1,'type'=>4])->field('id,title,thumbnail,major')->order('add_time desc,sort desc')->limit(6)->select();
     	//名校外籍文笔导师
-	    	$foreign_nationality = $this->model->where(['open'=>1,'type'=>5])->field('id,title,thumbnail,school,major,personal_profile')->order('sort desc,add_time desc')->select();
+	    	$foreign_nationality = $this->model->where(['open'=>1,'type'=>5])->field('id,title,thumbnail,school,major,personal_profile')->order('add_time desc,sort desc')->select();
     	//专家督导导师
-	    	$supervisor = $this->model->where(['open'=>1,'type'=>6])->field('id,title,thumbnail,major')->order('sort desc,add_time desc')->limit(5)->select();
+	    	$supervisor = $this->model->where(['open'=>1,'type'=>6])->field('id,title,thumbnail,major')->order('add_time desc,sort desc')->limit(5)->select();
 
             // 导师类型的，类型描述和导师类型擅长
             $tourt_type_list = change_key($this->tutor_type_model->field('id,describe,adept')->select()->toArray());
@@ -91,7 +91,7 @@ class Tutor extends Common{
             abort(404, '页面异常');
         }
 
-        $case_list = $this->case_model->where('tutor_id',$id)->where('is_show',1)->order('sort desc,add_time desc')->limit(6)->select();
+        $case_list = $this->case_model->where('tutor_id',$id)->where('is_show',1)->order('sort','desc')->limit(6)->select();
 
 
         foreach ($case_list as $key => &$val) {

@@ -161,7 +161,7 @@ class Family extends Common{
                 ->join('clt_new_city c','f.city_id = c.id')
                 ->join('clt_new_state s','c.state_id = s.id')
                 ->where('is_show',1)
-                ->order('sort desc,add_time desc')
+                ->order('add_time desc, sort desc')
                 ->paginate(array('list_rows'=>$pageSize,'page'=>$now_page))
                 ->toArray();
 
@@ -172,7 +172,7 @@ class Family extends Common{
                 ->join('clt_new_city c','f.city_id = c.id')
                 ->join('clt_new_state s','c.state_id = s.id')
                 ->where('is_show',1)
-                ->order('sort desc,add_time desc')
+                ->order('add_time desc, sort desc')
                 ->paginate(array('list_rows'=>$pageSize,'page'=>$now_page))
                 ; 
         }else{
@@ -183,7 +183,7 @@ class Family extends Common{
                 ->join('clt_new_state s','c.state_id = s.id')
                 ->where('s.id',$state_id)
                 ->where('f.is_show',1)
-                ->order('sort desc,add_time desc')
+                ->order('add_time desc, sort desc')
                 ->paginate(array('list_rows'=>$pageSize,'page'=>$now_page))
                 ->toArray();
             $page_list = Db::table('clt_new_family')
@@ -193,7 +193,7 @@ class Family extends Common{
                 ->join('clt_new_state s','c.state_id = s.id')
                 ->where('s.id',$state_id)
                 ->where('f.is_show',1)
-                ->order('sort desc,add_time desc')
+                ->order('add_time desc, sort desc')
                 ->paginate(array('list_rows'=>$pageSize,'page'=>$now_page))
                 ;
 
@@ -210,7 +210,7 @@ class Family extends Common{
             $v['cover_pic'] = config('admin_path') . $v['cover_pic'];
         }
 
-        $video_list = $this->video_model->where('tui_ids','like',20)->order('sort desc,add_time desc')->select()->toArray();
+        $video_list = $this->video_model->where('tui_ids','like',20)->order('add_time desc, sort desc')->select()->toArray();
         foreach ($video_list as $key => &$val) {
             $val['video'] = config('admin_path') . $val['video'];
             $val['cover_pic'] = config('admin_path') . $val['cover_pic'];

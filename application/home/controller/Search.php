@@ -29,8 +29,10 @@ class Search extends Common
         $data = input('');
         $page = input('page') ? input('page') : 1;
         $num = input('num') ? inut('num') : 8;
+
         try {
             include '/usr/local/xunsearch/sdk/php/lib/XS.php';
+
             $xs = new \XS('demo'); // 创建 XS 对象，项目名称为：demo
             $search = $xs->search;
             //中文分词
@@ -39,6 +41,7 @@ class Search extends Common
             $keywords = trim($data['keywords']);
             //词语拆分
             $words = $tokenizer->getTokens( $keywords );
+		dump($words);die;
             $where = '';
             foreach ($words as $key => $val) {
                 if ($key == 0) {

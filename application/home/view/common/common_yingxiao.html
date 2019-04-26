@@ -1,0 +1,150 @@
+<style type="text/css">
+			.leftTc{width: 44px;height: 44px;background-color: #333333;position: fixed;left: 0;top: 550px;z-index: 99999;border-radius: 3px;text-align: center;cursor:pointer;}
+			.leftTc:after{content: '';width: 0;height: 100%;display: inline-block;vertical-align: middle;}
+			.leftTc img{width: 28px;height: 28px;display: inline-block;vertical-align: middle;}
+			.hid,.hid2{width: 148px;height: 140px;border-radius: 3px;background-color: #000000;background-color: rgba(0,0,0,0.8);position: fixed;left: 0;top: 436px;z-index: 99999;display: none;text-align: center;}
+			.hid2{ width: 248px;height: 140px;left: 50%;top: 50%;display: none;margin-left: -124px;margin-top: -70px;background-color: rgba(0,0,0,0.6); }
+			.hid h2,.hid2 h2{text-align: center;font-size: 16px;color: #FFFFFF;font-weight: normal;margin-top: 16px;}
+			.hid p,.hid2 p{font-size: 16px;color: #FFFFFF;margin-bottom: 10px;}
+			.hid input,.hid2 input{width: 120px;height: 24px;background-color: #FFFFFF;display: block;margin: 0 auto;font-size: 12px;text-indent: 6px;line-height: 24px;border-radius: 2px;margin-bottom: 8px;}
+			.hid button,.hid2 button{width: 120px;height: 24px;background-color: #000000;color: #FFFFFF;font-size: 12px;line-height: 24px;border-radius: 2px;display: block;margin: 0 auto;cursor:pointer;border: none;}
+			.hid>img,.hid2>img{width: 8px;height: 8px;position: absolute;right: 8px;top: 8px;cursor:pointer;}
+			.hid .bbqwer,.hid2 .bbqwer{width: 306px;height: auto;background: #f5f5f5;line-height: 15px;padding: 17px 0;border: none;text-align: left;position: absolute;left: 165px;top: 10px;display: none;}
+			.hid2 .bbqwer{ left: 265px; }
+			.hid .bbqwer span,.hid2 .bbqwer span{font-size: 12px;color: #ff7062;display: block;    width: 255px;margin: 0 auto;text-align: left;}
+			.hid .bbqwer p,.hid2 .bbqwer p{width: 255px;margin: 0 auto;margin-top: 10px;font-size: 12px;color: #ff7062;}
+			.hid .bbqwer em,.hid2 .bbqwer em{width: 0;height: 0;display: block;border-style: solid;border-color: transparent #f5f5f5 transparent transparent;border-width: 10px;position: absolute;left: -20px;bottom: 10px;}
+			.hid .bbqwer>b,.hid2 .bbqwer>b{font-size: 12px;line-height: 1.2em;height: 12px;right: 5px;top: 5px;font-weight: 700;font-family: 宋体;cursor: pointer; position: absolute; color: #000;}
+		</style>
+		
+		<div class="leftTc">
+			<img src="/static/home/img/phone.png" alt="">
+		</div>
+		<div class="hid">
+			<h2>留学问题轻松问</h2>
+			<p>400-900-9770</p>
+			<input type="text" class="phone" placeholder="请输入电话号码" />
+			<button class="button">立即给您回电</button>
+			<img src="/static/home/img/leftX.png" alt="">
+			<div class="bbqwer">
+			    <span class="span1">手机请直接输入：如1860086xxxx</span>
+			    <p>输入您的电话号码，点击通话，稍后您将接到我们的电话，该通话对您<b>完全免费</b>，请放心接听！</p>
+			    <em></em>
+			    <b>╳</b>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var LeftTcTime = setTimeout(function () {
+				$('.leftTc').stop().fadeOut();
+				$('.hid').stop().fadeIn();
+				clearTimeout(LeftTcTime);
+			}, 3000)
+			$('.leftTc').on('click', function () {
+				$(this).stop().fadeOut();
+				$('.hid').stop().fadeIn();
+			})
+			$('.hid>img').on('click', function () {
+				$('.hid').stop().fadeOut();
+				$('.leftTc').stop().fadeIn();
+			})
+			var LeftVal = '';
+			$('.hid input').focus(function () {
+				if($(this).attr('placeholder')){
+					LeftVal = $(this).attr('placeholder');
+				}
+				$(this).removeAttr('placeholder');
+				$('.hid .bbqwer').stop().fadeIn();
+			})
+			$('.hid input').blur(function () {
+				if(LeftVal){
+					$(this).attr('placeholder', LeftVal);
+				}
+				$('.hid .bbqwer').stop().fadeOut();
+			})
+			$('.hid .bbqwer>b').on('click', function () {
+				$('.hid .bbqwer').stop().fadeOut();
+			})
+			$('.hid button').on('click', function () {
+				var Phone = $('.hid .phone').val();
+				var url = window.location.href;
+				if(Phone == ''){
+					alert('手机号不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						phone: Phone,
+						urlsite: url,
+						type: '免费电话',
+						page_title: $('title').eq(0).html(),
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.hid .phone').val('');
+					}
+				})
+			})
+			// $('.phoneR').on('click', function () {
+			// 	$('.hid2').stop().fadeIn();
+			// })
+			$('.ph').on('click', function () {
+				$('.hid2').stop().fadeIn();
+			})
+			$('.hid2>img').on('click', function () {
+				$('.hid2').stop().fadeOut();
+			})
+			var LeftVal = '';
+			$('.hid2 input').focus(function () {
+				if($(this).attr('placeholder')){
+					LeftVal = $(this).attr('placeholder');
+				}
+				$(this).removeAttr('placeholder');
+				$('.hid2 .bbqwer').stop().fadeIn();
+			})
+			$('.hid2 input').blur(function () {
+				if(LeftVal){
+					$(this).attr('placeholder', LeftVal);
+				}
+				$('.hid2 .bbqwer').stop().fadeOut();
+			})
+			$('.hid2 .bbqwer>b').on('click', function () {
+				$('.hid2 .bbqwer').stop().fadeOut();
+			})
+			$('.hid2 button').on('click', function () {
+				var Phone = $('.hid2 .phone').val();
+				var url = window.location.href;
+				if(Phone == ''){
+					alert('手机号不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						phone: Phone,
+						urlsite: url,
+						type: '免费电话',
+						page_title: $('title').eq(0).html(),
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.hid2 .phone').val('');
+					}
+				})
+			})
+		</script>

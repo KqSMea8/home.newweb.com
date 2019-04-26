@@ -3,7 +3,7 @@
  * @Author: Administrator
  * @Date:   2019-01-29 14:38:32
  * @Last Modified by:   dingxufeng
- * @Last Modified time: 2019-04-19 19:36:03
+ * @Last Modified time: 2019-04-19 17:41:47
  */
 namespace app\home\controller;
 use app\home\model\PromoteModel;			//背景提升
@@ -42,7 +42,7 @@ class Promote extends Common{
         $this->assign('pc_url',$pc_url);
 
         //关联属性   提取背景提升类型  字段
-        $promote_hot = $this->promote_model->where(['open'=>1])->field('id,title,thumbnail,target_object,is_hot,type')->order('sort desc,add_time desc')->withJoin(['info' => function($query){
+        $promote_hot = $this->promote_model->where(['open'=>1])->field('id,title,thumbnail,target_object,is_hot,type')->order('add_time desc,sort desc')->withJoin(['info' => function($query){
             $query->field('bg_promote_type,promote_brief,promote_map,rewrite');
         }])->select()->toArray();
 
@@ -139,7 +139,7 @@ class Promote extends Common{
             ->field('p.id,p.phase,p.title,p.thumbnail,p.target_object,p.activity_time,t.bg_promote_type,t.pro_title,t.pro_describe,t.pro_keyword,t.rewrite')
             ->where('p.phase','like','%'.$phase_in['phase'].'%')
             ->where('p.open',1)
-            ->order('sort desc,add_time desc')
+            ->order('add_time desc,sort desc')
             ->where($where)
             ->paginate(8,false,[
                 'page'=>$now_page,
@@ -271,7 +271,7 @@ class Promote extends Common{
             // }
 
         //更多推荐
-           $popular_info = $this->promote_model->where('open',1)->field('id,title,thumbnail,type')->order('sort desc,add_time desc')->limit(8)->select(); 
+           $popular_info = $this->promote_model->where('open',1)->field('id,title,thumbnail,type')->order('add_time desc,sort desc')->limit(8)->select(); 
            foreach ($popular_info as $key => &$val) {
                $proType = $this->Promote_type_model->where('id',$val['type'])->field('rewrite')->find();
                $val['rewrite'] = $proType['rewrite']; 
