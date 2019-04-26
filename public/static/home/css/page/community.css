@@ -1,0 +1,1040 @@
+/* banner */
+.banner{
+	width: 100%;
+	height: 532px;
+	background: url(/static/home/img/page/shequ_daxue/banner.jpg) no-repeat center center;
+	background-size: cover;
+}
+.banner h1{
+	font-size: 60px;
+	line-height: 88px;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding-top: 146px;
+	padding-bottom: 4px;
+	text-align: center;
+	text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+}
+.banner h3{
+	font-size: 42px;
+	line-height: 62px;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding-bottom: 36px;
+	text-align: center;
+	text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+}
+.banner a{
+	width: 300px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	background-color: #857FD1;
+	border-radius: 3px;
+	font-size: 20px;
+	color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+}
+.banner a:hover{
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+/* bannerNav */
+.bannerNav{
+	width: 100%;
+	height: 60px;
+	background-color: #E8E8E8;
+	line-height: 60px;
+	font-size: 0;
+}
+.bannerNav span{
+	font-size: 16px;
+	margin-right: 32px;
+	cursor:pointer;
+}
+.bannerNav span:hover{
+	color: #857FD1;
+}
+.bannerNav span.active{
+	color: #857FD1;
+	font-weight: bold;
+}
+.navHidden{
+	width: 100%;
+	height: 60px;
+	display: none;
+}
+
+/* title */
+h3.title{
+	text-align: center;
+	font-size: 38px;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	font-weight: normal;
+}
+
+/* 美国社区大学简介 */
+.daxue_jianjie .content{
+	width: 1168px;
+	height: 181px;
+	border: 1px solid #C3BFF3;
+	background-color: #F6F6F6;
+}
+.daxue_jianjie .content img{
+	width: 206px;
+	height: 158px;
+	margin-top: 11px;
+	margin-left: 15px;
+}
+.daxue_jianjie .content div.fr{
+	width: 867px;
+	margin-top: 31px;
+	margin-right: 36px;
+}
+.daxue_jianjie .content div.fr p{
+	font-size: 16px;
+	line-height: 28px;
+}
+.daxue_jianjie .content div.fr a{
+	font-size: 14px;
+	color: #857FD1;
+	float: right;
+}
+.daxue_jianjie .content div.fr a:hover{
+	text-decoration: underline;
+}
+.daxue_jianjie{
+	padding-bottom: 80px;
+}
+
+/* 美国社区大学五大特色 */
+.tese{
+	width: 100%;
+	height: 799px;
+	background-color: #F6F6F6;
+}
+.tese .box .title h3{
+	font-size: 36px;
+	font-weight: normal;
+	margin-bottom: 16px;
+}
+.tese .box .title p{
+	font-size: 14px;
+	color: #858282;
+}
+
+.tese .box .content>div.fl{
+	width: 364px;
+	height: 444px;
+	position: relative;
+}
+.tese .box .content>div.fl img{
+	width: 100%;
+	height: 100%;
+}
+.tese .box .content>div.fl .hidden_a,.tese .box .content>div.fr>.box .hidden_a{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.28);
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	font-weight: bold;
+}
+.tese .box .content>div.fl .hidden_a div,.tese .box .content>div.fr>.box .hidden_a div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.tese .box .content>div.fl .hidden_a:after,.tese .box .content>div.fr>.box .hidden_a:after{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.tese .box .content>div.fl .hidden_a .shequImg3,.tese .box .content>div.fr>.box .hidden_a img{
+	width: 48px;
+	height: 48px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 23px;
+}
+.shequImg3{
+	width: 48px;
+	height: 48px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 23px;
+}
+.shequImg3{background:url(/static/home/img/page/shequ_daxue/shequImg3.png)  no-repeat; display: block;}
+.icon4{height:51px;width:48px;background-position:0 0;}
+.icon5{height:50px;width:48px;background-position:0 -51px;}
+.icon3{height:48px;width:48px;background-position:0 -101px;}
+.icon1{height:48px;width:48px;background-position:0 -149px;}
+.icon2{height:48px;width:48px;background-position:0 -197px;}
+.tese .box .content>div.fl .hidden_b,.tese .box .content>div.fr>.box .hidden_b{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(9,9,9,0.4);
+	position: absolute;
+	top: 0;
+	color: #fff;
+	display: none;
+}
+.tese .box .content>div.fl .hidden_b .juzhong,.tese .box .content>div.fr>.box .hidden_b .juzhong{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+}
+.tese .box .content>div.fl .hidden_b h3,.tese .box .content>div.fr>.box .hidden_b h3{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.tese .box .content>div.fl .hidden_b p,.tese .box .content>div.fr>.box .hidden_b p{
+	font-size: 14px;
+	width: 315px;
+	line-height: 22px;
+	margin: 0 auto;
+	margin-bottom: 19px;
+}
+.tese .box .content>div.fl .hidden_b a,.tese .box .content>div.fr>.box .hidden_b a{
+	width: 102px;
+	height: 28px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	border-radius: 3px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.tese .box .content>div.fl .hidden_b a:hover,.tese .box .content>div.fr>.box .hidden_b a:hover{
+	background-color: #857FD1;
+	border-color: #857FD1;
+}
+
+.tese .box .content>div.fr{
+	width: 767px;
+}
+.tese .box .content>div.fr>.box{
+	width: 364px;
+	height: 202px;
+	margin-right: 39px;
+	margin-bottom: 41px;
+}
+.tese .box .content>div.fr>.box img{
+	width: 100%;
+	height: 100%;
+}
+.tese>.box>a,.heshi_renqun>a,.mingrenTang>a,.topTen>div>a,.anli>a,.tiaojian>a,.liucheng>a{
+	width: 248px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #857FD1;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+.tese>.box>a:hover,.heshi_renqun>a:hover,.mingrenTang>a:hover,.topTen>div>a:hover,.anli>a:hover,.pk .content .box a:hover,.tiaojian>a:hover,.liucheng>a:hover{
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+}
+
+/* 美国社区大学适合人群 */
+.heshi_renqun .content .box{
+	width: 210px;
+	height: 150px;
+	border: 1px solid #857FD1;
+	border-radius: 3px;
+	text-align: center;
+	margin-right: 27px;
+}
+.heshi_renqun .content .box .shequImg{
+	width: 40px;
+	height: 40px;
+	margin-top: 28px;
+	margin-bottom: 16px;
+	display: inline-block;
+}
+.shequImg{background:url(/static/home/img/page/shequ_daxue/shequImg.png)  no-repeat;}
+.rq4{height:36px;width:36px;background-position:0 0;}
+.rq2{height:36px;width:36px;background-position:-36px 0;}
+.rq5{height:36px;width:36px;background-position:-72px 0;}
+.rq1{height:40px;width:40px;background-position:-108px 0;}
+.rq3{height:40px;width:40px;background-position:-148px 0;}
+
+.heshi_renqun .content .box p{
+	width: 137px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+.heshi_renqun .content{
+	margin-bottom: 52px;
+}
+.heshi_renqun{
+	padding-bottom: 52px;
+}
+
+/* 美国社区大学名人堂 */
+.mingrenTang .swiper-container{
+	width: 1172px;
+	height: 338px;
+}
+.mingrenTang .swiper-slide{
+	width: 272px !important;
+	height: 336px !important;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+	text-align: center;
+	margin-right: 24px;
+}
+.mingrenTang .swiper-slide img{
+	width: 272px;
+	height: 226px;
+}
+.mingrenTang .swiper-slide h4{
+	font-size: 18px;
+	padding-top: 18px;
+	padding-bottom: 4px;
+}
+.mingrenTang .swiper-slide p{
+	font-size: 16px;
+	width: 144px;
+	margin: 0 auto;
+}
+.mingrenTang .btn,.anli .btn{
+	width: 24px;
+	height: 52px;
+	position: absolute;
+	top: 343px;
+	cursor:pointer;
+}
+.mingrenTang .btn.btnleft,.anli .btn.btnleft1{
+	left: -66px;
+}
+.mingrenTang .btn.btnright,.anli .btn.btnright1{
+	right: -66px;
+}
+.mingrenTang .swiper-container{
+	margin-bottom: 54px;
+}
+.mingrenTang{
+	padding-bottom: 80px;
+}
+
+/* 美国社区大学TOP 10排名榜 */
+.topTen{
+	width: 100%;
+	height: 948px;
+	background: url(/static/home/img/page/shequ_daxue/beijing1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.topTen .content table{
+	width: 100%;
+	border: 1px solid #A09AE9;
+	border-collapse: collapse;
+	margin-bottom: 46px;
+}
+.topTen .content table th{
+	height: 50px;
+	line-height: 50px;
+	background-color: #CAC6F9;
+	border: 1px solid #A09AE9;
+	font-size: 16px;
+}
+.topTen .content table td{
+	border: 1px solid #A09AE9;
+	text-align: center;
+	height: 50px;
+	background-color: #FFFFFF;
+	font-size: 15px;
+}
+.topTen .content table a:hover{
+	color: #857FD1;
+}
+
+/* 从美国社区大学升入名校精彩案例 */
+.anli .swiper-container2{
+	width: 100%;
+	height: 454px;
+	overflow: hidden;
+}
+.anli .swiper-container2 .swiper-slide{
+	width: 358px !important;
+	height: 450px !important;
+	border: 1px solid #857FD1;
+	background: url(/static/home/img/page/shequ_daxue/222.png) no-repeat center center;
+	background-size: cover;
+	margin-right: 36px;
+}
+.anli .swiper-container2 .swiper-slide h3{
+	width: 330px;
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 39px;
+	color: #857FD1;
+}
+.anli .swiper-container2 .swiper-slide div{
+	width: 309px;
+	margin: 0 auto;
+	margin-bottom: 22px;
+}
+.anli .swiper-container2 .swiper-slide div p{
+	font-size: 15px;
+	line-height: 24px;
+}
+.anli .swiper-container2 .swiper-slide h4{
+	font-size: 16px;
+	width: 309px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+.anli .swiper-container2 .swiper-slide p{
+	font-size: 15px;
+	line-height: 24px;
+	width: 309px;
+	margin: 0 auto;
+}
+.anli .swiper-container2 .swiper-slide div.anniu{
+	font-size: 0;
+	text-align: center;
+	position: absolute;
+	bottom: 27px;
+	width: 100%;
+	margin-bottom: 0;
+}
+.anli .swiper-container2 .swiper-slide div.anniu a{
+	width: 108px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 15px;
+	color: #FFFFFF;
+	background-color: #857FD1;
+	border-radius: 3px;
+	display: inline-block;
+}
+.anli .swiper-container2 .swiper-slide div.anniu a.a1{
+	background-color: #FFFFFF;
+	color: #857FD1;
+	margin-left: 30px;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.14);
+}
+.anli .swiper-container2 .swiper-slide div.anniu a:hover{
+	opacity: 0.8;
+}
+.anli .swiper-container2 .swiper-slide div.anniu a.a1:hover{
+	background-color: #857FD1;
+	color: #FFFFFF;
+}
+.anli .btn{
+	top: 394px;
+}
+.anli .swiper-container2{
+	margin-bottom: 52px;
+}
+.anli{
+	padding-bottom: 80px;
+}
+
+/* 美国社区大学&美国综合性大学留学费用大PK */
+.pk{
+	width: 100%;
+	height: 554px;
+	background: url(/static/home/img/page/shequ_daxue/beijing2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.pk .content .box{
+	width: 566px;
+	height: 284px;
+	border: 1px solid #857FD1;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	text-align: center;
+	margin-right: 33px;
+}
+.pk .content .box h3{
+	font-size: 24px;
+	padding-top: 41px;
+	padding-bottom: 23px;
+}
+.pk .content .box p{
+	font-size: 16px;
+	line-height: 24px;
+}
+.pk .content .box a{
+	width: 248px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #857FD1;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFFFFF;
+	display: inline-block;
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	margin-left: -124px;
+}
+
+/* 美国社区大学申请条件 */
+.tiaojian .content .box{
+	width: 270px;
+	height: 190px;
+	border: 1px solid #C9C8C8;
+	border-radius: 2px;
+	text-align: center;
+	margin-right: 26px;
+}
+.tiaojian .content .box .shequImg2{
+	width: 40px;
+	height: 40px;
+	margin-top: 28px;
+	margin-bottom: 20px;
+	display: inline-block;
+	background-color: transparent;
+}
+.shequImg2{background:url(/static/home/img/page/shequ_daxue/shequImg2.png)  no-repeat;}
+.tj3{height:40px;width:40px;background-position:0 0;}
+.tj4{height:40px;width:40px;background-position:-40px 0;}
+.tj1{height:40px;width:40px;background-position:-80px 0;}
+.tj2{height:40px;width:40px;background-position:-120px 0;}
+
+.tiaojian .content .box span{
+	display: block;
+	width: 44px;
+	height: 1px;
+	background-color: #E4E1E1;
+	margin: 0 auto;
+	margin-bottom: 21px;
+}
+.tiaojian .content .box p{
+	font-size: 18px;
+	line-height: 30px;
+}
+.tiaojian .content{
+	margin-bottom: 52px;
+}
+.tiaojian{
+	padding-bottom: 52px;
+}
+
+/* 美国社区大学申请流程 */
+.liucheng{
+	position: static;
+}
+.liucheng .content{
+	position: static;
+	margin-bottom: 52px;
+}
+.liucheng .content .box{
+	width: 212px;
+	height: 168px;
+	background: url(/static/home/img/page/shequ_daxue/lc1.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	margin-right: 27px;
+}
+.liucheng .content .box2{
+	background-image: url(/static/home/img/page/shequ_daxue/lc2.jpg);
+}
+.liucheng .content .box3{
+	background-image: url(/static/home/img/page/shequ_daxue/lc3.jpg);
+}
+.liucheng .content .box4{
+	background-image: url(/static/home/img/page/shequ_daxue/lc4.jpg);
+}
+.liucheng .content .box5{
+	background-image: url(/static/home/img/page/shequ_daxue/lc5.jpg);
+}
+.liucheng .content .box>.o{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.liucheng .content .box>.o h3{
+	font-size: 32px;
+	font-weight: normal;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+.liucheng .content .box>.o p{
+	font-size: 24px;
+}
+.liucheng .content .box .hidden{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	display: none;
+}
+.liucheng .content .box .hidden:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.liucheng .content .box .hidden p{
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 24px;
+	width: 170px;
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+}
+.liucheng{
+	padding-bottom: 80px;
+}
+
+/* 彬彬导师团队 */
+.daoshi_team{
+	width: 100%;
+	height: 828px;
+	background: url(/static/home/img/page/shequ_daxue/500478907_banner.jpg) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+}
+.daoshi_team h3.title{
+	padding-top: 79px;
+}
+
+.daoshi_team .count>div.t{
+	font-size: 16px;
+	margin-bottom: 28px;
+	text-align: center;
+}
+.daoshi_team .count>div.t .tbox{
+	display: inline-block;
+}
+.daoshi_team .count>div.t span{
+	padding: 0 25px;
+	color: #707070;
+}
+.daoshi_team .count>div.t a{
+	color: #232426;
+	padding-bottom: 10px;
+}
+.daoshi_team .count>div.t a:hover{
+	color: #857FD1;
+}
+.daoshi_team .count>div.t a.active{
+	color: #857FD1;
+	border-bottom: 2px solid #857FD1;
+}
+
+.daoshi_team .count>div.b .bBox{
+	display: none;
+}
+.daoshi_team .count>div.b .leftb{
+	margin-top: 50px;
+}
+.daoshi_team .count>div.b .leftb h3{
+	font-size: 30px;
+	color: #333333;
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+.daoshi_team .count>div.b .leftb p{
+	font-size: 24px;
+	color: #333333;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	margin-bottom: 23px;
+}
+.daoshi_team .count>div.b .leftb span{
+	width: 72px;
+	height: 4px;
+	background-color: #454545;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	display: block;
+	margin-bottom: 32px;
+}
+.daoshi_team .count>div.b .leftb em{
+	width: 367px;
+	display: block;
+	font-size: 15px;
+	color: #333333;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+.daoshi_team .count>div.b .leftb div.bBtn a{
+	width: 154px;
+	height: 34px;
+	border: 1px solid #333333;
+	line-height: 34px;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 28px;
+}
+.daoshi_team .count>div.b .leftb div.bBtn a:hover{
+	color: #fff;
+	border-color: #857FD1;
+	background-color: #857FD1;
+}
+
+.daoshi_team .count>div.b .rightb{
+	width: 716px;
+}
+.daoshi_team .count>div.b .rightb>div.fl{
+	width: 220px;
+	height: 232px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+	margin-left: 18px;
+	margin-bottom: 20px;
+}
+.daoshi_team .count>div.b .rightb>div.fl img{
+	width: 100%;
+	height: 100%;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden h3{
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400;
+	margin-top: 31px;
+	margin-bottom: 15px;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden span{
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 21px;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden p{
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 22px;
+	width: 90%;
+	margin: 0 auto;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden a{
+	font-size: 14px;
+	color: #fff;
+	width: 98px;
+	height: 28px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 28px;
+	border-radius: 5px;
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -49px;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden a:hover{
+	color: #fff;
+	border-color: #857FD1;
+	background-color: #857FD1;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hiddenTitle{
+	width: 100%;
+	height: 52px;
+	background-color: rgba(0,0,0,0.46);
+	text-align: center;
+	line-height: 52px;
+	font-size: 22px;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* 选择正确的背景提升 距离名校更近一步 */
+.bjts{
+	width: 100%;
+	padding-bottom: 80px;
+}
+.bjts .box .title{
+	padding-top: 80px;
+	margin-bottom: 51px;
+	text-align: center;
+}
+.bjts .box .title h3{
+	font-size: 36px;
+	font-weight: normal;
+	margin-bottom: 16px;
+}
+.bjts .box .title p{
+	font-size: 14px;
+	color: #858282;
+}
+
+.bjts .box .content>div.fl{
+	width: 364px;
+	height: 444px;
+	position: relative;
+}
+.bjts .box .content>div.fl img{
+	width: 100%;
+	height: 100%;
+}
+.bjts .box .content>div.fl .hidden_a,.bjts .box .content>div.fr>.box .hidden_a{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.28);
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	font-weight: bold;
+}
+.bjts .box .content>div.fl .hidden_a p,.bjts .box .content>div.fr>.box .hidden_a p{
+	display: inline-block;
+	vertical-align: middle;
+}
+.bjts .box .content>div.fl .hidden_a:after,.bjts .box .content>div.fr>.box .hidden_a:after{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.bjts .box .content>div.fl .hidden_b,.bjts .box .content>div.fr>.box .hidden_b{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(9,9,9,0.4);
+	position: absolute;
+	top: 0;
+	color: #fff;
+	display: none;
+}
+.bjts .box .content>div.fl .hidden_b .juzhong,.bjts .box .content>div.fr>.box .hidden_b .juzhong{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+}
+.bjts .box .content>div.fl .hidden_b h3,.bjts .box .content>div.fr>.box .hidden_b h3{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.bjts .box .content>div.fl .hidden_b p,.bjts .box .content>div.fr>.box .hidden_b p{
+	font-size: 14px;
+	width: 287px;
+	line-height: 22px;
+	margin: 0 auto;
+	margin-bottom: 19px;
+}
+.bjts .box .content>div.fl .hidden_b a,.bjts .box .content>div.fr>.box .hidden_b a{
+	width: 102px;
+	height: 28px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	border-radius: 3px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.bjts .box .content>div.fl .hidden_b a:hover,.bjts .box .content>div.fr>.box .hidden_b a:hover{
+	background-color: #857FD1;
+	border-color: #857FD1;
+}
+
+.bjts .box .content>div.fr{
+	width: 767px;
+}
+.bjts .box .content>div.fr>.box{
+	width: 364px;
+	height: 202px;
+	margin-right: 39px;
+	margin-bottom: 41px;
+}
+.bjts .box .content>div.fr>.box img{
+	width: 100%;
+	height: 100%;
+}
+.bjts .anniu{
+	text-align: center;
+	font-size: 0;
+}
+.bjts .anniu a{
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	background-color: #857FD1;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.bjts .anniu a.a1{
+	background-color: #FFFFFF;
+	color: #857FD1;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.26);
+	margin-left: 52px;
+}
+.bjts .anniu a:hover{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+.bjts .anniu a.a1:hover{
+	background-color: #857FD1;
+	color: #FFFFFF;
+}
+
+/* 彬彬教育致力让每一个学生牵手世界名校 */
+#mydiv{
+	width: 100%;
+	position: relative;
+	background: url(/static/home/img/page/shequ_daxue/beijing3.jpg) no-repeat center center;
+	background-size: cover;
+}
+#mydiv canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#mydiv .box{
+	height: 100%;
+}
+#mydiv .box .content{
+	position: relative;
+}
+#mydiv .box .content .dq{
+	width: 375px;
+	height: 364px;
+	background: url(/static/home/img/page/zonghe_daxue/d.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -27.5px;
+	margin-left: -182px;
+}
+#mydiv .box .content .dq>div{
+	width: 193px;
+	height: 193px;
+	border-radius: 50%;
+	background: url(/static/home/img/page/7_8/a6e310318cc5a075e8e4a0a459119ad.png) no-repeat left center;
+	background-size: cover;
+	background-color: #281E1C;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -96.5px;
+	margin-left: -96.5px;
+	overflow: hidden;
+	transition: all 3s;
+}
+#mydiv .box .content .dq>div img{
+	height: 193px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 7;
+}
+#mydiv .box .content .dq>div h3{
+	font-size: 26px;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	color: #fff;
+	/* margin-top: -56.5px; */
+}
+#mydiv .box .content .dq>div h3 p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#mydiv .box .content>div.fl li.li1{
+	margin-bottom: 69px;
+}
+#mydiv .box .content>div.fl li.li1 p{
+	width: 240px;
+}
+#mydiv .box .content>div.fl li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fl li.li2 p{
+	width: 336px;
+}
+#mydiv .box .content>div.fl li.li3 p{
+	width: 432px;
+}
+
+#mydiv .box .content>div.fl h3,#mydiv .box .content>div.fr h3{
+	font-size: 26px;
+	color: #857FD1;
+	margin-bottom: 7px;
+}
+#mydiv .box .content>div.fl p,#mydiv .box .content>div.fr p{
+	font-size: 16px;
+	color: #0F0F0F;
+}
+
+#mydiv .box .content>div.fr{
+	text-align: right;
+}
+#mydiv .box .content>div.fr li.li1 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li1{
+	margin-bottom: 50px;
+}
+#mydiv .box .content>div.fr li.li2 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fr li.li3 p{
+	width: 368px;
+}

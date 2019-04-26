@@ -1,0 +1,553 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/page/seniormoney.css">
+	</head>
+	<style type="text/css">
+		.banner h1{
+			font-size: 64px;
+			line-height: 88px;
+			padding-top: 144px;
+			padding-bottom: 6px;
+			font-weight: normal;
+			text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+			color: #FFFFFF;
+			text-align: center;
+		}
+	</style>
+	<body>
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- banner -->
+		<div class="banner">
+			<div class="gWidth1170">
+				<h1>美国高中留学费用大揭秘</h1>
+				<a href="javascript:;" onclick="go()">美国高中留学一年多少钱</a>
+			</div>
+		</div>
+		
+		<!-- 美国行前费用早知道 -->
+		<div class="fy gWidth1170">
+			<h3>美国行前费用早知道</h3>
+			<div class="content">
+				<div class="contentTop clearfix">
+					<div class="box fl">
+						<img src="/static/home/img/page/gaozhong_feiyong/icon1.png" alt="">
+						<span></span>
+						<p>考试报名费用</p>
+						<div class="hidden">
+							<div>
+								<h4>考试报名费用</h4>
+								<p>TOEFL考试：$ 268</p>
+								<p>TOEFL Junior考试：$ 60</p>
+								<p>Slate考试：$ 140</p>
+								<p>SSAT考试：初级 $157；高级 $257</p>
+								<p>SAT考试：约$100</p>
+							</div>
+						</div>
+					</div>
+					<div class="box fl">
+						<img src="/static/home/img/page/gaozhong_feiyong/xuexiaocopy.png" alt="">
+						<span></span>
+						<p>学校申请费</p>
+						<div class="hidden">
+							<div>
+								<h4>学校申请费</h4>
+								<p>每个学校：$90-800</p>
+								<p>材料邮寄：$25-35</p>
+							</div>
+						</div>
+					</div>
+					<div class="box fl">
+						<img src="/static/home/img/page/gaozhong_feiyong/huzhao.png" alt="">
+						<span></span>
+						<p>护照签证</p>
+						<div class="hidden">
+							<div>
+								<h4>护照签证</h4>
+								<p>办理护照：RMB 200</p>
+								<p>签证费：$ 200</p>
+								<p>SEVIS费：$ 200</p>
+							</div>
+						</div>
+					</div>
+					<div class="box fl">
+						<img src="/static/home/img/page/gaozhong_feiyong/jipiao.png" alt="">
+						<span></span>
+						<p>体检机票</p>
+						<div class="hidden">
+							<div>
+								<h4>体检机票</h4>
+								<p>体检：约RMB 2000</p>
+								<p>机票：约RMB 6000-13000</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contentBottom clearfix">
+					<p><a href="javascript:;" onclick="go()"><span></span>美国高中留学总费用?</a></p>
+					<p><a href="javascript:;" onclick="go()"><span></span>美国留学每年需要多少生活费?</a></p>
+					<p><a href="javascript:;" onclick="go()"><span></span>留学机构的收费标准?</a></p>
+					<p><a href="javascript:;" onclick="go()"><span></span>去美国应该办哪种银行卡?</a></p>
+					<p><a href="javascript:;" onclick="go()"><span></span>美国各类型中学收费标准是什么?</a></p>
+					<p><a href="javascript:;" onclick="go()"><span></span>去美国读高中需要准备多少保证金?</a></p>
+					<span>留学美国热门话题</span>
+				</div>
+				<a href="javascript:;" onclick="go()">点击了解更多费用详情</a>
+			</div>
+		</div>
+		
+		<!-- 美国城市生活费用不同 -->
+		<div class="difference">
+			<div class="gWidth1170">
+				<h3>美国城市生活费用不同</h3>
+				<div class="content clearfix">
+					<div class="box fl box1">
+						<h4>美国特大城市</h4>
+						<p class="city"><b>代表城市：</b>纽约、洛杉矶、迈阿密、芝加哥、华盛顿首府等城市</p>
+						<p><b>生活费用：</b>约 $1000-2000/月</p>
+					</div>
+					<div class="box fl box2">
+						<h4>美国大城市</h4>
+						<p class="city"><b>代表城市：</b>匹兹堡、西雅图、达拉斯、亚特兰大等城市</p>
+						<p><b>生活费用：</b>约 $800-1000/月</p>
+					</div>
+					<div class="box fl box3">
+						<h4>美国三级城市</h4>
+						<p class="city"><b>代表城市：</b>美国南部、中西部、东南部州、德州、康州等一些地区</p>
+						<p><b>生活费用：</b>约 $600-800/月</p>
+					</div>
+					<div class="box fl box4">
+						<h4>美国四级城市</h4>
+						<p class="city"><b>代表城市：</b>俄克拉荷马州、密苏里州、路易斯安那州等地区</p>
+						<p><b>生活费用：</b>约 $450-600/月</p>
+					</div>
+				</div>
+				<a href="javascript:;" onclick="go()">中美消费大对比</a>
+			</div>
+		</div>
+		
+		<!-- 美国高中费用标准 -->
+		<div class="biaozhun gWidth1170">
+			<h3>美国高中费用标准</h3>
+			<div class="content clearfix">
+				<div class="box fl">
+					<h4>私立走读中学</h4>
+					<p>每学年约$ 45,000-$ 75,000</p>
+					<span>（全覆盖）</span>
+					<a href="javascript:;" onclick="go()">我要申请</a>
+				</div>
+				<div class="box fl">
+					<h4>私立寄宿中学</h4>
+					<p>每学年约$ 45,000-$ 80,000</p>
+					<span>（全覆盖）</span>
+					<a href="javascript:;" onclick="go()">我要申请</a>
+				</div>
+				<div class="box fl">
+					<h4>艺术中学</h4>
+					<p>每学年约$ 55,000-$ 85,000</p>
+					<span>（全覆盖）</span>
+					<a href="javascript:;" onclick="go()">我要申请</a>
+				</div>
+				<div class="box fl">
+					<h4>蓝带中学</h4>
+					<p>每学年约$ 40,000-$ 75,000</p>
+					<span>（全覆盖）</span>
+					<a href="javascript:;" onclick="go()">我要申请</a>
+				</div>
+				<div class="box fl">
+					<h4>公立中学</h4>
+					<p>免学费</p>
+					<span></span>
+					<a href="javascript:;" onclick="go()">我要申请</a>
+				</div>
+			</div>
+			<a href="javascript:;" onclick="go()">美国高中费用详情</a>
+		</div>
+		
+		<!-- 高性价比美国优质中学推荐 -->
+		<div class="zs_tuijian">
+			<h3>高性价比美国优质中学推荐</h3>
+			<div class="content gWidth1170">
+				<div class="cTitle clearfix">
+					<span class="active">优质走读中学推荐</span>
+					<span>优质寄宿中学推荐</span>
+				</div>
+				<div class="cContent">
+					<ul>
+						<li class="clearfix tt">
+							<span style="width: 322px;">学校名称</span>
+							<span style="width: 122px;">地区</span>
+							<span style="width: 465px;">学校优势</span>
+							<span style="width: 96px;">留学费用</span>
+							<span style="width: 159px;">已成功申请</span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Saint Viator High School圣维克特高中</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">伊利诺伊州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">双蓝带学校；伊利诺伊州六所常春藤高中之一；STEM理工学校；苹果杰出荣誉学校。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$14353</p></span>
+							<span style="width: 159px;"><div><p>189人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Priceton Academy of the Sacred Heart<br />普林斯顿圣心学院</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">伊利诺伊州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">地理位置优越，靠近普林斯顿大学，治安良好，完善的教学设备，体育文艺项目众多，丰富的夏令营活动，100%升学率。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$35250</p></span>
+							<span style="width: 159px;"><div><p>168人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Hamden Hall Country Day School<br />汉姆顿学校</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">康涅狄格州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">康州私立学校排名第5；每年有15%毕业生进入常春藤名校。2/3以上的毕业生获得有高竞争力的大学或学院的录取，15%的12年级生荣获国家优等奖学金。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$35250</p></span>
+							<span style="width: 159px;"><div><p>123人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Rutgers Preparatory School<br />罗格斯中学</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">新泽西州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">学校建于1766年，是新泽西州最古老的贵族高中。师资力量强，%的教师拥有硕士及以上文凭，且多名都是来自于普林斯顿大学等常青藤名校。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$40875</p></span>
+							<span style="width: 159px;"><div><p>182人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Walsingham Academy<br />沃星汉姆学校</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">弗吉尼亚州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">综合教学实力强劲，多次获得美国蓝丝带奖，学校90%以上的教师都拥有硕士或博士学位，1：9的师生比例保证每位学生都能受到老师照顾，iPad教学。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$16500</p></span>
+							<span style="width: 159px;"><div><p>107人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Glenelg Country School<br />格莱内尔学校</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">马里兰州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">巴尔的摩地区的顶尖预备学校，教学质量盛名在外。2017年，100%的学生升入四年制大学，不仅如此，学生一共获得了730万美元的奖学金，大大减轻大学高昂费用的负担。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$33590</p></span>
+							<span style="width: 159px;"><div><p>151人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">The Quarry Lane School<br />库埃里兰中学</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">加利福尼亚州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">80%学校教师是硕士及以上学历，毕业于MIT、普林斯顿、斯坦福等世界名校，学术竞争力强，学校高中毕业生被录取的高校几乎涵盖美国所有顶尖知名大学。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$39000</p></span>
+							<span style="width: 159px;"><div><p>196人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Bishop Verot Catholic High School<br />韦罗特主教高中</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">佛罗里达州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">学校创立于1962年，是佛罗里达州最优秀的私立高中之一，升学率高达99%。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$15700</p></span>
+							<span style="width: 159px;"><div><p>108人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Falmouth Academy<br />福莫斯学院</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">马萨诸塞州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">本校是一所小型的、学术严谨的，提供7-12年级课程的全日制学校。阅读、写作、口语技能、分析和批判性思维是学校教学中非常重视的内容。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$29995</p></span>
+							<span style="width: 159px;"><div><p>130人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Brooklyn Friends School<br />布鲁克林友谊学校</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">纽约州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">学校升学率100%，许多学生顺利进入常春藤名校。SAT成绩优秀分数高达1270，ACT平均分为28分，远高于全美平均水平。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$39800</p></span>
+							<span style="width: 159px;"><div><p>198人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+					</ul>
+				</div>
+				<div class="cContent">
+					<ul>
+						<li class="clearfix tt">
+							<span style="width: 322px;">学校名称</span>
+							<span style="width: 122px;">地区</span>
+							<span style="width: 465px;">学校优势</span>
+							<span style="width: 96px;">留学费用</span>
+							<span style="width: 159px;">已成功申请</span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Pilgrim School<br />皮尔格雷姆学校</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">加利福尼亚州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">100%的升学率，学校的学生20%能进入常春藤名校，70%能被US NEWS排名前五十的大学录取。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$74900</p></span>
+							<span style="width: 159px;"><div><p>103人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">The MacDuffie School<br />马克杜菲学校</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">马萨诸塞州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">本校拥有高级职称的教授比例是64%，且有很多教师毕业于哈佛、耶鲁、哥伦比亚、普林斯顿等世界名校。小班教学，1:7师生比，学生关注度高。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$59050</p></span>
+							<span style="width: 159px;"><div><p>186人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">The White Mountain School<br />白山中学</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">新罕布什尔州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">学校拥有富有特色的教学设施和项目：理科教学楼用的都是可再生、可循环利用的能源，如太阳能发电，为环境保护、节能减排做出了一些贡献。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$63700</p></span>
+							<span style="width: 159px;"><div><p>176人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Idyllwild Arts Academy<br />艾迪怀德艺术学院</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">加利福尼亚州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">学校师资力量雄厚，艺术课程的老师都是经验丰富的专业人士，文化课程设置也达到了一流综合类大学的申请标准。学校拥有经过医学认证的专业医生和全职注册护士，24小时护理学生健康。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$67091</p></span>
+							<span style="width: 159px;"><div><p>105人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Cheshire Academy<br />柴郡中学</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">康涅狄格州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">美国最古老的寄宿中学之一，223年的建校历史，最早一批接收国际学生的学校，拥有悠久的文化历史底蕴与丰富的国际学生管理经验。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$61750</p></span>
+							<span style="width: 159px;"><div><p>196人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Ross School<br />罗斯中学</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">纽约州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">学校多次被评为全美蓝带中学，在纽约州私立学校排名10，该校教学理念先进科学，超前教育普遍，学习风气浓厚。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$74250</p></span>
+							<span style="width: 159px;"><div><p>171人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">The Grier School<br />格里尔女子中学</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">宾夕法尼亚州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">学校创建于1853年，是宾夕法尼亚州一所非常老牌的女子寄宿学校。65%的教师拥有硕士及以上学位，毕业生获得国家级奖学金。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$54500</p></span>
+							<span style="width: 159px;"><div><p>125人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Hawaii Preparatory Academy<br />夏威夷预备学院</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">夏威夷州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">本校所提供的独特的课程和课外活动均根据其特殊的地理位置和气候来设置。例如海洋科学研究、海龟研究、水肺潜水证书等。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$64500</p></span>
+							<span style="width: 159px;"><div><p>112人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Marianapolis Preparatory School<br />玛丽安娜预备学校</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">康涅狄格州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">学校给学生提供非常细节化的升学指导，学校给学生从9年级开始就开始进行指引，将与升学有关的事件全部标出，并进行个性化的指导，开设多种升学研讨会。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$57898</p></span>
+							<span style="width: 159px;"><div><p>130人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+						<li class="clearfix">
+							<span style="width: 322px;"><p style="width: 176px; text-align: center; line-height: 20px;">Hoosac School<br />湖沙克中学</p></span>
+							<span style="width: 122px;"><p style="text-align: center;">纽约州</p></span>
+							<span style="width: 465px;"><p style="width: 413px; line-height: 20px;">教育资源丰富，55%的教师拥有硕士及以上学位，学校始终坚持小班授课，师生比例1:5，以保证对每一个学生的关心和指导。</p></span>
+							<span style="width: 96px;"><p style="width: 56px;">$62700</p></span>
+							<span style="width: 159px;"><div><p>100人</p><a href="javascript:;" onclick="go()">我要申请</a></div></span>
+						</li>
+					</ul>
+				</div>
+				<p><em>*</em>此报价为预估费用，每年可能会有5%-15%的浮动</p>
+				<a href="javascript:;" onclick="go()">私人订制留学方案</a>
+			</div>
+		</div>
+		
+		<!-- 学长学姐告诉你 省钱也能很潇洒 -->
+		<div class="xiaosa gWidth1170">
+			<h3>学长学姐告诉你 省钱也能很潇洒</h3>
+			<div class="content clearfix">
+				<div class="box box1 fl">
+					<div class="img fl">美国公交车文化</div>
+					<div class="fr">
+						<p>学生在学校规定范围内可以免费搭乘公共交通工具。美国的公交车也很便宜，大约1.5美金/次，外出可以省掉一大笔费用！</p>
+					</div>
+				</div>
+				<div class="box box2 fl">
+					<div class="img fl">美国大促节日</div>
+					<div class="fr">
+						<p>美国的电影院、健身房都有面向学生的折扣活动。学弟学妹们在逛商场和超市的时候要记得主动询问商家是否有折扣，多多留意自己的信箱里是否有优惠券，会有意想不到的惊喜哦！</p>
+					</div>
+				</div>
+				<div class="box box3 fl">
+					<div class="img fl">美国各地美食</div>
+					<div class="fr">
+						<p>美国餐厅的消费相对比较高，尤其是中餐，如果偶尔想要去外面吃饭的话，可以选择麦当劳的美式中餐，加州大华超市的自助盒饭价格都很亲民，省钱的同时还可以解一解对中餐的相思之苦。</p>
+					</div>
+				</div>
+				<div class="box box4 fl">
+					<div class="img fl">美国“白菜价”服装</div>
+					<div class="fr">
+						<p>美国衣服是较为便宜的，在一些工厂直销店和特价商店会有比较好的价格。通常在八月中或圣诞节前后是打折季。</p>
+					</div>
+				</div>
+			</div>
+			<a href="javascript:;" onclick="go()">最佳省钱攻略看这里</a>
+		</div>
+		
+		<!-- 彬彬教育监管服务 -->
+		<div class="jianguan">
+			<div class="gWidth1170">
+				<h3>彬彬教育监管服务</h3>
+				<div class="content clearfix">
+					<div class="box fl">
+						<div class="img">
+							<img src="/static/home/img/page/haiwai_jianguan/fuwu1.png" alt="寄宿家庭安置全服务" title="寄宿家庭安置全服务">
+							<span>寄宿家庭安置全服务</span>
+						</div>
+						<p>提供寄宿家庭选择；十个月食宿费用；上、下学交通；国际学生监护；免费更换寄宿家庭</p>
+						<a href="/fmfml/0-1.html" target="_blank">提前预约寄宿家庭</a>
+					</div>
+					<div class="box fl">
+						<div class="img">
+							<img src="/static/home/img/page/haiwai_jianguan/fuwu2.png" alt="住宿管理" title="住宿管理">
+							<span>住宿管理</span>
+						</div>
+						<p>7*24紧急情况协助；匹配服务团队随时沟通；协助处理就医问题；定期家访、校访；生活矛盾处理</p>
+						<a href="/page/overseashome.html" target="_blank">预约贴心无忧管家</a>
+					</div>
+					<div class="box fl">
+						<div class="img">
+							<img src="/static/home/img/page/haiwai_jianguan/fuwu3.png" alt="学业跟踪" title="学业跟踪">
+							<span>学业跟踪</span>
+						</div>
+						<p>校规培训及介绍；成绩跟踪及反馈；选课及学习指导；升学规划；转学申请</p>
+						<a href="javascript:;" onclick="go()">预约辅导老师</a>
+					</div>
+					<div class="box fl">
+						<div class="img">
+							<img src="/static/home/img/page/haiwai_jianguan/fuwu4.png" alt="留学课堂" title="留学课堂">
+							<span>留学课堂</span>
+						</div>
+						<p>背景提升；美国风俗文化授课；名校学长传授留学经验；美国生活指导；定期组织课外活动</p>
+						<a href="javascript:;" onclick="go()">定制个性化成长方案</a>
+					</div>
+					<div class="box fl">
+						<div class="img">
+							<img src="/static/home/img/page/haiwai_jianguan/fuwu5.png" alt="行前指导" title="行前指导">
+							<span>行前指导</span>
+						</div>
+						<p>机票购买指导；行前行李准备；出入境指导；安全培训；选课、校服、疫苗体检等指导</p>
+						<a href="javascript:;" onclick="go()">知己知彼，出行无忧</a>
+					</div>
+					<div class="box fl">
+						<div class="img">
+							<img src="/static/home/img/page/haiwai_jianguan/fuwu6.png" alt="其他支持服务" title="其他支持服务">
+							<span>其他支持服务</span>
+						</div>
+						<p>ISWP心理支持服务；协助解决突发事件；法务支持；租房/买房；移民</p>
+						<a  href="javascript:;" onclick="go()">更多服务了解</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 彬彬教育致力于让每个学生牵手世界名校 -->
+		<div id="mydiv" class="pm_index" style="height: 695px;">
+			<div class="box gWidth1170 clearfix">
+				<!-- title -->
+				<div class="title">
+					<h3>彬彬教育致力于让每个学生牵手世界名校</h3>
+				</div>
+				<!-- content -->
+				<div class="content gWidth1170">
+					<div class="fl">
+						<ul>
+							<li class="li1">
+								<h3>6位1体</h3>
+								<p>业内首创“6位1体”服务模式；服务客户满意度高达100%</p>
+							</li>
+							<li class="li2">
+								<h3>广资源</h3>
+								<p>1000+校园独家代理；实地考察 真实可靠</p>
+							</li>
+							<li class="li3">
+								<h3>多重认证</h3>
+								<p>留学行业质量认证标准机构、国内十佳品牌诚信<br />留学机构、CSIET评审认证留学机构</p>
+							</li>
+						</ul>
+					</div>
+					<div class="dq">
+						<div>
+						</div>
+					</div>
+					<div class="fr">
+						<ul>
+							<li class="li1 clearfix">
+								<h3>全覆盖</h3>
+								<p class="fr">600+海外同专业导师覆盖全美TOP100名校<br />让学生提前了解校园生活并提供全程对应辅导</p>
+							</li>
+							<li class="li2 clearfix">
+								<h3>大数据</h3>
+								<p class="fr" style="width: 330px;">120000+超大申请数据库；科学手段狂揽offer</p>
+							</li>
+							<li class="li3 clearfix">
+								<h3>两个“1”</h3>
+								<p class="fr">国内独1拥有海外监管服务中心留学机构<br />国内独1拥有海外院校开发资质的留学机构</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+		<!-- 粒子链接 -->
+		<script type="text/javascript" src="/static/home/js/page/canvas-particle.js"></script>
+		<script type="text/javascript">
+			$('.fy .content .contentTop .box').hover(function () {
+				$(this).children('.hidden').stop().fadeIn();
+			}, function () {
+				$(this).children('.hidden').stop().fadeOut();
+			})
+			
+			$('.fy .content .contentTop .box:last-child').css({'margin-right': '0'});
+			
+			$('.difference .content>.box:last-child').css({'margin-right': '0'});
+			
+			$('.biaozhun .content .box:last-child').css({'margin-right': '0'});
+			
+			$('.zs_tuijian .content .cTitle span:last-child').css({'margin-right': '0'});
+			
+			$('.zs_tuijian .content .cContent').eq(0).css({'display': 'block'});
+			$('.zs_tuijian .content .cTitle span').eq(0).addClass('active');
+			$('.zs_tuijian .content .cTitle span').click(function () {
+				var index = $('.zs_tuijian .content .cTitle span').index($(this));
+				$(this).addClass('active').siblings('span').removeClass('active');
+				$('.zs_tuijian .content .cContent').eq(index).stop().fadeIn().siblings('.cContent').css({'display': 'none'});
+				if(index == 0){
+					$('.zs_tuijian .content>p').html('<em>*</em>此报价为预估费用，每年可能会有5%-15%的浮动');
+				}else{
+					$('.zs_tuijian .content>p').html('<em>*</em>此报价为预估费用，每年可能会有5%-15%的浮动');
+				}
+			})
+			
+			$('.zs_tuijian .content .cContent ul li span:last-child').css({'border-right': 'none'});
+			
+			$('.zs_tuijian .content .cContent ul li:last-child').css({'border-bottom': 'none'});
+			
+			$('.zs_tuijian .content .cContent ul li:nth-child(even)').css({'background-color': '#F5F5F6'});
+			
+			$('.xiaosa .content .box:nth-child(2n)').css({'margin-right': '0'});
+			
+			$('.jianguan .content .box:nth-child(3n)').css({'margin-right': '0'});
+			// 
+			window.onload = function() {
+				//配置
+				var config = {
+					vx: 4,	//小球x轴速度,正为右，负为左
+					vy: 4,	//小球y轴速度
+					height: 2,	//小球高宽，其实为正方形，所以不宜太大
+					width: 2,
+					count: 200,		//点个数
+					color: "228,228,228", 	//点颜色
+					stroke: "228,228,228", 		//线条颜色
+					dist: 30000, 	//点吸附距离
+					e_dist: 20000, 	//鼠标吸附加速距离
+					max_conn: 10 	//点到点最大连接数
+				}
+			
+				//调用
+				CanvasParticle(config);
+			}
+			
+			$(window).scroll(function () {
+				if( $(window).scrollTop() + 700 >= $('#mydiv').offset().top ){
+					$('#mydiv .box .dq>div').css({'background-position-x': 'right'});	 
+				}
+				
+				if( $(window).scrollTop() + 700 < $('#mydiv').offset().top ){
+					$('#mydiv .box .dq>div').css({'background-position-x': 'left'});	 
+				}
+			})
+		</script>
+		<!-- 高中表单 -->
+		{include file="common/common_highSchool"/}
+	</body>
+</html>

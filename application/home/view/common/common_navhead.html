@@ -1,0 +1,289 @@
+<style type="text/css">
+	
+	/* topNav */
+	.topNav{
+		width: 100%;
+		height: 99px;
+		background-color: #fff;
+		position: relative;
+		z-index: 999;
+		box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+	}
+	.topNavBox{
+		width: 1536px;
+		margin-left: auto;
+		margin-right: auto;
+		position: static;
+	}
+	.topNav .topNavBox>a>img{
+		width: 187px;
+		margin-top: 27px;
+		margin-right: 32px;
+	}
+	
+	.topNav .nav{
+		position: static;
+	}
+	.topNav .nav>div.fl{
+		position: static;
+	}
+	.topNav .nav>div.fl>a{
+		float: left;
+		line-height: 96px;
+		margin: 0 14px;
+		font-size: 16px;
+		color: #000000;
+		font-weight: 400;
+	}
+	.topNav .nav>div.fl:hover>a{
+		color: #FF5B5A;
+		border-bottom: 3px solid #FF7062;
+	}
+	.topNav .nav>div.fl a.active{
+		border-bottom: 3px solid #FF7062;
+	}
+	.topNav .nav>div.fl .box{
+		width: 100%;
+		background-color: #FFFFFF;
+		background-color: rgba(255,255,255,0.9);
+		left: 0;
+		top: 99px;
+		position: absolute;
+		display: none;
+		padding-bottom: 32px;
+		z-index: 999;
+	}
+	.topNav .nav>div.fl .box>div{
+		width: 1040px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.topNav .nav>div.fl .box>div h3{
+		font-size: 15px;
+		color: #FF5B5A;
+		margin-top: 22px;
+		margin-bottom: 10px;
+	}
+	.topNav .nav>div.fl .box>div>div a{
+		font-size: 15px;
+		color: #333333;
+		width: 140px;
+		display: inline-block;
+	}
+	.topNav .nav>div.fl .box>div>div a:hover{
+		color: #FF5B5A;
+	}
+	
+	.topNavBox .ss{
+		border-left: 2px solid #333333;
+		padding-left: 15px;
+		margin-top: 37px;
+	}
+	.topNavBox .ss h3{
+		display: inline-block;
+		height: 22px;
+		cursor:pointer;
+		margin-right: 40px;
+	}
+	.topNavBox .ss h3 img{
+		width: 21px;
+		height: 22px;
+	}
+	.topNavBox .ss .input{
+		height: 30px;
+		border: 1px solid #FF7062;
+		border-radius: 4px;
+		line-height: 30px;
+		font-size: 13px;
+		display: none;
+		margin-right: 17px;
+	}
+	.topNavBox .ss .input input{
+		float: left;
+		height: 30px;
+		text-indent: 15px;
+	}
+	.topNavBox .ss .input button{
+		width: 41px;
+		height: 30px;
+		background-color: #FF7062;
+		border-radius: 0 4px 4px 0;
+		float: left;
+		position: relative;
+	}
+	.topNavBox .ss .input button img{
+		width: 18px;
+	    height: 19px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-top: -9.5px;
+		margin-left: -9px;
+	}
+	
+	.topNav .phoneR{
+		line-height: 99px;
+		font-size: 0;
+		color: #222222;
+		font-weight: bold;
+	}
+	.topNav .phoneR>img{
+		width: 52px;
+		height: 52px;
+		margin-right: 12px;
+		vertical-align: middle;
+		cursor:pointer;
+	}
+	.topNav .phoneR span{
+		font-size: 24px;
+		vertical-align: middle;
+		overflow: hidden;
+		display: inline-block;
+		white-space: nowrap;
+	}
+	
+	/* 媒体查询 判定在小屏幕下改变顶部导航样式 */
+	@media screen and (max-width: 1440px) {
+		.topNavBox{
+			width: 1345px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.topNav .topNavBox>a>img{
+			width: 164px;
+		}
+		.topNav .nav>div.fl>a{
+			font-size: 14px;
+			margin: 0 11px;
+		}
+		.topNav .phoneR>img{
+			width: 50px;
+			height: 50px;
+		}
+		.topNav .phoneR span{
+			font-size: 22px;
+		}
+		.topNavBox .ss .input input {
+			width: 150px;
+		}
+	}
+</style>
+
+<!-- topNav -->
+<div class="topNav clearfix">
+	<!-- 导航版心部分 -->
+	<div class="topNavBox clearfix">
+		<a href="/index/ws" class="fl"><img src="/static/home/img/home/logoding.png" alt="美国留学_专业的美国留学服务中介机构_彬彬教育" title="美国留学_专业的美国留学服务中介机构_彬彬教育"></a>
+		<div class="nav fl">
+			<div class="fl">
+				<a href="/" class="active">首页</a>
+			</div>
+			<div class="fl">
+				<a href="/middle/" target="_blank">美国中学</a>
+				<div class="box">
+					<div>
+						<h3>我要申请</h3>
+						<div><a href="/page/attnd_high.html" target="_blank">走读高中</a><a href="/page/lodging.html" target="_blank">寄宿高中</a><a href="/page/art_high.html" target="_blank">艺术高中</a><a href="/page/blue_ribbon.html" target="_blank">蓝带高中</a></div>
+						<h3>规划攻略</h3>
+						<div><a href="/page/seniorsqgl.html" target="_blank">申请攻略</a><a href="/page/interview.html" target="_blank">面试流程</a><a href="/page/seniorsort.html" target="_blank">院校排名</a><a href="/page/seniorcompass.html" target="_blank">选校指南</a><a href="/page/seniormoney.html" target="_blank">留学费用</a></div>
+						<h3>我要就读</h3>
+						<div><a href="/page/middle_school.html" target="_blank">初中</a><a href="/page/high_school.html" target="_blank">高中</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="fl">
+				<a href="/college/" target="_blank">美国本科</a>
+				<div class="box">
+					<div>
+						<h3>我要申请</h3>
+						<div><a href="/page/comprehensive.html" target="_blank">综合类大学</a><a href="/page/sciences.html" target="_blank">文理学院</a><a href="/page/community.html" target="_blank">社区大学</a></div>
+						<h3>规划攻略</h3>
+						<div><a href="/page/collegesqgl.html" target="_blank">申请攻略</a><a href="/page/collegecompass.html" target="_blank">选校指南</a><a href="/page/collegemajor.html" target="_blank">专业介绍</a><a href="/page/university_ranking.html" target="_blank">院校排名</a><a href="/page/collegejxj.html" target="_blank">奖学金</a><a href="/page/collegemoney.html" target="_blank">留学费用</a></div>
+						<h3>我要就读</h3>
+						<div><a href="/page/helicopter.html" target="_blank">本科直申</a><a href="/page/transfer.html" target="_blank">本科转学</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="fl">
+				<a href="/graduate/" target="_blank">美国研究生</a>
+				<div class="box">
+					<div>
+						<h3>我要申请</h3>
+						<div><a href="/page/engineering.html" target="_blank">工科</a><a href="/page/commerce.html" target="_blank">商科</a><a href="/page/science.html" target="_blank">理科</a><a href="/page/liberal_arts.html" target="_blank">文科</a><a href="/page/postgraduate_art.html" target="_blank">艺术</a></div>
+						<h3>规划攻略</h3>
+						<div><a href="/article/3-65-1.html" target="_blank">申请规划</a><a href="/article/3-199-1.html" target="_blank">奖学金</a><a href="/article/3-198-1.html" target="_blank">文书写作</a><a href="/article/3-101-1.html" target="_blank">留学费用</a><a href="/article/3-203-1.html" target="_blank">院校排名</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="fl">
+				<a href="/page/polymerization.html" target="_blank">背景提升</a>
+			</div>
+			<div class="fl">
+				<a href="/page/overseashome.html" target="_blank">海外服务</a>
+				<div class="box">
+					<div>
+						<h3>海外服务</h3>
+						<div><a href="/page/overseashome.html" target="_blank">海外监管服务</a><a href="/fmfml/0-1.html" target="_blank">寄宿家庭精选</a><a href="/page/goclass.html" target="_blank">出国衔接课程</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="fl">
+				<a href="/tutor/special/" target="_blank">服务团队</a>
+			</div>
+				<!-- <div class="fl">
+					<a href="">院校库</a>
+				</div> -->
+			<div class="fl">
+				<a href="/article/0-204-1.html" target="_blank">成功故事</a>
+			</div>
+			<div class="fl">
+				<a href="/activity/0-0-1.html" target="_blank">活动讲座</a>
+			</div>
+			<div class="fl">
+				<a href="/page/testprep.html" target="_blank">出国考试</a>
+				<div class="box">
+					<div>
+						<h3>出国考试</h3>
+						<div><a href="/page/testprep.html" target="_blank">标化考试</a><a href="/page/slate.html" target="_blank">Slate考试</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="fl">
+				<a href="/article/0-0-1.html" target="_blank">留学资讯</a>
+			</div>
+		</div>
+		<!-- <div class="fl ss">
+			<h3><img src="/static/home/img/home/sousuo.png" alt=""></h3>
+			<div class="fl input">
+				<form action="{:url('search/index')}" method="get" id="form1">
+					<input type="text" id="keywords" name="keywords" autocomplete="off" value="" placeholder="搜索感兴趣的内容">
+					<button><img src="/static/home/img/home/search.png" alt=""></button>
+				</form>
+			</div>
+		</div> -->
+		<div class="phoneR fr" style="cursor:pointer;">
+			<img src="/static/home/img/home/xzixun.png" alt="">
+			<span>400 900 9770</span>
+		</div>
+	</div>
+</div>
+<div class="abcBannav"></div>
+<style type="text/css">
+	.abcBannav{
+		width: 100%;
+		height: 99px;
+		display: none;
+	}
+</style>
+
+<script type="text/javascript">
+	
+	$('.topNavBox .ss .input button').click(function(){
+		var keywords = $("#keywords").val();
+		if( keywords == '' ){
+			alert('请输入搜索内容~');
+			return false;
+		}
+	})
+	
+</script>

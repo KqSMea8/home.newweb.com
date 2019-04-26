@@ -1,0 +1,356 @@
+ /* banner */
+.banner{
+	width: 100%;
+	height: 340px;
+}
+.banner img{
+	width: 100%;
+	height: 340px;
+}
+
+/* 面包屑导航 */
+.mianbaoNav{
+	font-size: 14px;
+	color: #A2A2A2;
+	padding-top: 77px;
+	padding-bottom: 68px;
+}
+.mianbaoNav a{
+	color: #A2A2A2;
+}
+
+/* content */
+/* left */
+.content .boxL {
+	width: 798px;
+}
+/* title */
+.content .boxL .title{
+	margin-bottom: 36px;
+}
+.content .boxL .title h3{
+	font-size: 26px;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+.content .boxL .title p{
+	font-size: 14px;
+	color: #9E9E9F;
+}
+
+/* 活动信息 */
+.huodong_xinxi{
+	margin-bottom: 39px;
+}
+.huodong_xinxi>img{
+	width: 272px;
+	height: 272px;
+	margin-right: 55px;
+}
+.huodong_xinxi>div.fl p{
+	font-size: 16px;
+	line-height: 42px;
+}
+.huodong_xinxi>div.fl a{
+	width: 124px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #FF7062;
+	color: #fff;
+	font-size: 16px;
+	display: block;
+	margin-top: 30px;
+}
+.huodong_xinxi>div.fl a.guoqi{
+	background-color: #CCCCCC;
+}
+.huodong_xinxi>div.fl a:hover{
+	opacity: 0.8;
+}
+
+/* 嘉宾简介 */
+.jiabin{
+	margin-bottom: 39px;
+}
+.jiabin p{
+	font-size: 15px;
+	line-height: 28px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+.jiabin p a{
+	display: inline-block;
+}
+.jiabin table{
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+}
+.jiabin table tr td{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.content .boxL>p{
+	font-size: 14px;
+	color: #919191;
+	margin-bottom: 22px;
+}
+.content .boxL>p a{
+	display: inline-block;
+	color: #919191;
+}
+.content .boxL>p a:hover{
+	color: #FF7062;
+}
+
+/* 分享 */
+.bdsharebuttonbox{
+	font-size: 0;
+	margin-bottom: 69px;
+	text-align: right;
+}
+.bdsharebuttonbox #qq,.bdsharebuttonbox #xl,.bdsharebuttonbox #wx,.bdsharebuttonbox #top{
+	width: 32px;
+	height: 32px;
+	border-radius: 2px;
+	padding: 0;
+	display: inline-block;
+}
+.bdsharebuttonbox #qq{
+	background: url(../../img/wenzhang_xq/qq.png) no-repeat center center;
+	background-size: cover;
+}
+.bdsharebuttonbox #xl{
+	background: url(../../img/wenzhang_xq/xl.png) no-repeat center center;
+	background-size: cover;
+}
+.bdsharebuttonbox #wx{
+	background: url(../../img/wenzhang_xq/wx.png) no-repeat center center;
+	background-size: cover;
+}
+.bdsharebuttonbox #top{
+	background: url(../../img/wenzhang_xq/top.png) no-repeat center center;
+	background-size: cover;
+}
+
+/* 背景提升项目推荐 */
+.bjts_tJ{
+	border-top: 1px solid #E2E2E2;
+}
+.bjts_tJ>h3{
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 60px;
+	padding-top: 59px;
+}
+.bjts_tJ .box{
+	margin-bottom: 60px;
+}
+.bjts_tJ .box>a>.img{
+	width: 172px;
+	height: 117px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.bjts_tJ .box>a>.img img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+}
+.bjts_tJ .box>a>.img:hover img{
+	transform: scale(1.1);
+}
+.bjts_tJ .box>a>div.fr{
+	width: 592px;
+}
+.bjts_tJ .box>a>div.fr h3{
+	font-size: 18px;
+	font-weight: normal;
+	color: #0F0F0F;
+	margin-top: 3px;
+	margin-bottom: 13px;
+}
+.bjts_tJ .box>a>div.fr h3:hover{
+	color: #FF7062;
+}
+.bjts_tJ .box>a>div.fr span{
+	font-size: 14px;
+	color: #B4B4BB;
+	margin-bottom: 12px;
+	display: block;
+}
+.bjts_tJ .box>a>div.fr p{
+	font-size: 14px;
+	line-height: 22px;
+	color: #676666;
+}
+
+
+/*  */
+.hotAndForm{
+	width: 292px;
+}
+
+.huodong_jz,.bjts_tuijian{
+	margin-left: 28px;
+	margin-right: 28px;
+	border-bottom: 1px solid #707070;
+	border-color: rgba(112,112,112,0.3);
+	padding-bottom: 45px;
+}
+.huodong_jz>h3,.bjts_tuijian>h3,.hot_bq>h3{
+	font-size: 18px;
+	padding-top: 30px;
+	margin-bottom: 8px;
+}
+.huodong_jz h3{
+	padding-top: 0;
+}
+.huodong_jz>span,.bjts_tuijian>span,.hot_bq>span{
+	width: 72px;
+	height: 3px;
+	background-color: #FF7062;
+	display: block;
+	margin-bottom: 27px;
+}
+
+/* 活动讲座 */
+.huodong_jz .box{
+	margin-bottom: 30px;
+}
+.huodong_jz .box img{
+	width: 88px;
+	height: 88px;
+	border-radius: 3px;
+}
+.huodong_jz .box div.fr{
+	width: 128px;
+}
+.huodong_jz .box div.fr a{
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 9px;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.huodong_jz .box div.fr p{
+	font-size: 12px;
+	color: #727070;
+}
+.huodong_jz .box div.fr a:hover{
+	color: #FF7062;
+}
+
+/* 热门标签 */
+.hot_bq{
+	margin: 0 28px;
+	padding-bottom: 60px;
+}
+.hot_bq .box a{
+	width: 50%;
+	font-size: 14px;
+	line-height: 32px;
+	text-align: left;
+}
+.hot_bq .box a:hover{
+	color: #FF7062;
+}
+
+/* 弹窗 */
+.tanChuang,.tanChuang2{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.tanChuang>div,.tanChuang2>div{
+	width: 600px;
+	height: 352px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -176px;
+	margin-left: -300px;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+}
+.tanChuang>div h3{
+	text-align: center;
+	font-weight: normal;
+	font-size: 30px;
+	padding-top: 44px;
+	padding-bottom: 32px;
+	letter-spacing: 4px;
+}
+.tanChuang>div .input{
+	width: 450px;
+	height: 46px;
+	margin: 0 auto;
+	margin-bottom: 16px;
+}
+.tanChuang>div .input img{
+	position: absolute;
+	left: 17px;
+	top: 12px;
+}
+.tanChuang>div .input input{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	border: 1px solid #D5D5D8;
+	border-radius: 3px;
+	text-indent: 52px;
+}
+.tanChuang>div .button{
+	width: 452px;
+	height: 48px;
+	background-color: #FF7062;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 48px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 24px;
+	cursor:pointer;
+}
+.tanChuang>div .button:hover{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+.tanChuang2{
+	text-align: center;
+}
+.tanChuang2 img{
+	width: 113px;
+	height: 113px;
+	margin-top: 75px;
+	margin-bottom: 20px;
+}
+.tanChuang2 p{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.tanChuang2 .clear,.tanChuang .clear{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	margin: 0;
+	cursor:pointer;
+}

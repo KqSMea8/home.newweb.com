@@ -1,0 +1,318 @@
+
+
+/* banner */
+.banner{
+	width: 100%;
+	height: 340px;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 筛选 */
+.shaiXuan{
+	background-color: #fff;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.16);
+	margin-top: -54px;
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+/* 面包屑导航 */
+.shaiXuan .m_nav{
+	margin: 0 35px;
+	border-bottom: 1px solid #707070;
+	border-bottom: 1px solid rgba(112,112,112,0.6);
+	margin-top: 22px;
+	margin-bottom: 34px;
+	padding-bottom: 14px;
+}
+.shaiXuan .m_nav a,.shaiXuan .m_nav span{
+	float: left;
+	font-size: 14px;
+	color: #666666;
+}
+.shaiXuan .m_nav span{
+	margin: 0 5px;
+}
+/* 筛选项 */
+.shaiXuan .x_x{
+	margin: 0 35px;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.shaiXuan .x_x>div.fl{
+	width: 12%;
+	line-height: 35px;
+	font-size: 14px;
+	margin-right: 25px;
+}
+.shaiXuan .x_x>div.fl a:hover{
+	color: #FF7062;
+}
+.shaiXuan .x_x>div.fl a>em{
+	position: relative;
+}
+.shaiXuan .x_x>div.fl a>em>span{
+	display: block;
+    width: 20px;
+    height: 12px;
+    margin-top: 3px;
+	background: url(/static/home/img/family/hot.png) no-repeat #fff;
+	background-position: -2px -104px;
+	position: absolute;
+	right: -12px;
+	top: -10px;
+}
+.shaiXuan .x_x .x_box{
+	margin-bottom: 25px;
+}
+.shaiXuan .x_x .x_box>span.fl{
+	width: 135px;
+	font-weight: bold;
+}
+.shaiXuan .x_x .x_box>div.fl{
+	width: 900px;
+}
+.shaiXuan .x_x .x_box>div.fl a{
+	margin-right: 44px;
+}
+.shaiXuan .x_x .x_box>div.fl a.active{
+	color: #FF7062;
+}
+
+/* 列表 */
+.listBox{
+	margin-bottom: 64px;
+}
+.listBox .list{
+	width: 852px;
+	background-color: #fff;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.16);
+}
+.listBox .list .box{
+	margin: 0 35px;
+	margin-top: 35px;
+	border-bottom: 1px solid #707070;
+	border-bottom: 1px solid rgba(112,112,112,0.2);
+	padding-bottom: 35px;
+}
+.listBox .list .box .img{
+	width: 256px;
+	height: 144px;
+	overflow: hidden;
+}
+.listBox .list .box .img img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.6s;
+}
+.listBox .list .box .img:hover img{
+	transform: scale(1.1);
+}
+.listBox .list .box div.fr{
+	width: 470px;
+}
+.listBox .list .box div.fr h3{
+	font-weight: normal;
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+.listBox .list .box div.fr h3:hover{
+	color: #FF8C81;
+}
+.listBox .list .box div.fr h3 a:hover{
+	color: #FF8C81;
+}
+.listBox .list .box div.fr p{
+	font-size: 14px;
+	color: #696969;
+	line-height: 22px;
+	margin-bottom: 21px;
+}
+.listBox .list .box div.fr div{
+	font-size: 14px;
+	color: #333333;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.listBox .list .box div.fr div a{
+	display: inline-block;
+	color: #9B9B9B;
+	/*margin-right: 10px;*/
+}
+.listBox .list .box div.fr div span{
+	margin-right: 4px;
+}
+.listBox .list .box div.fr div em{
+	font-size: 13px;
+	color: #A2A0A0;
+}
+
+/* 分页 */
+.page{
+	margin-top: 35px;
+	margin-bottom: 64px;
+	margin-right: 28px;
+}
+.page ul li a{
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #D7D7D7;
+	font-size: 14px;
+	padding: 0 8px;
+	margin-right: 12px;
+}
+.page ul li span{
+	color: #CCCCCC;
+	margin-right: 12px;
+}
+.page ul li.active a{
+	color: #fff;
+	background-color: #FF8C81;
+	border-color: #FF8C81;
+}
+.page ul li a:hover{
+	color: #fff;
+	background-color: #FF8C81;
+	border-color: #FF8C81;
+}
+
+.page div.fl{
+	margin-left: 36px;
+}
+.page div.fl span{
+	font-size: 14px;
+	margin-right: 12px;
+}
+.page div.fl span input{
+	width: 36px;
+	height: 22px;
+	border: 1px solid #D7D7D7;
+	margin:  0 10px;
+	margin-left: 0;
+	text-align: center;
+}
+.page div.fl button{
+	width: 46px;
+	height: 24px;
+	color: #fff;
+	background-color: #FF8C81;
+	text-align: center;
+	line-height: 24px;
+}
+
+/*  */
+.hotAndForm{
+	width: 292px;
+	background-color: #fff;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.16);
+}
+
+.hotAndForm .fa,.huodong_jz,.bjts_tuijian,.tuijian{
+	margin-left: 28px;
+	margin-right: 28px;
+	border-bottom: 1px solid #707070;
+	border-color: rgba(112,112,112,0.3);
+	padding-bottom: 45px;
+}
+.hotAndForm .fa h3,.huodong_jz>h3,.bjts_tuijian>h3,.hot_bq>h3,.tuijian>h3{
+	font-size: 18px;
+	padding-top: 30px;
+	margin-bottom: 8px;
+}
+.hotAndForm .fa span,.huodong_jz>span,.bjts_tuijian>span,.hot_bq>span,.tuijian>span{
+	width: 72px;
+	height: 3px;
+	background-color: #FF7062;
+	display: block;
+	margin-bottom: 27px;
+}
+.hotAndForm .fa input{
+	width: 100%;
+	border: 1px solid #D7D7D7;
+	border-radius: 3px;
+	height: 38px;
+	margin-bottom: 19px;
+	text-indent: 12px;
+	font-size: 13px;
+}
+.hotAndForm .fa select{
+	width: 100%;
+	height: 38px;
+	border: 1px solid #D7D7D7;
+	border-radius: 3px;
+	stop-color: #333333;
+	text-indent: 10px;
+	font-size: 13px;
+}
+.hotAndForm .fa textarea{
+	width: 100%;
+	border: 1px solid #D7D7D7;
+	height: 92px;
+	text-indent: 12px;
+	padding-top: 10px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+.hotAndForm .fa button{
+	width: 100%;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #FF7062;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+	cursor:pointer; 
+}
+.hotAndForm .fa button:hover{
+	opacity: 0.8;
+}
+
+/* 高中名校推荐 */
+.tuijian .box{
+	width: 240px;
+	height: 138px;
+	margin-bottom: 23px;
+	position: relative;
+}
+.tuijian .box>a img{
+	width: 240px;
+	height: 138px;
+}
+.tuijian .box>a div.poa{
+	width: 100%;
+	height: 28px;
+	background-color: #000000;
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+	font-size: 14px;
+	line-height: 28px;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+}
+.tuijian .box>a img.bff{
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -18px;
+	margin-left: -18px;
+}
+
+/* 热门标签 */
+.hot_bq{
+	margin: 0 28px;
+	padding-bottom: 60px;
+}
+.hot_bq .box a{
+	width: 50%;
+	font-size: 14px;
+	line-height: 32px;
+	text-align: left;
+}
+.hot_bq .box a:hover{
+	color: #FF7062;
+}

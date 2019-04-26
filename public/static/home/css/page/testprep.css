@@ -1,0 +1,582 @@
+
+/* banner */
+.banner{
+	width: 100%;
+	height: 532px;
+	background: url(/static/home/img/page/chuguo_kaoshi/banner.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner p{
+	font-size: 60px;
+	line-height: 88px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow:0px 3px 4px rgba(0,0,0,0.64);
+	padding-top: 142px;
+	padding-bottom: 8px;
+}
+.banner em{
+	font-size: 48px;
+	line-height: 88px;
+	color: #FFFFFF;
+	text-shadow:0px 3px 4px rgba(0,0,0,0.64);
+	padding-bottom: 50px;
+	display: block;
+	text-align: center;
+}
+.banner>div>div{
+	text-align: center;
+	font-size: 0;
+}
+.banner>div>div a{
+	width: 234px;
+	height: 48px;
+	font-size: 20px;
+	line-height: 48px;
+	background-color: #FFFFFF;
+	color: #85A7CA;
+	border-radius: 5px;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.26);
+	display: inline-block;
+}
+.banner>div>div a.a1{
+	box-shadow: none;
+	margin-right: 33px;
+	color: #FFFFFF;
+	background-color: #86A8CB;
+}
+.banner>div>div a:hover{
+	background-color: #86A8CB;
+	color: #FFFFFF;
+}
+.banner>div>div a.a1:hover{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+
+/* title */
+h3.title{
+	font-size: 38px;
+	font-weight: normal;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+/* 13万学员的安心选择 */
+.xuanze{
+	padding-bottom: 90px;
+}
+.xuanze .content .box{
+	width: 364px;
+	height: 220px;
+	background: url(/static/home/img/page/chuguo_kaoshi/tu1.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	cursor:pointer;
+	margin-right: 39px;
+}
+.xuanze .content .box2{
+	background-image: url(/static/home/img/page/chuguo_kaoshi/tu2.jpg);
+}
+.xuanze .content .box3{
+	background-image: url(/static/home/img/page/chuguo_kaoshi/tu3.jpg);
+	margin-right: 0;
+}
+.xuanze .content .box .div1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.xuanze .content .box .div1 h3{
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	font-weight: normal;
+	padding-top: 49px;
+	padding-bottom: 16px;
+}
+.xuanze .content .box .div1 h3>span{
+	font-size: 48px;
+}
+.xuanze .content .box .div1>span{
+	width: 40px;
+	height: 1px;
+	display: block;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	margin-bottom: 18px;
+}
+.xuanze .content .box .div1 p{
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+}
+
+.xuanze .content .box .div2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	overflow: hidden;
+	z-index: 2;
+}
+.xuanze .content .box .div2 h4{
+	font-size: 22px;
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 34px;
+	padding-bottom: 18px;
+}
+.xuanze .content .box .div2 p{
+	font-size: 14px;
+	line-height: 25px;
+	color: #FFFFFF;
+	width: 297px;
+	margin: 0 auto;
+}
+.xuanze .content .box .div2 a{
+	width: 180px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	color: #FFFFFF;
+	background-color: #85A7CA;
+	border-radius: 3px;
+	display: block;
+	position: absolute;
+	bottom: 32px;
+	left: 50%;
+	margin-left: -90px;
+}
+.xuanze .content .box .div2 a:hover{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+.xuanze .content .box .div3{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(7,5,36,0.65);
+	z-index: 1;
+}
+
+/* 彬彬教育 让你留学不头痛 */
+.butoutent{
+	width: 100%;
+	height: 973px;
+	background: url(/static/home/img/page/chuguo_kaoshi/beijing1.png) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+.butoutent h3.title{
+	padding-bottom: 10px;
+}
+.butoutent>div>p{
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.butoutent .content .box{
+	width: 364px;
+	height: 428px;
+	border: 1px solid #85A7CA;
+	background-color: #FFFFFF;
+	position: relative;
+	margin-right: 36px;
+}
+.butoutent .content .box h4{
+	font-size: 26px;
+	font-weight: normal;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: #5689BE;
+}
+.butoutent .content .box div{
+	margin-bottom: 30px;
+}
+.butoutent .content .box div p,.butoutent .content .box div a{
+	font-size: 17px;
+	margin-bottom: 12px;
+	margin-left: 34px;
+}
+.butoutent .content .box div h5{
+	font-size: 18px;
+	margin-left: 34px;
+	margin-bottom: 12px;
+}
+.butoutent .content .box div a{
+	margin-bottom: 8px;
+	display: block;
+}
+.butoutent .content .box div a:hover{
+	color: #5689BE;
+}
+.butoutent .content .box>a{
+	width: 180px;
+	height: 34px;
+	color: #FFFFFF;
+	background-color: #85A7CA;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 16px;
+	position: absolute;
+	bottom: 38px;
+	left: 50%;
+	margin-left: -90px;
+}
+.butoutent .content .box>a:hover{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+.butoutent .poa{
+	width: 100%;
+	height: 224px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	line-height: 40px;
+}
+.butoutent .poa h4{
+	font-size: 26px;
+	color: #FFFFFF;
+	padding-top: 45px;
+	text-align: center;
+}
+.butoutent .poa p{
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 26px;
+}
+.butoutent .poa a{
+	width: 198px;
+	height: 36px;
+	border: 1px solid #FFFFFF;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 18px;
+	color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+}
+.butoutent .poa a:hover{
+	background-color: #85A7CA;
+	border-color: #85A7CA;
+}
+
+/* 出国考试找彬彬 提高成绩so easy */
+.easy .yuyan{
+	margin-bottom: 112px;
+}
+.easy .yuyan h4{
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 48px;
+}
+.easy .yuyan .content{
+	margin-bottom: 48px;
+}
+.easy .yuyan .content .box{
+	width: 272px;
+	height: 192px;
+	background: url(/static/home/img/page/chuguo_kaoshi/yuyan1.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	cursor:pointer;
+	margin-right: 27px;
+}
+.easy .yuyan .content .box2{
+	background-image: url(/static/home/img/page/chuguo_kaoshi/yuyan2.jpg);
+}
+.easy .yuyan .content .box3{
+	background-image: url(/static/home/img/page/chuguo_kaoshi/yuyan3.jpg);
+}
+.easy .yuyan .content .box4{
+	background-image: url(/static/home/img/page/chuguo_kaoshi/yuyan4.jpg);
+	margin-right: 0;
+}
+
+.easy .yuyan .content .box>h4{
+	width: 100%;
+	height: 68px;
+	background-color: #FFFFFF;
+	background-color: rgba(255,255,255,0.56);
+	text-align: center;
+	line-height: 68px;
+	font-size: 26px;
+	position: absolute;
+	top: 50%;
+	margin-top: -34px;
+}
+.easy .yuyan .content .box .hidden{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #00011D;
+	background-color: rgba(0,1,29,0.76);
+	text-align: center;
+	display: none;
+}
+.easy .yuyan .content .box .hidden:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.easy .yuyan .content .box .hidden p{
+	width: 231px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.easy .yuyan>a,.easy .xueshu a,.tigao>div>a{
+	width: 200px;
+	height: 38px;
+	background-color: #85A7CA;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 38px;
+	font-size: 16px;
+	display: block;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+.easy .yuyan>a:hover,.easy .xueshu a:hover,.tigao>div>a:hover{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+/* xueshu */
+.easy .xueshu{
+	padding-bottom: 80px;
+}
+.easy .xueshu>h4{
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: 48px;
+}
+.easy .xueshu .content{
+	padding-bottom: 25px;
+}
+.easy .xueshu .content .box{
+	width: 372px;
+	height: 188px;
+	background-color: #F1F6FC;
+	position: relative;
+	cursor:pointer;
+	margin-bottom: 27px;
+	margin-right: 27px;
+}
+.easy .xueshu .content .box img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.easy .xueshu .content .box h4{
+	font-size: 24px;
+	font-weight: normal;
+	color: #333333;
+	text-align: center;
+	padding-top: 26px;
+	padding-bottom: 16px;
+}
+.easy .xueshu .content .box p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+	width: 312px;
+	margin: 0 auto;
+}
+.easy .xueshu .content .box:hover{
+	background-color: #03172E;
+}
+.easy .xueshu .content .box:hover h4,.easy .xueshu .content .box:hover p{
+	color: #FFFFFF;
+}
+
+/* 私人订制学习系统 飞速提高考试成绩 */
+.tigao{
+	width: 100%;
+	height: 673px;
+	background: url(/static/home/img/page/chuguo_kaoshi/beijing2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.tigao h3.title{
+	padding-bottom: 11px;
+}
+.tigao>div>p{
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.tigao .content .box{
+	margin-bottom: 77px;
+	margin-right: 122px;
+}
+.tigao .content .box>.chuguoKsImg{
+	width: 72px;
+	height: 72px;
+	margin-right: 31px;
+	display: inline-block;
+}
+.chuguoKsImg{background:url(/static/home/img/page/chuguo_kaoshi/chuguoKsImg.png)  no-repeat;}
+.icon3{height:72px;width:72px;background-position:0 0;}
+.icon4{height:72px;width:72px;background-position:-72px 0;}
+.icon1{height:72px;width:72px;background-position:-144px 0;}
+.icon2{height:72px;width:72px;background-position:-216px 0;}
+.tigao .content .box>div.fl{
+	width: 421px;
+}
+.tigao .content .box>div.fl h4{
+	font-size: 24px;
+	padding-top: 4px;
+	padding-bottom: 12px;
+}
+.tigao .content .box>div.fl p{
+	font-size: 14px;
+	line-height: 28px;
+}
+/* 彬彬教育致力让每一个学生牵手世界名校 */
+#mydiv{
+	width: 100%;
+	position: relative;
+}
+#mydiv .title{
+	padding-top: 118px;
+	margin-bottom: 60px;
+}
+#mydiv canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#mydiv .box{
+	height: 100%;
+}
+#mydiv .box .content{
+	position: relative;
+}
+#mydiv .box .content .dq{
+	width: 375px;
+	height: 364px;
+	background: url(/static/home/img/page/YanJiuSheng/13223222222.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -27.5px;
+	margin-left: -182px;
+}
+#mydiv .box .content .dq>div{
+	width: 193px;
+	height: 193px;
+	border-radius: 50%;
+	background: url(/static/home/img/page/7_8/a6e310318cc5a075e8e4a0a459119ad.png) no-repeat left center;
+	background-size: cover;
+	background-color: #281E1C;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -96.5px;
+	margin-left: -96.5px;
+	overflow: hidden;
+	transition: all 3s;
+}
+#mydiv .box .content .dq>div img{
+	height: 193px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 7;
+}
+#mydiv .box .content .dq>div h3{
+	font-size: 26px;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	color: #fff;
+	/* margin-top: -56.5px; */
+}
+#mydiv .box .content .dq>div h3 p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#mydiv .box .content>div.fl li.li1{
+	margin-bottom: 69px;
+}
+#mydiv .box .content>div.fl li.li1 p{
+	width: 240px;
+}
+#mydiv .box .content>div.fl li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fl li.li2 p{
+	width: 336px;
+}
+#mydiv .box .content>div.fl li.li3 p{
+	width: 432px;
+}
+
+#mydiv .box .content>div.fl h3,#mydiv .box .content>div.fr h3{
+	font-size: 26px;
+	color: #85A7CA;
+	margin-bottom: 7px;
+}
+#mydiv .box .content>div.fl p,#mydiv .box .content>div.fr p{
+	font-size: 16px;
+	color: #0F0F0F;
+}
+
+#mydiv .box .content>div.fr{
+	text-align: right;
+}
+#mydiv .box .content>div.fr li.li1 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li1{
+	margin-bottom: 50px;
+}
+#mydiv .box .content>div.fr li.li2 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fr li.li3 p{
+	width: 368px;
+}

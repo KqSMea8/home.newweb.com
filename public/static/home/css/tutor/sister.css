@@ -1,0 +1,157 @@
+/* banner */
+.topBanner{
+	width: 100%;
+	height: 400px;
+	background: url(/static/home/img/tutor/ttbanner.jpg) no-repeat center center;
+	background-size: cover;
+}
+.topBanner .box{
+	position: relative;
+}
+.topBanner .box .Mbnav{
+	font-size: 14px;
+	color: #fff;
+	padding-top: 23px;
+	padding-bottom: 45px;
+}
+.topBanner .box .Mbnav a{
+	color: #fff;
+}
+.topBanner .box .Mbnav a:hover{
+	color: #FF7062;
+}
+.topBanner .box .Mbnav span{
+	margin: 0 10px;
+}
+
+.topBanner .box .xiangqing>img{
+	width: 229px;
+	height: 229px;
+	border-radius: 50%;
+	margin-right: 72px;
+}
+.topBanner .box .xiangqing h3{
+	font-size: 28px;
+	color: #fff;
+	font-weight: normal;
+	padding-top: 21px;
+	padding-bottom: 17px;
+}
+.topBanner .box .xiangqing p{
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.topBanner .box .xiangqing a{
+	width: 134px;
+	height: 34px;
+	color: #fff;
+	text-align: center;
+	line-height: 34px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.topBanner .box .xiangqing a:hover{
+	background-color: #FF7062;
+	border-color: #FF7062;
+}
+
+.topBanner .box .form{
+	width: 284px;
+	height: 400px;
+	background-color: #000000;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.topBanner .box .form h3{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	padding-top: 42px;
+	padding-bottom: 19px;
+	border-bottom: 1px solid #716A68;
+	margin-bottom: 24px;
+}
+.topBanner .box .form input{
+	width: 224px;
+	height: 36px;
+	background-color: #fff;
+	border-radius: 3px;
+	font-size: 14px;
+	text-indent: 14px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 16px;
+}
+.topBanner .box .form textarea{
+	width: 224px;
+	height: 83px;
+	background-color: #fff;
+	text-indent: 14px;
+	border-radius: 3px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 9px;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.topBanner .box .form button{
+	width: 224px;
+	height: 37px;
+	border-radius: 3px;
+	background-color: #FF7062;
+	color: #fff;
+	text-align: center;
+	line-height: 37px;
+	display: block;
+	margin: 0 auto;
+	cursor:pointer;
+}
+
+/* content */
+.content{
+	padding-bottom: 80px;
+}
+.content .title{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 21px;
+	font-weight: normal;
+	border-bottom: 1px solid #CACACA;
+	font-size: 22px;
+	position: relative;
+	margin-bottom: 32px;
+	margin-top: 90px;
+}
+.content .title span{
+	width: 64px;
+	height: 1px;
+	background-color: #FF7062;
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	margin-left: -32px;
+}
+.content p{
+	width: 1090px;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #000000;
+	line-height: 30px;
+}
+.content video{
+	width: 1090px;
+	height: 360px;
+	background-color: #000000;
+	margin: 14px auto;
+	display: block;
+}
+.content img{
+	width: 1090px;
+	margin: 14px auto;
+}

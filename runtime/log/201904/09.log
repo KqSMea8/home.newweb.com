@@ -1,0 +1,2909 @@
+---------------------------------------------------------------
+[ 2019-04-09T10:02:11+08:00 ] 192.168.1.217 GET home.newweb.com/favicon.ico
+[运行时间：0.428084s] [吞吐率：2.34req/s] [内存消耗：2,980.67kb] [文件加载：95]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]未定义变量: sys[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:14]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041297s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.029527s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.030695s ]
+---------------------------------------------------------------
+[ 2019-04-09T10:10:06+08:00 ] 127.0.0.1 GET home.newweb.com/
+[运行时间：0.028715s] [吞吐率：34.83req/s] [内存消耗：1,647.93kb] [文件加载：66]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:10:06+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.019354s] [吞吐率：51.67req/s] [内存消耗：1,671.73kb] [文件加载：67]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:13:10+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.023502s] [吞吐率：42.55req/s] [内存消耗：1,675.80kb] [文件加载：67]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:13:10+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.018995s] [吞吐率：52.65req/s] [内存消耗：1,671.80kb] [文件加载：67]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:13:13+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.021445s] [吞吐率：46.63req/s] [内存消耗：1,675.99kb] [文件加载：67]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:13:13+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.018888s] [吞吐率：52.94req/s] [内存消耗：1,671.80kb] [文件加载：67]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:14:49+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.021972s] [吞吐率：45.51req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:14:49+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.019837s] [吞吐率：50.41req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:14:55+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.022703s] [吞吐率：44.05req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:14:55+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020332s] [吞吐率：49.18req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:14:57+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.021778s] [吞吐率：45.92req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:14:57+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020121s] [吞吐率：49.70req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:02+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.030319s] [吞吐率：32.98req/s] [内存消耗：1,708.92kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:02+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.020669s] [吞吐率：48.38req/s] [内存消耗：1,708.92kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:02+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.020811s] [吞吐率：48.05req/s] [内存消耗：1,708.92kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:02+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.021091s] [吞吐率：47.41req/s] [内存消耗：1,708.92kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:02+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.020547s] [吞吐率：48.67req/s] [内存消耗：1,708.92kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:03+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.021809s] [吞吐率：45.85req/s] [内存消耗：1,708.92kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:03+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.021304s] [吞吐率：46.94req/s] [内存消耗：1,708.92kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:03+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.020829s] [吞吐率：48.01req/s] [内存消耗：1,708.92kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:03+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.019983s] [吞吐率：50.04req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:13+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.030335s] [吞吐率：32.97req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:13+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020372s] [吞吐率：49.09req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:13+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.040246s] [吞吐率：24.85req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:14+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020837s] [吞吐率：47.99req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:14+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.021907s] [吞吐率：45.65req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:14+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.022277s] [吞吐率：44.89req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:14+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.020595s] [吞吐率：48.56req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:14+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.021394s] [吞吐率：46.74req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:14+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.021885s] [吞吐率：45.69req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:14+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020825s] [吞吐率：48.02req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:14+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.020575s] [吞吐率：48.60req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:15+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020467s] [吞吐率：48.86req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:15+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.032202s] [吞吐率：31.05req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:15+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020527s] [吞吐率：48.72req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:15+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.022640s] [吞吐率：44.17req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:15+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020410s] [吞吐率：49.00req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:15+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.031290s] [吞吐率：31.96req/s] [内存消耗：1,708.87kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:15:15+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.020958s] [吞吐率：47.71req/s] [内存消耗：1,705.17kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationfy/22527html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [8]未定义数组索引: HTTP_X_WAP_PROFILE[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:15]
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/informationfy/22527html
+[运行时间：0.033627s] [吞吐率：29.74req/s] [内存消耗：1,751.49kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020759s] [吞吐率：48.17req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019767s] [吞吐率：50.59req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020251s] [吞吐率：49.38req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019777s] [吞吐率：50.56req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019980s] [吞吐率：50.05req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019725s] [吞吐率：50.70req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019525s] [吞吐率：51.22req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019872s] [吞吐率：50.32req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020756s] [吞吐率：48.18req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020196s] [吞吐率：49.51req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020320s] [吞吐率：49.21req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020309s] [吞吐率：49.24req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019831s] [吞吐率：50.43req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019993s] [吞吐率：50.02req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020348s] [吞吐率：49.15req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019870s] [吞吐率：50.33req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020901s] [吞吐率：47.84req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020770s] [吞吐率：48.15req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020334s] [吞吐率：49.18req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.022850s] [吞吐率：43.76req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.022483s] [吞吐率：44.48req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.022487s] [吞吐率：44.47req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.021072s] [吞吐率：47.46req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:29+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020209s] [吞吐率：49.48req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019873s] [吞吐率：50.32req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019855s] [吞吐率：50.37req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019639s] [吞吐率：50.92req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019524s] [吞吐率：51.22req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020786s] [吞吐率：48.11req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020739s] [吞吐率：48.22req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019383s] [吞吐率：51.59req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020237s] [吞吐率：49.41req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020284s] [吞吐率：49.30req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.021532s] [吞吐率：46.44req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020114s] [吞吐率：49.72req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019694s] [吞吐率：50.78req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019979s] [吞吐率：50.05req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020874s] [吞吐率：47.91req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:30+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019603s] [吞吐率：51.01req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.030982s] [吞吐率：32.28req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020641s] [吞吐率：48.45req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020603s] [吞吐率：48.54req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020493s] [吞吐率：48.80req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020317s] [吞吐率：49.22req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.021104s] [吞吐率：47.38req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020101s] [吞吐率：49.75req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020463s] [吞吐率：48.87req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019780s] [吞吐率：50.56req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019112s] [吞吐率：52.32req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020668s] [吞吐率：48.38req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019141s] [吞吐率：52.24req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020704s] [吞吐率：48.30req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:35+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019220s] [吞吐率：52.03req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:36+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019900s] [吞吐率：50.25req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:36+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019459s] [吞吐率：51.39req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:36+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.020502s] [吞吐率：48.78req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:36+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019940s] [吞吐率：50.15req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:36+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019311s] [吞吐率：51.78req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:17:36+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.019659s] [吞吐率：50.87req/s] [内存消耗：1,751.64kb] [文件加载：70]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554274728,1554343373; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2019-04-09T10:19:40+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.035899s] [吞吐率：27.86req/s] [内存消耗：2,691.20kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:19:41+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.135383s] [吞吐率：7.39req/s] [内存消耗：2,974.95kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/home/22527html/m.beliwin.com.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043657s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.029430s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.028996s ]
+---------------------------------------------------------------
+[ 2019-04-09T10:20:22+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.041471s] [吞吐率：24.11req/s] [内存消耗：2,691.52kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:20:24+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.038784s] [吞吐率：25.78req/s] [内存消耗：2,691.58kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:20:24+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.029253s] [吞吐率：34.18req/s] [内存消耗：2,691.58kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:20:25+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.147581s] [吞吐率：6.78req/s] [内存消耗：2,975.65kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/home/22527html/m.beliwin.com.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047796s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.032764s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.031891s ]
+---------------------------------------------------------------
+[ 2019-04-09T10:21:49+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.034137s] [吞吐率：29.29req/s] [内存消耗：2,692.35kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]未定义变量: sys[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:14]
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:21:54+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.039160s] [吞吐率：25.54req/s] [内存消耗：2,692.53kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]未定义变量: sys[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:14]
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:21:54+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html/m.beliwin.com.html
+[运行时间：0.030878s] [吞吐率：32.39req/s] [内存消耗：2,692.53kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]未定义变量: sys[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:14]
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:21:55+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.133968s] [吞吐率：7.46req/s] [内存消耗：2,982.34kb] [文件加载：95]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/home/22527html/m.beliwin.com.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]未定义变量: sys[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\Common.php:14]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043601s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.028656s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.028989s ]
+---------------------------------------------------------------
+[ 2019-04-09T10:22:06+08:00 ] 127.0.0.1 GET home.newweb.com/home/22527html
+[运行时间：0.029952s] [吞吐率：33.39req/s] [内存消耗：2,691.35kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:22:15+08:00 ] 127.0.0.1 GET home.newweb.com/
+[运行时间：1.062729s] [吞吐率：0.94req/s] [内存消耗：3,504.58kb] [文件加载：96]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\index\index.html [ array (
+  0 => 'pc_url',
+  1 => 'link_list',
+  2 => 'adv_list',
+  3 => 'case_list',
+  4 => 'admin_path',
+  5 => 'list',
+  6 => 'bj_promote',
+  7 => 'activity_list',
+  8 => 'gao_article_list',
+  9 => 'ben_article_list',
+  10 => 'yan_article_list',
+  11 => 'column_tdk_res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044223s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.028919s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.030029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tutor_type` [ RunTime:0.031010s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_tutor_type` [ RunTime:0.028801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tutor` [ RunTime:0.030459s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 1 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.028965s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 2 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029330s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`school`,`major`,`type`,`add_time` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 3 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029536s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 4 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029022s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`school`,`major`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 5 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029189s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type`,`major` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 6 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.030448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.030338s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_bg_promote_type` [ RunTime:0.029665s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.029128s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`lecture_time`,`name`,`lecture_venue`,`end_time`,`home_pic`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `recommend_id` LIKE '%31%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.030060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.029515s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.028701s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029249s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.029020s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.030053s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 1  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.029380s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 2  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.029172s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 3  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.031128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_case` [ RunTime:0.031194s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`student_name`,`score`,`apply_stage`,`xx_logo`,`head_img`,`xx_offer`,`xx_major`,`xx_name`,`sort`,`small_head_img` FROM `clt_new_case` WHERE  `tui_ids` LIKE '%15%' ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.030786s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_adv` [ RunTime:0.028824s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_adv` WHERE  `adv_type_id` = 5 ORDER BY `sort` DESC [ RunTime:0.030895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_link` [ RunTime:0.030356s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_link` WHERE  `open` = '1' ORDER BY `sort` DESC [ RunTime:0.028659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tdk` [ RunTime:0.029736s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_tdk` WHERE  `id` = 1  AND `type` = '1' LIMIT 1 [ RunTime:0.029328s ]
+---------------------------------------------------------------
+[ 2019-04-09T10:22:19+08:00 ] 127.0.0.1 GET home.newweb.com/article/0-0-1.html
+[运行时间：1.018593s] [吞吐率：0.98req/s] [内存消耗：3,523.95kb] [文件加载：102]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1554776536',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'apply_stage_id' => '0',
+  'article_type_id' => '0',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\index.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'page',
+  6 => 'list',
+  7 => 'case_list',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047644s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.032298s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.032972s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.031595s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.032684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.032223s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_new_article` WHERE  `is_show` = 1 LIMIT 1 [ RunTime:0.068499s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`cover_pic`,`edit_time`,`timing`,`type`,`keyword`,`content` FROM `clt_new_article` WHERE  `is_show` = 1 ORDER BY `edit_time` DESC,`sort` DESC,`id` DESC LIMIT 0,8 [ RunTime:0.067665s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031763s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.031367s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.031217s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030664s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031171s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.032114s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.032323s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031056s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_case` [ RunTime:0.033566s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`student_name`,`add_time`,`head_img` FROM `clt_new_case` WHERE  `is_show` = 1 ORDER BY `sort` DESC LIMIT 4 [ RunTime:0.032638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.031532s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `phase` LIKE '%%'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.035347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.033526s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.032299s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031796s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.031626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.032417s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.031712s ]
+[ error ] [8]未定义数组索引: apply_stage[E:\PHPTutorial\WWW\home.newweb.com\thinkphp\library\think\Collection.php:486]
+---------------------------------------------------------------
+[ 2019-04-09T10:22:19+08:00 ] 127.0.0.1 POST home.newweb.com/home/article/get_article_types.html
+[运行时间：0.241366s] [吞吐率：4.14req/s] [内存消耗：2,959.70kb] [文件加载：89]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1554776536',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/article/0-0-1.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://home.newweb.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '16',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+)
+[ info ] [ PARAM ] array (
+  'apply_stage_id' => '0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044134s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.029820s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030995s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.028020s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.027914s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.028161s ]
+---------------------------------------------------------------
+[ 2019-04-09T10:22:33+08:00 ] 127.0.0.1 GET home.newweb.com/article/0-0-1.html
+[运行时间：0.972970s] [吞吐率：1.03req/s] [内存消耗：3,329.87kb] [文件加载：99]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1554776540',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'apply_stage_id' => '0',
+  'article_type_id' => '0',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\index.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'page',
+  6 => 'list',
+  7 => 'case_list',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052456s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.033476s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.033057s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.035008s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.037328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.032890s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_new_article` WHERE  `is_show` = 1 LIMIT 1 [ RunTime:0.032111s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`cover_pic`,`edit_time`,`timing`,`type`,`keyword`,`content` FROM `clt_new_article` WHERE  `is_show` = 1 ORDER BY `edit_time` DESC,`sort` DESC,`id` DESC LIMIT 0,8 [ RunTime:0.069374s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031487s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.031262s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.030898s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031331s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031178s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.031749s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.033349s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_case` [ RunTime:0.032921s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`student_name`,`add_time`,`head_img` FROM `clt_new_case` WHERE  `is_show` = 1 ORDER BY `sort` DESC LIMIT 4 [ RunTime:0.033097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.032676s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `phase` LIKE '%%'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.032628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.032710s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.032128s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.035089s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.032485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.033317s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.035518s ]
+[ error ] [8]未定义数组索引: apply_stage[E:\PHPTutorial\WWW\home.newweb.com\thinkphp\library\think\Collection.php:486]
+---------------------------------------------------------------
+[ 2019-04-09T10:22:33+08:00 ] 127.0.0.1 GET home.newweb.com/article/m.beliwin.com
+[运行时间：0.032435s] [吞吐率：30.83req/s] [内存消耗：2,692.32kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1554776540',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:22:34+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.142954s] [吞吐率：7.00req/s] [内存消耗：2,975.97kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1554776540',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/article/m.beliwin.com',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046823s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.032539s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.031513s ]
+---------------------------------------------------------------
+[ 2019-04-09T10:22:54+08:00 ] 127.0.0.1 GET home.newweb.com/
+[运行时间：1.116878s] [吞吐率：0.90req/s] [内存消耗：3,241.34kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1554776540',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\index\index.html [ array (
+  0 => 'pc_url',
+  1 => 'link_list',
+  2 => 'adv_list',
+  3 => 'case_list',
+  4 => 'admin_path',
+  5 => 'list',
+  6 => 'bj_promote',
+  7 => 'activity_list',
+  8 => 'gao_article_list',
+  9 => 'ben_article_list',
+  10 => 'yan_article_list',
+  11 => 'column_tdk_res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047688s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.032895s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.031381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tutor_type` [ RunTime:0.031636s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_tutor_type` [ RunTime:0.032755s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tutor` [ RunTime:0.032404s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 1 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.032940s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 2 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.033245s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`school`,`major`,`type`,`add_time` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 3 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.032075s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 4 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.032114s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`school`,`major`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 5 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.033167s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type`,`major` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 6 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.033453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.031911s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_bg_promote_type` [ RunTime:0.032606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.032721s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`lecture_time`,`name`,`lecture_venue`,`end_time`,`home_pic`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `recommend_id` LIKE '%31%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.032815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.031488s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032633s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031183s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.031205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.035271s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 1  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.032497s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 2  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.032705s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 3  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.033596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_case` [ RunTime:0.032222s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`student_name`,`score`,`apply_stage`,`xx_logo`,`head_img`,`xx_offer`,`xx_major`,`xx_name`,`sort`,`small_head_img` FROM `clt_new_case` WHERE  `tui_ids` LIKE '%15%' ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.033893s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_adv` [ RunTime:0.031932s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_adv` WHERE  `adv_type_id` = 5 ORDER BY `sort` DESC [ RunTime:0.032644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_link` [ RunTime:0.031944s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_link` WHERE  `open` = '1' ORDER BY `sort` DESC [ RunTime:0.033730s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tdk` [ RunTime:0.031208s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_tdk` WHERE  `id` = 1  AND `type` = '1' LIMIT 1 [ RunTime:0.031608s ]
+---------------------------------------------------------------
+[ 2019-04-09T10:23:04+08:00 ] 127.0.0.1 GET home.newweb.com/article/m.beliwin.com
+[运行时间：0.033702s] [吞吐率：29.67req/s] [内存消耗：2,692.28kb] [文件加载：85]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1554776540',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [8]Use of undefined constant DBNAME - assumed 'DBNAME'[E:\PHPTutorial\WWW\home.newweb.com\application\home\controller\EmptyController.php:10]
+---------------------------------------------------------------
+[ 2019-04-09T10:23:09+08:00 ] 127.0.0.1 GET home.newweb.com/
+[运行时间：1.039652s] [吞吐率：0.96req/s] [内存消耗：3,241.34kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; TTSvolume=10; BL_D_PROV=Yandex; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1554776540',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\index\index.html [ array (
+  0 => 'pc_url',
+  1 => 'link_list',
+  2 => 'adv_list',
+  3 => 'case_list',
+  4 => 'admin_path',
+  5 => 'list',
+  6 => 'bj_promote',
+  7 => 'activity_list',
+  8 => 'gao_article_list',
+  9 => 'ben_article_list',
+  10 => 'yan_article_list',
+  11 => 'column_tdk_res',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042420s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.030142s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.032491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tutor_type` [ RunTime:0.029312s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_tutor_type` [ RunTime:0.038223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tutor` [ RunTime:0.029373s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 1 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.030261s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 2 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029956s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`school`,`major`,`type`,`add_time` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 3 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029849s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 4 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029857s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`school`,`major`,`type` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 5 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029990s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`adept`,`type`,`major` FROM `clt_new_tutor` WHERE  `open` = 1  AND `type` = 6 ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.029816s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_bg_promote_type` [ RunTime:0.030350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.029632s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`lecture_time`,`name`,`lecture_venue`,`end_time`,`home_pic`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `recommend_id` LIKE '%31%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.028810s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.029614s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029197s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029102s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.028123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.029461s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 1  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.030129s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 2  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.028883s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`type`,`apply_stage`,`is_show`,`index_sort`,`cover_pic` FROM `clt_new_article` WHERE  `is_show` = 1  AND `apply_stage` = 3  AND `tui_ids` LIKE '%1%' ORDER BY `index_sort` DESC,`add_time` DESC LIMIT 6 [ RunTime:0.029534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_case` [ RunTime:0.029228s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`student_name`,`score`,`apply_stage`,`xx_logo`,`head_img`,`xx_offer`,`xx_major`,`xx_name`,`sort`,`small_head_img` FROM `clt_new_case` WHERE  `tui_ids` LIKE '%15%' ORDER BY `sort` DESC LIMIT 6 [ RunTime:0.029682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_adv` [ RunTime:0.029165s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_adv` WHERE  `adv_type_id` = 5 ORDER BY `sort` DESC [ RunTime:0.029344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_link` [ RunTime:0.030431s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_link` WHERE  `open` = '1' ORDER BY `sort` DESC [ RunTime:0.029545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_tdk` [ RunTime:0.030367s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_tdk` WHERE  `id` = 1  AND `type` = '1' LIMIT 1 [ RunTime:0.029768s ]
+---------------------------------------------------------------
+[ 2019-04-09T18:01:54+08:00 ] 192.168.1.166 GET home.newweb.com/favicon.ico
+[运行时间：0.211399s] [吞吐率：4.73req/s] [内存消耗：2,974.83kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'bdshare_firstime=1552553546037; Hm_lvt_01e274a68687048b409421c6d427bdd1=1554255082,1554263856,1554270398,1554270527',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.051892s ] mysql:host=47.104.25.221;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.033715s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.034307s ]

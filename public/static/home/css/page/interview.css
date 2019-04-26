@@ -1,0 +1,800 @@
+/* banner */
+.banner{
+	width: 100%;
+	height: 532px;
+	background: url(/static/home/img/page/gaozhong_mianshi/banner.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+}
+.banner h1{
+	font-size: 64px;
+	color: #FFFFFF;
+	text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+	padding-top: 143px;
+	padding-bottom: 13px;
+	font-weight: normal;
+}
+.banner h3{
+	font-size: 44px;
+	color: #FFFFFF;
+	text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+	font-weight: normal;
+	padding-bottom: 42px;
+}
+.banner a{
+	width: 234px;
+	height: 48px;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.26);
+	background-color: #CDB380;
+	text-align: center;
+	font-size: 22px;
+	line-height: 48px;
+	border-radius: 3px;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.26);
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+	display: block;
+	margin: 0 auto;
+	color: #FFFFFF;
+}
+.banner a:hover{
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+/* bannerNav */
+.bannerNav{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 0;
+	background-color: #E8E8E8;
+}
+.bannerNav span{
+	font-size: 17px;
+	margin-right: 59px;
+	cursor:pointer;
+}
+.bannerNav span:hover{
+	color: #B18F4D;
+}
+.bannerNav span.active{
+	color: #B18F4D;
+	font-weight: bold;
+}
+.navHidden{
+	width: 100%;
+	height: 60px;
+	display: none;
+}
+
+/* title */
+h3.title{
+	font-size: 38px;
+	font-weight: normal;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+/* 美国高中面试的重要性 */
+.zhongyaoxing h3.title{
+	padding-bottom: 10px;
+}
+.zhongyaoxing>p{
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.zhongyaoxing .box{
+	width: 272px;
+	height: 192px;
+	background-color: #EFEFEF;
+	position: relative;
+	cursor:pointer;
+	transition: all 0.5s;
+	color: #333333;
+	margin-right: 27px;
+}
+.zhongyaoxing .box img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.zhongyaoxing .box h4{
+	font-size: 22px;
+	text-align: center;
+	padding-top: 28px;
+	padding-bottom: 16px;
+	color: #B18F4D;
+    position: relative;
+}
+.zhongyaoxing .box p{
+	width: 228px;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 24px;
+    position: relative;
+}
+/* .zhongyaoxing .box:hover{
+	background-color: #242424;
+	color: #FFFFFF;
+}
+.zhongyaoxing .box:hover h4{
+	color: #FFFFFF;
+} */
+.zhongyaoxing .content{
+	margin-bottom: 52px;
+}
+.zhongyaoxing{
+	padding-bottom: 90px;
+}
+.zhongyaoxing>a{
+	width: 190px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #CDB380;
+	font-size: 16px;
+	color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+.zhongyaoxing>a:hover,.wenti .anniu a:hover,.mianshi_fuwu .anniu a:hover,.jiqiao>div>a:hover,.mianshi .content .box>a:hover,.sida_xingshi .content .box .hidden a:hover,.mingshi_tuandui .content .box div.fr a:hover,.mianshi_fudao .content .box div.anniu a:hover{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+/* 对手已经上路，而你是否还在原地踏步？ */
+.wenti{
+	width: 100%;
+	height: 830px;
+	background: url(/static/home/img/page/gaozhong_mianshi/beijing1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.wenti .content{
+	width: 100%;
+	height: 423px;
+	background: url(/static/home/img/page/gaozhong_mianshi/wenti.png) no-repeat center center;
+	background-size: cover;
+	margin-top: 26px;
+	position: relative;
+}
+.wenti .content>div{
+	position: absolute;
+}
+.w312{
+	width: 312px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 17px;
+	background-color: #E8E7E7;
+	text-align: center;
+}
+.w284{
+	width: 284px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 17px;
+	background-color: #E8E7E7;
+	text-align: center;
+}
+.w324{
+	width: 324px;
+	height: 56px;
+	font-size: 17px;
+	background-color: #E8E7E7;
+	text-align: center;
+}
+.w324 p,.w340 p{
+	width: 272px;
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 5px;
+}
+.w340{
+	width: 340px;
+	height: 56px;
+	font-size: 17px;
+	background-color: #E8E7E7;
+	text-align: center;
+}
+.w243{
+	width: 243px;
+	height: 56px;
+	font-size: 17px;
+	height: 48px;
+	line-height: 48px;
+	background-color: #E8E7E7;
+	text-align: center;
+}
+.w267{
+	width: 267px;
+	height: 56px;
+	font-size: 17px;
+	height: 48px;
+	line-height: 48px;
+	background-color: #E8E7E7;
+	text-align: center;
+}
+.wenti .content>div:hover{
+	background-color: #CDB380;
+}
+.wenti .content>div:hover p{
+	color: #FFFFFF;
+}
+.wenti .content{
+	margin-bottom: 52px;
+}
+
+.wenti .anniu{
+	font-size: 0;
+	text-align: center;
+}
+.wenti .anniu a{
+	display: inline-block;
+	width: 190px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #CDB380;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #FFFFFF;
+	margin-right: 113px;
+}
+
+/* 彬彬留学面试服务 */
+.mianshi_fuwu h3.title{
+	padding-bottom: 10px;
+}
+.mianshi_fuwu p{
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 60px;
+}
+.mianshi_fuwu .content .box{
+	width: 212px;
+	height: 165px;
+	background: url(/static/home/img/page/gaozhong_mianshi/fw1.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	cursor:pointer;
+	margin-right: 27px;
+}
+.mianshi_fuwu .content .box2{
+	background-image: url(/static/home/img/page/gaozhong_mianshi/fw2.jpg);
+}
+.mianshi_fuwu .content .box3{
+	background-image: url(/static/home/img/page/gaozhong_mianshi/fw3.jpg);
+}
+.mianshi_fuwu .content .box4{
+	background-image: url(/static/home/img/page/gaozhong_mianshi/fw4.jpg);
+}
+.mianshi_fuwu .content .box5{
+	background-image: url(/static/home/img/page/gaozhong_mianshi/fw5.jpg);
+	margin-right: 0;
+}
+.mianshi_fuwu .content .box .div1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.28);
+	font-weight: bold;
+	text-align: center;
+	line-height: 165px;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+.mianshi_fuwu .content .box4 .div1:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.mianshi_fuwu .content .box4 .div1 p{
+	line-height: 35px;
+	font-size: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+.mianshi_fuwu .content .box .div2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.4);
+	color: #FFFFFF;
+	text-align: center;
+	display: none;
+}
+.mianshi_fuwu .content .box .div2:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.mianshi_fuwu .content .box .div2 em{
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	width: 150px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.mianshi_fuwu .content{
+	margin-bottom: 52px;
+}
+.mianshi_fuwu .anniu{
+	font-size: 0;
+	text-align: center;
+}
+.mianshi_fuwu .anniu a{
+	display: inline-block;
+	width: 286px;
+	height: 40px;
+	background-color: #CDB380;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-radius: 3px;
+}
+.mianshi_fuwu .anniu a.a1{
+	background-color: #FFFFFF;
+	color: #B18F4D;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+	margin-left: 80px;
+}
+.mianshi_fuwu{
+	padding-bottom: 80px;
+}
+.mianshi_fuwu .anniu a.a1:hover{
+	background-color: #CDB380;
+	color: #FFFFFF;
+}
+
+/* 美国高中面试技巧 */
+.jiqiao{
+	width: 100%;
+	height: 945px;
+	background: url(/static/home/img/page/gaozhong_mianshi/beijing2.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.jiqiao .content .box{
+	width: 512px;
+	margin-right: 94px;
+}
+.jiqiao .content .box h3{
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+.jiqiao .content .box h3 span{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #CDB380;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-right: 12px;
+}
+.jiqiao .content .box p{
+	font-size: 16px;
+	margin-left: 26px;
+	height: 70px;
+	margin-bottom: 10px;
+}
+
+.jiqiao>div{
+	position: relative;
+	height: 100%;
+}
+.jiqiao>div>a{
+	width: 190px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 3px;
+	background-color: #CDB380;
+	font-size: 16px;
+	color: #FFFFFF;
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 79px;
+	margin-left: -95px;
+}
+
+/* 维立克面试 */
+.mianshi .content .box{
+	width: 560px;
+	height: 660px;
+	background: url(/static/home/img/page/gaozhong_mianshi/ms1.jpg) no-repeat center center;
+	background-size: cover;
+	border-top: 5px solid #E1D9CC;
+	position: relative;
+	margin-right: 49px;
+}
+.mianshi .content .box h4{
+	font-size: 24px;
+	text-align: center;
+	color: #B18F4D;
+	padding-top: 33px;
+	padding-bottom: 32px;
+}
+.mianshi .content .box p{
+	width: 485px;
+	margin-left: 42px;
+	font-size: 16px;
+	line-height: 24px;
+}
+.mianshi .content .box p span{
+	color: #B18F4D;
+	font-weight: bold;
+}
+
+.mianshi .content .box>div{
+	margin-top: 36px;
+	padding: 0 42px;
+	margin-bottom: 35px;
+}
+.mianshi .content .box>div h3{
+	font-size: 16px;
+	color: #B18F4D;
+	padding-bottom: 8px;
+}
+.mianshi .content .box>div p{
+	margin: 0;
+	font-size: 16px;
+	line-height: 28px;
+	color: #000000;
+}
+.mianshi .content .box>a{
+	width: 190px;
+	height: 40px;
+	background-color: #CDB380;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 47px;
+	left: 50%;
+	margin-left: -95px;
+}
+.mianshi .content .box1{
+	background-image: url(/static/home/img/page/gaozhong_mianshi/ms2.jpg);
+	margin-right: 0;
+}
+.mianshi .content .box1 p{
+	width: 476px;
+	margin-bottom: 24px;
+}
+
+.mianshi{
+	padding-bottom: 77px;
+}
+
+/* 美国高中面试四大形式 */
+.sida_xingshi{
+	width: 100%;
+	height: 902px;
+	background: url(/static/home/img/page/gaozhong_mianshi/beijing3.jpg) no-repeat center center;
+	background-size: cover;
+}
+.sida_xingshi .content .box{
+	width: 560px;
+	height: 292px;
+	background: url(/static/home/img/page/gaozhong_mianshi/xs1.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 48px;
+	margin-right: 50px;
+}
+.sida_xingshi .content .box2{
+	background-image: url(/static/home/img/page/gaozhong_mianshi/xs2.jpg);
+	margin-right: 0;
+}
+.sida_xingshi .content .box3{
+	background-image: url(/static/home/img/page/gaozhong_mianshi/xs3.jpg);
+}
+.sida_xingshi .content .box4{
+	background-image: url(/static/home/img/page/gaozhong_mianshi/xs4.jpg);
+	margin-right: 0;
+}
+.sida_xingshi .content .box h4{
+	text-align: center;
+	line-height: 292px;
+	color: #FFFFFF;
+	text-shadow:0px 2px 4px rgba(0,0,0,0.59);
+	font-size: 24px;
+}
+.sida_xingshi .content .box .hidden{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.sida_xingshi .content .box .hidden h3{
+	font-size: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow:0px 2px 4px rgba(0,0,0,0.59);
+	padding-top: 28px;
+	padding-bottom: 21px;
+}
+.sida_xingshi .content .box .hidden p{
+	width: 480px;
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 17px;
+}
+.sida_xingshi .content .box .hidden a{
+	width: 190px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #CDB380;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* 美国高中面试名师团队 */
+.mingshi_tuandui{
+	padding-bottom: 47px;
+}
+.mingshi_tuandui .content .box{
+	width: 570px;
+	height: 250px;
+	border: 1px solid #CDB380;
+	margin-bottom: 33px;
+	margin-right: 26px;
+}
+.mingshi_tuandui .content .box img.fl{
+	width: 234px;
+	height: 228px;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+.mingshi_tuandui .content .box div.fr{
+	width: 280px;
+	height: 230px;
+	margin-right: 18px;
+	padding-top: 20px;
+	position: relative;
+}
+.mingshi_tuandui .content .box div.fr h3{
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+.mingshi_tuandui .content .box div.fr p{
+	font-size: 15px;
+	line-height: 24px;
+}
+.mingshi_tuandui .content .box div.fr a{
+	width: 128px;
+	height: 32px;
+	background-color: #CDB380;
+	line-height: 32px;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 16px;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 23px;
+	left: 50%;
+	margin-left: -64px;
+}
+
+/* 彬彬面试辅导，成功拿下名校Offer */
+.mianshi_fudao{
+	width: 100%;
+	height: 791px;
+	background-color: #F8F5F1;
+}
+
+.mianshi_fudao .content .box{
+	width: 358px;
+	height: 518px;
+	border: 1px solid #CDB380;
+	background-color: #FFFFFF;
+	position: relative;
+	margin-right: 45px;
+}
+.mianshi_fudao .content .box h3{
+	font-size: 22px;
+	line-height: 34px;
+	color: #B18F4D;
+	text-align: center;
+	padding-top: 34px;
+	padding-bottom: 34px;
+}
+
+.mianshi_fudao .content .box>div{
+	width: 316px;
+	margin: 0 auto;
+	margin-bottom: 36px;
+}
+.mianshi_fudao .content .box>div p{
+	font-size: 15px;
+	line-height: 28px;
+}
+.mianshi_fudao .content .box>div p span{
+	display: block;
+	float: left;
+}
+.mianshi_fudao .content .box h4{
+	font-size: 16px;
+	margin-left: 22px;
+	margin-bottom: 9px;
+}
+.mianshi_fudao .content .box>p{
+	font-size: 15px;
+	line-height: 24px;
+	width: 316px;
+	height: 120px;
+	margin: 0 auto;
+	margin-bottom: 24px;
+}
+.mianshi_fudao .content .box div.anniu{
+	font-size: 0;
+	text-align: center;
+	margin-bottom: 0;
+}
+.mianshi_fudao .content .box div.anniu a{
+	width: 108px;
+	height: 32px;
+	display: inline-block;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 32px;
+	background-color: #CDB380;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+.mianshi_fudao .content .box div.anniu a.a1{
+	background-color: #FFFFFF;
+	color: #B18F4D;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.14);
+	margin-left: 41px;
+}
+.mianshi_fudao .content .box div.anniu a.a1:hover{
+	background-color: #B18F4D;
+	color: #FFFFFF;
+}
+
+/* 彬彬教育致力让每一个学生牵手世界名校 */
+#mydiv{
+	width: 100%;
+	position: relative;
+}
+#mydiv canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#mydiv .box{
+	height: 100%;
+}
+#mydiv .box .content{
+	position: relative;
+}
+#mydiv .box .content .dq{
+	width: 375px;
+	height: 364px;
+	background: url(/static/home/img/page/gaozhong_mianshi/d.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -27.5px;
+	margin-left: -182px;
+}
+#mydiv .box .content .dq>div{
+	width: 193px;
+	height: 193px;
+	border-radius: 50%;
+	background: url(/static/home/img/page/7_8/a6e310318cc5a075e8e4a0a459119ad.png) no-repeat left center;
+	background-size: cover;
+	background-color: #281E1C;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -96.5px;
+	margin-left: -96.5px;
+	overflow: hidden;
+	transition: all 3s;
+}
+#mydiv .box .content .dq>div img{
+	height: 193px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 7;
+}
+#mydiv .box .content .dq>div h3{
+	font-size: 26px;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	color: #fff;
+	/* margin-top: -56.5px; */
+}
+#mydiv .box .content .dq>div h3 p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#mydiv .box .content>div.fl li.li1{
+	margin-bottom: 69px;
+}
+#mydiv .box .content>div.fl li.li1 p{
+	width: 240px;
+}
+#mydiv .box .content>div.fl li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fl li.li2 p{
+	width: 336px;
+}
+#mydiv .box .content>div.fl li.li3 p{
+	width: 432px;
+}
+
+#mydiv .box .content>div.fl h3,#mydiv .box .content>div.fr h3{
+	font-size: 26px;
+	color: #B18F4D;
+	margin-bottom: 7px;
+}
+#mydiv .box .content>div.fl p,#mydiv .box .content>div.fr p{
+	font-size: 16px;
+	color: #0F0F0F;
+}
+
+#mydiv .box .content>div.fr{
+	text-align: right;
+}
+#mydiv .box .content>div.fr li.li1 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li1{
+	margin-bottom: 50px;
+}
+#mydiv .box .content>div.fr li.li2 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fr li.li3 p{
+	width: 368px;
+}

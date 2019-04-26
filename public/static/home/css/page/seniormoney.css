@@ -1,0 +1,709 @@
+
+/* banner */
+.banner{
+	width: 100%;
+	height: 532px;
+	background: url(/static/home/img/page/gaozhong_feiyong/banner.jpg) no-repeat center center;
+	background-size: cover;
+}
+.banner>div{
+	height: 100%;
+	position: relative;
+}
+.banner>div a{
+	width: 296px;
+	height: 51px;
+	text-align: center;
+	line-height: 51px;
+	background-color: #FDA100;
+	color: #FFFFFF;
+	font-size: 22px;
+	border-radius: 5px;
+	bottom: 149px;
+	left: 50%;
+	margin-left: -148px;
+	position: absolute;
+	z-index: 3;
+}
+.banner>div a:hover{
+	background-color: #FDB332;
+}
+
+/* 美国行前费用早知道 */
+.fy h3,.difference h3,.biaozhun h3,.zs_tuijian h3,.xiaosa h3,.jianguan h3,#mydiv .title h3,.dayi .title h3{
+	font-size: 36px;
+	font-weight: bold;
+	padding-top: 75px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.fy .content .contentTop{
+	margin-bottom: 44px;
+}
+.fy .content .contentTop .box{
+	width: 268px;
+	height: 182px;
+	border: 1px solid #FDA100;
+	border-radius: 5px;
+	margin-right: 30px;
+	position: relative;
+}
+.fy .content .contentTop .box img{
+	width: 44px;
+	height: 44px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 36px;
+	margin-bottom: 12px;
+}
+.fy .content .contentTop .box span{
+	width: 76px;
+	height: 1px;
+	background-color: #E9E8E8;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 22px;
+}
+.fy .content .contentTop .box p{
+	font-size: 20px;
+	text-align: center;
+}
+.fy .content .contentTop .box .hidden{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+}
+.fy .content .contentTop .box .hidden:before{
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.fy .content .contentTop .box .hidden>div{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.fy .content .contentTop .box .hidden h4{
+	font-size: 20px;
+	padding-top: 19px;
+	padding-bottom: 12px;
+}
+.fy .content .contentTop .box .hidden p{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.fy .content .contentBottom{
+	width: 1168px;
+	height: 89px;
+	border: 1px solid #FDA100;
+	border-radius: 5px;
+	background-color: #FEF8EC;
+	padding-top: 39px;
+	margin-bottom: 56px;
+	position: relative;
+}
+.fy .content .contentBottom p{
+	width: 33.33%;
+	float: left;
+	text-indent: 26px;
+	font-size: 16px;
+	line-height: 30px;
+}
+.fy .content .contentBottom p span{
+	width: 5px;
+	height: 5px;
+	background-color: #333333;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 3px;
+	transform: rotate(45deg);
+	margin-right: 9px;
+}
+.fy .content .contentBottom>span{
+	display: block;
+	width: 188px;
+	height: 37px;
+	background-color: #FDA100;
+	text-align: center;
+	line-height: 37px;
+	color: #FFFFFF;
+	font-size: 18px;
+	position: absolute;
+	left: 20px;
+	top: -20px;
+	font-weight: bold;
+}
+.fy .content .contentBottom p a:hover{
+	color: #FDA100;
+}
+
+.fy .content>a,.zs_tuijian .content>a,.xiaosa>a{
+	width: 272px;
+	height: 46px;
+	background-color: #FDA100;
+	font-size: 18px;
+	text-align: center;
+	line-height: 46px;
+	border-radius: 5px;
+	box-shadow:0px 2px 2px rgba(0,0,0,0.23);
+	margin: 0 auto;
+	margin-bottom: 87px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.fy .content>a:hover,.zs_tuijian .content>a:hover,.xiaosa>a:hover{
+	background-color: #FDB332;
+}
+
+/* 美国城市生活费用不同 */
+.difference{
+	width: 100%;
+	height: 590px;
+	background-color: #F6F6F6;
+}
+.difference h3{
+	padding-top: 75px;
+}
+.difference .content{
+	margin-bottom: 57px;
+}
+.difference .content>.box{
+	width: 272px;
+	height: 212px;
+	border: 1px solid #DCD7D7;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	margin-right: 24px;
+}
+.difference .content>.box h4{
+	width: 100%;
+	height: 62px;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	line-height: 62px;
+	font-weight: normal;
+	font-size: 24px;
+	color: #FFFFFF;
+	background: url(/static/home/img/page/gaozhong_feiyong/city1.png) no-repeat center center;
+	background-size: cover;
+}
+.difference .content>.box p{
+	width: 235px;
+	display: block;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 32px;
+}
+.difference .content>.box p.city{
+	margin-top: 28px;
+}
+.difference .content>.box2 h4{
+	background-image: url(/static/home/img/page/gaozhong_feiyong/city2.png);
+}
+.difference .content>.box3 h4{
+	background-image: url(/static/home/img/page/gaozhong_feiyong/city3.png);
+}
+.difference .content>.box4 h4{
+	background-image: url(/static/home/img/page/gaozhong_feiyong/city4.png);
+}
+
+.difference>div>a,.biaozhun>a{
+	width: 272px;
+	height: 46px;
+	background-color: #FDA100;
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0 auto;
+	box-shadow:0px 2px 2px rgba(0,0,0,0.23);
+	border-radius: 5px;
+	color: #FFFFFF;
+}
+.difference>div>a:hover,.biaozhun>a:hover{
+	background-color: #FDB332;
+}
+
+/* 美国高中费用标准 */
+.biaozhun{
+	padding-bottom: 88px;
+}
+.biaozhun .content{
+	margin-bottom: 60px;
+}
+.biaozhun .content .box{
+	width: 216px;
+	height: 230px;
+	border: 1px solid #92A5D3;
+	border-radius: 5px;
+	text-align: center;
+	margin-right: 20px;
+}
+.biaozhun .content .box h4{
+	font-size: 20px;
+	padding-top: 41px;
+	padding-bottom: 22px;
+}
+.biaozhun .content .box p{
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+.biaozhun .content .box span{
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 32px;
+	display: block;
+	height: 19px;
+}
+.biaozhun .content .box a{
+	width: 106px;
+	height: 31px;
+	border-radius: 5px;
+	border: 1px solid #707070;
+	font-size: 16px;
+	text-align: center;
+	line-height: 31px;
+	display: block;
+	margin: 0 auto;
+}
+.biaozhun .content .box a:hover{
+	color: #FFFFFF;
+	background-color: #FDA100;
+	border-color: #FDA100;
+}
+
+/* 高性价比美国优质中学推荐 */
+.zs_tuijian{
+	width: 100%;
+	height: 1143px;
+	background: url(/static/home/img/page/gaozhong_feiyong/20418_banner.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.zs_tuijian .content .cTitle{
+	width: 508px;
+	margin: 0 auto;
+}
+.zs_tuijian .content .cTitle span{
+	float: left;
+	width: 232px;
+	height: 40px;
+	background-color: #FDA100;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	margin-right: 44px;
+	cursor:pointer;
+}
+.zs_tuijian .content .cTitle span.active{
+	background-color: #072F67;
+	color: #FFFFFF;
+}
+
+.zs_tuijian .content .cContent{
+	display: none;
+}
+.zs_tuijian .content .cContent.active{
+	display: block;
+}
+.zs_tuijian .content .cContent ul{
+	border: 1px solid #D6D7DA;
+	border-radius: 5px;
+	margin-top: 28px;
+	overflow: hidden;
+}
+.zs_tuijian .content .cContent ul li{
+	font-size: 0;
+	background-color: #FFFFFF;
+	height: 65px;
+	border-bottom: 1px solid #D6D7DA;
+}
+.zs_tuijian .content .cContent ul li span{
+	border-right: 1px solid #D6D7DA;
+	display: inline-block;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	height: 65px;
+}
+.zs_tuijian .content .cContent ul li span::before{
+	content: " ";
+    display: inline-block;
+    height: 65px;
+    width: 1px;
+    vertical-align: middle;
+}
+.zs_tuijian .content .cContent ul li span p{
+	max-width: 413px;
+	text-align: left;
+	margin: 0 auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+.zs_tuijian .content .cContent ul li span div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.zs_tuijian .content .cContent ul li span div p{
+	font-size: 14px;
+}
+.zs_tuijian .content .cContent ul li span div a{
+	color: #FF750C;
+	font-weight: bold;
+}
+.zs_tuijian .content .cContent ul li span div a:hover{
+	color: #072F67;
+}
+.zs_tuijian .content .cContent ul li.tt{
+	background-color: #D4D9F9;
+	height: 42px;
+	line-height: 42px;
+	font-weight: bold;
+	border-bottom: 1px solid #D6D7DA;
+}
+.zs_tuijian .content .cContent ul li.tt span{
+	height: 42px;
+}
+.zs_tuijian .content .cContent ul li.tt span::before{
+	height: 42px;
+}
+
+.zs_tuijian .content>p{
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 21px;
+	margin-bottom: 51px;
+}
+.zs_tuijian .content>p em{
+	color: #DB8480;
+	margin-right: 4px;
+}
+
+/* 学长学姐告诉你 省钱也能很潇洒 */
+.xiaosa .content{
+	margin-bottom: 34px;
+}
+.xiaosa .content .box{
+	width: 566px;
+	height: 176px;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 47px;
+	margin-right: 34px;
+}
+.xiaosa .content .box .img{
+	width: 258px;
+	height: 176px;
+	background: url(/static/home/img/page/gaozhong_feiyong/money1.png) no-repeat center center;
+	text-align: center;
+	line-height: 176px;
+	font-size: 24px;
+	color: #FFFFFF;
+	transition: all 0.5s;
+	background-size: 100%;
+}
+.xiaosa .content .box div.fr{
+	width: 307px;
+	height: 174px;
+	border: 1px solid #E8E8E8;
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+}
+.xiaosa .content .box div.fr::before{
+	content: '';
+	width: 1px;
+	height: 174px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.xiaosa .content .box div.fr p{
+	font-size: 14px;
+	line-height: 26px;
+	width: 246px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 34px;
+}
+
+.xiaosa .content .box2 .img{
+	background-image: url(/static/home/img/page/gaozhong_feiyong/money2.png);
+}
+.xiaosa .content .box3 .img{
+	background-image: url(/static/home/img/page/gaozhong_feiyong/money3.png);
+}
+.xiaosa .content .box4 .img{
+	background-image: url(/static/home/img/page/gaozhong_feiyong/money4.png);
+}
+
+/* 彬彬教育监管服务 */
+.jianguan{
+	width: 100%;
+	height: 946px;
+	background: url(/static/home/img/page/gaozhong_feiyong/beijing2.png) no-repeat center center;
+	background-size: cover;
+}
+.jianguan h3{
+	color: #FFFFFF;
+}
+
+.jianguan .content .box{
+	width: 368px;
+	height: 316px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	box-shadow:0px 0px 4px rgba(0,0,0,0.16);
+	margin-right: 33px;
+	margin-bottom: 33px;
+}
+.jianguan .content .box .img{
+	width: 100%;
+	height: 134px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px 5px 0 0;
+}
+.jianguan .content .box .img img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+}
+.jianguan .content .box:hover .img img{
+	transform: scale(1.1);
+}
+.jianguan .content .box .img span{
+	width: 100%;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+.jianguan .content .box p{
+	width: 331px;
+	height: 73px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #333333;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 16px;
+	margin-top: 20px;
+}
+.jianguan .content .box a{
+	width: 211px;
+	height: 38px;
+	border: 1px solid #707070;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 38px;
+	font-size: 16px;
+	display: block;
+	margin: 0 auto;
+}
+.jianguan .content .box a:hover{
+	color: #FFFFFF;
+	background-color: #FDA100;
+	border-color: #FDA100;
+}
+
+/* 彬彬服务模式 */
+#mydiv{
+	width: 100%;
+	position: relative;
+}
+#mydiv canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#mydiv .box{
+	height: 100%;
+}
+#mydiv .box .content{
+	position: relative;
+}
+#mydiv .box .content .dq{
+	width: 375px;
+	height: 364px;
+	background: url(/static/home/img/page/YanJiuSheng/13223222222.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -27.5px;
+	margin-left: -182px;
+}
+#mydiv .box .content .dq>div{
+	width: 193px;
+	height: 193px;
+	border-radius: 50%;
+	background: url(/static/home/img/page/YanJiuSheng/3232323232332.png) no-repeat left center;
+	background-size: cover;
+	background-color: #281E1C;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -96.5px;
+	margin-left: -96.5px;
+	overflow: hidden;
+	transition: all 3s;
+}
+#mydiv .box .content .dq>div img{
+	height: 193px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 7;
+}
+#mydiv .box .content .dq>div h3{
+	font-size: 26px;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	color: #fff;
+	/* margin-top: -56.5px; */
+}
+#mydiv .box .content .dq>div h3 p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#mydiv .box .content>div.fl li.li1{
+	margin-bottom: 69px;
+}
+#mydiv .box .content>div.fl li.li1 p{
+	width: 240px;
+}
+#mydiv .box .content>div.fl li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fl li.li2 p{
+	width: 336px;
+}
+#mydiv .box .content>div.fl li.li3 p{
+	width: 432px;
+}
+
+#mydiv .box .content>div.fl h3,#mydiv .box .content>div.fr h3{
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 7px;
+	font-weight: bold;
+}
+#mydiv .box .content>div.fl p,#mydiv .box .content>div.fr p{
+	font-size: 16px;
+	color: #0F0F0F;
+}
+
+#mydiv .box .content>div.fr{
+	text-align: right;
+}
+#mydiv .box .content>div.fr li.li1 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li1{
+	margin-bottom: 50px;
+}
+#mydiv .box .content>div.fr li.li2 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fr li.li3 p{
+	width: 368px;
+}
+
+/* 留学问题免费答疑 */
+.dayi{
+	width: 100%;
+	height: 575px;
+	background: url(/static/home/img/page/haiwai_jianguan/500592074.png) no-repeat center center;
+	background-size: cover;
+}
+
+.dayi>div h3{
+	padding-top: 86px;
+}
+
+.dayi .form{
+	width: 1028px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.dayi .form .ftop input{
+	width: 250px;
+	height: 40px;
+	border: 1px solid #DFDEDE;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	text-indent: 12px;
+	line-height: 40px;
+	margin-right: 136px;
+	font-size: 12px;
+	float: left;
+}
+.dayi .form .ftop select{
+	width: 252px;
+	height: 42px;
+	background-color: #FFFFFF;
+	border: 1px solid #DFDEDE;
+	border-radius: 3px;
+	text-indent: 12px;
+	color: #333333;
+	float: left;
+}
+.dayi .form .ftop input::-webkit-input-placeholder{
+    color: #333333;
+}
+.dayi .form>textarea{
+	width: 1026px;
+	height: 130px;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	text-indent: 12px;
+	border: 1px solid #DFDEDE;
+	margin-top: 33px;
+	padding-top: 18px;
+}
+.dayi .form>textarea::-webkit-input-placeholder{
+    color: #333333;
+}
+
+.dayi .form>button{
+	width: 68px;
+	height: 36px;
+	background: url(/static/home/img/page/haiwai_jianguan/right.png) no-repeat center center;
+	background-size: 15%;
+	background-color: #000000;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 3px;
+	margin-top: 33px;
+	float: right;
+	cursor:pointer;
+}
+.dayi .title h3{
+	font-size: 32px;
+}

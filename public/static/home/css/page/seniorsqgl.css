@@ -1,0 +1,906 @@
+/* banner */
+.banner{
+	width: 100%;
+	height: 532px;
+	background: url(/static/home/img/page/gaozhong_sq/banner@2x.png) no-repeat center center;
+	background-size: cover;
+	font-size: 0;
+}
+
+.banner div{
+	height: 100%;
+	position: relative;
+}
+
+.banner a{
+	height: 48px;
+	padding: 0 20px;
+	border: 1px solid #EF8102;
+	text-align: center;
+	line-height: 48px;
+	font-size: 22px;
+	display: inline-block;
+	position: absolute;
+	bottom: 145px;
+}
+.banner .a1{
+	background-color: #EF8102;
+	color: #FFFFFF;
+	margin-right: 18px;
+	left: 43px;
+}
+.banner .a1:hover{
+	background-color: #F9A340;
+	border-color: #F9A340;
+}
+.banner .a2{
+	background-color: transparent;
+	color: #EF8102;
+	left: 284px;
+}
+.banner .a2:hover{
+	border-color: #F9A340;
+	color: #F9A340;
+}
+
+/* 低龄留学的优势 */
+h3.title{
+	font-size: 36px;
+	text-align: center;
+	padding-top: 70px;
+	margin-bottom: 65px;
+}
+h3.title em{
+	color: #EF8102;
+}
+
+.youshi .content{
+	margin-bottom: 50px;
+}
+.youshi .content>div.fl{
+	width: 585px;
+	height: 361px;
+	background: url(/static/home/img/page/gaozhong_sq/back2.png) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+.youshi .content>div.fl .biaoti{
+	width: 116px;
+	background-color: #EF8102;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 17px 0;
+	position: absolute;
+	left: 75px;
+	top: -8px;
+	z-index: 3;
+}
+.youshi .content>div.fl .biaoti span{
+	width: 96px;
+	height: 1px;
+	display: block;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+}
+.youshi .content>div.fl .biaoti h4{
+	font-size: 24px;
+	padding: 7px 0;
+}
+.youshi .content>div.fl>span{
+	width: 0;
+	height: 0;
+	display: block;
+	border-style: solid;
+	border-width: 8px;
+	border-color: transparent transparent #9B5402 transparent;
+	position: absolute;
+	top: -16px;
+	z-index: 2;
+}
+.youshi .content>div.fl>span.sj1{
+	left: 67px;
+}
+.youshi .content>div.fl>span.sj2{
+	left: 183px;
+}
+.youshi .content>div.fl>img.zhang{
+	width: 236px;
+	height: 133px;
+	position: absolute;
+	left: 27px;
+	top: 143px;
+}
+.youshi .content>div.fl>ul{
+	margin-top: 42px;
+	margin-right: 80px;
+}
+.youshi .content>div.fl>ul li{
+	margin-bottom: 40px;
+}
+.youshi .content>div.fl>ul li>span{
+	font-size: 18px;
+	color: #FFFFFF;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.youshi .content>div.fl>ul li>div span{
+	display: inline-block;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	margin-left: 3px;
+	vertical-align: middle;
+}
+
+.youshi .content>div.fr{
+	width: 585px;
+	height: 361px;
+	background-color: #F9F9F9;
+}
+.youshi .content>div.fr .biaoti{
+	width: 116px;
+	background-color: #FBECA4;
+	color: #535252;
+	text-align: center;
+	padding: 17px 0;
+	position: absolute;
+	right: 75px;
+	top: -8px;
+	z-index: 3;
+}
+.youshi .content>div.fr .biaoti span{
+	width: 96px;
+	height: 1px;
+	display: block;
+	background-color: #535252;
+	margin: 0 auto;
+}
+.youshi .content>div.fr .biaoti h4{
+	font-size: 24px;
+	padding: 7px 0;
+}
+.youshi .content>div.fr>span{
+	width: 0;
+	height: 0;
+	display: block;
+	border-style: solid;
+	border-width: 8px;
+	border-color: transparent transparent #E1C11C transparent;
+	position: absolute;
+	top: -16px;
+	z-index: 2;
+}
+.youshi .content>div.fr>span.sj1{
+	right: 67px;
+}
+.youshi .content>div.fr>span.sj2{
+	right: 183px;
+}
+.youshi .content>div.fr>ul{
+	margin-top: 42px;
+	margin-left: 80px;
+}
+.youshi .content>div.fr>ul li{
+	margin-bottom: 40px;
+}
+.youshi .content>div.fr>ul li>span{
+	font-size: 18px;
+	color: #000000;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.youshi .content>div.fr>ul li>div span{
+	display: inline-block;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background-color: #000000;
+	margin-left: 3px;
+	vertical-align: middle;
+}
+.youshi .content>ul{
+	position: absolute;
+	left: 50%;
+	top: 36px;
+	margin-left: -62px;
+}
+.youshi .content>ul li{
+	width: 124px;
+	height: 36px;
+	background-color: #FED81B;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 20px;
+	margin-bottom: 28px;
+}
+
+.youshi>a,.haiwaizy>a,.ziyuan .x_content>a,.shengxin>a{
+	width: 236px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: #EF8102;
+	color: #FFFFFF;
+	font-size: 22px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 90px;
+	transition: all 0.5s;
+}
+.youshi>a:hover,.haiwaizy>a:hover,.ziyuan .x_content>a:hover,.shengxin>a:hover{
+	background-color: #F9A340;
+}
+
+/* 美国高中申请条件 */
+.sq_tiaojian{
+	width: 100%;
+	height: 1206px;
+	background: url(/static/home/img/page/gaozhong_sq/back1.png) no-repeat center center;
+	background-size: cover;
+}
+
+.sq_tiaojian .content .box{
+	width: 556px;
+	height: 474px;
+	background-color: #FFFFFF;
+	position: relative;
+	border-bottom: 4px solid #EF8102;
+	border-radius: 0 0 5px 5px;
+}
+.sq_tiaojian .content .box .tBox{
+	height: 64px;
+	line-height: 64px;
+	margin-left: 35px;
+	margin-top: 48px;
+	margin-bottom: 34px;
+}
+.sq_tiaojian .content .box .tBox h3{
+	font-size: 26px;
+	color: #EF8102;
+}
+.sq_tiaojian .content .box .tBox>div.fl{
+	width: 62px;
+	height: 62px;
+	border: 1px solid #EF8102;
+	border-radius: 50%;
+	margin-right: 22px;
+}
+.sq_tiaojian .content .box .tBox>div.fl>div{
+	width: 52px;
+	height: 52px;
+	background-color: #EF8102;
+	border-radius: 50%;
+	margin: 5px auto;
+	position: relative;
+}
+.sq_tiaojian .content .box .tBox>div.fl>div img{
+	width: 28px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -14px;
+	margin-top: -12px;
+}
+
+.sq_tiaojian .content .box h5{
+	font-size: 18px;
+	color: #333333;
+	margin-left: 41px;
+	margin-bottom: 8px;
+}
+.sq_tiaojian .content .box h5 span{
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #333333;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-right: 9px;
+}
+.sq_tiaojian .content .box p{
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+	width: 436px;
+	margin-left: 61px;
+	margin-bottom: 24px;
+}
+.sq_tiaojian .content .box em{
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+	display: block;
+	width: 478px;
+	margin-left: 40px;
+	margin-bottom: 25px;
+}
+.sq_tiaojian .content .box a{
+	width: 212px;
+	height: 44px;
+	display: block;
+	background-color: #EF8102;
+	text-align: center;
+	line-height: 44px;
+	color: #FFFFFF;
+	font-size: 18px;
+	margin: 0 auto;
+}
+.sq_tiaojian .content .box a:hover{
+	background-color: #F9A340;
+}
+.sq_tiaojian .content .box.fr{
+	border-bottom-color: #FED81B;
+}
+.sq_tiaojian .content .box.fr p{
+	margin-bottom: 13px;
+	width: 465px;
+}
+.sq_tiaojian .content .box.fr a{
+	margin-top: 25px;
+}
+
+/* 美国高中申请材料 */
+.haiwaizy{
+	margin-top: 30px;
+}
+.haiwaizy .content{
+	margin-bottom: 40px;
+}
+.haiwaizy .content .box1{
+	width: 121px;
+	height: 150px;
+	background-color: #FFFFFF;
+	border: 1px solid #EF8102;
+	margin-right: 26px;
+}
+.haiwaizy .content .box1>img{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 34px;
+	margin-bottom: 22px;
+}
+.haiwaizy .content .box1>p{
+	font-size: 16px;
+	text-align: center;
+}
+
+.ziyuan .x_title{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.ziyuan .x_title a{
+	display: inline-block;
+}
+.ziyuan .x_title a{
+	font-size: 18px;
+	color: #232426;
+	vertical-align: middle;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 9px;
+	vertical-align: middle;
+}
+.ziyuan .x_title span{
+	display: inline-block;
+	font-size: 16px;
+	color: #707070;
+	margin: 0 26px;
+	padding-bottom: 9px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+}
+.ziyuan .x_title a.active{
+	color: #EF8102;
+	border-bottom-color: #EF8102;
+	font-weight: bold;
+}
+
+.ziyuan .x_content{
+	text-align: center;
+	display: none;
+}
+.ziyuan .x_content p{
+	width: 630px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #333333;
+	line-height: 26px;
+	margin-bottom: 40px;
+}
+.ziyuan .x_content .v .box{
+	width: 280px;
+	height: 192px;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+	border-radius: 3px;
+	text-align: left;
+	margin-right: 16px;
+	margin-bottom: 20px;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+.ziyuan .x_content .v .box:hover{
+	box-shadow:0px 3px 26px rgba(0,0,0,0.3);
+}
+.ziyuan .x_content .v .box .hover,.ziyuan .x_content .v .box video{
+	width: 264px;
+	height: 152px;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+.ziyuan .x_content .v .box .hover{
+	position: relative;
+}
+.ziyuan .x_content .v .box .hover img{
+	width: 100%;
+	height: 100%;
+}
+.ziyuan .x_content .v .box .hover img.bf{
+	width: 49px;
+	height: 49px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -24.5px;
+	margin-left: -24.5px;
+}
+.ziyuan .x_content .v .box video{
+	background-color: #000000;
+	display: none;
+}
+.ziyuan .x_content .v .box span{
+	font-size: 14px;
+	color: #333333;
+	margin-top: 6px;
+	display: block;
+	margin-left: 9px;
+}
+.ziyuan .x_content>a{
+	width: 290px;
+	margin-top: 54px;
+	margin-bottom: 80px;
+}
+/* 弹出的视频层 */
+.tc_video{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 999999;
+}
+.tc_video .video{
+	width: 1100px;
+	height: 540px;
+	background-color: #000000;
+	position: absolute;
+	left: 50%;
+	top:  50%;
+	margin-top: -270px;
+	margin-left: -550px;
+}
+.tc_video .video video{
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+}
+.tc_video .video img{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor:pointer;
+}
+
+/* 四类美国高中任你选 */
+.renNixuan{
+	width: 100%;
+	height: 811px;
+	background-color: #F8F7F3;
+}
+
+.renNixuan .content .box{
+	width: 570px;
+	height: 260px;
+	background-color: #FFFFFF;
+	border: 1px solid #CECBCB;
+	position: relative;
+	margin-bottom: 25px;
+	margin-right: 25px;
+}
+.renNixuan .content .box img.fl{
+	width: 234px;
+	height: 236px;
+	
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.renNixuan .content .box .img{
+	float: left;
+	width: 234px;
+	height: 236px;
+	overflow: hidden;
+	margin-left: 11px;
+	margin-top: 13px;
+	margin-right: 22px;
+}
+.renNixuan .content .box .img:hover img{
+	transform: scale(1.1);
+}
+.renNixuan .content .box>div.fl{
+	width: 292px;
+}
+.renNixuan .content .box>div.fl h4{
+	font-size: 22px;
+	padding-top: 22px;
+	margin-bottom: 11px;
+	text-align: center;
+}
+.renNixuan .content .box>div.fl p{
+	font-size: 14px;
+	line-height: 22px;
+}
+.renNixuan .content .box>a{
+	width: 128px;
+	height: 32px;
+	background-color: #EF8102;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-align: center;
+	line-height: 32px;
+	position: absolute;
+	bottom: 23px;
+	right: 95px;
+}
+.renNixuan .content .box>a:hover{
+	background-color: #F9A340;
+}
+
+/* 有彬彬 留学更省心 */
+.shengxin .content .box .img{
+	width: 566px;
+	height: 95px;
+	background: url(/static/home/img/page/gaozhong_sq/2245.png) no-repeat center center;
+	background-size: cover;
+	line-height: 95px;
+	text-align: center;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+.shengxin .content .box2 .img{
+	background-image: url(/static/home/img/page/gaozhong_sq/2246.png);
+}
+.shengxin .content .box .bot{
+	width: 564px;
+	height: 248px;
+	background-color: #F6F6F6;
+	border: 1px solid #E2E2E2;
+	border-top: none;
+	margin-bottom: 60px;
+}
+.shengxin .content .box .bot:before{
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	vertical-align: middle;
+}
+.shengxin .content .box .bot ul{
+	width: 558px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.shengxin .content .box .bot ul li{
+	font-size: 14px;
+	line-height: 28px;
+}
+.shengxin>a{
+	margin-bottom: 0;
+}
+
+/* 高中申请流程 */
+.sq_lc .content{
+	width: 100%;
+	height: 337px;
+	background-color: #F6F7F9;
+	margin-bottom: 88px;
+}
+.sq_lc .content>div.fr{
+	width: 289px;
+	height: 266px;
+	background: url(/static/home/img/page/7_8/offer.png) no-repeat center center;
+	background-size: cover;
+	margin-right: 41px;
+	margin-top: 37px;
+	color: #FFFFFF;
+}
+.sq_lc .content>div.fr ul{
+	font-size: 14px;
+	line-height: 36px;
+	margin-top: 28px;
+}
+.sq_lc .content>div.fr ul li a{
+	color: #FFFFFF;
+	text-indent: 29px;
+}
+.sq_lc .content>div.fr ul li a:hover{
+	color: #EF8102;
+}
+.sq_lc .content>div.fr ul li a.anniu{
+	width: 172px;
+	height: 36px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 36px;
+	background-color: #EF8102;
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-top: 32px;
+	text-indent: 0px;
+}
+.sq_lc .content>div.fr ul li a.anniu:hover{
+	background-color: #F9A340;
+}
+
+.sq_lc .content>div.fl{
+	margin-top: 30px;
+	margin-left: 36px;
+}
+.sq_lc .content>div.fl>div{
+	font-size: 0;
+}
+.sq_lc .content>div.fl>div span:before{
+	content: '';
+	width: 0px;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sq_lc .content>div.fl>div span{
+	width: 98px;
+	height: 98px;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #EF8102;
+	border-radius: 50%;
+	font-size: 17px;
+	vertical-align: middle;
+	cursor:pointer;
+	font-weight: bold;
+}
+.sq_lc .content>div.fl>div span p{
+	display: inline-block;
+	vertical-align: middle;
+}
+.sq_lc .content>div.fl>div img{
+	width: 36px;
+	height: 20px;
+	vertical-align: middle;
+	margin: 0 13px;
+}
+.sq_lc .content>div.fl>div.tone{
+	margin-bottom: 22px;
+}
+.sq_lc .content>div.fl>div.ttwo{
+	margin-bottom: 20px;
+}
+.sq_lc .content>div.fl>div.ttwo img{
+	width: 20px;
+	height: 36px;
+}
+.sq_lc .content>div.fl>div b{
+	width: 612px;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 44px;
+	margin-right: 20px;
+	text-align: center;
+}
+.sq_lc .content>div.fl>div span.active{
+	background-color: #EF8102;
+	color: #FFFFFF;
+}
+
+.tthree span,.tthree img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.sq_lc .content>div.fl>div.tthree img{
+	margin-top: 41px;
+}
+
+/* 彬彬海外独家特色服务 */
+.ts_fw{
+	width: 100%;
+	height: 927px;
+	background: url(/static/home/img/page/gaozhong_sq/500908892.png) no-repeat center center;
+	background-size: cover;
+}
+
+.ts_fw .content .box{
+	width: 368px;
+	height: 316px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	box-shadow:0px 0px 4px rgba(0,0,0,0.16);
+	margin-right: 33px;
+	margin-bottom: 33px;
+}
+.ts_fw .content .box .img{
+	width: 100%;
+	height: 134px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px 5px 0 0;
+}
+.ts_fw .content .box .img img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+}
+.ts_fw .content .box:hover .img img{
+	transform: scale(1.1);
+}
+.ts_fw .content .box .img span{
+	width: 100%;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+.ts_fw .content .box p{
+	width: 331px;
+	height: 73px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #333333;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 16px;
+	margin-top: 20px;
+}
+.ts_fw .content .box a{
+	width: 211px;
+	height: 38px;
+	border: 1px solid #707070;
+	text-align: center;
+	line-height: 38px;
+	font-size: 16px;
+	display: block;
+	margin: 0 auto;
+}
+.ts_fw .content .box a:hover{
+	color: #fff;
+	background-color: #EF8102;
+	border-color: #FF7062;
+}
+/* 彬彬教育致力让每一个学生牵手世界名校 */
+#mydiv{
+	width: 100%;
+	position: relative;
+}
+#mydiv .title{
+	padding-top: 118px;
+	margin-bottom: 60px;
+}
+#mydiv canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#mydiv .box{
+	height: 100%;
+}
+#mydiv .box .content{
+	position: relative;
+}
+#mydiv .box .content .dq{
+	width: 375px;
+	height: 364px;
+	background: url(/static/home/img/page/YanJiuSheng/13223222222.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -27.5px;
+	margin-left: -182px;
+}
+#mydiv .box .content .dq>div{
+	width: 193px;
+	height: 193px;
+	border-radius: 50%;
+	background: url(/static/home/img/page/7_8/a6e310318cc5a075e8e4a0a459119ad.png) no-repeat left center;
+	background-size: cover;
+	background-color: #281E1C;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -96.5px;
+	margin-left: -96.5px;
+	overflow: hidden;
+	transition: all 3s;
+}
+
+#mydiv .box .content .dq>div h3{
+	font-size: 26px;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	color: #fff;
+	/* margin-top: -56.5px; */
+}
+#mydiv .box .content .dq>div h3 p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#mydiv .box .content>div.fl li.li1{
+	margin-bottom: 69px;
+}
+#mydiv .box .content>div.fl li.li1 p{
+	width: 240px;
+}
+#mydiv .box .content>div.fl li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fl li.li2 p{
+	width: 336px;
+}
+#mydiv .box .content>div.fl li.li3 p{
+	width: 432px;
+}
+
+#mydiv .box .content>div.fl h3,#mydiv .box .content>div.fr h3{
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 7px;
+}
+#mydiv .box .content>div.fl p,#mydiv .box .content>div.fr p{
+	font-size: 16px;
+	color: #0F0F0F;
+}
+
+#mydiv .box .content>div.fr{
+	text-align: right;
+}
+#mydiv .box .content>div.fr li.li1 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li1{
+	margin-bottom: 50px;
+}
+#mydiv .box .content>div.fr li.li2 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fr li.li3 p{
+	width: 368px;
+}

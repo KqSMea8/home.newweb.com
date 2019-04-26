@@ -1,0 +1,258 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/activity/content.css">
+	</head>
+	<body>	
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- banner -->
+		<div class="banner">
+			<img src="/static/home/img/activity/content/banner.png" alt="">
+		</div>
+		
+		<!-- 面包屑导航 -->
+		<div class="mianbaoNav gWidth1170 clearfix">
+			<a href="/" class="fl">美国留学</a><span class="fl">&gt;</span>
+			<a href="/activity/1-{$activity_info.type}-1.html" class="fl">{$activity_info['article_type']}</a><span class="fl">&gt;</span>
+			<a class="fl">{$activity_info['title']}</a>
+		</div>
+		
+		<!-- 弹窗 -->
+		<div class="tanChuang">
+			<div>
+				<h3>预约参加线下活动</h3>
+				<div class="input">
+					<input type="text" class="name" placeholder="请输入您的姓名" />
+					<img src="/static/home/img/input1.png" alt="">
+				</div>
+				<div class="input">
+					<input type="text" class="phone" placeholder="请输入您的联系方式" />
+					<img src="/static/home/img/input2.png" alt="">
+				</div>
+				<button class="button">立即报名</button>
+				<img src="/static/home/img/clear.png" class="clear" alt="">
+			</div>
+		</div>
+		<div class="tanChuang2">
+			<div>
+				<img src="/static/home/img/erweima.png" alt="">
+				<p>扫描二维码，添加小助手微信报名；参与者均有<br />机会获得留学大礼包！</p>
+				<img src="/static/home/img/clear.png" class="clear" alt="">
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var Val;
+			$('.tanChuang .input input').focus(function () {
+				if($(this).attr('placeholder')){
+					Val = $(this).attr('placeholder');
+				}
+				$(this).removeAttr('placeholder');
+			})
+			$('.tanChuang .input input').blur(function () {
+				if(Val){
+					$(this).attr('placeholder', Val);
+				}
+			})
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.tanChuang>div .button').on('click', function () {
+				var Name = $('.tanChuang>div .input input.name').val();
+				var Phone = $('.tanChuang>div .input input.phone').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == '' ){
+					alert('选项内容不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						urlsite: url,
+						path_source:path_source
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.tanChuang>div .input input.name').val('');
+						$('.tanChuang>div .input input.phone').val('');
+					}
+				})
+			})
+		</script>
+		
+		<!-- content --> 
+		<div class="content gWidth1170 clearfix">
+			<!-- left -->
+			<div class="fl boxL">
+				<!-- title -->
+				<div class="title">
+					<h3>{$activity_info['title']}</h3>
+					<p>{$activity_info['add_time']} · 彬彬留学</p>
+				</div>
+				
+				<!-- 活动信息 -->
+				<div class="huodong_xinxi clearfix">
+					<img src="<?php echo config('admin_path');?>{$activity_info['details_portrait']}" class="fl" alt="">
+					<div class="fl">
+						<p><b>主讲人：</b>{$activity_info['name']}</p>
+						<p><b>讲座时间：</b>{$activity_info['lecture_time']}</p>
+						<p><b>讲座地点：</b>{$activity_info['lecture_venue']}</p>
+						<p><b>活动类型：</b>{$activity_info['activity_type']}</p>
+						{if $activity_info['status'] == 1}
+						<a>立即报名</a>
+						{else /}
+						<a class="guoqi">活动过期</a>
+						{/if}
+					</div>
+				</div>
+				
+				<!-- 嘉宾简介 -->
+				<div class="jiabin">
+					{$activity_info['activity_content']|raw}
+				</div>
+				
+				<!-- 标签 -->
+				{notempty name="activity_info['key_arr']"}
+					<p>标签：
+						{volist name="activity_info['key_arr']" id="val"}
+							<a href="javascript:;">{$val}</a>
+						{/volist}
+					</p>
+				{else /}
+					<p>标签：</p>
+				{/notempty}
+				
+				
+				<!-- 分享 -->
+				<div class="clearfix">
+					<div class="bdsharebuttonbox fr">
+						<a href="#" class="bds_weixin" id="wx" data-cmd="weixin"></a>
+						<a href="#" class="bds_tsina" id="xl" data-cmd="tsina"></a>
+						<a href="#" class="bds_qzone" id="qq" data-cmd="qzone"></a>
+						<a id="top" title="返回顶部"></a>
+					</div>
+				</div>
+				<!-- 背景提升项目推荐 -->
+				<div class="bjts_tJ">
+					<h3>背景提升项目推荐</h3>
+					{volist name="promote_info" id="promote_v"}
+					<div class="box clearfix">
+						<a href="/{$promote_v.rewrite}/{$promote_v.id}.html" class="clearfix">
+							<div class="img fl">
+								<img src="<?php echo config('admin_path');?>{$promote_v.thumbnail}" alt="">
+							</div>
+							<div class="fr">
+								<h3>{$promote_v.title}</h3>
+								<p> </p>
+								<p>适合人群:　{$promote_v.target_object}</p>
+							</div>
+						</a>
+					</div>
+					{/volist}
+				</div>
+			</div>
+			<!-- 表单&&热门推荐 -->
+			<div class="fr hotAndForm">
+				<!-- 热门活动讲座 -->
+				<div class="huodong_jz">
+					<h3>热门活动讲座</h3>
+					<span></span>
+					{volist name="popular_list" id="popular_vo"}
+					<div class="box clearfix">
+						<a href="/{$popular_vo.rewrite}/{$popular_vo.id}.html" rel="nofollow" class="fl"><img src="<?php echo config('admin_path');?>{$popular_vo['details_portrait']}" alt=""></a>
+						<div class="fr">
+							<a href="/{$popular_vo.rewrite}/{$popular_vo.id}.html">{$popular_vo.title}</a>
+							<p>{$popular_vo.lecture_time}</p>
+						</div>
+					</div>
+					{/volist}
+				</div>
+				<!-- 热门标签 -->
+				<div class="hot_bq">
+					<h3>热门标签</h3>
+					<span></span>
+					<div class="box clearfix">
+						{volist name="label_list" id="label_list_vo"}
+						<a href="{$label_list_vo.href}" target="_blank" class="fl">{$label_list_vo.title}</a>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- offer 弹出 -->
+		<div class="offerTanchu">
+			<img src="../img/cggs_xq/video_gb.png" class="gb" alt="">
+			<img src="" class="img" alt="">
+		</div>
+		
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+		
+		<script>
+			// 百度分享 自由选择版
+			window._bd_share_config = {
+				"common": {
+					"bdSnsKey": {},
+					"bdText": "",
+					"bdMini": "2",
+					"bdPic": "",
+					"bdStyle": "0",
+					"bdSize": "16"
+				},
+				"share": {},
+				"image": {
+					"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"],
+					"viewText": "分享到：",
+					"viewSize": "16"
+				},
+				"selectShare": {
+					"bdContainerClass": null,
+					"bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+				}
+			};
+			with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
+				'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+		</script>
+		
+		<script type="text/javascript">
+			
+			$('#top').click(function () {
+				$('html,body').animate({scrollTop: '0'}, 1000);
+			})
+			
+			var type = "<?=$activity_info['activity_type']?>";
+			
+			$('.huodong_xinxi>div.fl a').on('click', function () {
+				if( type == '线下' ){
+					$('.tanChuang').css({'display': 'block'});
+				}else if( type == '线上' ){
+					$('.tanChuang2').css({'display': 'block'});
+				}
+			})
+			
+			$('.tanChuang .clear').on("click", function () {
+				$('.tanChuang').css({'display': 'none'});
+			})
+			$('.tanChuang2 .clear').on("click", function () {
+				$('.tanChuang2').css({'display': 'none'});
+			})
+			
+			$('.boxL .jiabin span').removeAttr('style');
+
+		</script>
+		
+	</body>
+</html>

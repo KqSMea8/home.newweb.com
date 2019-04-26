@@ -1,0 +1,504 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/tutor/special.css">
+		<!-- swiper -->
+		<link rel="stylesheet" href="/static/home/css/public/swiper/idangerous.swiper.css" />
+		<script src="/static/home/js/public/swiper/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>	
+	
+		<style type="text/css">
+			.swiper-container4{
+				width: 100%;
+				height: 310px;
+				overflow: hidden;
+			}
+		</style>
+
+	<body>
+
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+
+		<!-- banner -->
+		<div class="banner">
+			<h1>彬彬教育服务团队</h1>
+			<span>首创【六位一体】辅导模式 让留学申请更安心</span>
+			<a href="javascript:;" onclick="go()">免费体验服务</a>
+			
+			<div class="banNav clearfix">
+				<div class="gWidth1170 clearfix">
+					<span class="fl">服务模式</span>
+					<span class="fl">全程咨询导师</span>
+					<span class="fl">全能主申请导师</span>
+					<span class="fl">海外同专业导师</span>
+					<span class="fl">资深流程导师</span>
+					<span class="fl">名校外籍文笔导师</span>
+					<span class="fl">专家督导导师</span>
+					<span class="fl">服务体验</span>
+					<span class="fl">辅导流程</span>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 彬彬服务模式 -->
+		<div id="mydiv" class="daoshi_index" style="height: 695px;">
+			<div class="box clearfix">
+				<!-- title -->
+				<div class="title">
+					<h3>彬彬服务模式</h3>
+					<span></span>
+				</div>
+				<!-- content -->
+				<div class="content gWidth1170">
+					<div class="fl">
+						<ul>
+							<li class="li1">
+								<h3>全程咨询导师</h3>
+								<p>全程申请规划、申请时间进度把控</p>
+							</li>
+							<li class="li2">
+								<h3>全能主导师</h3>
+								<p>选校定位、推荐人筛选、简历咨询、文书咨询、面试辅导</p>
+							</li>
+							<li class="li3">
+								<h3>海外同专业导师</h3>
+								<p>职业规划咨询、选校选专业咨询建议、文书素材把关、模拟面试</p>
+							</li>
+						</ul>
+					</div>
+					<div class="dq">
+						<div>
+							<h3><p>行业首创<br />【六位一体】<br />辅导模式</p></h3>
+						</div>
+					</div>
+					<div class="fr">
+						<ul>
+							<li class="li1 clearfix">
+								<h3>资深流程导师</h3>
+								<p class="fr">网申填写辅导、成绩认证辅导、语言成绩寄送辅导、申请材料的准备指导</p>
+							</li>
+							<li class="li2 clearfix">
+								<h3>名校外籍文笔导师</h3>
+								<p class="fr">文书母语润色、词汇句法优化、素材结构建议</p>
+							</li>
+							<li class="li3 clearfix">
+								<h3>专家督导导师</h3>
+								<p class="fr">跟踪学生申请进度、定期跟踪学生的申请体验、审核学生申请方案</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 全程咨询导师 -->
+		<div class="zixun_daoshi daoshi_index">
+			<div class="box gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>全程咨询导师</h3>
+					<span></span>
+				</div>
+				<!-- content -->
+				<div class="content">
+					<div class="bBox clearfix">
+						<div class="fl leftb">
+							<!-- <h3>名校文科英语母语导师</h3>
+							<p><i>1对1</i>修改润色</p> -->
+							<em>{$tourt_type_list[1]['describe']}</em>
+							<em><b>职责：</b>{$tourt_type_list[1]['adept']}</em>
+							<div class="bBtn clearfix">
+								<a href="javascript:;" onclick="go()" class="fl">匹配专属导师</a>
+								<a href="javascript:;" onclick="go()" class="fl">查看更多导师</a>
+							</div>
+						</div>
+						<div class="fr rightb">
+							{volist name="consultation" id="consultation_v"}
+							<div class="fl">
+								<img src="<?php echo config('admin_path');?>{$consultation_v.thumbnail}" alt="{$consultation_v.title}" title="{$consultation_v.title}">
+								<div class="hiddenTitle">{$consultation_v.title}</div>
+								<div class="hidden">
+									<h3>{$consultation_v.title}</h3>
+									<span></span>
+									<p>{$consultation_v.adept}</p>
+									<a href="/teacher/{$consultation_v.id}.html" target="_blank">个人介绍</a>
+								</div>
+							</div>
+							{/volist}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 全能主申请导师 -->
+		<div class="zhushenq_daoshi daoshi_index gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3>全能主申请导师</h3>
+				<span></span>
+			</div>
+			<!-- content -->
+			<div class="content">
+				<p>{$tourt_type_list[2]['describe']}</p>
+				<p class="p"><b>擅长：</b>{$tourt_type_list[2]['adept']}</p>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						{volist name="apply" id="apply_v"}
+						<div class="swiper-slide">
+							<div class="box">
+								<img src="<?php echo config('admin_path');?>{$apply_v.thumbnail}" alt="{$apply_v.title}" title="{$apply_v.title}">
+								<h3>{$apply_v.title}</h3>
+								<p>{$apply_v.adept}</p>
+								<a href="/teacher/{$apply_v.id}.html" target="_blank">个人介绍</a>
+							</div>
+						</div>
+						{/volist}
+					</div>
+				</div>
+				<div class="leftBtn"></div>
+				<div class="rightBtn"></div>
+			</div>
+			<a  href="javascript:;" onclick="go()">查看更多导师</a>
+		</div>
+		
+		<!-- 海外同专业导师 -->
+		<div class="zhuanye_daoshi daoshi_index">
+			<div class="box gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>海外同专业导师</h3>
+					<span></span>
+				</div>
+				<!-- content -->
+				<div class="content">
+					<p>{$tourt_type_list[3]['describe']}</p>
+					<p><b>擅长：</b>{$tourt_type_list[3]['adept']}</p>
+					<div class="swiper-container2 clearfix">
+						<div class="swiper-wrapper">
+							{volist name="major" id="major_v"}
+							<div class="swiper-slide">
+								<div class="box">
+									<div class="img">
+										<img src="<?php echo config('admin_path');?>{$major_v.thumbnail}" alt="{$major_v.title}" title="{$major_v.title}">
+									</div>
+									<h3>{$major_v.title}</h3>
+									<p>{$major_v.school}</p>
+									<em>{$major_v.major}</em>
+									<a href="/sister/{$major_v.id}.html" target="_blank">个人介绍</a>
+								</div>
+							</div>
+							{/volist}
+						</div>
+					</div>
+					<div class="leftBtn1"></div>
+					<div class="rightBtn1"></div>
+				</div>
+				<div class="ann clearfix">
+					<a onclick="go();">查看更多导师</a><a onclick="go();">匹配与您同专业导师</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 资深流程导师 -->
+		<div class="liucheng_daoshi daoshi_index gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3>资深流程导师</h3>
+				<span></span>
+			</div>
+			<!-- content -->
+			<div class="content">
+				<p>{$tourt_type_list[4]['describe']}</p>
+				<p><b>擅长：</b>{$tourt_type_list[4]['adept']}</p>
+				<div class="box clearfix">
+					<div class="swiper-container4">
+						<div class="swiper-wrapper">
+							{volist name="senior_process" id="senior_process_v"}
+							<div class="swiper-slide">
+								<div class="boxb">
+									<div class="img">
+										<img src="<?php echo config('admin_path');?>{$senior_process_v.thumbnail}" alt="$senior_process_v.title}" title="$senior_process_v.title}">
+									</div>
+									<h3>{$senior_process_v.title}</h3>
+									<p>{$senior_process_v.major}</p>
+									<a href="javascript:;" onclick="go()">与TA聊聊</a>
+								</div>
+							</div>
+							{/volist}
+						</div>
+					</div>
+					<div class="leftBtn2"></div>
+					<div class="rightBtn2"></div>
+				</div>
+				<div class="annn">
+					<a href="javascript:;" onclick="go()">查看更多导师</a><a href="javascript:;" onclick="go()">匹配专属导师</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 名校外籍导师 -->
+		<div class="foreignTutor daoshi_index count" id="foreignTutor">
+			<div class="gWidth1170">
+				<div class="serviceModeTitle">
+					<h2>名校外籍文笔导师</h2>
+					<p></p>
+				</div>
+				<div class="tutorTab clearfix">
+					<p style="color: #fff;font-size: 16px;line-height: 32px;margin-bottom: 46px;">{$tourt_type_list[5]['describe']}<br /><b>擅长：</b>{$tourt_type_list[5]['adept']}</p>
+					<div class="left">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<!-- 第一页数据 -->
+								<div class="swiper-slide">
+									{volist name="foreign_nationality" id="foreign_nationality_v" mod="5" offset="0" length='4'}
+									<ul class="tabLeft">
+										<li class="">
+											<div class="tabBox clearfix">
+												<img src="<?php echo config('admin_path');?>{$foreign_nationality_v['thumbnail']}" style="border-radius: 50px;" class="left" alt="{$foreign_nationality_v.title}" title="{$foreign_nationality_v.title}" />
+												<div class="left">
+													<p>{$foreign_nationality_v.title}</p>
+													<span>{$foreign_nationality_v.school}</span>
+													<span>{$foreign_nationality_v.major}</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+									{/volist}
+								</div>
+								<!-- 第二页数据 -->
+								<div class="swiper-slide">
+									{volist name="foreign_nationality" id="foreign_nationality_v" mod="5" offset="4" length='4'}
+									<ul class="tabLeft">
+										<li>
+											<div class="tabBox clearfix">
+												<img src="<?php echo config('admin_path');?>{$foreign_nationality_v['thumbnail']}" style="border-radius: 50px;" class="left" alt="{$foreign_nationality_v.title}" title="{$foreign_nationality_v.title}" />
+												<div class="left">
+													<p>{$foreign_nationality_v.title}</p>
+													<span>{$foreign_nationality_v.school}</span>
+													<span>{$foreign_nationality_v.major}</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+									{/volist}
+								</div>
+							</div>
+						</div>
+						<div class="fr">
+							<div class="btnL"><span></span></div>
+							<div class="btnR"><span></span></div>
+						</div>
+					</div>
+					<div class="tabRight right">
+						{volist name="foreign_nationality" id="foreign_nationality_con"}
+						<div class="rightBox">
+							<div>
+								{$foreign_nationality_con.personal_profile|raw}
+							</div>
+							<a href="javascript:;" onclick="go()">与TA聊聊</a>
+						</div>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 专家督导导师 -->
+		<div class="dudao_daoshi daoshi_index">
+			<div class="box gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>专家督导导师</h3>
+					<span></span>
+				</div>
+				<!-- content -->
+				<div class="content">
+					<p>{$tourt_type_list[6]['describe']}</p>
+					<p><b>擅长：</b>{$tourt_type_list[6]['adept']}</p>
+					<div class="conBox clearfix">
+						{volist name="supervisor" id="supervisor_v"}
+						<div class="box fl">
+							<img src="<?php echo config('admin_path');?>{$supervisor_v['thumbnail']}" alt="{$supervisor_v['title']}" title="{$supervisor_v['title']}">
+							<p>{$supervisor_v['title']}</p>
+							<span>{$supervisor_v['major']}</span>
+						</div>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 细致入微的导师服务体验 -->
+		<div class="gWidth1170 daoshi_index fuwu_tiyan">
+			<!-- title -->
+			<div class="title">
+				<h3>细致入微的导师服务体验</h3>
+				<span></span>
+			</div>
+			<!-- content -->
+			<div class="content clearfix">
+				<div class="fl tab_title">
+					<div class="div1" id="active">
+						<p>申请季陪<br />伴智囊团</p>
+					</div>
+					<div class="div2">
+						<p>科学的时间<br />安排和计划</p>
+					</div>
+					<div class="div3">
+						<p>密切的<br />沟通交流</p>
+					</div>
+					<div class="div4">
+						<p>无死角的<br />规划辅导</p>
+					</div>
+				</div>
+				<div class="fl tab_content">
+					<div class="box1 clearfix">
+						<p>“六位一体”所有导师为留学生提供24小时答疑服务，学生和家长有任何问题，导师们都会在最短时间内解决，尽一切必要的方式与学生和家长保持联系畅通。</p>
+						<a href="javascript:;" onclick="go()">体验导师服务</a>
+					</div>
+					<div class="box1 clearfix">
+						<p>凡事预则立，不预则废。导师们会在服务开始后跟同学制定科学的时间规划，安排好咨询的进度。并且会根据学生的成长变化，与时俱进，调整计划，让学生能够提早规避掉很多申请过程当中的陷阱，让学生不再因为错过时间点而遗憾。</p>
+						<a href="javascript:;" onclick="go()">体验导师服务</a>
+					</div>
+					<div class="box1 clearfix">
+						<p>在规划期间，主申请导师会每月跟学生沟通并更新计划，彬彬教育的老师们会主要以解决问题为最终目标，为同学们学术活动规划中大大小小的问题提供专业和富有启发性的答案。在申请季期间，主申请导师和班主任也会保持和学生的实时联系，充分开发学生的现有经历和潜能，保证申请进度有条不紊，扎扎实实地应对申请季的挑战。同时在线沟通的方式可以为国内的学生匹配到在国外专业领域学习工作的专业导师，为国内的学生分享申请的经验。</p>
+						<a href="javascript:;" onclick="go()">体验导师服务</a>
+					</div>
+					<div class="box1 clearfix">
+						<p>在申请过程当中，许多背景规划、活动推荐都需要结合专业本身来确定，不同的专业有其独特的规划方案，彬彬教育通过引入专业导师，来为学生提供专业度方面的把关，避免了一些传统模式实际操作中，学生负责给自己规划，顾问负责给学生加油的倒挂现象。同时在文书辅导过程中，针对专业度强的文书，部分传统机构往往无法在文书写作方面给予学生提升和帮助，甚至套用模版。而彬彬教育则针对这个行业和学生的痛点，通过专业导师的辅导为学生提供全方位的服务。</p>
+						<a href="javascript:;" onclick="go()">体验导师服务</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 彬彬导师辅导流程 -->
+		<div class="liucheng daoshi_index">
+			<div class="gWidth1170">
+				<!-- 彬彬导师辅导流程 -->
+				<div class="houqi_jianguan clearfix">
+					<div class="title">
+						<h3>彬彬导师辅导流程</h3>
+						<span></span>
+					</div>
+					<div class="box clearfix">
+						<div class="swiper-container3">
+							<div class="xian"></div>
+							<div class="swiper-wrapper clearfix">
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>规划辅导项目启动</h3>
+										<p>学生信息收集、发送申请信息收集表、规划主导师匹配</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>学生咨询访谈会议</h3>
+										<p>组建微信咨询群、发送会议准备邮件、收集学生问题</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>专属背景提升报告</h3>
+										<p>明确当前的优劣势和规划要点、标准考试选择和安排、课外活动建议、先修课程选择、专业方向咨询</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>计划方案执行</h3>
+										<p>月度主题咨询、根据学生情况灵活调整方案细节、鉴别并筛选学期中各类活动机会、微信答疑沟通、实习科研等申请材料准备</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>成果反馈</h3>
+										<p>总结学生新增经历、记录学生点滴变化、为学生申请季开展打好基础</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>申请季辅导开始</h3>
+										<p>交接学生资料、主导师班主任加入申请智囊团、确定目标细分专业方向</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>选校辅导</h3>
+										<p>开放选校项目数据库和Offer、了解学生选校偏好、介绍学校项目特色和难易程度、分梯度和层次提供建议学校</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>简历推荐信制作</h3>
+										<p>挖掘个人经历、确定写作提纲、逐字逐句修改、外籍导师语言润色</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>核心文书指导</h3>
+										<p>挖掘个性化细节、选择特色切入视角、搭建文书提纲、专业导师专业度把控、外籍导师语言润色</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>网申、成绩认证等流程辅导</h3>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>面试辅导</h3>
+										<p>开放历年来常见面试题目、分享导师面试经验、计时模拟面试</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>飞跃重洋</h3>
+										<p>创建青年留学社区、指导签证机票等行前准备、分享租房缴纳学费购买保险攻略</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="leftBtn"></div>
+						<div class="rightBtn"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+		<!-- 粒子链接 -->
+		<script type="text/javascript" src="/static/home/js/public/canvas-particle.js"></script>
+		<!-- jquery-ui -->
+		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script> -->
+		<!-- 当前页面js -->
+		<script type="text/javascript" src="/static/home/js/tutor/Daoshi.js"></script>
+		<script type="text/javascript">
+			$('.dudao_daoshi .box .content .box:last-child').css({'margin-right': '0'});
+		</script>
+	</body>
+</html>

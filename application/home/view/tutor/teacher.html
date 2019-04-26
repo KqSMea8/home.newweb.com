@@ -1,0 +1,257 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/tutor/tutor.css">
+		<!-- swiper -->
+		<link rel="stylesheet" href="/static/home/css/public/swiper/idangerous.swiper.css" />
+		<script src="/static/home/js/public/swiper/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+
+		<!-- banner -->
+		<div class="topBanner">
+			<div class="gWidth1170 box">
+				<!-- 面包屑导航 -->
+				<div class="clearfix Mbnav">
+					<a href="/" class="fl">美国留学</a><span class="fl">&gt;</span>
+					<a href="/tutor/special" class="fl">服务团队</a><span class="fl">&gt;</span>
+					<a class="fl">{$tutor_info['title']}</a>
+				</div>
+				<div class="xiangqing clearfix">
+					<img src="<?php echo config('admin_path');?>{$tutor_info['details_portrait']}" class="fl" alt="">
+					<div class="fl">
+						<h3>{$tutor_info['title']}</h3>
+						<p>{$tutor_info['type']}</p>
+						<span>擅长：{$tutor_info['adept']}</span>
+						<a onclick="go()">预约申请留学</a>
+					</div>
+				</div>
+				<!-- 表单 -->
+				<div class="form">
+					<h3>预约导师，免费测录取率</h3>
+					<input type="text" class="name" placeholder="您的姓名">
+					<input type="text" class="phone" placeholder="联系方式">
+					<textarea placeholder="留言"></textarea>
+					<button class="button">马上预约</button>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var textpl='';
+			$('.form input').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.form input').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			$('.form textarea').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.form textarea').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.topBanner .box .form button').on('click', function () {
+				var Name = $('.topBanner .box .form input.name').val();
+				var Phone = $('.topBanner .box .form input.phone').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == ''){
+					alert('姓名电话不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						urlsite: url,
+						path_source:path_source,
+						page_title: $('title').eq(0).html(),
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.topBanner .box .form input.name').val('');
+						$('.topBanner .box .form input.phone').val('');
+					}
+				})
+			})
+		</script>
+		
+		<!-- content -->
+		<div class="content gWidth1170">
+			{notempty name="tutor_info['personal_profile']"}
+				<h3 class="title">个人简介<span></span></h3>
+				{$tutor_info['personal_profile']|raw}
+			{/notempty}
+			{notempty name="tutor_info['video']"}
+				<video src="<?php echo config('admin_path');?>{$tutor_info['video']}"  poster="<?php echo config('admin_path');?>{$tutor_info['cover_pic']}"  controls></video>
+			{/notempty}
+			{notempty name="tutor_info['adept_field']"}
+				<h3 class="title">擅长领域<span></span></h3>
+				{$tutor_info['adept_field']|raw}
+			{/notempty}
+			{notempty name="tutor_info['experience']"}
+				<h3 class="title">服务心得<span></span></h3>
+				{$tutor_info['experience']|raw}
+			{/notempty}
+			{notempty name="tutor_info['student_evaluation']"}
+				<h3 class="title">学生评价<span></span></h3>
+				{$tutor_info['student_evaluation']|raw}
+			{/notempty}		
+			{notempty name="case_list"}
+				<h3 class="title">学生故事<span></span></h3>
+				<div class="clearfix">
+				{volist name="case_list" id="val"}
+					<a href="/success/{$val.id}.html">
+						<div class="box fl">
+							<div class="fl">
+								<img src="{$val.xx_logo}" alt="" style="margin-right: 20px;">
+							</div>
+							<div class="fl text">
+								<h3>{$val.title}</h3>
+								<p>{$val.score}{$val['xx_name'][0]}</p>
+							</div>
+						</div>
+					</a>
+				{/volist}
+			{/notempty}
+
+				<!-- <div class="box fl">
+					<div class="img fl">
+						<img src="/static/home/img/xuexiao.png" alt="">
+					</div>
+					<div class="fl text">
+						<h3>南加州大学</h3>
+						<p>从迷茫到清晰 找准方向成功水到渠成</p>
+					</div>
+				</div>
+				<div class="box fl">
+					<div class="img fl">
+						<img src="/static/home/img/xuexiao.png" alt="">
+					</div>
+					<div class="fl text">
+						<h3>南加州大学</h3>
+						<p>从迷茫到清晰 找准方向成功水到渠成</p>
+					</div>
+				</div>
+				<div class="box fl">
+					<div class="img fl">
+						<img src="/static/home/img/xuexiao.png" alt="">
+					</div>
+					<div class="fl text">
+						<h3>南加州大学</h3>
+						<p>从迷茫到清晰 找准方向成功水到渠成</p>
+					</div>
+				</div>
+				<div class="box fl">
+					<div class="img fl">
+						<img src="/static/home/img/xuexiao.png" alt="">
+					</div>
+					<div class="fl text">
+						<h3>南加州大学</h3>
+						<p>从迷茫到清晰 找准方向成功水到渠成</p>
+					</div>
+				</div>
+				<div class="box fl">
+					<div class="img fl">
+						<img src="/static/home/img/xuexiao.png" alt="">
+					</div>
+					<div class="fl text">
+						<h3>南加州大学</h3>
+						<p>从迷茫到清晰 找准方向成功水到渠成</p>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		
+		<style>
+			.content>div .box{
+				width: 50%;
+				margin-bottom: 32px;
+			}
+			.content>div .box img{
+				width: 80px;
+				margin-top: 30px;
+			}
+			.content>div .box .text{
+				line-height: 28px;
+				width: 350px;
+			}
+			.content>div .box h3{
+				/*font-size: 16px;*/
+				margin-top: 44px;
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+			}
+			.content>div .box p{
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+			}
+			.content>div .box h3:hover{
+				color: #FF7062;
+			}
+		</style>
+
+		<!-- offer展示 -->
+		{notempty name="offer_pic"}
+		<div class="offerZs gWidth1170">
+			<h3>offer展示<span></span></h3>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					{volist name="offer_pic" id="vo"}
+					<div class="swiper-slide">
+						<img src="<?php echo config('admin_path');?>{$vo}" alt="">
+					</div>
+					{/volist}
+				</div>
+			</div>
+			<div class="btnleft btn"><img src="/static/home/img/tutor/left.png" alt=""></div>
+			<div class="btnright btn"><img src="/static/home/img/tutor/right.png" alt=""></div>
+		</div>
+		{/notempty}
+		
+		<script type="text/javascript">
+			
+			// swiper
+			var mySwiper = new Swiper('.swiper-container',{
+				slidesPerView : 4,
+			});
+			$('.btnleft').click(function() {
+				mySwiper.swipePrev();
+			});
+			$('.btnright').click(function() {
+				mySwiper.swipeNext();
+			});
+			
+			if( $('.swiper-container .swiper-slide').length <= 4 ){
+				$('.btn').css({'display': 'none'});
+			}else{
+				$('.btn').css({'display': 'block'});
+			}
+			
+			$('span').removeAttr('style');
+			
+		</script>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+	</body>
+</html>

@@ -1,0 +1,14 @@
+User-agent: *
+Disallow:/qa/*
+Disallow:/college/*
+Disallow:/zdhottop/*
+Disallow:/artguidan/*
+Disallow:/zdguide/*
+Disallow:/zdhotsch/*
+Disallow:/fmcontent/*
+Disallow:/acn/*
+Disallow:/member/*
+Disallow:/online/*
+Disallow:/tk/*
+Disallow:/jshottopic/*
+Disallow:/sat/*

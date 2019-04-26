@@ -1,0 +1,982 @@
+/* top swiper */
+.swiper-container{
+	width: 100%;
+	height: 472px;
+	position: relative;
+}
+.swiper-container img{
+	width: 100%;
+	height: 472px;
+}
+.pagination{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+}
+.pagination span{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0 5px;
+}
+.pagination span.swiper-active-switch{
+	background-color: #FF7062;
+}
+
+/* 彬彬教育美国研究生申请 */
+.YjsSq{
+	background: url(/static/home/img/apply/graduate_student/beijing1.png) no-repeat center center;
+}
+
+.YjsSq .title,.Fwts .box .title,#mydiv .box .title,.fuwu_tiyan .title,.Jybox .title,.bjts_xiangmu .title,.daoshi_team .title,.offerBox .title{
+	text-align: center;
+	padding-top: 93px;
+	padding-bottom: 62px;
+}
+.YjsSq .title h3,.Fwts .box .title h3,#mydiv .box .title h3,.fuwu_tiyan .title h3,.Jybox .title h3,.bjts_xiangmu .title h3,.daoshi_team .title h3,.offerBox .title h3{
+	font-weight: normal;
+	font-size: 36px;
+	margin-bottom: 13px;
+	color: #333333;
+}
+.YjsSq .title p,.Fwts .box .title p,#mydiv .box .title p,.fuwu_tiyan .title p,.Jybox .title p,.bjts_xiangmu .title p,.daoshi_team .title p,.offerBox .title p{
+	font-size: 16px;
+	color: #777676;
+}
+
+.YjsSq .content{
+	padding-bottom: 103px;
+}
+.YjsSq .content>div.fl{
+	text-align: center;
+	margin-bottom: 67px;
+}
+.YjsSq .content>div.fl h3{
+	font-weight: normal;
+	font-size: 48px;
+	color: #424345;
+	margin-bottom: 6px;
+}
+.YjsSq .content>div.fl p{
+	font-size: 16px;
+	line-height: 26px;
+	color: #333333;
+}
+.YjsSq .content>div.fl.div1,.YjsSq .content>div.fl.div4{
+	width: 304px;
+	margin-right: 193px;
+}
+.YjsSq .content>div.fl.div2,.YjsSq .content>div.fl.div5{
+	width: 176px;
+	margin-right: 192px;
+}
+.YjsSq .content>div.fl.div3,.YjsSq .content>div.fl.div6{
+	width: 305px;
+}
+.YjsSq .content>div.fl.div4,.YjsSq .content>div.fl.div5,.YjsSq .content>div.fl.div6{
+	margin-bottom: 0;
+}
+
+/* 彬彬服务特色 */
+.Fwts{
+	width: 100%;
+	height: 639px;
+	background: url(/static/home/img/apply/graduate_student/beijing2.png) no-repeat center center;
+}
+
+.Fwts .box .title{
+	padding-bottom: 51px;
+}
+
+.Fwts .box .content>div.fl{
+	width: 20%;
+	height: 320px;
+	cursor:pointer;
+	position: relative;
+}
+.Fwts .box .content>div.fl .t{
+	width: 90px;
+	height: 90px;
+	border: 1px dashed #707070;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 63px;
+	margin-bottom: 26px;
+}
+.Fwts .box .content>div.fl .t .img{
+	margin-top: 28px;
+	background:url(/static/home/img/apply/graduate_student/img.png)  no-repeat;
+	display: inline-block;
+}
+.Fwts .box .content>div.fl .t .img.icon4{height:36px;width:36px;background-position:0 0;}
+.Fwts .box .content>div.fl .t .img.icon5{height:36px;width:36px;background-position:-36px 0;}
+.Fwts .box .content>div.fl .t .img.icon3{height:36px;width:36px;background-position:-72px 0;}
+.Fwts .box .content>div.fl .t .img.icon1{height:36px;width:36px;background-position:-108px 0;}
+.Fwts .box .content>div.fl .t .img.icon2{height:36px;width:36px;background-position:-144px 0;}
+.Fwts .box .content>div.fl>span{
+	width: 24px;
+	height: 3px;
+	display: block;
+	background-color: #707070;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.Fwts .box .content>div.fl>p{
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	width: 128px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 24px;
+}
+.Fwts .box .content>div.fl .hidden{
+	width: 100%;
+	height: 100%;
+	background: url(/static/home/img/apply/graduate_student/tese1.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.Fwts .box .content>div.fl .hidden .p{
+	width: 182px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -91px;
+	transform: translateY(-50%);
+}
+.Fwts .box .content>div.fl .hidden .p p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+}
+
+/* 彬彬服务模式 */
+#mydiv{
+	width: 100%;
+	position: relative;
+}
+#mydiv canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#mydiv .box{
+	height: 100%;
+}
+#mydiv .box .title{
+	padding-bottom: 70px;
+}
+
+#mydiv .box .content{
+	position: relative;
+}
+#mydiv .box .content .dq{
+	width: 375px;
+	height: 364px;
+	background: url(/static/home/img/apply/graduate_student/13223222222.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -27.5px;
+	margin-left: -182px;
+}
+#mydiv .box .content .dq>div{
+	width: 193px;
+	height: 193px;
+	border-radius: 50%;
+	background: url(/static/home/img/apply/undergraduate/3232323232332.png) no-repeat left center;
+	background-size: cover;
+	background-color: #281E1C;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -96.5px;
+	margin-left: -96.5px;
+	overflow: hidden;
+	transition: all 3s;
+}
+#mydiv .box .content .dq>div img{
+	height: 193px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 7;
+}
+#mydiv .box .content .dq>div h3{
+	font-size: 26px;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	color: #fff;
+	/* margin-top: -56.5px; */
+}
+#mydiv .box .content .dq>div h3 p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#mydiv .box .content>div.fl li.li1{
+	margin-bottom: 69px;
+}
+#mydiv .box .content>div.fl li.li1 p{
+	width: 240px;
+}
+#mydiv .box .content>div.fl li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fl li.li2 p{
+	width: 336px;
+}
+#mydiv .box .content>div.fl li.li3 p{
+	width: 432px;
+}
+
+#mydiv .box .content>div.fl h3,#mydiv .box .content>div.fr h3{
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 7px;
+}
+#mydiv .box .content>div.fl p,#mydiv .box .content>div.fr p{
+	font-size: 16px;
+	color: #0F0F0F;
+}
+
+#mydiv .box .content>div.fr{
+	text-align: right;
+}
+#mydiv .box .content>div.fr li.li1 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li1{
+	margin-bottom: 50px;
+}
+#mydiv .box .content>div.fr li.li2 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fr li.li3 p{
+	width: 368px;
+}
+
+/* 强大的国内外导师团队 */
+.daoshi_team{
+	width: 100%;
+	height: 977px;
+	background: url(/static/home/img/apply/graduate_student/beijing3.png) no-repeat top center;
+	background-size: cover;
+	overflow: hidden;
+}
+.daoshi_team .count .b .bBox{
+	display: none;
+}
+
+.daoshi_team .count>div.t{
+	font-size: 16px;
+	margin-bottom: 28px;
+	text-align: center;
+}
+.daoshi_team .count>div.t .tbox{
+	display: inline-block;
+}
+.daoshi_team .count>div.t span{
+	padding: 0 25px;
+	color: #707070;
+}
+.daoshi_team .count>div.t a{
+	color: #232426;
+	padding-bottom: 10px;
+}
+.daoshi_team .count>div.t a.active{
+	color: #FF7062;
+	border-bottom: 2px solid #FF7062;
+}
+
+.daoshi_team .count>div.b .leftb{
+	margin-top: 50px;
+}
+.daoshi_team .count>div.b .leftb h3{
+	font-size: 30px;
+	color: #333333;
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+.daoshi_team .count>div.b .leftb p{
+	font-size: 24px;
+	color: #333333;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	margin-bottom: 23px;
+}
+.daoshi_team .count>div.b .leftb span{
+	width: 72px;
+	height: 4px;
+	background-color: #454545;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	display: block;
+	margin-bottom: 32px;
+}
+.daoshi_team .count>div.b .leftb em{
+	width: 367px;
+	display: block;
+	font-size: 15px;
+	color: #333333;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+.daoshi_team .count>div.b .leftb div.bBtn a{
+	width: 154px;
+	height: 34px;
+	border: 1px solid #333333;
+	line-height: 34px;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 28px;
+}
+.daoshi_team .count>div.b .leftb div.bBtn a:hover{
+	color: #fff;
+	border-color: #FF7062;
+	background-color: #FF7062;
+}
+
+.daoshi_team .count>div.b .rightb{
+	width: 716px;
+}
+.daoshi_team .count>div.b .rightb>div.fl{
+	width: 220px;
+	height: 232px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+	margin-left: 18px;
+	margin-bottom: 20px;
+}
+.daoshi_team .count>div.b .rightb>div.fl img{
+	width: 100%;
+	height: 100%;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden h3{
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400;
+	margin-top: 31px;
+	margin-bottom: 15px;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden span{
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 21px;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden p{
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	width: 90%;
+	margin: 0 auto;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden a{
+	font-size: 14px;
+	color: #fff;
+	width: 98px;
+	height: 28px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 28px;
+	border-radius: 5px;
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -49px;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hidden a:hover{
+	color: #fff;
+	border-color: #FF7062;
+	background-color: #FF7062;
+}
+.daoshi_team .count>div.b .rightb>div.fl .hiddenTitle{
+	width: 100%;
+	height: 52px;
+	background-color: rgba(0,0,0,0.46);
+	text-align: center;
+	line-height: 52px;
+	font-size: 22px;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* 细致入微的导师服务体验 */
+.fuwu_tiyan{
+	padding-bottom: 77px;
+}
+.fuwu_tiyan .content .tab_title{
+	width: 272px;
+	height: 399px;
+	position: relative;
+	margin-left: 111px;
+}
+.fuwu_tiyan .content .tab_title>div{
+	width: 146px;
+	height: 146px;
+	border: 1px solid #E6E6E6;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	display: table;
+	cursor:pointer;
+	overflow: hidden;
+	text-align: center;
+}
+.fuwu_tiyan .content .tab_title>div p{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 20px;
+	color: #5B636D;
+	line-height: 30px;
+}
+.fuwu_tiyan .content .tab_title>div.div1{
+	top: 0;
+	left: 0;
+}
+.fuwu_tiyan .content .tab_title>div.div2{
+	top: 86px;
+	left: 118px;
+}
+.fuwu_tiyan .content .tab_title>div.div3{
+	top: 170px;
+	left: 0;
+}
+.fuwu_tiyan .content .tab_title>div.div4{
+	bottom: 0;
+	right: 0;
+}
+.fuwu_tiyan .content .tab_title>div#active{
+	background-color: #5B636D;
+	border-color: #5B636D;
+}
+.fuwu_tiyan .content .tab_title>div#active p{
+	color: #fff;
+}
+.fuwu_tiyan .content .tab_title>div:hover{
+	background-color: #E9E9E9;
+}
+
+.fuwu_tiyan .content .tab_content .box1{
+	display: none;
+}
+.fuwu_tiyan .content .tab_content .box1 p{
+	width: 571px;
+	font-size: 16px;
+	line-height: 34px;
+	color: #000000;
+	margin-left: 113px;
+	margin-top: 69px;
+}
+.fuwu_tiyan .content .tab_content .box1 a{
+	width: 154px;
+	height: 34px;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 34px;
+	display: block;
+	margin-top: 40px;
+	float: right;
+}
+.fuwu_tiyan .content .tab_content .box1 a:hover{
+	background-color: #FF7062;
+	border-color: #FF7062;
+	color: #FFFFFF;
+}
+
+/* 名校offer最新录取&&学长学姐传授名校申请经验 */
+.offerJy{
+	width: 100%;
+	height: 1597px;
+	background: url(/static/home/img/apply/graduate_student/14c736896a8d48859eddfcaf2e6cd2d6_th.png) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/* 名校offer最新录取 */
+.offerJy .offerBox .content>div.fl{
+	width: 280px;
+	height: 184px;
+	background-size: cover;
+	cursor:pointer;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+.offerJy .offerBox .content>div.fl>img.fl{
+	height: 120px;
+	    position: relative;
+	z-index: 2;
+}
+.offerJy .offerBox .content>div.fl>img{
+	transition: all 1s;
+	transform: scale(1);
+}
+.offerJy .offerBox .content>div.fl>img.img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.offerJy .offerBox .content>div.fl>div.fr{
+	width: 112px;
+	color: #fff;
+	text-align: center;
+	margin-top: 53px;
+	margin-right: 28px;
+}
+.offerJy .offerBox .content>div.fl>div.fr span{
+	display: block;
+	font-size: 36px;
+	margin-bottom: 5px;
+}
+.offerJy .offerBox .content>div.fl>div.fr em{
+	font-size: 18px;
+}
+
+.offerJy .offerBox .content>div.fl:hover>img{
+	transform: scale(1.1);
+}
+
+.Jybox .title{
+	padding-top: 124px;
+}
+
+.Jybox .content .cleft{
+	width: 179px;
+	margin-left: 10px;
+}
+.Jybox .content .cleft h3{
+	font-size: 84px;
+	line-height: 111px;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #DCDCDC;
+	cursor:pointer;
+}
+.Jybox .content .cleft h3.active{
+	color: #FF7062;
+}
+
+.Jybox .content .cright{
+	display: none;
+	overflow: hidden;
+	position: static;
+}
+.Jybox .content .cright h3{
+	font-size: 84px;
+	color: #FF7062;
+	line-height: 111px;
+	margin-right: 25px;
+}
+.Jybox .content .cright div.fl{
+	margin-top: 36px;
+	width: 756px;
+}
+.Jybox .content .cright div.fl .t{
+	font-size: 16px;
+	border-bottom: 1px solid #D5D4D4;
+	margin-bottom: 28px;
+}
+.Jybox .content .cright div.fl .t p{
+	margin-bottom: 10px;
+	color: #333333;
+}
+.Jybox .content .cright div.fl .t p span{
+	margin-right: 50px;
+}
+
+.Jybox .content .cright div.fl .b h4{
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.Jybox .content .cright div.fl .b ul{
+	margin-bottom: 28px;
+}
+.Jybox .content .cright div.fl .b ul li{
+	font-size: 14px;
+	color: #333333;
+	line-height: 22px;
+}
+.Jybox .content .cright div.fl .b p{
+	font-size: 14px;
+	color: #333;
+	line-height: 24px;
+}
+.Jybox .content .cright div.fl .b p span{
+	margin: 0 50px;
+	margin-bottom: 12px;
+}
+.Jybox .content .cright div.fl .b img{
+	width: 120px;
+	height: 161px;
+	margin-bottom: 32px;
+	cursor:pointer;
+}
+.Jybox .content .cright div.fl .b p.p{
+	display: inline-block;
+}
+.Jybox .content .cright>a{
+	display: inline-block;
+	font-size: 14px;
+	color: #FF7062;
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+}
+.Jybox .content .cright>a:hover{
+	text-decoration: underline;
+}
+/* offer弹出 */
+.offtt{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 999;
+}
+.offtt img{
+	width: 600px;
+	height: 800px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -400px;
+	margin-left: -300px;
+}
+.offtt span.cha{
+	width: 36px;
+	height: 36px;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: url(/static/home/img/apply/graduate_student/video_gb.png) no-repeat center center;
+	background-size: cover;
+	cursor:pointer;
+}
+
+/* 全维度高品质背景提升项目 */
+.bjts_xiangmu{
+	padding-bottom: 96px;
+}
+.bjts_xiangmu .title p{
+	width: 338px;
+	margin: 0 auto;
+	line-height: 22px;
+}
+
+.bjts_xiangmu .content>div.t{
+	font-size: 16px;
+	margin-bottom: 28px;
+	text-align: center;
+}
+.bjts_xiangmu .content>div.t .tbox{
+	display: inline-block;
+}
+.bjts_xiangmu .content>div.t span{
+	padding: 0 25px;
+	color: #707070;
+}
+.bjts_xiangmu .content>div.t a{
+	color: #232426;
+	padding-bottom: 10px;
+}
+.bjts_xiangmu .content>div.t a.active{
+	color: #FF7062;
+	border-bottom: 2px solid #FF7062;
+}
+
+.bcontent{
+	display: none;
+}
+
+.bcontent>div.fl{
+	width: 364px;
+	height: 444px;
+	position: relative;
+}
+.bcontent>div.fl img{
+	width: 100%;
+	height: 100%;
+}
+.bcontent>div.fl .hidden_a,.bcontent>div.fr>.box .hidden_a{
+	width: 100%;
+	height: 69px;
+	background:linear-gradient(180deg,rgba(101,98,98,0.1) 0%,rgba(3,3,3,1) 100%);
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	line-height: 69px;
+	position: absolute;
+	bottom: 0;
+	font-weight: bold;
+	text-indent: 21px;
+}
+.bcontent>div.fl .hidden_b,.bcontent>div.fr>.box .hidden_b{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(9,9,9,0.7);
+	position: absolute;
+	top: 0;
+	color: #fff;
+	display: none;
+	text-align: center;
+}
+.bcontent>div.fl .hidden_b .juzhong,.bcontent>div.fr>.box .hidden_b .juzhong{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+}
+.bcontent>div.fl .hidden_b h3,.bcontent>div.fr>.box .hidden_b h3{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.bcontent>div.fl .hidden_b p,.bcontent>div.fr>.box .hidden_b p{
+	font-size: 14px;
+	width: 287px;
+	line-height: 22px;
+	margin: 0 auto;
+	margin-bottom: 19px;
+}
+.bcontent>div.fl .hidden_b a,.bcontent>div.fr>.box .hidden_b a{
+	width: 102px;
+	height: 28px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	border-radius: 3px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.bcontent>div.fl .hidden_b a:hover,.bcontent>div.fr>.box .hidden_b a:hover,.bcontent .more:hover{
+	background-color: #FF7062;
+	border-color: #FF7062;
+}
+
+.bcontent>div.fr{
+	width: 767px;
+}
+.bcontent>div.fr>.box{
+	width: 364px;
+	height: 202px;
+	margin-right: 39px;
+	margin-bottom: 40px;
+}
+.bcontent>div.fr>.box img{
+	width: 100%;
+	height: 100%;
+}
+
+.bcontent .more{
+	width: 54px;
+	height: 30px;
+	border: 1px solid #707070;
+	border-radius: 3px;
+	text-align: center;
+	margin-top: 40px;
+}
+.bcontent .more span{
+	width: 8px;
+	height: 16px;
+	display: inline-block;
+	background: url(/static/home/img/apply/graduate_student/anniu.png) no-repeat center center;
+	background-size: cover;
+	margin-top: 7px;
+}
+
+/* 活动讲座 新闻列表 */
+.news{
+	width: 100%;
+	height: 676px;
+	background: url(/static/home/img/apply/graduate_student/beijing5.png) no-repeat center center;
+	background-size: cover;
+}
+
+.news .box>div.fl{
+	padding-top: 94px;
+}
+.news .box>div.fl h3{
+	font-size: 30px;
+	color: #333333;
+	font-weight: normal;
+	margin-bottom: 56px;
+}
+.news .box>div.fl h3 a{
+	display: inline;
+}
+.news .box>div.fl h3 a.fr{
+	font-size: 14px;
+	color: #FF7062;
+	line-height: 40px;
+}
+.news .box>div.fl h3 a.fr:hover{
+	text-decoration: underline;
+}
+.news .box>div.bL{
+	margin-right: 133px;
+}
+.news .box .content>div{
+	width: 466px;
+	height: 148px;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 30px;
+}
+.news .box .content>div .img{
+	width: 124px;
+	height: 124px;
+	overflow: hidden;
+	margin-left: 13px;
+	margin-top: 11px;
+	border-radius: 3px;
+	margin-right: 26px;
+}
+.news .box .content>div img{
+	width: 124px;
+	height: 124px;
+	transition: all 0.5s;
+}
+.news .box .content>div .img:hover img{
+	transform: scale(1.1);
+}
+.news .box .content>div .cLeft{
+	padding-top: 0;
+	margin-top: 20px;
+}
+.news .box .content>div .cLeft h4{
+	font-weight: normal;
+	font-size: 16px;
+	width: 256px;
+	margin-bottom: 19px;
+	color: #0F0F0F;
+}
+.news .box .content>div .cLeft h4 a{
+	color: #0F0F0F;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.news .box .content>div .cLeft h4 a:hover{
+	color: #FF7062;
+}
+.news .box .content>div .cLeft p{
+	color: #727070;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+.news .box .content>div .yyz{
+	width: 80px;
+	height: 26px;
+	display: block;
+	background-color: #FF7062;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 26px;
+	position: absolute;
+	right: 21px;
+	bottom: 14px;
+	border-radius: 3px;
+}
+
+.news .box .content1>ul.fl li{
+	width: 116px;
+	height: 38px;
+	border-radius: 5px;
+	background-color: transparent;
+	text-align: center;
+	line-height: 38px;
+	color: #333333;
+	margin-bottom: 13px;
+	cursor:pointer;
+}
+.news .box .content1>ul.fl li:hover{
+	background-color: #E1E1E1;
+}
+.news .box .content1>ul.fl li.active{
+	background-color: #4D4D4D;
+	color: #fff;
+}
+
+.news .box .content1>div.fl{
+	margin-left: 43px;
+	display: none;
+}
+.news .box .content1>div.fl div{
+	border-bottom: 1px solid #E2DDDD;
+	padding-bottom: 11px;
+	margin-bottom: 16px;
+}
+.news .box .content1>div.fl div h5 a{
+	font-size: 16px;
+	color: #333333;
+	width: 371px;
+	font-weight: normal;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	margin-bottom: 6px;
+}
+.news .box .content1>div.fl div h5 a:hover{
+	color: #FF7062;
+}
+.news .box .content1>div.fl div p{
+	font-size: 12px;
+	color: #B8B7B7;
+	text-align: right;
+}

@@ -1,0 +1,72 @@
+<!-- 浮动表单 -->
+		<div class="formFd">
+			<div class="gWidth1170">
+				<h3>免费定制留学方案</h3>
+				<input type="text" class="name" placeholder="姓名：" />
+				<input type="text" class="phone" placeholder="电话：" />
+				<input type="text" class="nianji" placeholder="申请年级">
+				<button class="button">提交</button>
+				<img src="/static/home/img/clear2.png" alt="">
+			</div>
+		</div>
+		<div class="formGb"><p>美国高中<br />VIP申请</p></div>
+		
+		<style type="text/css">
+		.formFd{width: 100%;height: 84px;background-color: #000000;background-color: rgba(0,0,0,0.8);position: fixed;bottom: 0; overflow: hidden;z-index: 999999;}
+		.formFd h3{display: inline-block;font-size: 22px;color: #FFFFFF;line-height: 84px;color: #FFFFFF;font-weight: normal;margin-right: 35px;}
+		.formFd input{width: 210px;height: 34px;border: 1px solid #ADADAD;border-radius: 3px;text-indent: 15px;color: #FFFFFF;margin-right: 30px;line-height: 34px;}
+		.formFd select{width: 212px;height: 36px;border: 1px solid #ADADAD;border-radius: 3px;color: #999999;text-indent: 15px;line-height: 36px;margin-right: 32px;}
+		.formFd button{width: 92px;height: 36px;background-color: #FFFFFF;text-align: center;line-height: 36px;font-size: 18px;border-radius: 3px;cursor:pointer;margin-top: 0;color: #333333;}
+		.formFd button:hover{background-color: #FF7062;color: #FFFFFF;}
+		.formFd img{width: 20px;height: 20px;position: absolute;right: 0;top: 33px;cursor:pointer;}
+		.formGb{width: 84px;height: 84px;background-color: #000000;background-color: rgba(0,0,0,0.8);position: fixed;left: 20px;bottom: 20px;text-align: center;display: none;border-radius: 3px;cursor:pointer;}
+		.formGb:before{content: '';width: 0;height: 100%;vertical-align: middle;display: inline-block;}
+		.formGb p{font-size: 16px;line-height: 24px;color: #FFFFFF;display: inline-block;vertical-align: middle;}
+		</style>
+		
+		<script type="text/javascript">
+			$('.formFd img').click(function () { $('.formFd').stop().animate({'width': '0'}, function (){ $('.formGb').stop().fadeIn(); }); });
+			$('.formGb').click(function () { $(this).stop().fadeOut();  $('.formFd').stop().animate({'width': '100%'}); });
+			var Val;
+			$('.formFd input').focus(function () { if($(this).attr('placeholder')) { Val = $(this).attr('placeholder') } $(this).removeAttr('placeholder'); })
+			$('.formFd input').blur(function () { if( Val ){ $(this).attr('placeholder', Val) } })
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.formFd .button').on('click', function () {
+				var Name = $('.formFd .name').val();
+				var Phone = $('.formFd .phone').val();
+				var Sclass = $('.formFd .nianji').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == '' || Sclass == '' ){
+					alert('选项内容不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						sclass: Sclass ,// 低龄||高中 0  本科 1 研究生 2  -----> 初中-高中年级 7-12
+						urlsite: url,
+						path_source:path_source
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.formFd .name').val('');
+						$('.formFd .phone').val('');
+						$('.formFd .nianji').val('');
+					}
+				})
+			})
+		</script>

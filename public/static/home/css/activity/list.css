@@ -1,0 +1,347 @@
+
+
+/* banner */
+.banner{
+	width: 100%;
+	height: 340px;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 筛选 */
+.shaiXuan{
+	height: 187px;
+	background-color: #fff;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.16);
+	margin-top: -54px;
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+/* 面包屑导航 */
+.shaiXuan .m_nav{
+	margin: 0 35px;
+	border-bottom: 1px solid #707070;
+	border-bottom: 1px solid rgba(112,112,112,0.6);
+	margin-top: 22px;
+	margin-bottom: 34px;
+	padding-bottom: 14px;
+}
+.shaiXuan .m_nav a,.shaiXuan .m_nav span{
+	float: left;
+	font-size: 14px;
+	color: #666666;
+}
+.shaiXuan .m_nav span{
+	margin: 0 5px;
+}
+/* 筛选项 */
+.shaiXuan .x_x{
+	margin: 0 35px;
+	font-size: 14px;
+}
+.shaiXuan .x_x .x_box{
+	margin-bottom: 25px;
+}
+.shaiXuan .x_x .x_box>span.fl{
+	font-weight: bold;
+	margin-right: 35px;
+}
+.shaiXuan .x_x .x_box>div.fl{
+	width: 1000px;
+}
+.shaiXuan .x_x .x_box>div.fl a{
+	margin-right: 44px;
+}
+.shaiXuan .x_x .x_box>div.fl a.active{
+	color: #FF7062;
+}
+
+/* 列表 */
+.listBox{
+	margin-bottom: 64px;
+}
+.listBox .list{
+	width: 852px;
+	background-color: #fff;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.16);
+}
+.listBox .list .box{
+	margin: 0 35px;
+	margin-top: 35px;
+	border-bottom: 1px solid #707070;
+	border-bottom: 1px solid rgba(112,112,112,0.2);
+	padding-bottom: 35px;
+}
+.listBox .list .box>a{
+	width: 64px;
+	height: 28px;
+	border-radius: 3px;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	bottom: 41px;
+}
+.listBox .list .box .img{
+	width: 256px;
+	height: 144px;
+	overflow: hidden;
+}
+.listBox .list .box .img img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.6s;
+}
+.listBox .list .box .img:hover img{
+	transform: scale(1.1);
+}
+.listBox .list .box div.fr{
+	width: 470px;
+}
+.listBox .list .box div.fr h3{
+	font-weight: normal;
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+.listBox .list .box div.fr h3 a:hover{
+	color: #FF7062;
+}
+.listBox .list .box div.fr p{
+	font-size: 14px;
+	color: #696969;
+	line-height: 22px;
+	margin-bottom: 21px;
+}
+.listBox .list .box div.fr div{
+	font-size: 14px;
+	color: #333333;
+	width: 100%;
+}
+.listBox .list .box div.fr div a{
+	display: inline-block;
+	color: #9B9B9B;
+	margin-right: 10px;
+}
+.listBox .list .box div.fr div a:hover{
+	color: #FF7062;
+}
+.listBox .list .box div.fr div span{
+	margin-right: 4px;
+}
+.listBox .list .box div.fr div em{
+	font-size: 13px;
+	color: #A2A0A0;
+}
+
+/* 分页 */
+.page{
+	margin-top: 35px;
+	margin-bottom: 64px;
+	margin-right: 28px;
+}
+.page ul li a{
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #D7D7D7;
+	font-size: 14px;
+	padding: 0 8px;
+	margin-right: 12px;
+}
+.page ul li span{
+	color: #CCCCCC;
+	margin-right: 12px;
+}
+.page ul li.active a{
+	color: #fff;
+	background-color: #FF8C81;
+	border-color: #FF8C81;
+}
+.page ul li a:hover{
+	color: #fff;
+	background-color: #FF8C81;
+	border-color: #FF8C81;
+}
+
+.page div.fl{
+	margin-left: 36px;
+}
+.page div.fl span{
+	font-size: 14px;
+	margin-right: 12px;
+}
+.page div.fl span input{
+	width: 36px;
+	height: 22px;
+	border: 1px solid #D7D7D7;
+	margin:  0 10px;
+	margin-left: 0;
+	text-align: center;
+}
+.page div.fl button{
+	width: 46px;
+	height: 24px;
+	color: #fff;
+	background-color: #FF8C81;
+	text-align: center;
+	line-height: 24px;
+}
+
+/*  */
+.hotAndForm{
+	width: 292px;
+	background-color: #fff;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.16);
+}
+
+.hotAndForm .fa,.huodong_jz,.bjts_tuijian,.anli{
+	margin-left: 28px;
+	margin-right: 28px;
+	border-bottom: 1px solid #707070;
+	border-color: rgba(112,112,112,0.3);
+	padding-bottom: 45px;
+}
+.hotAndForm .fa h3,.huodong_jz>h3,.bjts_tuijian>h3,.hot_bq>h3,.anli>h3{
+	font-size: 18px;
+	padding-top: 30px;
+	margin-bottom: 8px;
+}
+.hotAndForm .fa span,.huodong_jz>span,.bjts_tuijian>span,.hot_bq>span,.anli>span{
+	width: 36px;
+	height: 3px;
+	background-color: #FF7062;
+	display: block;
+	margin-bottom: 27px;
+}
+.hotAndForm .fa input{
+	width: 100%;
+	border: 1px solid #D7D7D7;
+	border-radius: 3px;
+	height: 38px;
+	margin-bottom: 19px;
+	text-indent: 12px;
+}
+.hotAndForm .fa input::-webkit-input-placeholder{
+    color: #333333;
+}
+.hotAndForm .fa select{
+	width: 100%;
+	height: 38px;
+	border: 1px solid #D7D7D7;
+	border-radius: 3px;
+	stop-color: #333333;
+	padding-left: 10px;
+}
+.hotAndForm .fa textarea{
+	width: 100%;
+	border: 1px solid #D7D7D7;
+	height: 92px;
+	text-indent: 12px;
+	padding-top: 10px;
+	margin-top: 18px;
+	border-radius: 3px;
+}
+.hotAndForm .fa textarea::-webkit-input-placeholder{
+    color: #333333;
+}
+.hotAndForm .fa button{
+	width: 100%;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #FF7062;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+	cursor:pointer;
+}
+.hotAndForm .fa button:hover{
+	opacity: 0.8;
+}
+
+/* 活动讲座 */
+.huodong_jz .box{
+	margin-bottom: 30px;
+}
+.huodong_jz .box img{
+	width: 88px;
+	height: 88px;
+	border-radius: 3px;
+}
+.huodong_jz .box div.fr{
+	width: 128px;
+}
+.huodong_jz .box div.fr a{
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 9px;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.huodong_jz .box div.fr p{
+	font-size: 12px;
+	color: #727070;
+}
+.huodong_jz .box div.fr a:hover{
+	color: #FF7062;
+}
+
+/* 背景提升推荐 */
+.bjts_tuijian .box{
+	margin-bottom: 30px;
+}
+.bjts_tuijian .box img{
+	width: 88px;
+	height: 49px;
+	border-radius: 3px;
+	margin-right: 19px;
+}
+.bjts_tuijian .box>a{
+	width: 112px;
+	font-size: 14px;
+	line-height: 24px;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.bjts_tuijian .box>a:hover{
+	color: #FF7062;
+}
+
+/* 热门标签 */
+.hot_bq{
+	margin: 0 28px;
+	padding-bottom: 60px;
+}
+.hot_bq .box a{
+	width: 50%;
+	font-size: 14px;
+	line-height: 32px;
+	text-align: left;
+}
+.hot_bq .box a:hover{
+	color: #FF7062;
+}
+
+/* 成功案例 */
+.anli p{
+	width: 223px;
+	font-size: 14px;
+	color: #333333;
+	margin-bottom: 18px;
+}
+.anli a{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.anli a:hover{
+	color: #FF7062;
+}

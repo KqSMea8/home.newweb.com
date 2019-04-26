@@ -1,0 +1,1485 @@
+---------------------------------------------------------------
+[ 2019-04-18T10:26:15+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.980001s] [吞吐率：1.02req/s] [内存消耗：3,397.56kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1554776536,1555034393,1555055014,1555404856',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043726s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.030645s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030023s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.031191s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.035503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.031955s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.032134s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.044890s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029377s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031437s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.031332s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.029134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.031099s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.029225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.031344s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029176s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029695s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.029928s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.030763s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.031301s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029644s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.029785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.031291s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.032968s ]
+---------------------------------------------------------------
+[ 2019-04-18T10:27:30+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.749663s] [吞吐率：1.33req/s] [内存消耗：3,398.05kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039202s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.026969s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.025189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.027535s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.028935s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.027511s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.030527s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027822s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.026084s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.025695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.026936s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.028057s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.026921s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.027090s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.025167s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026525s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.026851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.027019s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.026302s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.028479s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.025797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.027551s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.025408s ]
+---------------------------------------------------------------
+[ 2019-04-18T10:27:40+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.761055s] [吞吐率：1.31req/s] [内存消耗：3,398.16kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554451',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039255s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.026618s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.025284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.028339s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.026777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.027361s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.027538s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.030397s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.026572s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027488s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.027257s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.025258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.027383s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.027201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.032087s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.025148s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.025754s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.026772s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.027386s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.026196s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026190s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.026332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.027632s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.026233s ]
+---------------------------------------------------------------
+[ 2019-04-18T10:29:57+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22580.html
+[运行时间：0.861971s] [吞吐率：1.16req/s] [内存消耗：3,402.53kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554461',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationsvd/22572.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22580',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.045270s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.031496s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.031058s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.032754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.032067s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22580 LIMIT 1 [ RunTime:0.032525s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22580  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.036619s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030438s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031384s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.031704s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.030768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.031511s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.031243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.030920s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030312s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030670s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.030373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.031744s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.031051s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031262s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.030917s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.031125s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.032707s ]
+---------------------------------------------------------------
+[ 2019-04-18T10:30:40+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：1.126643s] [吞吐率：0.89req/s] [内存消耗：3,398.17kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554601',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046699s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.034578s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.031584s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.264737s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.033057s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.033419s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.049377s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031570s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030633s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.033118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.031736s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.030940s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.032390s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.031641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.033427s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031148s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030473s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.031341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.034610s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.031211s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031072s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.030341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.031484s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.030613s ]
+---------------------------------------------------------------
+[ 2019-04-18T11:31:39+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.364867s] [吞吐率：2.74req/s] [内存消耗：3,058.03kb] [文件加载：91]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554641',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041428s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.028649s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.028267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.028208s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.028477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.027110s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.027703s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.042732s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.044231s ]
+---------------------------------------------------------------
+[ 2019-04-18T11:31:39+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.149751s] [吞吐率：6.68req/s] [内存消耗：2,976.20kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554641',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationsvd/22572.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.045363s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.037495s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.031606s ]
+---------------------------------------------------------------
+[ 2019-04-18T11:32:36+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.410643s] [吞吐率：2.44req/s] [内存消耗：3,164.13kb] [文件加载：91]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554641',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048965s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.027521s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.029624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.030920s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.027314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.038846s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.029361s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.046147s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.088417s ]
+---------------------------------------------------------------
+[ 2019-04-18T11:36:14+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.723036s] [吞吐率：1.38req/s] [内存消耗：3,164.30kb] [文件加载：91]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554641',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.045572s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.032459s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.031951s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.285853s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.032647s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.032009s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.049401s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.132355s ]
+---------------------------------------------------------------
+[ 2019-04-18T11:36:14+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.136508s] [吞吐率：7.33req/s] [内存消耗：2,976.23kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554641',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationsvd/22572.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044192s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.030774s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.029253s ]
+---------------------------------------------------------------
+[ 2019-04-18T11:36:29+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.964567s] [吞吐率：1.04req/s] [内存消耗：3,408.35kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555554641',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057864s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.034632s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.026698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.027685s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.035222s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.030883s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.045352s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.081451s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029410s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029237s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.028422s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.029686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.030240s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.030119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.032534s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032712s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032040s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.035352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.028550s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.028496s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.033032s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.032021s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.030475s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.032560s ]
+---------------------------------------------------------------
+[ 2019-04-18T11:44:02+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：1.267279s] [吞吐率：0.79req/s] [内存消耗：3,210.45kb] [文件加载：94]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555558590',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.051732s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.047074s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.056099s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.043605s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031915s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.045900s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.031307s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.055201s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.102458s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.045967s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.045118s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.032815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.047946s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.043284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.044202s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.041860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.042605s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.040264s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.046727s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.051584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.035690s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.043835s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.045298s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.042530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.042454s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.042355s ]
+---------------------------------------------------------------
+[ 2019-04-18T11:44:41+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：1.342407s] [吞吐率：0.74req/s] [内存消耗：3,311.47kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555559043',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048399s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.049013s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.050287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.065074s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.065025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.068975s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.059830s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.079157s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.115099s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.062242s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031970s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.032708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.033030s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.032537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.032433s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.034448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.032851s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.033844s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031522s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.033250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.032452s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.036395s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054173s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.051891s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.053195s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.042891s ]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+---------------------------------------------------------------
+[ 2019-04-18T13:55:56+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.386208s] [吞吐率：2.59req/s] [内存消耗：3,164.13kb] [文件加载：91]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555559082',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047000s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.029792s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.029702s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.031569s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.027998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.027762s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.031974s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.044818s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.073660s ]
+---------------------------------------------------------------
+[ 2019-04-18T13:55:56+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.146118s] [吞吐率：6.84req/s] [内存消耗：2,976.23kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555559082',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationsvd/22572.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046420s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.032037s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.030755s ]
+---------------------------------------------------------------
+[ 2019-04-18T13:56:14+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.883540s] [吞吐率：1.13req/s] [内存消耗：3,311.04kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555559082',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041078s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.028167s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.029690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.030518s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.029062s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.029935s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.046975s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.087650s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027743s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028377s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.029913s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.027702s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.028883s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.027082s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.029561s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026875s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026691s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.028620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.028685s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.028100s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026778s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.026785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.028556s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.028016s ]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+---------------------------------------------------------------
+[ 2019-04-18T13:57:38+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.345811s] [吞吐率：2.89req/s] [内存消耗：3,033.72kb] [文件加载：91]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555566974',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053445s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.033931s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.031710s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.031512s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.031650s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.054494s ]
+---------------------------------------------------------------
+[ 2019-04-18T13:58:33+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.476205s] [吞吐率：2.10req/s] [内存消耗：3,107.09kb] [文件加载：91]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555566974',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.040989s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.030086s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.029085s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.036896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.029535s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.029345s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.043435s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.073246s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027041s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029126s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027284s ]
+---------------------------------------------------------------
+[ 2019-04-18T13:58:34+08:00 ] 127.0.0.1 GET home.newweb.com/favicon.ico
+[运行时间：0.133669s] [吞吐率：7.48req/s] [内存消耗：2,976.23kb] [文件加载：93]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555566974',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationsvd/22572.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039378s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.028016s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`rewrite` FROM `clt_new_article_type` [ RunTime:0.029210s ]
+---------------------------------------------------------------
+[ 2019-04-18T13:58:51+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.939130s] [吞吐率：1.06req/s] [内存消耗：3,509.38kb] [文件加载：100]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555566974',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041774s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.029467s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.029118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.029141s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.041448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.029634s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.029493s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.052494s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.106609s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028648s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027908s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027760s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.030070s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.029246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.028976s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.029274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.029148s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026989s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.028817s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.028046s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.029255s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.029444s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027229s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.029080s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.029558s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.034294s ]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+---------------------------------------------------------------
+[ 2019-04-18T13:58:54+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.974952s] [吞吐率：1.03req/s] [内存消耗：3,311.47kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555567132',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046910s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.031793s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031840s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.032673s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.032093s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.032025s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.050327s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.085240s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.032610s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.032349s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.034399s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.031756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.032429s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.030915s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.032716s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030859s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031565s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.031923s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.032515s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.032974s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031434s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.031313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.032244s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.030836s ]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+---------------------------------------------------------------
+[ 2019-04-18T13:58:55+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：0.948767s] [吞吐率：1.05req/s] [内存消耗：3,311.47kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555567132',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.045682s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.033225s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.031932s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.031979s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.031923s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.049365s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.079149s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030893s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030525s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.032207s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.030829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.031926s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.031034s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.032123s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030637s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030768s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.030854s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.030949s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.031364s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030138s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.031519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.031401s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.031380s ]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+---------------------------------------------------------------
+[ 2019-04-18T13:59:00+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22580.html
+[运行时间：0.858697s] [吞吐率：1.16req/s] [内存消耗：3,307.56kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555567136',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://home.newweb.com/informationsvd/22572.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22580',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041962s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.027626s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.033463s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.029592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.028539s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22580 LIMIT 1 [ RunTime:0.027904s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22580  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.043804s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22580  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.073360s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028389s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027752s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.028399s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.028389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.028486s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.027928s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.030284s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.028929s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027840s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.027869s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.026959s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027111s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.027418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.027400s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.028818s ]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+[ error ] [8]未定义数组索引: rewrite[E:\PHPTutorial\WWW\home.newweb.com\runtime\temp\1f6ee8ed54f157c95bfc8a175cb66e30.php:483]
+---------------------------------------------------------------
+[ 2019-04-18T14:00:30+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：1.107254s] [吞吐率：0.90req/s] [内存消耗：3,285.23kb] [文件加载：94]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555567148',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043335s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.028884s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.027166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.029284s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.027725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.029797s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.029122s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.047601s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028603s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029032s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028658s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.074597s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027005s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.028474s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 197 LIMIT 1 [ RunTime:0.027538s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.034564s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027249s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 200 LIMIT 1 [ RunTime:0.027688s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027554s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.028399s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.028049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.028821s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.027863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.028789s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027291s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027365s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.029119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.028477s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.029237s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030607s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.027154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.029704s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.027199s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:00:49+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：1.137813s] [吞吐率：0.88req/s] [内存消耗：3,483.23kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555567230',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048665s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.029185s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.029856s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.029439s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.029584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.029120s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.030267s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.047271s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027025s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.026808s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027750s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.081876s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031283s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.032728s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 197 LIMIT 1 [ RunTime:0.027261s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.027174s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027474s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 200 LIMIT 1 [ RunTime:0.027705s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028088s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028811s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.027902s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.027031s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.035287s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.029809s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.029803s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.028720s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029015s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.027883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.027707s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.029860s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.026978s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.026685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.027600s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.029464s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:51:48+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：1.411891s] [吞吐率：0.71req/s] [内存消耗：3,483.70kb] [文件加载：97]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555567250',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043552s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.028027s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.026979s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.028626s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.028227s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.035660s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.346034s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028105s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028207s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027377s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.086982s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028492s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.028317s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 197 LIMIT 1 [ RunTime:0.027412s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.027133s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.032582s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 200 LIMIT 1 [ RunTime:0.027338s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028527s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.027591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.028423s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.027785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.028155s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.027304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.027834s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027454s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027557s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.027410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.028768s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.026926s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.027673s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.027461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.027472s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.027091s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:51:49+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：1.161389s] [吞吐率：0.86req/s] [内存消耗：3,285.79kb] [文件加载：94]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555567250',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046851s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.030609s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.033908s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.030706s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.030139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.030863s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.030533s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.048826s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029582s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029502s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029832s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.079269s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.032358s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.036167s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 197 LIMIT 1 [ RunTime:0.030590s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.029535s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028937s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 200 LIMIT 1 [ RunTime:0.029458s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.028981s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.029506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.030903s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.029842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.031079s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.030068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.030721s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029101s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029483s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.030877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.030861s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.029003s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.029791s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.029395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.030267s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.029231s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:53:04+08:00 ] 127.0.0.1 GET home.newweb.com/informationsvd/22572.html
+[运行时间：1.217712s] [吞吐率：0.82req/s] [内存消耗：3,285.79kb] [文件加载：94]
+[ info ] [ LANG ] E:\PHPTutorial\WWW\home.newweb.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_01e274a68687048b409421c6d427bdd1=1555034393,1555055014,1555404856,1555554376; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; Hm_lpvt_01e274a68687048b409421c6d427bdd1=1555570310',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'home.newweb.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22572',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\PHPTutorial\WWW\home.newweb.com\application\home\view\article\info.html [ array (
+  0 => 'apply_stage_list',
+  1 => 'article_type_list',
+  2 => 'pc_url',
+  3 => 'label_list',
+  4 => 'column_tdk_res',
+  5 => 'tui_list',
+  6 => 'info',
+  7 => 'activity_info',
+  8 => 'promote_info',
+  9 => 'rigth_list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046272s ] mysql:host=114.215.19.10;port=3306;dbname=xinweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_apply_stage` [ RunTime:0.031688s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`url` FROM `clt_new_apply_stage` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article_type` [ RunTime:0.032988s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`describe`,`keyword` FROM `clt_new_article_type` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.031465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_article` [ RunTime:0.031489s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_new_article` WHERE  `id` = 22572 LIMIT 1 [ RunTime:0.031796s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `type` = 65  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 3 [ RunTime:0.050085s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031429s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030398s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030664s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`cover_pic`,`introduction`,`describe`,`add_time`,`type`,`content` FROM `clt_new_article` WHERE  `id` <> 22572  AND `apply_stage` = 3  AND `is_show` = 1 ORDER BY `add_time` DESC LIMIT 8 [ RunTime:0.081873s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031321s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 101 LIMIT 1 [ RunTime:0.032740s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 197 LIMIT 1 [ RunTime:0.030571s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 61 LIMIT 1 [ RunTime:0.031408s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030743s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 200 LIMIT 1 [ RunTime:0.030312s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.030608s ]
+[ sql ] [ SQL ] SELECT `title`,`rewrite` FROM `clt_new_article_type` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.031792s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote` [ RunTime:0.032259s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail` FROM `clt_new_bg_promote` WHERE  `phase` = '3'  AND `open` = '1' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.031441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity` [ RunTime:0.032467s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`details_portrait`,`lecture_time`,`type` FROM `clt_new_activity` WHERE  `open` = '1'  AND `phase` = 3  AND `recommend_id` LIKE '%35%' ORDER BY `sort` DESC LIMIT 2 [ RunTime:0.032477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_activity_articletype` [ RunTime:0.033412s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031144s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_activity_articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.031135s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumbnail`,`type` FROM `clt_new_bg_promote` WHERE  `open` = '1'  AND `recommend_id` LIKE '%29%' ORDER BY `sort` DESC LIMIT 3 [ RunTime:0.032627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_bg_promote_type` [ RunTime:0.036028s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.031541s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.030995s ]
+[ sql ] [ SQL ] SELECT `rewrite` FROM `clt_new_bg_promote_type` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.030447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_new_label` [ RunTime:0.032257s ]
+[ sql ] [ SQL ] SELECT `title`,`href` FROM `clt_new_label` WHERE  `recommend_id` LIKE '%43%' [ RunTime:0.031043s ]

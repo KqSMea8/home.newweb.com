@@ -1,0 +1,355 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/article/info.css">
+	</head>
+	
+	<style>
+		.bdsharebuttonbox .bds_qzone{
+			background-position: center;
+		}
+		.content_c table{
+			width: 100%;
+			text-align: center;
+			border-collapse: collapse;
+			margin-bottom: 30px;
+			border: 1px solid #CCCCCC;
+		}
+		.content_c table tr{
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #CCCCCC;
+		}
+		.content_c table td{
+			font-size: 14px;
+			border: 1px solid #CCCCCC;
+		}
+	</style>
+	<style type="text/css">
+		.M-box3{margin:50px 0 36px;}
+		.M-box3 a{float:left;padding:2px 8px;border:1px solid  #bfbfbf;margin-right:10px;border-radius: 3px;font-size: 14px;}
+		.M-box3 span{float: left;}
+		.M-box3 span.active{background: #FF7062;color: white;border: 1px solid #FF7062;padding: 1px 7px;margin-right:10px;border-radius: 3px;}
+	</style>
+	<body>
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- topBanner -->
+		<div class="banner">
+			<img src="/static/home/img/article/banner.png" alt="">
+		</div>
+
+		<!-- content -->
+		<div class="content clearfix gWidth1170">
+
+			<!-- 丁许峰  修改面包屑导航  19-04-12 -->
+
+			<!-- 面包屑导航 -->
+			<div class="mmbb clearfix">
+				<a href="/">美国留学</a><span>&gt;</span>
+				{eq name="$info.type" value="205"}
+					<a href="{$info.level_two['url']}">{$info.level_two['title']}</a><span>&gt;</span>
+					<a href="/article/0-204-1.html">{$info.level_two['title']}成功案例</a><span>&gt;</span>
+					<a href="">{$info.title}</a>
+				{else /}
+					<a href="{$info.level_two['url']}">{$info.level_two['title']}</a><span>&gt;</span>
+					<a href="/article/{$info.level_two['id']}-{$info.level_three['id']}-1.html">{$info.level_two['title']}{$info.level_three['title']}</a><span>&gt;</span>
+					<a href="">{$info.title}</a>
+				{/eq}
+				
+			</div>
+			<!-- content 主体 -->
+			<div class="fl content_Fl">
+				<!-- 标题 -->
+				<div class="contentTitle">
+					<h1>{$info.title}</h1>
+					<p>{$info.edit_time} · 彬彬教育</p>
+				</div>
+
+				<!-- 摘要 -->
+				<div class="contentZy">
+					<p>{$info.describe}</p>
+				</div>
+
+				<!-- 内容部分 -->
+
+				<div class="content_c">
+					<div>
+						{notempty name="$info['content']"}
+							<?=$info['content'];?>
+						{/notempty}
+						<a href="javascript:;" class="sq">点击收起</a>
+					</div>
+					<a href="javascript:;" class="more">点击查看更多</a>
+				</div>
+				
+				
+				<!-- 标签 -->
+				
+				<p class="biaoq" style="margin-top: 20px;">标签：
+					{volist name="info['keyword']" id="vo"}
+					<a href="javascript:;">{$vo}</a>
+					{/volist}
+				</p>
+
+				<!-- 分享 -->
+				<div class="clearfix">
+					<div class="bdsharebuttonbox fr">
+						<a href="#" class="bds_weixin" id="wx" data-cmd="weixin"></a>
+						<a href="#" class="bds_tsina" id="xl" data-cmd="tsina"></a>
+						<a href="#" class="bds_qzone" id="qq" data-cmd="qzone"></a>
+						<a id="top" title="返回顶部"></a>
+					</div>
+				</div>
+
+				<!-- 推荐文章 -->
+				<div class="tuijianB clearfix">
+					{notempty name="tui_list"}
+						{volist name="tui_list" id="val"}
+							<a href="/{$val.rewrite}/{$val.id}.html" style="margin: 15px;margin-left: 0;margin-bottom: 40px;">
+								<div class="box clearfix">
+									<div class="img fl">
+										<img src="{$val.cover_pic}" class="fl" alt="">
+									</div>
+									<div class="fr" style="width: 580px;">
+										<h3>{$val.title}</h3>
+										<span></span>
+										<!-- <span>{$val.add_time} · 彬彬留学</span> -->
+										<p>{$val.describe}</p>
+									</div>
+								</div>
+							</a>
+						{/volist}
+					{/notempty}
+				</div>
+			</div>
+			<!-- content 推荐列表 -->
+			<div class="fr content_Fr">
+				<!-- 定制方案 -->
+				<div class="fa">
+					<h3>免费定制个性化申请方案</h3>
+					<span></span>
+					<input type="text" placeholder="姓名:" class="name">
+					<input type="text" placeholder="电话:" class="phone">
+					<select name="" id="">
+						<option value="">申请阶段:</option>
+						<option value="中学">中学</option>
+						<option value="本科">本科</option>
+						<option value="研究生">研究生</option>
+					</select>
+					<textarea placeholder="留言"></textarea>
+					<button>免费评估</button>
+				</div>
+				<!-- 热门活动讲座 -->
+				<div class="huodong_jz">
+					<h3>热门活动讲座</h3>
+					<span></span>
+					{notempty name="activity_info"}
+						{volist name="activity_info" id="activity_v"}
+							<div class="box clearfix">
+								<img src="{$activity_v.details_portrait}" class="fl" alt="">
+								<div class="fr">
+									<a href="/{$activity_v.rewrite}/{$activity_v.id}.html">{$activity_v.title}</a>
+									<p>{$activity_v.lecture_time}</p>
+								</div>
+							</div>
+						{/volist}
+					{/notempty}
+				</div>
+				<!-- 背景提升推荐 -->
+				<div class="bjts_tuijian">
+					<h3>背景提升推荐</h3>
+					<span></span>
+					{notempty name="promote_info"}
+						{volist name="promote_info" id="promote_v"}
+							<div class="box clearfix">
+								<img src="{$promote_v.thumbnail}" class="fl" alt="">
+								<a href="/{$promote_v.rewrite}/{$promote_v.id}.html" class="fl">{$promote_v.title}</a>
+							</div>
+						{/volist}
+					{/notempty}
+				</div>
+				<div class="bjts_tuijian">
+					<h3>最新文章推荐</h3>
+					<span></span>
+					{notempty name="rigth_list"}
+						{volist name="rigth_list" id="rigth_v"}
+							<div class="box clearfix" style="margin-bottom: 20px;">
+								<a href="/{$rigth_v.rewrite}/{$rigth_v.id}.html" style="width: 100%; -webkit-line-clamp: 1;" class="fl" title="{$rigth_v.title}">{$rigth_v.title}</a>
+							</div>
+						{/volist}
+					{/notempty}
+				</div>
+				<!-- 热门标签 -->
+				<div class="hot_bq">
+					<h3>热门标签</h3>
+					<span></span>
+					<div class="box clearfix">
+						{volist name="label_list" id="label_list_vo"}
+						<a href="{$label_list_vo.href}" target="_blank" class="fl">{$label_list_vo.title}</a>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 留学问题免费答疑 -->
+		<div class="dayiForm">
+			<div class="gWidth1170 clearfix">
+				<h3>留学问题免费答疑</h3>
+				<div class="form1 clearfix">
+					<input type="text" placeholder="姓名:" class="fl name">
+					<input type="text" placeholder="电话:" class="fl phone">
+					<select>
+						<option value="">申请阶段:</option>
+						<option value="中学">中学</option>
+						<option value="本科">本科</option>
+						<option value="研究生">研究生</option>
+					</select>
+				</div>
+				<textarea rows="" cols="" placeholder="留言"></textarea>
+				<div style="text-align: right; width: 1028px;">
+					<div class="haiwaiRight haiwaiRight1"><a></a></div>
+				</div>
+			</div>
+		</div>
+		
+		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+		<script type="text/javascript" src="/static/home/js/article/info.js"></script>
+		<script type="text/javascript" src="/static/home/js/jquery.pagination.js"></script>
+		<script>
+			inpUt($('.dayiForm textarea'));
+			inpUt($('.dayiForm input'));
+			inpUt($('.fa input'));
+			inpUt($('.fa textarea'));
+			function inpUt (jqDom) {
+				var dayiVal;
+				jqDom.focus(function () {
+					if( $(this).attr('placeholder') ){
+						dayiVal = $(this).attr('placeholder');
+					}
+					$(this).removeAttr('placeholder');
+				})
+				jqDom.blur(function () {
+					if( dayiVal ){
+						$(this).attr('placeholder', dayiVal);
+					}
+				})
+			}
+			
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.content_Fr .fa button').on('click', function () {
+				var Name = $('.content_Fr .fa input.name').val();
+				var Phone = $('.content_Fr .fa input.phone').val();
+				var Sclass = $('.content_Fr .fa select').val();
+				var Question = $('.content_Fr .fa textarea').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == '' ){
+					alert('姓名电话不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						sclass: Sclass ,// 低龄||高中 0  本科 1 研究生 2  -----> 初中-高中年级 7-12
+						question: Question,
+						urlsite: url,
+						path_source:path_source,
+						page_title: '上边表单, '+$('title').eq(0).html(),
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.content_Fr .fa input.name').val('');
+						$('.content_Fr .fa input.phone').val('');
+						$('.content_Fr .fa select').val('');
+						$('.content_Fr .fa textarea').val('');
+					}
+				})
+			})
+			
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.haiwaiRight').on('click', function () {
+				var Name = $('.dayiForm .form1 input.name').val();
+				var Phone = $('.dayiForm .form1 input.phone').val();
+				var Sclass = $('.dayiForm .form1 select').val();
+				var Question = $('.dayiForm textarea').val();
+				var url = window.location.href;
+				if( Name == '' || Phone == '' ){
+					alert('姓名电话不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						sclass: Sclass ,// 低龄||高中 0  本科 1 研究生 2  -----> 初中-高中年级 7-12
+						question: Question,
+						urlsite: url,
+						page_title: '下边表单, '+$('title').eq(0).html(),
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.dayiForm .form1 input.name').val('');
+						$('.dayiForm .form1 input.phone').val('');
+						$('.dayiForm .form1 select').val('');
+						$('.dayiForm textarea').val('');
+					}
+				})
+			})
+			
+		</script>
+		<script type="text/javascript">
+			var contentCHeight = $('.content_c').height();
+			if( contentCHeight <= 1000 ){
+				$('.content_c a.more').css({'display': 'none'});
+				$('.content_c a.sq').css({'display': 'none'});
+			}else{
+				$('.content_c a.more').html( '点击展开剩余&nbsp;' +  parseInt(100 - 1000 / contentCHeight * 100) + '&nbsp;%' );
+				$('.content_c>div').css({'height': '1000px'});
+				$('.content_c>div').addClass('ovh');
+				$('.content_c a.more').on('click' , function () {
+					if($('.content_c>div').attr('style')){
+						$('.content_c>div').removeAttr('style');
+					}
+					$('.content_c>div').removeClass('ovh');
+					$(this).stop().fadeOut();
+				})
+				$('.content_c a.sq').on('click', function () {
+					$('.content_c>div').css({'height': '1000px'});
+					$('.content_c>div').addClass('ovh');
+					$('.content_c a.more').stop().fadeIn();
+					$('body,html').scrollTop(1120);
+				})
+			}
+			$('.content_c table td').removeAttr('style');
+		</script>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+	</body>
+</html>

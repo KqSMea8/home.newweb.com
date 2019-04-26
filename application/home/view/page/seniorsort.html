@@ -1,0 +1,662 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/page/seniorsort.css">
+	</head>
+	<style type="text/css">
+		
+		.bannerTop h1{
+			font-size: 64px;
+			line-height: 88px;
+			padding-top: 167px;
+			padding-bottom: 6px;
+			font-weight: normal;
+			text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+			color: #FFFFFF;
+			text-align: center;
+		}
+		
+	</style>
+	<body>
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!--头部信息 end-->
+		<!-- banner -->
+		<div class="bannerTop">
+			<div class="gWidth1170">
+				<h1>美国高中学校排名</h1>
+				<a href="javascript:;" onclick="go()" >心仪学校排名查询</a>
+			</div>
+		</div>
+		
+		<!-- bannerNav -->
+		<div class="bannerNav">
+			<div class="gWidth1170 clearfix">
+				<span class="fl active">排名要素</span>
+				<span class="fl">2019排名榜单</span>
+				<span class="fl">留学费用</span>
+				<span class="fl">申请方案</span>
+				<span class="fl">申请要求</span>
+				<span class="fl">背景提升</span>
+				<span class="fl">成功案例</span>
+				<span class="fl">彬彬优势</span>
+			</div>
+		</div>
+		<div class="hnav" style="height: 56px; display: none;"></div>
+		
+		<!-- 美国高中排名要素深度解析 -->
+		<div class="pm_index analysis gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3>美国高中排名要素深度解析</h3>
+				<span><em></em></span>
+			</div>
+			<!-- content -->
+			<div class="content gWidth1170 clearfix">
+				<div class="box fl">
+					<img src="/static/home/img/page/gaozhong_pm/icon1.png" alt="">
+					<h4>硬件实力</h4>
+					<p>获得捐款的数额直接影响着学校的教学设施质量。捐款越多，意味着学校拥有越多的资金实力去改善学习环境和教学设备。</p>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/page/gaozhong_pm/icon1.png" alt="">
+					<h4>学术实力</h4>
+					<p>课程体系越完备，师资质量越高，才能更好地帮助学生培养能力，最终进入顶尖大学。</p>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/page/gaozhong_pm/icon1.png" alt="">
+					<h4>名校的入读率</h4>
+					<p>学生进入常春藤大学的比例越高，证明该学校教学质量越优秀。</p>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/page/gaozhong_pm/icon1.png" alt="">
+					<h4>SAT平均成绩</h4>
+					<p>学校每年的SAT平均成绩是排名因素中重要的学术能力体现。</p>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/page/gaozhong_pm/icon1.png" alt="">
+					<h4>国际生比例</h4>
+					<p>国际学生占比代表着学校的多样性，国际生比例在3%-15%。</p>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/page/gaozhong_pm/icon1.png" alt="">
+					<h4>学校规模</h4>
+					<p>学生人数是否具备最基础的标准，有百人学校，也有千人大校。</p>
+				</div>
+			</div>
+			<a href="javascript:;" onclick="go()" >更多排名标准</a>
+		</div>
+		
+		<!-- 2019美国高中学校排名榜单 -->
+		<div class="pm_index List">
+			<div class="gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>2019美国高中学校排名榜单</h3>
+					<span><em></em></span>
+				</div>
+				<!-- content -->
+				<div class="content">
+					<div class="ccTitle clearfix">
+						<a class="active">2019最佳美国寄宿高中排名</a>
+						<a>2019最佳美国走读高中排名</a>
+					</div>
+					<div class="ccContent">
+						<div class="cct clearfix">
+							<span style="width: 68px;">排名</span>
+							<span style="width: 368px;">学校中文名</span>
+							<span style="width: 398px;">学校英文名</span>
+							<span style="width: 158px;">申请条件</span>
+							<span style="width: 155px;">申请咨询</span>
+						</div>
+						<ul class="biaoge" id="bg1">
+							
+						</ul>
+					</div>
+					<div class="ccContent">
+						<div class="cct clearfix">
+							<span style="width: 68px;">排名</span>
+							<span style="width: 368px;">学校中文名</span>
+							<span style="width: 398px;">学校英文名</span>
+							<span style="width: 158px;">申请条件</span>
+							<span style="width: 155px;">申请咨询</span>
+						</div>
+						<ul class="biaoge" id="bg2">
+							
+						</ul>
+					</div>
+				</div>
+				<a href="javascript:;" onclick="go()" >更多院校排名</a>
+			</div>
+		</div>
+		
+		<!-- 美国高中留学费用 -->
+		<div class="pm_index liuxue_fy gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3>美国高中留学费用</h3>
+				<span><em></em></span>
+			</div>
+			<!-- content -->
+			<div class="content clearfix">
+				<div class="box fl">
+					<div class="boxBox">
+						<div class="div1">
+							<h4>学费</h4>
+							<p>走读、寄宿</p>
+							<img src="/static/home/img/page/9_12/anniu.png" alt="">
+						</div>
+						<div class="div2">
+							<p style="width: 270px;">走读中学：每年约45,000-75,000美元<br />寄宿中学：每年约45,000-80,000美元<br />（具体费用请参考学校官网）</p>
+							<a href="javascript:;" onclick="go()" >咨询具体费用</a>
+						</div>
+					</div>
+				</div>
+				<div class="box box2 fl">
+					<div class="boxBox">
+						<div class="div1">
+							<h4>生活费</h4>
+							<p>住宿、交通</p>
+							<img src="/static/home/img/page/9_12/anniu.png" alt="">
+						</div>
+						<div class="div2">
+							<p>一般每年约2万美元，纽约、波士顿、旧金山等大城市生活费用会相对高一些。（地区不同生活费用有所不同）</p>
+							<a href="javascript:;" onclick="go()" >咨询具体费用</a>
+						</div>
+					</div>
+				</div>
+				<div class="box box3 fl">
+					<div class="boxBox">
+						<div class="div1">
+							<h4>其它费用</h4>
+							<p>医疗、课本、活动</p>
+							<img src="/static/home/img/page/9_12/anniu.png" alt="">
+						</div>
+						<div class="div2">
+							<p>医疗费每年约500-1000美元；<br />书本费每年约500-800美元；<br />课外活动费用每年约300-1000美元。（具体费用根据学校而定）</p>
+							<a href="javascript:;" onclick="go()" >咨询具体费用</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 美国高中申请方案 -->
+		<div class="pm_index sq_demo gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3>美国高中申请方案</h3>
+				<span><em></em></span>
+			</div>
+			<p>早行动、早规划、早准备，越早申请，通过率越高，学生有更多的时间熟悉美国文化及教育制度；而且有完整的美高成绩，申请美国大学时更有优势。</p>
+			<!-- content -->
+			<div class="content clearfix">
+				<div class="box fl">
+					<h4>初二在读</h4>
+					<span></span>
+					<p>相当于美国8年级</p>
+					<b>可申8/9年级</b>
+					<a href="javascript:;" onclick="go()" >申请详情</a>
+				</div>
+				<div class="box fl">
+					<h4>初三在读</h4>
+					<span></span>
+					<p>相当于美国9年级</p>
+					<b>可申9/10年级</b>
+					<a href="javascript:;" onclick="go()" >申请详情</a>
+				</div>
+				<div class="box fl">
+					<h4>高一在读</h4>
+					<span></span>
+					<p>相当于美国10年级</p>
+					<b>可申10/11年级</b>
+					<a href="javascript:;" onclick="go()" >申请详情</a>
+				</div>
+				<div class="box fl">
+					<h4>高二在读</h4>
+					<span></span>
+					<p>相当于美国11年级</p>
+					<b>可申11/12年级</b>
+					<a href="javascript:;" onclick="go()" >申请详情</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 美国高中申请要求与步骤 -->
+		<div class="pm_index yqAndBz">
+			<div class="gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>美国高中申请要求与步骤</h3>
+					<span><em></em></span>
+				</div>
+				<!-- content -->
+				<div class="content clearfix">
+					<div class="box fl">
+						<div>
+							<div class="img">
+								<img src="/static/home/img/page/gaozhong_pm/tu1.png" alt="申请要求" title="申请要求">
+								<span>申请要求</span>
+							</div>
+							<div class="b">
+								<h4><span></span>学术要求</h4>
+								<p>在校平均分达到80%以上、含金量高的学术奖项、国内外各大竞赛奖项</p>
+								<h4><span></span>标准化考试成绩</h4>
+								<p>语言成绩：托福、小托福、SLEP、SLATE<br />入学考试：SSAT</p>
+								<h4><span></span>申请材料</h4>
+								<p>文书、PS、推荐信、家庭背景</p>
+							</div>
+						</div>
+						<a href="javascript:;" onclick="go()" >点击了解申请详情</a>
+					</div>
+					<div class="box fl">
+						<div>
+							<div class="img">
+								<img src="/static/home/img/page/gaozhong_pm/tu2.png" alt="申请步骤" title="申请步骤">
+								<span>申请步骤</span>
+							</div>
+							<div class="b">
+								<h4><span></span>搜集标准化考试复习材料，加强英语学习</h4>
+								<h4><span></span>锁定目标学校，了解院校申请要求</h4>
+								<h4><span></span>参加标准化考试培训并取得相应成绩</h4>
+								<h4><span></span>索取院校申请表格，寄送成绩，提交申请</h4>
+								<h4><span></span>拿到学校录取通知，申请签证，准备入学</h4>
+							</div>
+						</div>
+						<a href="javascript:;" onclick="go()" >定制个性化留学方案</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 参加背景提升课程 提高美国名校录取几率 -->
+		<div class="pm_index bjts_kc gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3>参加背景提升课程 提高美国名校录取几率</h3>
+				<span><em></em></span>
+			</div>
+			<!-- content -->
+			<div class="content clearfix">
+				<div class="box fl">
+					<div class="img">插班</div>
+					<div class="c">
+						<p>插班是指中国学生利用不同国家学校放假和开学的时间差，赴国外走进当地的学校，进行短期学习，深度体验国外的课堂，感受多元文化。</p>
+						<a href="javascript:;" onclick="go()">规划专属方案</a>
+					</div>
+				</div>
+				<div class="box fl">
+					<div class="img img2">访校</div>
+					<div class="c">
+						<p>深度走访美国精英学校，体验美国特色课程，全面了解美国文化，埋下梦想的种子，提升跨文化交流的能力。</p>
+						<a href="javascript:;" onclick="go()">点击开启访校之旅</a>
+					</div>
+				</div>
+				<div class="box fl">
+					<div class="img img3">夏令营</div>
+					<div class="c">
+						<p>夏令营可以带领孩子们全真体验世界著名学府，拓宽国际视野，丰富人生阅历，增强主动性，培养个性以及国际化、多元化的文化理念和思维习惯。</p>
+						<a href="javascript:;" onclick="go()">私人订制路线</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 彬彬教育名校录取榜 -->
+		<div class="pm_index AdmissionList gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3>彬彬教育名校录取榜</h3>
+				<span><em></em></span>
+			</div>
+			<!-- content -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="box fl">
+							<div class="img fl">
+								<div>
+									<img src="/static/home/img/page/gaozhong_pm/mlh.png" alt="玛丽湖预备中学" title="玛丽湖预备中学">
+								</div>
+								<a href="/success/72.html" target="_blank">与TA同校</a>
+							</div>
+							<div class="fr">
+								<h4>H同学</h4>
+								<p>录取院校：玛丽湖预备中学</p>
+								<p>考试成绩： slep55/67,GPA4.0</p>
+								<p>定制个性化方案：彬彬指导H同学参加了语言培训项目，几次课下来就考出了合适申请的分数。培训期间老师也是不是找他聊天，试图找出他的闪光点。</p>
+							</div>
+						</div>
+						<div class="box fl">
+							<div class="img fl">
+								<div>
+									<img src="/static/home/img/page/gaozhong_pm/wkwejd.png" alt="瓦卡维尔基督教学校" title="瓦卡维尔基督教学校">
+								</div>
+								<a href="/success/94.html" target="_blank" >与TA同校</a>
+							</div>
+							<div class="fr">
+								<h4>Z同学</h4>
+								<p>录取院校：瓦卡维尔基督教学校</p>
+								<p>考试成绩：GPA4.0,托福113,SSAT2400</p>
+								<p>定制个性化方案：申请美国高中有一份让招生官眼前一亮的文书很重要，经过彬彬老师与我父母很好地根据我的情况制订了相应计划，这使我的申请变得容易了许多。</p>
+							</div>
+						</div>
+						<div class="box fl">
+							<div class="img fl">
+								<div>
+									<img src="/static/home/img/page/gaozhong_pm/klsd.png" alt="克里斯蒂安联合高中" title="克里斯蒂安联合高中">
+								</div>
+								<a href="/studentstory/752.html" target="_blank" >与TA同校</a>
+							</div>
+							<div class="fr">
+								<h4>Z同学</h4>
+								<p>录取院校：克里斯蒂安联合高中</p>
+								<p>考试成绩：GPA3.8,托福109</p>
+								<p>定制个性化方案：Z同学性格比较沉稳不爱表达，这对面试非常不利，最后在和彬彬留学规划老师的配合下，Z同学顺利拿到克里斯蒂安联合高中录取通知书。</p>
+							</div>
+						</div>
+						<div class="box fl">
+							<div class="img fl">
+								<div>
+									<img src="/static/home/img/page/gaozhong_pm/mxhst.png" alt="梅西赫斯特预备高中" title="梅西赫斯特预备高中">
+								</div>
+								<a href="/studentstory/751.html" target="_blank" >与TA同校</a>
+							</div>
+							<div class="fr">
+								<h4>L同学</h4>
+								<p>录取院校：梅西赫斯特预备高中</p>
+								<p>考试成绩：GPA3.7,托福112</p>
+								<p>定制个性化方案：L同学在2015年第一次申请失败的经历严重打击了他的自信心，于是找到彬彬留学的老师给他做指导，最后成功获得四所寄宿学校的offer。</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box fl">
+							<div class="img fl">
+								<div>
+									<img src="/static/home/img/page/gaozhong_pm/sml.png" alt="圣玛丽高中" title="圣玛丽高中">
+								</div>
+								<a href="/success/126.html" target="_blank" >与TA同校</a>
+							</div>
+							<div class="fr">
+								<h4>N同学</h4>
+								<p>录取院校：圣玛丽高中</p>
+								<p>考试成绩：GPA:3.5,TOEFL:100,SSAT:2150</p>
+								<p>定制个性化方案：帮N同学制定申请规划和思路，一方面是展现电影制作方面的特长，一方面是向招生官冲分展现学生各方面能力。</p>
+							</div>
+						</div>
+						<div class="box fl">
+							<div class="img fl">
+								<div>
+									<img src="/static/home/img/page/gaozhong_pm/wsdjq.png" alt="威斯顿剑桥学校" title="威斯顿剑桥学校">
+								</div>
+								<a href="/success/115.html" target="_blank" >与TA同校</a>
+							</div>
+							<div class="fr">
+								<h4>K同学</h4>
+								<p>录取院校：威斯顿剑桥学校</p>
+								<p>考试成绩：托福103, SSAT：2220,GPA：3.8</p>
+								<p>定制个性化方案：彬彬教育给该学校的招生官写了邮件推荐这个学生，最终通过与康同学的不屑努力，顺利接到了理想学校的offer。</p>
+							</div>
+						</div>
+						<div class="box fl">
+							<div class="img fl">
+								<div>
+									<img src="/static/home/img/page/gaozhong_pm/wb.png" alt="韦伯中学" title="韦伯中学">
+								</div>
+								<a href="/success/114.html" target="_blank" >与TA同校</a>
+							</div>
+							<div class="fr">
+								<h4>X同学</h4>
+								<p>录取院校：韦伯中学</p>
+								<p>考试成绩：托福105,SSAT：2100,GPA：4.0</p>
+								<p>定制个性化方案：彬彬教育的导师团队为X同学制定了合理的规划和建议，且X同学无论成绩还是志愿一直都很明确，最终成功拿到了梦校的录取通知书。</p>
+							</div>
+						</div>
+						<div class="box fl">
+							<div class="img fl">
+								<div>
+									<img src="/static/home/img/page/gaozhong_pm/lgsy.png" alt="罗格斯预科学校" title="罗格斯预科学校">
+								</div>
+								<a href="/success/108.html" target="_blank" >与TA同校</a>
+							</div>
+							<div class="fr">
+								<h4>G同学</h4>
+								<p>录取院校：罗格斯预科学校</p>
+								<p>考试成绩：GPA：3.5+,TOEFL：90+,SSAT：2000+</p>
+								<p>定制个性化方案：成绩优异的G同学，想就读波士顿大学城的一所名校，经过家长和彬彬全方面的培训，最终以优异的成绩踏入飞往美国波士顿的航班。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pagination"></div>
+		</div>
+		
+		<!-- 彬彬教育致力于让每个学生牵手世界名校 -->
+		<div id="mydiv" class="pm_index" style="height: 695px;">
+			<div class="box gWidth1170 clearfix">
+				<!-- title -->
+				<div class="title">
+					<h3>彬彬教育致力于让每个学生牵手世界名校</h3>
+					<span><em></em></span>
+				</div>
+				<!-- content -->
+				<div class="content gWidth1170">
+					<div class="fl">
+						<ul>
+							<li class="li1">
+								<h3>6位1体</h3>
+								<p>业内首创“6位1体”服务模式；服务客户满意度高达100%</p>
+							</li>
+							<li class="li2">
+								<h3>广资源</h3>
+								<p>1000+校园独家代理；实地考察 真实可靠</p>
+							</li>
+							<li class="li3">
+								<h3>多重认证</h3>
+								<p>留学行业质量认证标准机构、国内十佳品牌诚信<br />留学机构、CSIET评审认证留学机构</p>
+							</li>
+						</ul>
+					</div>
+					<div class="dq">
+						<div>
+							<!-- <img src="/static/home/img/page/7_8/a6e310318cc5a075e8e4a0a459119ad.png" alt=""> -->
+						</div>
+					</div>
+					<div class="fr">
+						<ul>
+							<li class="li1 clearfix">
+								<h3>全覆盖</h3>
+								<p class="fr">600+海外同专业导师覆盖全美TOP100名校<br />让学生提前了解校园生活并提供全程对应辅导</p>
+							</li>
+							<li class="li2 clearfix">
+								<h3>大数据</h3>
+								<p class="fr" style="width: 330px;">120000+超大申请数据库；科学手段狂揽offer</p>
+							</li>
+							<li class="li3 clearfix">
+								<h3>两个“1”</h3>
+								<p class="fr">国内独1拥有海外监管服务中心留学机构<br />国内独1拥有海外院校开发资质的留学机构</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+		
+		<!-- 粒子链接 -->
+		<script type="text/javascript" src="__JS__/newpage/canvas-particle.js"></script>
+		<script type="text/javascript">
+			var t = document.documentElement.scrollTop || document.body.scrollTop;
+			var scroll = true;
+			if(t>=100){
+				$('.abcBannav').css({'display': 'none'});
+				$('.topNav').css({'position': 'static'});
+			}
+			
+			$('.bannerNav span:last-child').css({'margin-right': '0'});
+			var t = document.documentElement.scrollTop || document.body.scrollTop;
+			var nav = $('.bannerNav').offset().top;
+			$gkLength = $('.pm_index').length;
+			window.onscroll = function () {
+				var top = document.documentElement.scrollTop || document.body.scrollTop;
+				if(top>=nav){
+					$('.bannerNav').css({'position': 'fixed', 'top': '0', 'z-index': '9999'});
+					$('.hnav').css({'display': 'block'});
+				}else if(top<=$('.analysis').offset().top){
+					$('.bannerNav').css({'position': 'static', 'top':''});
+					$('.hnav').css({'display': 'none'});
+				}
+				for( var i=0; i<$gkLength; i++ ){
+					if( i == $gkLength - 1 ){
+						if( top>=$('.pm_index').eq(i).offset().top ){
+							$('.bannerNav span').removeClass('active');
+							$('.bannerNav span').eq(i).addClass('active');
+						}
+						return;
+					}
+					if( top>=$('.pm_index').eq(i).offset().top - 300 && top<$('.pm_index').eq(i+1).offset().top ){
+						$('.bannerNav span').removeClass('active');
+						$('.bannerNav span').eq(i).addClass('active');
+					}
+				}
+				
+				var top = document.documentElement.scrollTop || document.body.scrollTop;
+				if( !scroll ){
+					return;
+				}
+				if( top >= 100 ){
+					if( $('.topNav').css('position') == 'relative' ){
+						$('.abcBannav').css({'display': 'none'});
+						$('.topNav').css({'position': 'static'});
+					}
+				}else if(top == 0) {
+					$('.abcBannav').css({'display': 'none'});
+					$('.topNav').css({'position': 'relative'});
+				}
+			}
+			$('.bannerNav span').on('click', function () {
+				var index = $('.bannerNav span').index($(this));
+				var offsetTop = $('.pm_index').eq(index).offset().top;
+				$('body, html').stop().animate({scrollTop: offsetTop}, 1500);
+			})
+			// 
+			$('.analysis .content .box:nth-child(3n)').css({'margin-right': '0'});
+			// 
+			$('.List .content .ccTitle a:last-child').css({'margin-right': '0'});
+			$('.List .content .ccContent').eq(0).css('display', 'block');
+			$('.List .content .ccTitle a').click(function () {
+				var index = $('.List .content .ccTitle a').index($(this));
+				$(this).addClass('active').siblings('a').removeClass('active');
+				$('.List .content .ccContent').eq(index).stop().fadeIn().siblings('.ccContent').css({'display': 'none'});
+			})
+			$('.List .content .ccContent .biaoge span:nth-child(5n)').css({'border-right': 'none'});
+			// 
+			$('.liuxue_fy .content .box .boxBox').hover(function (){
+				$(this).children('.div1').css({'display': 'none'});
+				$(this).children('.div2').css({'display': 'inline-block'});
+				$(this).css({'background-color': 'rgba(0,0,0,0.5)'});
+			}, function () {
+				$(this).children('.div1').css({'display': 'inline-block'});
+				$(this).children('.div2').css({'display': 'none'});
+				$(this).css({'background-color': 'rgba(0,0,0,0.3)'});
+			})
+			// 
+			$('.sq_demo .content .box:last-child').css({'margin-right': '0'});
+			// 
+			$('.yqAndBz .content .box:last-child').css({'margin-right': '0'});
+			// 
+			$('.bjts_kc .content .box:last-child').css({'margin-right': '0'});
+			// 
+			// swiper
+			var mySwiper = new Swiper('.swiper-container',{
+				pagination : '.pagination',
+				paginationClickable : true
+			});
+			$('.AdmissionList .swiper-container .box:nth-child(2n)').css({'margin-right': '0'});
+			$('.AdmissionList .pagination span:last-child').css({'margin-right': '0'});
+			// 
+			window.onload = function() {
+				//配置
+				var config = {
+					vx: 4,	//小球x轴速度,正为右，负为左
+					vy: 4,	//小球y轴速度
+					height: 2,	//小球高宽，其实为正方形，所以不宜太大
+					width: 2,
+					count: 200,		//点个数
+					color: "228,228,228", 	//点颜色
+					stroke: "228,228,228", 		//线条颜色
+					dist: 30000, 	//点吸附距离
+					e_dist: 20000, 	//鼠标吸附加速距离
+					max_conn: 10 	//点到点最大连接数
+				}
+			
+				//调用
+				CanvasParticle(config);
+			}
+			
+			//
+			$(window).scroll(function () {
+				if( $(window).scrollTop() + 700 >= $('#mydiv').offset().top ){
+					$('#mydiv .box .dq>div').css({'background-position-x': 'right'});	 
+				}
+				
+				if( $(window).scrollTop() + 700 < $('#mydiv').offset().top ){
+					$('#mydiv .box .dq>div').css({'background-position-x': 'left'});	 
+				}
+			})
+			// 
+			$('.yqAndBz .content .box:nth-child(1)>div .b h4').css({'font-weight': 'bold'});
+			$('.List .content .ccContent .biaoge li:last-child').css({'border-bottom': 'none'});
+			// 
+			$('.coping').css({'position': 'static'});
+			// 
+			$.ajax({
+				url: '/home/index/content',
+				data:{
+					type: 1
+				},
+				dataType:'json',//服务器返回json格式数据
+				type:'post',//HTTP请求类型
+				success:function(data){
+					var Bg1 = document.getElementById('bg1');
+					for(var i=0; i<data.datas.length; i++){
+						Bg1.innerHTML += '<li class="clearfix">'+
+							'<span style="width: 68px;">'+ data.datas[i].id +'</span>'+
+							'<span style="width: 368px;">'+ data.datas[i].school_name +'</span>'+
+							'<span style="width: 398px;">'+ data.datas[i].english_name +'</span>'+
+							'<span style="width: 158px;"><a class="a1" onclick="go()" target="_black">申请条件</a></span>'+
+							'<span style="width: 154px;"><a class="a2" onclick="go()" target="_black">免费评估</a></span>'+
+						'</li>';
+					}
+				},
+			});
+			$.ajax({
+				url: '/home/index/content',
+				data:{
+					type: 2
+				},
+				dataType:'json',//服务器返回json格式数据
+				type:'post',//HTTP请求类型
+				success:function(data){
+					var Bg2 = document.getElementById('bg2');
+					for(var i=0; i<data.datas.length; i++){
+						Bg2.innerHTML += '<li class="clearfix">'+
+							'<span style="width: 68px;">'+ (i+1) +'</span>'+
+							'<span style="width: 368px;">'+ data.datas[i].school_name +'</span>'+
+							'<span style="width: 398px;">'+ data.datas[i].english_name +'</span>'+
+							'<span style="width: 158px;"><a class="a1" onclick="go()" target="_black">申请条件</a></span>'+
+							'<span style="width: 154px;"><a class="a2" onclick="go()" target="_black">免费评估</a></span>'+
+						'</li>';
+					}
+				},
+			});
+		</script>
+		
+		<!-- 高中表单 -->
+		{include file="common/common_highSchool"/}
+		
+	</body>
+</html>

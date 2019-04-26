@@ -1,0 +1,290 @@
+ {include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/promote/list.css">
+		<!-- 分页样式 -->
+		<link rel="stylesheet" href="/static/common/css/page.css" />
+		<style>
+			body{
+				background-color: #F9FAFC;
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- banner -->
+		<div class="banner">
+			<img src="/static/home/img/promote/list/banner_1.png" alt="">
+		</div>
+		
+		<!-- 筛选 -->
+		<div class="shaiXuan gWidth1170">
+			<!-- 面包屑导航 -->
+			<div class="m_nav clearfix">
+				<a href="/">美国留学</a><span>&gt;</span><a href="/page/polymerization.html">背景提升</a>
+			</div>
+			<!-- 筛选项 -->
+			<div class="x_x">
+				<div class="x_box clearfix">
+					<span class="fl">申请阶段:</span>
+					<div class="fl phase">
+						<a href="/project/0-0-1.html" class="fl active">全部</a>
+						<a href="/project/1-0-1.html" class="fl">高中</a>
+						<a href="/project/2-0-1.html" class="fl">本科</a>
+						<a href="/project/3-0-1.html" class="fl">研究生</a>
+					</div>
+				</div>
+				<div class="x_box x_box2 clearfix">
+					<span class="fl">文章类型:</span>
+					<div class="fl">
+						<a href="0" class="fl active">全部</a>
+						{volist name="promote_type" id="vo"}
+							{in name="$vo.id" value="$phase_type"}
+								<a href="{$vo.id}" class="fl">{$vo.bg_promote_type}</a>
+							{/in}
+						{/volist}
+						<!-- <a href="" class="fl">申请规划</a>
+						<a href="" class="fl">院校排名</a>
+						<a href="" class="fl">择校指南</a>
+						<a href="" class="fl">面试指导</a>
+						<a href="" class="fl">留学费用</a>
+						<a href="" class="fl">成功故事</a>
+						<a href="" class="fl">背景提升案例</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- 列表 -->
+		<div class="listBox gWidth1170 clearfix">
+			<!-- 列表 -->
+			<div class="fl list">
+				{volist name="promote_list" id="vo"}
+				<div class="box clearfix">
+					<div class="img clearfix">
+						<img src="<?php echo config('admin_path');?>{$vo['thumbnail']}" class="fl" alt="">
+						<span><p>{$vo.bg_promote_type}</p></span>
+					</div>
+					<div class="fr">
+						<h3><a href="/{$vo.rewrite}/{$vo.id}.html" target="_blank">{$vo.title}</a></h3>
+						<p><b>针对对象：</b>{$vo.target_object}</p>
+						<p><b>时间安排：</b>{$vo.activity_time}</p>
+					</div>
+				</div>
+				{/volist}
+				<!-- 分页 -->
+				<div style="text-align: center;" class="clearfix">
+					{$page|raw}
+				</div>
+				<!-- <div class="page fr">
+					<ul class="fl">
+						<li class="fl"><a href="">上一页</a></li>
+						<li class="fl active"><a href="">1</a></li>
+						<li class="fl"><a href="">2</a></li>
+						<li class="fl"><a href="">3</a></li>
+						<li class="fl"><span>...</span></li>
+						<li class="fl"><a href="">230</a></li>
+						<li class="fl"><a href="">231</a></li>
+						<li class="fl"><a href="">下一页</a></li>
+					</ul>
+					<div class="fl">
+						<span>跳转：<input type="text" >页</span><button>确定</button>
+					</div>
+				</div> -->
+			</div>
+			<!-- 表单&&热门推荐 -->
+			<div class="fr hotAndForm">
+				<!-- 定制方案 -->
+				<div class="fa">
+					<h3>免费定制个性化申请方案</h3>
+					<span></span>
+					<input type="text" placeholder="姓名:" class="name">
+					<input type="text" placeholder="电话:" class="phone">
+					<select name="" id="">
+						<option value="">申请阶段:</option>
+						<option value="0">中学</option>
+						<option value="1">本科</option>
+						<option value="2">研究生</option>
+					</select>
+					<textarea placeholder="留言"></textarea>
+					<button>免费评估</button>
+				</div>
+				<!-- 热门活动讲座 -->
+				<div class="huodong_jz">
+					<h3>背景提升案例</h3>
+					<span></span>
+					{volist name="case_bjts" id="val"}
+					<div class="box clearfix">
+						<div class="img">
+							<img src="{$val['cover_pic']}" class="fl" alt="">
+						</div>
+						<div class="fr">
+							<a href="/informationbjal/{$val.id}.html" target="_blank">{$val.title}</a>
+							<p>{$val.add_time}</p>
+						</div>
+					</div>
+					{/volist}
+				</div>
+				<!-- 热门标签 -->
+				<div class="hot_bq">
+					<h3>热门标签</h3>
+					<span></span>
+					<div class="box clearfix">
+						{volist name="label_list" id="label_list_vo"}
+						<a href="{$label_list_vo.href}" target="_blank" class="fl">{$label_list_vo.title}</a>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+		
+		<script type="text/javascript">
+			
+			$('.huodong_jz .box:last-child').css({'margin-bottom': '0'});
+			$('.bjts_tuijian .box:last-child').css({'margin-bottom': '0'});
+
+			var listB = $('.listBox .list .box .img span p');
+			
+			listB.map(function (index, item) {
+				if(item.innerHTML.length > 4){
+					item.style.width = '100%';
+				}else{
+					item.style.width = '24px';
+				}
+			})
+			
+			var textpl='';
+			$('.hotAndForm input').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.hotAndForm input').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			$('.hotAndForm textarea').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.hotAndForm textarea').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.hotAndForm .fa button').on('click', function () {
+				var Name = $('.hotAndForm .fa input.name').val();
+				var Phone = $('.hotAndForm .fa input.phone').val();
+				var Sclass = $('.hotAndForm .fa select').val();
+				var Question = $('.hotAndForm .fa textarea').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == '' || Sclass == '' || Question == '' ){
+					alert('选项内容不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						sclass: Sclass ,// 低龄||高中 0  本科 1 研究生 2  -----> 初中-高中年级 7-12
+						question: Question,
+						urlsite: url,
+						path_source:path_source
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.hotAndForm .fa input.name').val('');
+						$('.hotAndForm .fa input.phone').val('');
+						$('.hotAndForm .fa select').val('');
+						$('.hotAndForm .fa textarea').val('');
+					}
+				})
+			})
+		</script>
+		<script type="text/javascript">
+			
+			var uRl = window.location.pathname; // 获取url的文件路径
+			function GetRequest(uRl) { // 这是一个把文件路径拆分成[0,1,2]的函数;  
+			   var url = uRl; // 传进来的值
+			   var theRequest = new Object();  
+			   if (url.indexOf("/") != -1) {  
+				  var str = url.substr(1); // 如果第一位是/的话 把它去掉。  
+				  strs = str.split("/");  // 把剩下的部分以 / 来拆分
+				  str2 = strs[1].split("."); // 后面的一位是 .html 所以用.再拆分一次
+				  str3 = str2[0].split("-"); // 第一位是 0-1-2 所以用- 进行最后一次拆分
+			   }  
+			   return str3;  // 得到一个值 并返回
+			}  
+			var urlHtml = GetRequest(uRl); // 把url的文件路径传进函数 进行拆分并已变量存储
+			$('.shaiXuan .x_x .x_box>div.phase a').eq(urlHtml[0]).addClass('active').siblings('a').removeClass('active'); // 给申请阶段附加当前项
+			$('.shaiXuan .x_x .x_box>div.phase a').on('click', function () {
+				sessionStorage.removeItem('active');
+			})
+			var aUrl = $('.shaiXuan .x_x .x_box2>div.fl a') // 获取文章类型的所有a标签
+			if( urlHtml[0] == 0 ){ // 如果刚刚拆分的路径的 第一位是0 那么代表着 申请阶段为全部
+				for( var i=0; i<aUrl.length; i++ ){ // 进行遍历,并挨个赋值路径.
+					aUrl.eq(i).removeClass('active');
+					var type = aUrl.eq(i).attr('href'); // 获取最开始的url 因为当中储存着 文章类型的唯一id
+					aUrl.eq(i).attr('href', '/project/0-'+ type +'-1.html'); // 赋值路径
+				}
+			}else{ // 如果不是0 说明申请阶段 不是全部
+				for( var i=0; i<aUrl.length; i++ ){
+					aUrl.eq(i).removeClass('active');
+					var type = aUrl.eq(i).attr('href'); // 获取id
+					aUrl.eq(i).attr('href', '/project/'+ urlHtml[0] +'-'+ type +'-1.html'); // 赋值路径
+				}
+			}
+			
+			// 文章类型当前项
+			if(urlHtml[0] == 0){
+				sessionStorage.setItem('active', urlHtml[1]);
+			}else{
+				var arrGet = [urlHtml[0],urlHtml[1]].join();
+				var arr = [];
+				for(var i=0; i<aUrl.length; i++){
+					arr.push(GetRequest(aUrl.eq(i).attr('href')).slice(0,2).join());
+				}
+				sessionStorage.setItem('active', arr.indexOf(arrGet));
+			}
+			
+			// 给分页动态更改路径
+			var pageUrl = $('.pagination .x a');
+			for(var i=0; i<pageUrl.length; i++){
+				var uuu = pageUrl.eq(i).attr('href');
+				var uUrl = uuu.split('?');
+				var page = uUrl[1].split("=");
+				var pU = GetRequest(uUrl[0]);
+				pageUrl.eq(i).attr('href', '/project/'+ pU[0] +'-'+ pU[1] +'-'+ page[1] +'.html')
+			}
+			
+			// 给文章类型附加当前项
+			var wzlx = $('.shaiXuan .x_x .x_box2>div.fl a');
+			wzlx.on('click', function () {
+				var index = wzlx.index($(this));
+				sessionStorage.setItem('active', index);
+			})
+			if( !sessionStorage.getItem('active') ){
+				wzlx.eq(0).addClass('active');
+			}else{
+				wzlx.eq(sessionStorage.getItem('active')).addClass('active');
+			}
+			
+		</script>
+	</body>
+</html>

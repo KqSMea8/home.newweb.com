@@ -1,0 +1,280 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/family/index_detail.css">
+
+		<!-- swiper -->
+		<link rel="stylesheet" href="/static/home/css/public/swiper/swiper.min.css" />
+		<script src="/static/home/js/public/swiper/swiper4/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<style type="text/css">
+		body {
+			background-color: #F4F4F4;
+		}
+		.gallery-thumbs{
+			margin-top: -106px;
+			height: 110px;
+		}
+		.swiper-button-next, .swiper-button-prev{
+			top: 42%;
+		}
+	</style>
+
+	<body>
+
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- 面包屑导航 -->
+		<div class="mainbaoNav gWidth1170 clearfix">
+			<a href="/" class="fl">美国留学</a><span class="fl">&gt;</span>
+			<a href="/fmfml/0-1.html" class="fl">寄宿家庭</a><span class="fl">&gt;</span>
+			<a class="fl">{$info.title}</a>
+		</div>
+
+		<!-- 立即咨询 -->
+		<div class="liji_zixun gWidth1170 clearfix">
+			<div class="room-img fl">
+				<!-- Swiper -->
+				<div class="swiper-container gallery-top">
+					<div class="swiper-wrapper">
+						{notempty name="info.pics"}
+							{volist name="info.pics" id="val"}
+								<div class="swiper-slide"><img src="{$val}" alt=""></div>
+							{/volist}
+						{/notempty}
+					</div>
+				</div>
+
+				<div class="swiper-container gallery-thumbs">
+					<div class="swiper-wrapper">
+						{notempty name="info.pics"}
+							{volist name="info.pics" id="val"}
+								<div class="swiper-slide"><img src="{$val}" alt=""></div>
+							{/volist}
+						{/notempty}
+					</div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+				</div>
+			</div>
+			<div class="fr">
+				<h1>{$info.title}</h1>
+				<span>{$info.state_id}  {$info.city_id}</span>
+				<p><b>简介：</b>{$info.introduction}</p>
+				<a href="javascript:;" onclick="go()">立即咨询</a>
+			</div>
+		</div>
+
+		<!-- 寄宿信息 -->
+		<div class="jisu_xinxi gWidth1170 clearfix">
+			<div class="fl">
+				<h3>家庭介绍</h3>
+				{notempty name="info.custom_fields"}
+					{volist name="info.custom_fields" id="val"}
+						<p><b>{$key}:　 </b>{$val|raw}</p>
+					{/volist}
+				{/notempty}
+				<div class="zhoubian">
+					<h3>周边学校</h3>
+					<div class="clearfix">
+						
+					</div>
+					<a href="javascript:;" class="fr">展开更多</a>
+				</div>
+			</div>
+			<div class="fr">
+				<h3>只需5秒，<br />马上预定心仪住家</h3>
+				<span></span>
+				<input type="text" class="name" placeholder="姓名:">
+				<input type="text" class="phone" placeholder="电话:">
+				<input type="text" class="time" placeholder="入住时间:">
+				<button class="button">预定</button>
+				<em></em>
+				<div>
+					<i></i>400-900-9770
+				</div>
+			</div>
+		</div>
+		
+		<style type="text/css">
+			.jisu_xinxi div.fl>h3{padding-left: 20px;font-size: 20px;margin-bottom: 20px;}
+			.jisu_xinxi div.fl>div.zhoubian{padding: 0 20px;margin-top: 62px;}
+			.jisu_xinxi div.fl>div.zhoubian h3{font-size: 20px;margin-bottom: 26px;}
+			.jisu_xinxi div.fl>div.zhoubian .box{width: 50%;margin-bottom: 32px;}
+			.jisu_xinxi div.fl>div.zhoubian .box img{width: 48px;height: 48px;border-radius: 50%;margin-right: 16px;}
+			.jisu_xinxi div.fl>div.zhoubian .box ul{font-size: 15px;padding-top: 2px;}
+			.jisu_xinxi div.fl>div.zhoubian .box ul span{font-size: 14px;}
+			.jisu_xinxi div.fl>div.zhoubian>a{font-size: 14px;padding-right: 57px;}
+			.jisu_xinxi>div.fl{padding-bottom: 38px;}
+		</style>
+		
+		<script type="text/javascript">
+			var textpl='';
+			$('.jisu_xinxi input').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.jisu_xinxi input').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			$('.jisu_xinxi textarea').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.jisu_xinxi textarea').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.jisu_xinxi>div.fr .button').on('click', function () {
+				var Name = $('.jisu_xinxi>div.fr input.name').val();
+				var Phone = $('.jisu_xinxi>div.fr input.phone').val();
+				var Question = $('.jisu_xinxi>div.fr input.time').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == '' || Question == '' ){
+					alert('选项内容不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						question: Question ,// 低龄||高中 0  本科 1 研究生 2  -----> 初中-高中年级 7-12
+						urlsite: url,
+						path_source:path_source
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.jisu_xinxi>div.fr input.name').val('');
+						$('.jisu_xinxi>div.fr input.phone').val('');
+						$('.jisu_xinxi>div.fr input.time').val('');
+					}
+				})
+			})
+		</script>
+
+		<!-- 精品住家推荐 -->
+		<div class="zhujia_tuijian gWidth1170">
+			<div class="title">
+				<h3>精品住家推荐</h3>
+			</div>
+			<div class="clearfix content">
+				{notempty name="tui_list"}
+					{volist name="tui_list" id="val"}
+						<div class="box fl">
+							<a href="/fmcontent/{$val.id}.html" class="img"><img src="{$val.cover_pic}" alt="{$val.title}"></a>
+							<a href="/fmcontent/{$val.id}.html">{$val.title}</a>
+							<span>{$val.state_id}  {$val.city_id}</span>
+						</div>
+					{/volist}
+				{/notempty}
+			</div>
+		</div>
+
+		<script src="/static/home/js/family/JsjtXq.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.jisu_xinxi span').removeAttr('style');
+			
+			console.log(window.location.pathname);
+			function GetRequest(uRl) { // 这是一个把文件路径拆分成[0,1,2]的函数;  
+			   var url = uRl; // 传进来的值
+			   var theRequest = new Object();  
+			   if (url.indexOf("/") != -1) {  
+				  var str = url.substr(1); // 如果第一位是/的话 把它去掉。  
+				  strs = str.split("/");  // 把剩下的部分以 / 来拆分
+				  str2 = strs[1].split("."); // 后面的一位是 .html 所以用.再拆分一次
+				  str3 = str2[0].split("-"); // 第一位是 0-1-2 所以用- 进行最后一次拆分
+			   }  
+			   return str3;  // 得到一个值 并返回
+			}
+			var familyId = GetRequest( window.location.pathname )[0];
+
+			$.ajax({
+				'url': '/home/Family/periphery_school',
+				'dataType': 'json',
+				'type': 'post',
+				'data': {
+					'familyId': familyId,
+					'limit': 1  // 1是初始数据, 0是除初始数据外的所有数据
+				},
+				success: function (res) {
+					console.log(res);
+					if(res.count == 0){
+						$('.zhoubian').css({'display': 'none'});
+						return;
+					}
+					if(res.count <= 4){
+						$('.zhoubian>a').css({'display': 'none'});
+					}
+					var box = $('.zhoubian>div');
+					var str = '';
+					for(var i=0; i<res.datas.length; i++){
+						str += '<div class="box fl">'+
+							'<img src="'+ res.datas[i].logo +'" alt="" class="fl" />'+
+							'<ul class="fl">'+
+								'<li>'+ res.datas[i].name +'</li>'+
+								'<li><span>'+ res.datas[i].grade +'</span></li>'+
+							'</ul>'+
+						'</div>';
+					}
+					box.html(str);
+				}
+			})
+			$('.jisu_xinxi div.fl>div.zhoubian>a').on('click', function () {
+				$.ajax({
+					'url': '/home/Family/periphery_school',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						'familyId': familyId,
+						'limit': 0  // 1是初始数据, 0是除初始数据外的所有数据
+					},
+					success: function (res) {
+						if( res.datas == null ){
+							alert('没有更多数据了~');
+							$('.jisu_xinxi div.fl>div.zhoubian>a').css({'display': 'none'});
+						}else{
+							var box = $('.zhoubian>div');
+							var str = box.html();
+							for(var i=0; i<res.datas.length; i++){
+								str += '<div class="box fl">'+
+									'<img src="'+ res.datas[i].logo +'" alt="" class="fl" />'+
+									'<ul class="fl">'+
+										'<li>'+ res.datas[i].name +'</li>'+
+										'<li><span>'+ res.datas[i].grade +'</span></li>'+
+									'</ul>'+
+								'</div>';
+							}
+							box.html(str);
+							$('.jisu_xinxi div.fl>div.zhoubian>a').css({'display': 'none'});
+						}
+					}
+				})
+			})
+			
+		</script>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+	</body>
+</html>
+
+<!-- <div class="box fl">
+	<img src="http://192.168.1.229/uploads/20190225/family/Michael Belanger Family_1.png" alt="" class="fl" />
+	<ul class="fl">
+		<li>University of Pennsylvania</li>
+		<li><span>9-12年级</span></li>
+	</ul>
+</div> -->

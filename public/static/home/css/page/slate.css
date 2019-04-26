@@ -1,0 +1,661 @@
+/* banner */
+.banner{
+	width: 100%;
+	height: 532px;
+	background: url(/static/home/img/slate/banner.jpg) no-repeat center center;
+	background-size: cover;
+	color: #FFFFFF;
+}
+.banner h1{
+	font-size: 60px;
+	line-height: 88px;
+	font-weight: normal;
+	padding-top: 109px;
+	padding-bottom: 8px;
+	text-shadow:0px 2px 3px rgba(0,0,0,0.69);
+	margin-left: 86px;
+}
+.banner h2,.banner h3{
+	font-size: 40px;
+	line-height: 58px;
+	font-weight: normal;
+	text-shadow:0px 2px 3px rgba(0,0,0,0.69);
+	margin-left: 86px;
+}
+.banner h3{
+	padding-bottom: 50px;
+}
+.banner a{
+	width: 248px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+	color: #6385CC;
+	background-color: #FFFFFF;
+	border-radius: 30px;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.26);
+	margin-left: 86px;
+}
+.banner a:hover{
+	background-color: #D5DCEB;
+}
+.banner a em{
+	width: 38px;
+	height: 38px;
+	background: url(/static/home/img/slate/xiaoshou.png) no-repeat center center;
+	background-size: cover;
+	margin-top: 5px;
+	margin-left: 6px;
+	margin-right: 15px;
+	float: left;
+}
+
+/* bannerNav */
+.bannerNav{
+	width: 100%;
+	height: 60px;
+	background-color: #E8E8E8;
+	line-height: 60px;
+	font-size: 0;
+}
+.bannerNav span{
+	font-size: 18px;
+	margin-right: 100px;
+	cursor:pointer;
+}
+.bannerNav span:hover{
+	color: #6385CC;
+}
+.bannerNav span.active{
+	color: #6385CC;
+	font-weight: bold;
+}
+.navHidden{
+	width: 100%;
+	height: 60px;
+	display: none;
+}
+
+/* title */
+h3.title{
+	font-size: 38px;
+	line-height: 50px;
+	font-weight: normal;
+	padding-top: 90px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+/* SLATE考试介绍 */
+.kaoshi_jieshao .content{
+	width: 100%;
+	height: 235px;
+	border: 1px solid #C3DFE9;
+	border-radius: 5px;
+}
+.kaoshi_jieshao{
+	padding-bottom: 80px;
+}
+.kaoshi_jieshao .content>img.fl{
+	width: 258px;
+	height: 194px;
+	margin-left: 22px;
+	margin-top: 20px;
+}
+.kaoshi_jieshao .content>div.fr{
+	width: 788px;
+	margin-right: 44px;
+	margin-top: 31px;
+}
+.kaoshi_jieshao .content>div.fr p{
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 11px;
+}
+.kaoshi_jieshao .content>div.fr a{
+	font-size: 16px;
+	color: #6385CC;
+}
+.kaoshi_jieshao .content>div.fr a:hover{
+	text-decoration: underline;
+}
+
+/* SLATE考试独特优势 */
+.dute_youshi{
+	width: 100%;
+	height: 681px;
+	background-color: #F8F8F9;
+}
+.dute_youshi .content .box{
+	width: 272px;
+	height: 323px;
+	background: url(/static/home/img/slate/youshi1.jpg) no-repeat center center;
+	background-size: cover;
+	transition: all 0.5s;
+	margin-right: 27px;
+}
+.dute_youshi .content .box2{background-image: url(/static/home/img/slate/youshi2.jpg);}
+.dute_youshi .content .box3{background-image: url(/static/home/img/slate/youshi3.jpg);}
+.dute_youshi .content .box4{background-image: url(/static/home/img/slate/youshi4.jpg);margin-right: 0;}
+.dute_youshi .content .box .hidden{
+	width: 260px;
+	height: 50px;
+	background-color: #000000;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	left: 6px;
+	bottom: 6px;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+.dute_youshi .content .box .hidden h3{
+	text-align: center;
+	font-size: 18px;
+	/* font-weight: normal; */
+	padding-top: 13px;
+	padding-bottom: 19px;
+}
+.dute_youshi .content .box .hidden span{
+	display: block;
+	width: 72px;
+	height: 4px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+.dute_youshi .content .box .hidden p{
+	width: 221px;
+	margin: 0 auto;
+	font-size: 15px;
+	line-height: 24px;
+	color: #FFFFFF;
+	margin-top: 17px;
+}
+.dute_youshi .content .box:hover{
+	box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+}
+.dute_youshi>div>a,.slate_kaoshi>div>a,.kaoshi_neirong>div>a,.jieshou_xuexiao>a{
+	width: 272px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	background-color: #6385CC;
+	border-radius: 3px;
+	color: #FFFFFF;
+	font-size: 18px;
+	margin: 0 auto;
+}
+.dute_youshi>div>a:hover,.slate_kaoshi>div>a:hover,.kaoshi_neirong>div>a:hover,.jieshou_xuexiao>a:hover{
+	opacity: 0.8;
+}
+.dute_youshi .content{
+	margin-bottom: 56px;
+}
+
+/* 选择彬彬SLATE考试 */
+.slate_kaoshi{
+	width: 100%;
+	height: 698px;
+	background: url(/static/home/img/slate/beijing1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.slate_kaoshi h3.title{
+	color: #FFFFFF;
+}
+.slate_kaoshi .content .box{
+	width: 321px;
+	height: 321px;
+	background: url(/static/home/img/slate/bin1.png) no-repeat center center;
+	background-size: cover;
+	margin-right: 103px;
+}
+.slate_kaoshi .content .box2{background-image: url(/static/home/img/slate/bin2.png);}
+.slate_kaoshi .content .box3{background-image: url(/static/home/img/slate/bin3.png); margin-right: 0;}
+.slate_kaoshi .content .box h3{
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	padding-top: 36px;
+	padding-bottom: 14px;
+}
+.slate_kaoshi .content .box span{
+	width: 136px;
+	height: 1px;
+	background-color: #6385CC;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 13px;
+}
+.slate_kaoshi .content .box h4{
+	font-size: 32px;
+	line-height: 42px;
+	color: #6385CC;
+	text-align: center;
+	margin-bottom: 54px;
+}
+.slate_kaoshi .content .box p{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	width: 264px;
+	margin: 0 auto;
+}
+.slate_kaoshi .content{
+	margin-bottom: 64px;
+}
+
+/* SLATE考试内容  */
+.kaoshi_neirong{
+	width: 100%;
+	height: 1070px;
+	background: url(/static/home/img/slate/beijing2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.kaoshi_neirong .content .box{
+	width: 380px;
+	height: 226px;
+	background: url(/static/home/img/slate/neirong1.jpg) no-repeat center center;
+	background-size: cover;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+.kaoshi_neirong .content .box2{background-image: url(/static/home/img/slate/neirong2.jpg);}
+.kaoshi_neirong .content .box3{background-image: url(/static/home/img/slate/neirong3.jpg);margin-right: 0;}
+.kaoshi_neirong .content .box4{background-image: url(/static/home/img/slate/neirong4.jpg);}
+.kaoshi_neirong .content .box5{background-image: url(/static/home/img/slate/neirong5.jpg);}
+.kaoshi_neirong .content .box6{background-image: url(/static/home/img/slate/neirong6.jpg);margin-right: 0;}
+.kaoshi_neirong .content .box .div1:before{
+	content: '';
+	width: 1px;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.kaoshi_neirong .content .box .div1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.kaoshi_neirong .content .box .div1 div{
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	width: 373px;
+	color: #FFFFFF;
+}
+.kaoshi_neirong .content .box .div1 div h3{
+	font-size: 26px;
+	margin-bottom: 11px;
+}
+.kaoshi_neirong .box .div1 div span{
+	font-size: 18px;
+}
+.kaoshi_neirong .box .div2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	display: none;
+}
+.kaoshi_neirong .box .div2:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.kaoshi_neirong .box .div2>div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.kaoshi_neirong .box .div2 p{
+	width: 322px;
+	color: #FFFFFF;
+	text-align: left;
+	font-size: 15px;
+	line-height: 26px;
+}
+.kaoshi_neirong .content{
+	margin-bottom: 50px;
+}
+.kaoshi_neirong .neirong_poa{
+	width: 100%;
+	height: 219px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.kaoshi_neirong .neirong_poa img{
+	width: 246px;
+	height: 162px;
+	margin-top: 29px;
+}
+.kaoshi_neirong .neirong_poa div.fr{
+	width: 744px;
+	padding-top: 46px;
+}
+.kaoshi_neirong .neirong_poa div.fr p{
+	font-size: 18px;
+	line-height: 34px;
+	color: #FFFFFF;
+	letter-spacing:1px;
+}
+.kaoshi_neirong .neirong_poa div.fr a{
+	width: 192px;
+	height: 34px;
+	border: 1px solid #FFFFFF;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 34px;
+	color: #FFFFFF;
+	font-size: 16px;
+	float: right;
+}
+.kaoshi_neirong .neirong_poa div.fr a:hover{
+	background-color: #6385CC;
+	border-color: #6385CC;
+}
+
+/* 接受SLATE考试成绩的学校 */
+.jieshou_xuexiao .content .table1 table,.jieshou_xuexiao .content .table2 table{
+	border: 1px solid #AEC0E6;
+	height: 52px;
+	background-color: #D4E1FB;
+	color: #333333;
+	width: 100%;
+	text-align: center;
+	border-collapse:collapse;
+}
+.jieshou_xuexiao .content .table1 table th,.jieshou_xuexiao .content .table2 table td{
+	border: 1px solid #AEC0E6;
+}
+.jieshou_xuexiao .content .table2{
+	height: 421px;
+	overflow-y: scroll;
+}
+.jieshou_xuexiao .content .table2 table{
+	background-color: transparent;
+	color: #000000;
+	text-align: center;
+}
+.jieshou_xuexiao .content .table2 table td{
+	height: 41px;
+	font-size: 14px;
+}
+.jieshou_xuexiao .content .table2 table td a:hover{
+	color: #8B8EC7;
+	text-decoration: underline;
+}
+.jieshou_xuexiao .content{
+	margin-bottom: 61px;
+}
+.jieshou_xuexiao{
+	padding-bottom: 80px;
+}
+
+/* SLATE考试级别 */
+.kaoshi_jibie{
+	width: 100%;
+	height: 1007px;
+	background: url(/static/home/img/slate/beijing3.jpg) no-repeat center center;
+	background-size: cover;
+}
+.kaoshi_jibie .content{
+	width: 100%;
+	height: 711px;
+	background: url(/static/home/img/slate/border.jpg) no-repeat center center;
+	background-size: cover;
+}
+.kaoshi_jibie .content>div.fl{
+	margin-top: 71px;
+	margin-bottom: 52px;
+	border-right: 1px dashed #6385CC;
+	padding-bottom: 37px;
+}
+.kaoshi_jibie .content>div.fl>h3{
+	text-align: center;
+	font-size: 24px;
+}
+.kaoshi_jibie .content>div.fl ul{
+	margin-left: 100px;
+	padding-top: 68px;
+	margin-right: 106px;
+}
+.kaoshi_jibie .content>div.fl ul li{
+	width: 380px;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #C7C7C7;
+	padding-bottom: 21px;
+}
+.kaoshi_jibie .content>div.fl ul li span{
+	font-size: 18px;
+	font-weight: bold;
+	color: #6385CC;
+	margin-right: 49px;
+}
+.kaoshi_jibie .content>div.fl ul li em{
+	font-size: 18px;
+}
+.kaoshi_jibie .content>div.fl ul li em i{
+	font-weight: bold;
+}
+.kaoshi_jibie .content>div.fl a{
+	width: 180px;
+	height: 40px;
+	font-size: 16px;
+	text-align: center;
+	background-color: #6385CC;
+	color: #FFFFFF;
+	margin: 0 auto;
+	line-height: 40px;
+	border-radius: 3px;
+	margin-top: 40px;
+}
+.kaoshi_jibie .content>div.fl a:hover{
+	opacity: 0.8;
+}
+.kaoshi_jibie .content>div.fr{
+	width: 583px;
+}
+.kaoshi_jibie .content>div.fr h3{
+	font-size: 24px;
+	line-height: 31px;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 48px;
+}
+.kaoshi_jibie .content>div.fr img{
+	width: 392px;
+	height: 525px;
+	display: block;
+	margin: 0 auto;
+}
+.kaoshi_jibie>div>.anniu{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 0;
+}
+.kaoshi_jibie>div>.anniu a{
+	display: inline-block;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #6385CC;
+	border-radius: 3px;
+	padding: 0 26px;
+	color: #FFFFFF;
+}
+.kaoshi_jibie>div>.anniu a.a1{
+	height: 38px;
+	line-height: 38px;
+	margin-left: 30px;
+	background-color: transparent;
+	color: #6385CC;
+	border: 1px solid #6385CC;
+}
+.kaoshi_jibie>div>.anniu a.a1:hover{
+	background-color: #6385CC;
+	color: #FFFFFF;
+}
+
+/* SLATE考试流程 */
+.kaoshi_liucheng .slateOne h4,.kaoshi_liucheng .slateTwo h4,.slateThree h4{
+	font-size: 24px;
+	line-height: 31px;
+	text-align: center;
+	margin-bottom: 29px;
+}
+.kaoshi_liucheng .slateOne h4 em,.kaoshi_liucheng .slateTwo h4 em,.slateThree h4 em{
+	width: 28px;
+	height: 28px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 28px;
+	background-color: #6385CC;
+	color: #FFFFFF;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 12px;
+	margin-bottom: 3px;
+}
+.kaoshi_liucheng .slateOne .contentOne{
+	width: 100%;
+	height: 400px;
+	background: url(/static/home/img/slate/zhenbei.png) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 72px;
+}
+.kaoshi_liucheng .slateOne .contentOne:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.kaoshi_liucheng .slateOne .contentOne>div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.kaoshi_liucheng .slateOne .contentOne p{
+	width: 1060px;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: left;
+}
+.kaoshi_liucheng .slateTwo>p{
+	width: 764px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 32px;
+}
+.kaoshi_liucheng .slateTwo .contentTwo .box{
+	width: 364px;
+	height: 416px;
+	background: url(/static/home/img/slate/liucheng1.jpg) no-repeat center center;
+	background-size: cover;
+	margin-right: 39px;
+	text-align: center;
+}
+.kaoshi_liucheng .slateTwo .contentTwo .box2{background-image: url(/static/home/img/slate/liucheng2.jpg);}
+.kaoshi_liucheng .slateTwo .contentTwo .box3{background-image: url(/static/home/img/slate/liucheng3.jpg);margin-right: 0;}
+.kaoshi_liucheng .slateTwo .contentTwo .box h3{
+	font-size: 24px;
+	line-height: 28px;
+	color: #FFFFFF;
+	margin-bottom: 17px;
+}
+.kaoshi_liucheng .slateTwo .contentTwo .box img{
+	width: 32px;
+	height: 16px;
+}
+.kaoshi_liucheng .slateTwo .contentTwo .box:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.kaoshi_liucheng .slateTwo .contentTwo .box>div.div1{
+	display: inline-block;
+	vertical-align: middle;
+}
+.kaoshi_liucheng .slateTwo .contentTwo .box>div.hidden{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.kaoshi_liucheng .slateTwo .contentTwo .box>div.hidden:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.kaoshi_liucheng .slateTwo .contentTwo .box>div.hidden p{
+	width: 277px;
+	line-height: 28px;
+	font-size: 16px;
+	color: #FFFFFF;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+.kaoshi_liucheng .slateTwo{
+	margin-bottom: 82px;
+}
+.kaoshi_liucheng .slateThree .contentTherr>div.fl{
+	width: 362px;
+	height: 353px;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+	border: 1px solid #D0DBF3;
+}
+.kaoshi_liucheng .slateThree .contentTherr>div.fl img{
+	width: 304px;
+	height: 157px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 69px;
+}
+.kaoshi_liucheng .slateThree .contentTherr>div.fl a{
+	width: 212px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #6385CC;
+	border-radius: 3px;
+	color: #FFFFFF;
+	font-size: 16px;
+	margin: 0 auto;
+}
+.kaoshi_liucheng .slateThree .contentTherr>div.fl a:hover,.kaoshi_jibie>div>.anniu a:hover{
+	opacity: 0.8;
+}
+.kaoshi_liucheng .slateThree .contentTherr>div.fr{
+	width: 765px;
+	height: 353px;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+	border: 1px solid #D0DBF3;
+}
+.kaoshi_liucheng .slateThree .contentTherr>div.fr p{
+	font-size: 14px;
+	line-height: 28px;
+	width: 702px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.kaoshi_liucheng .slateThree .contentTherr{
+	margin-bottom: 90px;
+}

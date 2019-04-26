@@ -1,0 +1,725 @@
+
+/* banner */
+.banner{
+	width: 100%;
+	height: 532px;
+	background: url(/static/home/img/page/daxue_paiming/banner.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	color: #FFFFFF;
+}
+.banner h1{
+	font-size: 64px;
+	line-height: 88px;
+	padding-top: 144px;
+	padding-bottom: 6px;
+	font-weight: normal;
+	text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+}
+.banner h2{
+	font-size: 44px;
+	line-height: 62px;
+	text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+	padding-bottom: 47px;
+	font-weight: normal;
+}
+.banner a{
+	width: 319px;
+	height: 50px;
+	background-color: #8B8EC7;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
+	font-size: 22px;
+	margin: 0 auto;
+}
+.banner a:hover,.pingfen_tixi>a:hover,.zongpai_100>div>a:hover,.shangke_paiming .content>a:hover,.shangke_paiming .content .contentBottom .conCon>div.fr a:hover{
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+/* banenrNav */
+.bannerNav{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 0;
+	background-color: #F8F8F8;
+}
+.bannerNav span{
+	font-size: 16px;
+	margin-right: 39px;
+	cursor:pointer;
+}
+.bannerNav span:hover{
+	color: #8B8EC7;
+}
+.bannerNav span.active{
+	font-weight: bold;
+	color: #8B8EC7;
+}
+.navHidden{
+	width: 100%;
+	height: 60px;
+	display: none;
+}
+
+/* title */
+h3.title{
+	font-size: 38px;
+	font-weight: normal;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+/* 2019US News美国大学排名评分体系 */
+.pingfen_tixi .content>div.fl{
+	width: 285px;
+	height: 430px;
+	background: url(/static/home/img/page/daxue_paiming/tu1.jpg) no-repeat center center;
+	text-align: center;
+	cursor:pointer;
+	margin-right: 10px;
+}
+.pingfen_tixi .content>div.fl:before,.pingfen_tixi .content>div.fr .box:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.pingfen_tixi .content>div.fl .div1,.pingfen_tixi .content>div.fr .box .div1{
+	display: inline-block;
+	vertical-align: middle;
+}
+.pingfen_tixi .content>div.fl .div1 h3,.pingfen_tixi .content>div.fr .box .div1 h3{
+	font-size: 36px;
+	color: #FFFFFF;
+	padding-bottom: 13px;
+}
+.pingfen_tixi .content>div.fl .div1 span,.pingfen_tixi .content>div.fr .box .div1 span{
+	width: 148px;
+	height: 1px;
+	background-color: #FFFFFF;
+	display: block;
+	margin-bottom: 14px;
+}
+.pingfen_tixi .content>div.fl .div1 p,.pingfen_tixi .content>div.fr .box .div1 p{
+	font-size: 22px;
+	color: #FFFFFF;
+}
+.pingfen_tixi .content>div.fl .div2,.pingfen_tixi .content>div.fr .box .div2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+	text-align: center;
+}
+.pingfen_tixi .content>div.fl .div2:before,.pingfen_tixi .content>div.fr .box .div2:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.pingfen_tixi .content>div.fl .div2 p,.pingfen_tixi .content>div.fr .box .div2 p{
+	width: 247px;
+	color: #FFFFFF;
+	line-height: 20px;
+	font-size: 15px;
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+}
+.pingfen_tixi .content>div.fr{
+	width: 875px;
+}
+.pingfen_tixi .content>div.fr .box{
+	width: 285px;
+	height: 210px;
+	background: url(/static/home/img/page/daxue_paiming/tu2.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	cursor:pointer;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.pingfen_tixi .content>div.fr .box2{
+	background-image: url(/static/home/img/page/daxue_paiming/tu3.jpg);
+}
+.pingfen_tixi .content>div.fr .box3{
+	background-image: url(/static/home/img/page/daxue_paiming/tu4.jpg);
+	margin-right: 0;
+}
+.pingfen_tixi .content>div.fr .box4{
+	background-image: url(/static/home/img/page/daxue_paiming/tu5.jpg);
+}
+.pingfen_tixi .content>div.fr .box5{
+	background-image: url(/static/home/img/page/daxue_paiming/tu6.jpg);
+}
+.pingfen_tixi .content>div.fr .box6{
+	background-image: url(/static/home/img/page/daxue_paiming/tu7.jpg);
+	margin-right: 0;
+}
+.pingfen_tixi .content{
+	padding-bottom: 42px;
+}
+.pingfen_tixi>a,.zongpai_100>div>a,.shangke_paiming .content>a{
+	width: 300px;
+	height: 36px;
+	background-color: #8B8EC7;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 36px;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+.pingfen_tixi{
+	padding-bottom: 80px;
+}
+
+/* 2019US News美国大学综排TOP100 */
+.zongpai_100{
+	width: 100%;
+	height: 913px;
+	background: url(/static/home/img/page/daxue_paiming/beijing1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.zongpai_100 h3.title{
+	padding-top: 80px;
+}
+.zongpai_100 .content .zpTitel{
+	font-size: 0;
+	text-align: center;
+	margin-bottom: 32px;
+}
+.zongpai_100 .content .zpTitel span{
+	width: 136px;
+	height: 38px;
+	border: 1px solid #8B8EC7;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 38px;
+	font-size: 16px;
+	color: #8B8EC7;
+	display: inline-block;
+	margin-right: 30px;
+	cursor:pointer;
+}
+.wenli100 .content .zpTitel span{
+	border-color: #C29772;
+	color: #C29772;
+}
+.zongpai_100 .content .zpTitel span:hover,.zongpai_100 .content .zpTitel span.active{
+	background-color: #8B8EC7;
+	color: #FFFFFF;
+}
+.wenli100 .content .zpTitel span:hover,.wenli100 .content .zpTitel span.active{
+	background-color: #C29772;
+	color: #FFFFFF;
+}
+.zongpai_100 .content .zpCon .table1 table,.zongpai_100 .content .zpCon .table2 table{
+	border: 1px solid #BFC1E9;
+	height: 68px;
+	background-color: #BFC1E9;
+	color: #FFFFFF;
+	width: 100%;
+	text-align: center;
+	border-collapse:collapse;
+}
+.wenli100 .content .zpCon .table1 table,.wenli100 .content .zpCon .table2 table{
+	background-color: #ECD9C8;
+	color: #000000;
+}
+.zongpai_100 .content .zpCon .table1 table th,.zongpai_100 .content .zpCon .table2 table td{
+	border: 1px solid #BFC1E9;
+}
+.wenli100 .content .zpCon .table1 table th,.wenli100 .content .zpCon .table2 table td{
+	border-color: #C29772;
+}
+.zongpai_100 .content .zpCon .table2{
+	height: 421px;
+	overflow-y: scroll;
+}
+.zongpai_100 .content .zpCon .table2 table{
+	background-color: transparent;
+	color: #000000;
+	text-align: center;
+}
+.zongpai_100 .content .zpCon .table2 table td{
+	height: 41px;
+	font-size: 14px;
+}
+.zongpai_100 .content .zpCon .table2 table td a:hover{
+	color: #8B8EC7;
+	text-decoration: underline;
+}
+.wenli100 .content .zpCon .table2 table td a:hover{
+	color: #C29772;
+	text-decoration: underline;
+}
+.zongpai_100 .content .zpCon{
+	display: none;
+}
+.zongpai_100 .content{
+	margin-bottom: 52px;
+}
+.wenli100>div>a{
+	background-color: #C29772;
+}
+
+/* 知己知彼 提升申请成功率 */
+.qinglai h3.title{
+	padding-bottom: 11px;
+}
+.qinglai>p{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 60px;
+}
+.qinglai .content>div.fl{
+	width: 511px;
+}
+.qinglai .content>div.fl .tbox{
+	width: 234px;
+	height: 50px;
+	border: 1px solid #979797;
+	border-radius: 3px;
+	line-height: 50px;
+	float: left;
+	cursor:pointer;
+	margin-bottom: 24px;
+	margin-right: 38px;
+}
+.qinglai .content>div.fl .tbox img{
+	width: 31px;
+	height: 31px;
+	vertical-align: middle;
+	margin-right: 19px;
+	margin-left: 25px;
+}
+.qinglai .content>div.fl .tbox span{
+	font-size: 16px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.qinglai .content>div.fl .tbox:hover,.qinglai .content>div.fl .tbox.active{
+	background-color: #8B8EC7;
+	border-color: #8B8EC7;
+	color: #FFFFFF;
+}
+.qinglai .content>div.fr{
+	width: 592px;
+	height: 280px;
+	background: url(/static/home/img/page/daxue_paiming/dingji.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	display: none;
+}
+.qinglai .content>div.fr:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.qinglai .content>div.fr>div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.qinglai .content>div.fr>div p{
+	width: 472px;
+	color: #FFFFFF;
+	text-align: left;
+	display: block;	
+	margin: 0 auto;
+	font-size: 15px;
+	line-height: 24px;
+	margin-bottom: 11px;
+}
+.qinglai .content>div.fr>div a{
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: right;
+}
+.qinglai .content>div.fr>div a:hover{
+	text-decoration: underline;
+}
+.qinglai{
+	padding-bottom: 66px;
+}
+
+/* 美国TOP50名校申请条件 */
+.top50_tiaojian{
+	width: 100%;
+	height: 719px;
+	background: url(/static/home/img/page/daxue_paiming/beijing2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.top50_tiaojian .content .box{
+	width: 362px;
+	height: 210px;
+	border: 1px solid #B3B6E8;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 25px;
+	margin-right: 38px;
+}
+.top50_tiaojian .content .box img{
+	width: 44px;
+	height: 44px;
+	margin-top: 21px;
+	margin-bottom: 16px;
+}
+.top50_tiaojian .content .box span{
+	width: 36px;
+	height: 1px;
+	background-color: #BCBCBC;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 18px;
+}
+.top50_tiaojian .content .box h3{
+	font-size: 18px;
+	color: #000000;
+	margin-bottom: 6px;
+}
+.top50_tiaojian .content .box p{
+	font-size: 17px;
+	margin-bottom: 18px;
+}
+.top50_tiaojian .content .box a{
+	font-size: 16px;
+	color: #8B8EC7;
+}
+.top50_tiaojian .content .box a:hover{
+	text-decoration: underline;
+}
+
+/* 2019US News美国本科商科专业排名 */
+.shangke_paiming{
+	width: 100%;
+	height: 1143px;
+	background: url(/static/home/img/page/daxue_paiming/beijing3.jpg) no-repeat center center;
+	background-size: cover;
+}
+.shangke_paiming>div>h3.title{
+	padding-top: 80px;
+	padding-bottom: 8px;
+}
+.shangke_paiming>div>p{
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+.shangke_paiming .content .contentTop .box{
+	width: 210px;
+	height: 238px;
+	border: 1px solid #E5C4A8;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	text-align: center;
+	margin-right: 27px;
+}
+.shangke_paiming .content .contentTop .box img{
+	width: 88px;
+	height: 88px;
+	margin-top: 22px;
+	margin-bottom: 19px;
+}
+.shangke_paiming .content .contentTop .box h3{
+	font-size: 18px;
+	margin-bottom: 7px;
+}
+.shangke_paiming .content .contentTop .box p{
+	font-size: 16px;
+	margin-bottom: 18px;
+}
+.shangke_paiming .content .contentTop .box a{
+	font-size: 16px;
+	color: #C29772;
+}
+.shangke_paiming .content .contentTop .box a:hover{
+	text-decoration: underline;
+}
+.shangke_paiming .content .contentTop {
+	margin-bottom: 48px;
+}
+.shangke_paiming .content>a{
+	background-color: #C29772;
+}
+.shangke_paiming .content .contentBottom h3.title{
+	padding-top: 77px;
+	font-size: 26px;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fl{
+	font-size: 0;
+	width: 470px;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fl span{
+	width: 218px;
+	height: 50px;
+	border: 1px solid #E5C4A8;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	color: #C29772;
+	background-color: #FFFFFF;
+	cursor:pointer;
+	margin-right: 29px;
+	margin-bottom: 11px;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fl span:hover,.shangke_paiming .content .contentBottom .conCon>div.fl span.active{
+	background-color: #C29772;
+	color: #FFFFFF;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fr{
+	width: 636px;
+	height: 366px;
+	border: 1px solid #C29772;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fr h3{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 38px;
+	padding-bottom: 37px;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fr ul{
+	padding: 0 95px;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fr ul li{
+	width: 50%;
+	font-size: 15px;
+	line-height: 34px;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fr a{
+	width: 200px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	background-color: #C29772;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 37px;
+}
+.shangke_paiming .content .contentBottom .conCon>div.fr>div{
+	display: none;
+}
+.gongke .content .contentTop .box{
+	border-color: #C8CAF1;
+}
+.gongke .content .contentTop .box a{
+	color: #8B8EC7;
+}
+.gongke .content>a{
+	background-color: #8B8EC7;
+}
+.gongke .content .contentBottom .conCon>div.fl span{
+	color: #000000;
+	border-color: #C8CAF1;
+}
+.gongke .content .contentBottom .conCon>div.fl span:hover,.gongke .content .contentBottom .conCon>div.fl span.active{
+	background-color: #8B8EC7;
+}
+.gongke .content .contentBottom .conCon>div.fr{
+	border-color: #C8CAF1;
+	height: 302px;
+}
+.gongke .content .contentBottom .conCon>div.fr a{
+	background-color: #8B8EC7;
+	margin-top: 31px;
+}
+.gongke .content .contentBottom .conCon>div.fr h3{
+	padding-bottom: 22px;
+	padding-top: 33px;
+}
+.gongke .content .contentBottom .conCon>div.fr ul li{
+	line-height: 28px;
+}
+
+/* 如何合理科学选校 */
+.kexue_xx{
+	width: 100%;
+	height: 462px;
+	background: url(/static/home/img/page/daxue_paiming/beijing4.jpg) no-repeat center center;
+	background-size: cover;
+}
+.kexue_xx .content .box{
+	width: 272px;
+	height: 192px;
+	background: url(/static/home/img/page/daxue_paiming/xx1.jpg) no-repeat center center;
+	background-size: cover;
+	cursor:pointer;
+	margin-right: 27px;
+}
+.kexue_xx .content .box2{
+	background-image: url(/static/home/img/page/daxue_paiming/xx2.jpg);
+}
+.kexue_xx .content .box3{
+	background-image: url(/static/home/img/page/daxue_paiming/xx3.jpg);
+}
+.kexue_xx .content .box4{
+	background-image: url(/static/home/img/page/daxue_paiming/xx4.jpg);
+}
+.kexue_xx .content .box h3{
+	font-size: 24px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 192px;
+}
+.kexue_xx .content .box .hidden{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.kexue_xx .content .box .hidden p{
+	width: 225px;
+	margin: 0 auto;
+	font-size: 15px;
+	line-height: 22px;
+	color: #FFFFFF;
+	margin-top: 38px;
+}
+.kexue_xx .content .box .hidden a{
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+}
+.kexue_xx .content .box .hidden a:hover{
+	text-decoration: underline;
+}
+
+/* 彬彬教育致力让每一个学生牵手世界名校 */
+#mydiv{
+	width: 100%;
+	position: relative;
+}
+#mydiv canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#mydiv .box{
+	height: 100%;
+}
+#mydiv .box .content{
+	position: relative;
+}
+#mydiv .box .content .dq{
+	width: 375px;
+	height: 364px;
+	background: url(/static/home/img/page/daxue_paiming/di.png) no-repeat center center;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -27.5px;
+	margin-left: -182px;
+}
+#mydiv .box .content .dq>div{
+	width: 193px;
+	height: 193px;
+	border-radius: 50%;
+	background: url(/static/home/img/page/7_8/a6e310318cc5a075e8e4a0a459119ad.png) no-repeat left center;
+	background-size: cover;
+	background-color: #281E1C;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -96.5px;
+	margin-left: -96.5px;
+	overflow: hidden;
+	transition: all 3s;
+}
+#mydiv .box .content .dq>div img{
+	height: 193px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 7;
+}
+#mydiv .box .content .dq>div h3{
+	font-size: 26px;
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	color: #fff;
+	/* margin-top: -56.5px; */
+}
+#mydiv .box .content .dq>div h3 p{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#mydiv .box .content>div.fl li.li1{
+	margin-bottom: 69px;
+}
+#mydiv .box .content>div.fl li.li1 p{
+	width: 240px;
+}
+#mydiv .box .content>div.fl li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fl li.li2 p{
+	width: 336px;
+}
+#mydiv .box .content>div.fl li.li3 p{
+	width: 432px;
+}
+
+#mydiv .box .content>div.fl h3,#mydiv .box .content>div.fr h3{
+	font-size: 26px;
+	color: #8B8EC7;
+	margin-bottom: 7px;
+}
+#mydiv .box .content>div.fl p,#mydiv .box .content>div.fr p{
+	font-size: 16px;
+	color: #0F0F0F;
+}
+
+#mydiv .box .content>div.fr{
+	text-align: right;
+}
+#mydiv .box .content>div.fr li.li1 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li1{
+	margin-bottom: 50px;
+}
+#mydiv .box .content>div.fr li.li2 p{
+	width: 320px;
+}
+#mydiv .box .content>div.fr li.li2{
+	margin-bottom: 47px;
+}
+#mydiv .box .content>div.fr li.li3 p{
+	width: 368px;
+}

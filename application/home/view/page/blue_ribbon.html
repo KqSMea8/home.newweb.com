@@ -1,0 +1,695 @@
+{include file="common/common_head"/}
+	<!--引入 主css-->
+	<link rel="stylesheet" href="/static/home/css/page/blue_ribbon.css" />
+</head>
+<style type="text/css">
+		.banner {background: url(/static/home/img/page/landai/banner.jpg) no-repeat center center;background-size: cover;width: 100%;height: 532px;position: relative;}
+		.bannerNav {width: 100%;height: 60px;background-color: #EEEEEE;line-height: 60px;font-size: 0;}
+		.bannerNav>div {height: 60px;}
+		.bannerNav span {font-size:17px;cursor: pointer;width: 11%;text-align: center;display: inline-block;}
+		.bannerNav span.active {color:#A28450;font-weight:bold;}
+		.anniu{position: absolute;bottom:100px;left:44%;}
+		.anniu a{border:1px solid rgba(209,166,127,1);letter-spacing: 1px;font-size:24px;z-index: 111;width:239px;height:50px;color:rgba(209,166,127,1);border-radius:4px;line-height:50px;text-align: center;transition:all 0.2s ease-in-out;}
+		.anniu a:hover{background:rgba(209,166,127,1);color: #fff;}
+		.tedian{width:100%;height:623px;background: #fff;}
+		.titles{font-size: 38px;font-weight: bold;color: rgba(0, 0, 0, 1);text-align: center;margin: 0px 0 5px 0;padding-top: 80px;}
+		
+		.boxs {width:226px;height:248px;background: url(/static/home/img/page/landai/cheng.png) no-repeat center center;background-size: cover;position: relative;margin-right:10px;}
+		.box2{background: url(/static/home/img/page/landai/jingyingjiayu.png) no-repeat center center;width:226px;height:248px;background-size: cover;}
+		.box3{background: url(/static/home/img/page/landai/ylhj.png) no-repeat center center;width:226px;height:248px;background-size: cover;margin-right: 0px;}
+		.box4{background: url(/static/home/img/page/landai/yqyg.png) no-repeat center center;width:226px;height:248px;background-size: cover;}
+		.box5{background: url(/static/home/img/page/landai/zyzd.png) no-repeat center center;width:226px;height:248px;background-size: cover;}
+		.boxs .hidden1 {position: absolute;left: 0;top: 0;width: 100%;height: 100%;font-size: 20px;color: #FFFFFF;font-weight: bold;text-align: center;line-height: 248px;background:rgba(0,0,0,.5);display: block;}
+		.boxs .hidden2 {position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(23,14,1,0.6);color: #FFFFFF;text-align: center;display: none;}
+		.boxs .hidden2  a{width:163px;height:36px;border-radius:4px;border:1px solid rgba(255,255,255,1);font-size:16px;font-weight:bold;color:rgba(255,255,255,1);line-height:36px;letter-spacing:2px;margin: 20px auto;}
+		.boxs .hidden2 h3 {font-size: 18px;padding-top: 34px;padding-bottom: 20px;}
+		.boxs .hidden2 p{padding: 0 15px;}
+		.button {width: 352px;height: 50px;background:#fff;border-radius: 4px;font-size: 20px;color:#D1A67F;line-height: 50px;text-align: center;margin: 50px auto;border: 1px solid #D1A67F;}
+		.button:hover{background:#D1A67F;color: #fff;}
+		.lodge{background:url(/static/home/img/page/landai/360.png) no-repeat center center; background-size:cover;width:100%;height:598px;}
+		.liuxue{margin-top: 40px;}
+		.top_rank{margin-top:40px;}
+		/* .top_rank tr{display: block;}
+		.top_rank th{text-align: center;height:40px;font-weight: normal;box-sizing: border-box;}
+    	.top_rank td {text-align: center;height:40px;box-sizing: border-box;display: inline-block;}
+
+		.top_rank td{font-size:16px;font-weight:400;text-align: center;height:40px;line-height:40px;} */
+		.top_rank li{color: #fff;float: left;width:154px;height:70px;line-height:70px;text-align: center;font-size: 16px;background:#D1A67F;box-sizing: border-box;border-left: 1px solid #fff;text-align: center;}
+		.hiddenn table{border-collapse: collapse;width: 100%;}
+		.hiddenn table th{height: 50px;line-height: 50px;background-color: #D1A67F;color: #FFFFFF;}
+		.hiddenn table,.hiddenn table tr{border: 1px solid #D1A67F;}
+		.hiddenn table td,.hiddenn table th{border-left: 1px solid #D1A67F;}
+		.hiddenn tr td{height:40px;line-height:40px;text-align: center;font-size: 15px;box-sizing: border-box;overflow: hidden;}
+		.hiddenn tr td a:hover{color: #D1A67F;}
+		.lodges{width:100%;height:730px;}
+		.liuxues{margin-top: 40px;}
+		.boxss {width:370px;height:443px;background: url(/static/home/img/page/landai/llll.png) no-repeat center center;background-size: cover;position: relative;margin-right:30px;}
+		.box22{background: url(/static/home/img/page/landai/ggggg.png) no-repeat center center;width:370px;height:443px;background-size: cover;}
+		.box33{background: url(/static/home/img/page/landai/zzzzz.png) no-repeat center center;width:370px;height:443px;background-size: cover;}		
+		.boxss .hidden11 {position: absolute;left: 0;top: 0;width: 100%;height: 100%;font-size:38px;color: #FFFFFF;font-weight: bold;text-align: center;line-height:430px;background:rgba(0,0,0,.5);display: block;}
+		.boxss .hidden22 {position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(23,14,1,0.6);color: #FFFFFF;text-align: center;display: none;}
+		.boxss .hidden22 a{width:163px;height:36px;border-radius:4px;font-size:16px;font-weight:bold;color:rgba(255,255,255,1);line-height:36px;letter-spacing:2px;margin: 20px auto;}
+		.boxss .hidden22 a:hover{opacity: 0.8;}
+		.boxss .hidden22 h3 {font-size: 18px;padding-top:24px;padding-bottom:10px;}
+		.boxss .hidden22 h4{text-align:left;margin: 20px 0 0 20px;}
+		.boxss .hidden22 p{padding: 0 15px;text-align:left;margin-left: 20px;margin-top:10px;padding-left: 0;}
+		
+		.liuxues{margin-top: 40px;}
+		.boxsss {width:370px;height:238px;background: url(/static/home/img/page/landai/jg.png) no-repeat center center;background-size: cover;position: relative;margin-right:30px;}
+		.box222{background: url(/static/home/img/page/landai/jx.png) no-repeat center center;width:370px;height:238px;background-size: cover;}
+		.box333{background: url(/static/home/img/page/landai/xjkc.png) no-repeat center center;width:370px;height:238px;background-size: cover;}		
+		.boxsss .hidden111 {letter-spacing: 2px;position: absolute;left: 0;top: 0;width: 100%;height: 100%;font-size:24px;color: #FFFFFF;font-weight: bold;text-align: center;line-height:230px;background:rgba(0,0,0,.5);display: block;}
+		.boxsss .hidden222 {position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(23,14,1,0.6);color: #FFFFFF;text-align: center;display: none;}
+		.boxsss .hidden222 a{width:163px;height:36px;border-radius:4px;border:1px solid rgba(255,255,255,1);font-size:16px;font-weight:bold;color:rgba(255,255,255,1);line-height:36px;letter-spacing:2px;position: absolute;bottom: 10px;left: 50%;margin-left: -81.5px;}
+		.boxsss .hidden222 a:hover{background-color: #D1A67F;border-color: #D1A67F;}
+		.boxsss .hidden222 h3 {font-size: 18px;padding-top:26px;padding-bottom:16px;}
+		.boxsss .hidden222 h4{text-align:left;margin: 20px 0 0 20px;}
+		.boxsss .hidden222 p{padding: 0 15px;text-align:left;margin-left: 30px;margin-top:10px;}
+		.tudifl{width: 333px;margin-left:90px;}
+		.tudicet img{width:190px;height:185px;margin:35px 50px;}
+		.tudifr{width: 333px;}
+		.faya h4{font-size:18px;color:rgba(0,0,0,1)}
+		.faya a{width:161px;height:36px;border-radius:4px;border:1px solid rgba(209,166,127,1);text-align: center;line-height:36px;color: #D1A67F;margin: 20px 0 0 126px;}
+		.faya a:hover{background: #D1A67F;color: #fff;}
+		.fayas a:hover{background: #D1A67F;color: #fff;}
+		.fayas{width:330px;margin-top:30px;}
+		.fayas h4{font-size: 18px;color:rgba(0,0,0,1);}
+		.fayas a{width:161px;height:36px;border-radius:4px;border:1px solid rgba(209,166,127,1);text-align: center;line-height:36px;color: #D1A67F;    margin: 20px auto;}
+		.dada{margin-top:60px;}
+		.banner h1{
+			font-size: 64px;
+			line-height: 88px;
+			padding-top: 144px;
+			padding-bottom: 6px;
+			font-weight: normal;
+			text-shadow:0px 3px 4px rgba(0,0,0,0.72);
+			color: #FFFFFF;
+			text-align: center;
+		}
+</style>
+<body>
+	<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!--banner-->
+		<div class="banner">
+			<h1>美国蓝带高中</h1>
+			<!-- 按钮 -->
+			<div class="anniu">
+				<a href="javascript:;" onclick="go()" class="one">申请蓝带高中</a>
+			</div>
+		</div>
+		<!--banner-->
+		<!-- bannerNav -->
+		<div class="bannerNav">
+			<div class="gWidth1170">
+				<span class="active">蓝带高中特点</span>
+				<span>蓝带高中优势</span>
+				<span>学校推荐</span>
+				<span>注意事项</span>
+				<span>优秀案例</span>
+				<span>申请流程</span>
+				<span>留学费用</span>
+				<span>海外服务</span>
+				<span style="margin-right: 0px;">彬彬优势</span>
+			</div>
+		</div>
+		<!--美国蓝带高中特点-->
+		<div class="tedian gk_index huadou">
+			<div class="titles">
+				美国蓝带高中特点
+			</div>
+			<div class="gWidth1170 dada clearfix">
+				<div class="tudifl fl">
+					<div class="faya">
+						<h4>数量少，美国只有3.9%的学校可以进入蓝带学校的排列中。</h4>
+						<a href="javascript:;" onclick="go()">查询美国蓝带高中 </a>
+					</div>
+					<div class="faya" style="margin-top: 60px;">
+						<h4>教学质量高，超前教育普遍，学习风气浓厚</h4>
+						<a href="javascript:;" onclick="go()">学校详情了解</a>
+					</div>
+				</div>
+				<div class="tudicet fl">
+				 	<img src="/static/home/img/page/landai/tedian.png" alt="蓝带高中特点" title="蓝带高中特点"/>
+				 	<div class="fayas" >
+					<h4>学校老师要求严格，每天每门功课都有小测验，成绩全部记录，定期报告家长。</h4>
+					<a href="javascript:;" onclick="go()">蓝带高中课程查询</a>
+				</div>
+				</div>
+				<div class="tudifr fl">
+					<div class="faya">
+						<h4>竞争激烈，与国内中学相似，注重分数和排名</h4>
+						<a href="javascript:;" onclick="go()">蓝带高中排名查询</a>
+					</div>
+					<div class="faya" style="margin-top: 60px;">
+						<h4>学费不高，办学经费主要来自教会和校友捐赠</h4>
+						<a href="javascript:;" onclick="go()">蓝带高中留学费用</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--美国蓝带高中特点-->
+		
+	<!--美国寄宿高中特点-->
+	<div class="lodge gk_index">
+		<div class="gWidth1170">
+			<div class="titles">
+				美国蓝带高中优势
+			</div>
+			<div class="liuxue">
+					<div class="content clearfix">
+					<div class="boxs fl">
+						<div class="hidden1" >卓越的成就感</div>
+						<div class="hidden2">
+							<h3>卓越的成就感</h3>
+							<p>美国蓝带高中的教育以卓越和均等为核心，追求所有学生卓越成就，具有强烈的使命感。对于每一名学生的发展与成长都极为关注,不会让一名学生落后。</p>
+						</div>
+					</div>
+					<div class="boxs box2 fl">
+						<div class="hidden1">精英教育</div>
+						<div class="hidden2">
+							<h3>精英教育</h3>
+							<p>美国蓝带高中数量很少，以培养卓有成就的精英为教育目标。学校开设了很多AP课程，毕业率均超过90%以上，而且大部分毕业生均能考入美国名校</p>
+						</div>
+					</div>
+					<div class="boxs box5 fl">
+						<div class="hidden1">专业升学指导团队</div>
+						<div class="hidden2">
+							<h3>专业升学指导团队</h3>
+							<p>紧密结合学生情况，从入学第一年起就对每位同学进行个性化指导，帮助学生申请美国大学且适合的专业。</p>
+						</div>
+					</div>
+					<div class="boxs box4 fl">
+						<div class="hidden1">要求严格</div>
+						<div class="hidden2">
+							<h3>要求严格</h3>
+							<p>美国蓝带高中对学生的要求极为严格。每天每门功课都有小测验，成绩全部计入总成绩，一次没考好总成绩和学校排名都会受影响，并及时与家长反馈。</p>
+						</div>
+					</div>
+					<div class="boxs box3 fl">
+						<div class="hidden1">一流的环境</div>
+						<div class="hidden2">
+							<h3>一流的环境</h3>
+							<p>大部分美国蓝带高中的地理位置非常良好，交通便利。无论是硬件设施、师资力量以及教学环境上，均在全美中学中首屈一指。</p>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" onclick="go()" class="button">马上申请心仪学校</a>
+			</div>
+		</div>
+	</div>
+	<!--美国寄宿高中特点-->
+	
+	<!--美国蓝带高中推荐-->
+	<div class="gWidth1170 gk_index">
+		<div class="titles">
+			美国蓝带高中学校推荐
+		</div>
+			<div class="top_rank">
+				
+				<div class="hiddenn">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+						    <th>院校名称</th>
+						    <th>院校英文名称</th>
+						    <th>成立时间</th>
+						    <th>所属地区</th>
+						    <th>马上申请</th>
+						</tr>
+					<tbody>
+						<tr>
+							<td>罗格斯中学</td>
+							<td>Rutgers Preparatory School</td>
+							<td>1766年</td>
+							<td>新泽西州</td>
+							<td><a href="javascript:;" onclick="go()">马上申请</a></td>
+						</tr>
+						<tr><td>劳伦斯伍德米尔学校</td><td>Lawrence Woodmere Academy</td><td>1912年</td><td>纽约州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+						<tr><td>贵格菁英中学</td><td>Friends Select School</td><td>1689年</td><td>宾夕法尼亚州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+						<tr><td>斯泰顿岛中学</td><td>Staten Island Academy</td><td>1862年</td><td>纽约州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+						<tr><td>莫斯布朗中学</td><td>Moses Brown School</td><td>1784年</td><td>罗得岛州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+						<tr><td>惠勒学校</td><td>The Wheeler School</td><td>1889年</td><td>罗得岛州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+						<tr><td>阿秉堂教友会中学</td><td>Abington Friends School</td><td>1697年</td><td>宾夕法尼亚州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+						<tr><td>墨尔本中央天主高中</td><td>Melbourne Central Catholic High School</td><td>1961年</td><td>佛罗里达州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+						<tr><td>圣拉斐尔中学</td><td>Saint Raphael Academy</td><td>1924年</td><td>罗德岛州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+						<tr><td>哈德里根中学</td><td>Bishop Hendricken High School</td><td>1959年</td><td>罗德岛州</td><td><a href="javascript:;" onclick="go()">马上申请</a></td></tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		
+	</div>
+	<!--美国蓝带高中推荐-->
+	
+	<!--申请蓝带高中注意事项-->
+	<div class="band gk_index">
+		<div class="titles">
+			申请蓝带高中注意事项
+		</div>
+		<div class="gWidth1170 clearfix">
+			<div class="raidus">
+				<ul >
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			
+			<div class="radiuss">
+				<ul>
+					<li>
+						<div class="after">
+							<h4>申请要慎重</h4>
+							<em></em>
+							<p>普通学校的尖子生转学到蓝带学区，很可能就成了落后生。所以想要申请蓝带学校的家长孩子一定要做好充分的准备。</p>	
+						</div>
+					</li>
+					<li>
+						<div class="after">
+							<h4>功课要抓紧</h4>
+							<em></em>
+							<p>到美国蓝带中学就读，一定要注意抓功课。如果孩子不在学校之外下功夫努力加油，他根本就进不了快班。这就是美国蓝带中学的超前教育。</p>	
+						</div>
+					</li>
+					<li>
+						<div class="after">
+							<h4>减少课外活动</h4>
+							<em></em>
+							<p>为了确保学习成绩，为孩子选择课外活动时要量力而行。如果孩子在蓝带学校的成绩不理想，最好减少课外活动，等到成绩提高之后，再逐渐增加课外活动。</p>	
+						</div>
+					</li>
+					<li>
+						<div class="after">
+							<h4>无需考试</h4>
+							<em></em>
+							<p>对于美国公立蓝带学校来说，并不需要特别的入学考试。只要家宅位于蓝带学区内，每个家庭中的所有学龄儿童都可自动进入蓝带学校。</p>	
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<a href="javascript:;" onclick="go()" class="button">更多注意事项</a>
+	</div>
+	<!--申请蓝带高中注意事项-->
+	
+	<!--美国蓝带高中优秀学生案例-->
+		<div class="lodges gk_index">
+		<div class="gWidth1170">
+			<div class="titles">
+				美国蓝带高中优秀学生案例
+			</div>
+			<div class="liuxues">
+				<div class="content clearfix">
+					<div class="boxss fl">
+						<div class="hidden11" >L同学</div>
+						<div class="hidden22">
+							<h3>L同学</h3>
+							<h4>个人档案</h4>
+							<p>教育背景：首都师范大学附属中学</p>
+							<p>录取学校：布雷迪主教高中</p>
+							<h4>成长足迹</h4>
+							<p>在读时间：2012年9月-2016年7月</p>
+							<p>语言成绩：托福68</p>
+							<p>兴趣爱好：运动 绘画</p>
+							<p>实践背景：2013年-2017年，担任班长<br />2013年-2016年，学生会副主席 <br />2015年，参加公益社会实践项目</p>
+							<a href="/studentstory/709.html" class="knows" target="_blank">了解案例详情</a>
+						</div>
+					</div>
+					<div class="boxss box22 fl">	
+						<div class="hidden11">S同学</div>
+						<div class="hidden22">
+							<h3>S同学</h3>
+							<h4>个人档案</h4>
+							<p>教育背景：北京师范大学第二附属中学</p>
+							<p>录取学校：圣维克特高中</p>
+							<h4>成长足迹</h4>
+							<p>在读时间：2014年9月-2018年7月</p>
+							<p>语言成绩：slate 4.0 GPA：3.5</p>
+							<p>兴趣爱好：排球 跳舞</p>
+							<p>实践背景： 2013年-2017年，担任班长<br /> 2013年-2016年，学生会副主席 <br />2015年，排球比赛获奖</p>
+							<a href="/studentstory/710.html" class="knows" target="_blank">了解案例详情</a>
+						</div>
+					</div>
+					<div class="boxss box33 fl" style="margin-right: 0px;">
+						<div class="hidden11">C同学</div>
+						<div class="hidden22">
+							<h3>C同学</h3>
+							<h4>个人档案</h4>
+							<p>教育背景：北京某重点中学</p>
+							<p>录取学校：加尔塞斯纪念中学</p>
+							<h4>成长足迹</h4>
+							<p>在读时间：2013年9月-2017年7月</p>
+							<p>语言成绩：托福80</p>
+							<p>兴趣爱好：绘画 阅读</p>
+							<p>实践背景：2013年参加青少年计算机比赛<br /> 2015年参加辩论类夏令营<br /> 2016年参加学术竞赛</p>
+							<a href="/studentstory/148.html" class="knows" target="_blank">了解案例详情</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--美国蓝带高中优秀学生案例-->
+	<style type="text/css">
+		.knows{width:200px!important;height:30px!important;background:rgba(209,166,127,1);border-radius:4px;margin: 10px auto;line-height: 30px!important;}
+		.triangle_border_down {
+		    width: 0;
+		    height: 0;
+		    border-width: 10px 10px 0;
+		    border-style: solid;
+		    border-color: #FDE7D3 transparent transparent;
+		    margin: 29px auto;
+		    position: relative;
+		    bottom: 30px;
+    		left: 0px;
+		}
+		.triangle_border_up {
+		    width: 0;
+		    height: 0;
+		    border-width: 0 10px 10px;
+		    border-style: solid;
+		    border-color: transparent transparent #FDE7D3;
+		    margin: 40px auto;
+		    position: relative;
+		    bottom: 148px;
+		}
+		.shenqing{width:100%;height:598px;background:url(/static/home/img/page/landai/sqlc.png) no-repeat center center;background-size:cover;}
+		.wao{margin-top:40px;}
+	</style>
+	<!--美国蓝带高中申请流程-->
+	<div class="shenqing gk_index">
+		<div class="titles">
+			美国蓝带高中申请流程
+		</div>
+		<div class="gWidth1170 wao">
+			<div class="sqtop">
+				<ul class="clearfix">
+					<li>留学规划<div class="triangle_border_down"></div></li>
+					<li>选校指导<div class="triangle_border_down"></div></li>
+					<li>面试辅导<div class="triangle_border_down"></div></li>
+					<li>后续服务<div class="triangle_border_down"></div></li>
+				</ul>
+			</div>
+			<div class="sqcenter">
+				<ul class="clearfix">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="sqbtm">
+				<ul class="clearfix">
+					<li>学生评估<div class="triangle_border_up"></div></li>
+					<li>背景提升<div class="triangle_border_up"></div></li>
+					<li>文书规划<div class="triangle_border_up"></div></li>
+					<li>获得offer<div class="triangle_border_up"></div></li>
+				</ul>
+			</div>
+		</div>
+		<div class="anniuy clearfix">
+			<a href="javascript:;" onclick="go()" class="fl two">申请流程详细规划</a>
+			<a href="javascript:;" onclick="go()" class="fl two" style="margin-right: 0px;">蓝带高中入学要求</a>
+		</div>
+	</div>
+	<!--美国蓝带高中申请流程-->
+	<div class="classroom gk_index">
+			<h3 class="titles" style="margin-bottom: 60px;">蓝带高中留学费用</h3>
+			<div class="gWidth1170">
+				<div class="train clearfix">
+					<div class="white">
+						<div class="black">
+							<h4>学费</h4>
+							<p>走读中学：每年约$45,000-$75,000 </p>
+							<p>寄宿中学：每年约$45,000-$80,000 </p>
+							<p style="color: #9C9C9C;">（具体费用请参考学校官网）</p>
+							<a href="javascript:;" onclick="go()">咨询具体学费</a>
+						</div>
+					</div>
+					<div class="white">
+						<div class="black">
+							<h4>生活费</h4>
+							<p>一般每年约$20,000，纽约、波士顿、旧金山等大城市生活费用会相对高一些。</p>
+							<p style="color: #9C9C9C;">（具体费用根据学校而定）</p>
+							<a href="javascript:;" onclick="go()">咨询具体生活费</a>
+						</div>
+					</div>
+					<div class="white" style="margin-right: 0px;">
+						<div class="black">
+							<h4>其他费用</h4>
+							<p>医疗费每年约$500-$1000；书本费每年约$500-$800；课外活动费用每年约$300-$1000。</p>
+							<p style="color: #9C9C9C;">（具体费用根据学校而定）</p>
+							<a href="javascript:;" onclick="go()">咨询具体费用</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	<!--360°全方位服务——有彬彬留学更放心-->
+	<div class="bearing gk_index">
+		<div class="gWidth1170">
+			<div class="titles">360°全方位服务——有彬彬留学更放心</div>
+			<div class="liuxues">
+				<div class="content clearfix">
+					<div class="boxsss fl">
+						<div class="hidden111" >寄宿家庭精选</div>
+						<div class="hidden222">
+							<h3>寄宿家庭精选</h3>
+							<p>1.10000+精选寄宿家庭，都是在当地有较高收入的优质家庭<br />2.根据学生需求至少提供2-3个家庭供选择 <br />3.免费更换寄宿家庭，并且保证调换住家的时效性</p>
+							<a href="/fmfml/0-1.html" target="_blank">预约寄宿家庭</a>
+						</div>
+					</div>
+					<div class="boxsss box222 fl">
+						<div class="hidden111">特色海外监管服务</div>
+						<div class="hidden222">
+							<h3>特色海外监管服务</h3>
+							<p>1.及时解决学生留学期间学习、生活问题<br />2.把控服务质量，不定期组织实地探访，了解学生实际情况反馈家长 <br />3.24H紧急情况处理，随时保持联系进行处理 </p>
+							<a href="/page/overseashome.html" target="_blank">预约贴心无忧管家</a>
+						</div>
+					</div>
+					<div class="boxsss box333 fl" style="margin-right: 0px;">
+						<div class="hidden111">出国衔接课程</div>
+						<div class="hidden222">
+							<h3>出国衔接课程</h3>
+							<p>1.美国本土多年资深教学在职教师授课 <br />2.课程设计丰富，并拥有美国原版教材  <br />3.小班制授课，老师对学生关注度高，让学生快速适应中美学习差异</p>
+							<a href=" /page/goclass.html" target="_blank">点击获取原版教材</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--360°全方位服务——有彬彬留学更放心-->
+	<style type="text/css">
+		.bearing{width:100%;height:488px;background:url(/static/home/img/page/landai/360.png) no-repeat center center;background-size:cover;}
+		.anniuy {width:700px;margin:60px auto;}
+		.anniuy a.two {background-color: #fff;color: #D1A67F;margin-right: 100px;}
+
+		.anniuy a {width:278px;height:50px;text-align: center;line-height: 52px;font-size: 22px;color: #FFFFFF;border: 1px solid #D1A67F;}
+		.anniuy a:hover{background: #D1A67F;color: #fff;}
+		.classroom{width:100%;height:581px;background:#fff;}
+		.black{width:300px;height:260px;border:2px solid #D1A67F;margin:12px auto;padding:0 20px;}
+		.black h4{font-size:24px;font-weight:bold;color:rgba(0,0,0,1);text-align: center;margin:18px auto;}
+		.black p{font-size:16px;color:rgba(0,0,0,1);margin-top:20px;text-align: center;}
+		.black a{width:201px;height:40px;border-radius:4px;border:2px solid #D1A67F;margin:20px auto;text-align: center;line-height:40px;transition: all 0.2s ease-in-out;}
+		.black a:hover{background: #D1A67F;color: #fff;}
+		.white{width:370px;height:285px;background: #fff;float: left;margin:0 30px 20px 0;box-shadow:0px 2px 8px 0px rgba(0,0,0,0.17);}
+		.white:nth-child(2){margin-top:36px;}
+		.white:nth-child(5){margin-top:36px;}
+		.sqtop li{width:136px;height:99px;background:#FDE7D3;float:left;margin-left: 150px;font-weight: bold;text-align: center;line-height: 99px;margin-bottom: 20px;}
+		.sqbtm li{float:left;width:136px;height:99px;background:#FDE7D3;float:left;margin-right: 150px;font-weight: bold;text-align: center;line-height: 99px;margin-top: 20px;}
+		.sqcenter li{float:left;}
+		.sqcenter{margin-left: 56px;}
+		.sqcenter li:nth-child(odd){width:20px;height:20px;background:rgba(209,166,127,1);border-radius:50%;}
+		.sqcenter li:nth-child(even){width:126px;height:2px;border-bottom:2px dashed #D1A67F;margin-top:8px;}
+		.after{margin-left: 49px;}
+		.band{width:100%;height:1091px;background:url(/static/home/img/page/landai/gzzysx.png) no-repeat center center;background-size:cover;margin-top:60px;}
+		.raidus{float:left;margin:104px 20px 0 0;}
+		.radiuss{float:left;}
+		.radiuss li h4{font-size:20px;font-weight:bold;color:rgba(0,0,0,1);padding-top: 22px;}
+		.radiuss li p{font-size:18px;color:rgba(0,0,0,1)}
+		.radiuss li em{width:70px;height:2px;background:rgba(209,166,127,1);display: block;margin: 10px 0 18px 0;}
+		.radiuss li{width:1080px;height:162px;background:#F9E6D5;border-radius:8px;margin-top: 30px;}
+		.raidus li:nth-child(odd){width:30px;height:30px;background:rgba(209,166,127,1);border-radius:50%;}
+		.raidus li:nth-child(even){height:155px;width:2px;border-left: 1px dashed #D1A67F;margin-left: 14px;}
+	</style>
+	<!--海外监管服务团队-->
+	<div id="mydiv" class="ys_index" style="height:628px;margin-top: 50px;">
+			<div class="box gWidth1170 clearfix gk_index">
+				<!-- title -->
+				<h3 class="title">彬彬教育致力让每一个学生牵手世界名校</h3>
+				<!-- content -->
+				<div class="content gWidth1170">
+					<div class="fl">
+						<ul>
+							<li class="li1">
+								<h3>6位1体</h3>
+								<p>业内首创“6位1体”服务模式<br />服务客户满意度高达100%</p>
+							</li>
+							<li class="li2">
+								<h3>广资源</h3>
+								<p>1000+校园独家代理；实地考察 真实可靠</p>
+							</li>
+							<li class="li3">
+								<h3>多重认证</h3>
+								<p>留学行业质量认证标准机构；国内十佳品牌诚信<br />留学机构；CSIET评审认证留学机构</p>
+							</li>
+						</ul>
+					</div>
+					<div class="dq">
+						<div>
+						</div>
+					</div>
+					<div class="fr">
+						<ul>
+							<li class="li1 clearfix">
+								<h3>全覆盖</h3>
+								<p class="fr">600+海外同专业导师覆盖全美TOP100名校<br />让学生提前了解校园生活并提供全程对应辅导</p>
+							</li>
+							<li class="li2 clearfix">
+								<h3>大数据</h3>
+								<p class="fr" style="width: 330px;">120000+超大申请数据库；科学手段狂揽offer</p>
+							</li>
+							<li class="li3 clearfix">
+								<h3>两个“1”</h3>
+								<p class="fr">国内独1拥有海外监管服务中心留学机构<br />国内独1拥有海外院校开发资质的留学机构</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+</body>
+<!-- 底部 -->
+		{include file="common/common_bottom"/}
+<script type="text/javascript">
+		var t = document.documentElement.scrollTop || document.body.scrollTop;
+		var scroll = true;
+		if(t>=100){
+			$('.abcBannav').css({'display': 'none'});
+			$('.topNav').css({'position': 'static'});
+		}
+		var nav = $('.bannerNav').offset().top;
+		$gkLength = $('.gk_index').length;
+		window.onscroll = function () { 
+			var top = document.documentElement.scrollTop || document.body.scrollTop;
+			if(top>=nav){
+				$('.bannerNav').css({'position': 'fixed', 'top': '0', 'z-index': '9999'});
+				$('.navHidden').css({'display': 'block'});
+			}else if(top<=$('.huadou').offset().top){
+				$('.bannerNav').css({'position': 'static', 'top':''});
+				$('.navHidden').css({'display': 'none'});
+			}
+			for( var i=0; i<$gkLength; i++ ){
+				if( i == $gkLength - 1 ){
+					if( top>=$('.gk_index').eq(i).offset().top ){
+						$('.bannerNav span').removeClass('active');
+						$('.bannerNav span').eq(i).addClass('active');
+					}
+					return;
+				}
+				if( top>=$('.gk_index').eq(i).offset().top && top<$('.gk_index').eq(i+1).offset().top ){
+					$('.bannerNav span').removeClass('active');
+					$('.bannerNav span').eq(i).addClass('active');
+				}
+			}
+			var top = document.documentElement.scrollTop || document.body.scrollTop;
+			if( !scroll ){
+				return;
+			}
+			if( top >= 100 ){
+				if( $('.topNav').css('position') == 'relative' ){
+					$('.abcBannav').css({'display': 'none'});
+					$('.topNav').css({'position': 'static'});
+				}
+			}else if(top == 0) {
+				$('.abcBannav').css({'display': 'none'});
+				$('.topNav').css({'position': 'relative'});
+			}
+		}
+		$('.bannerNav span').on('click', function () {
+			var index = $('.bannerNav span').index($(this));
+			var offsetTop = $('.gk_index').eq(index).offset().top;
+			$('body, html').stop().animate({scrollTop: offsetTop}, 1500);
+		})
+	
+		// 粒子链接配置文件--不用改 放过去就行
+	window.onload = function() {
+		//配置
+		var config = {
+			vx: 4, //小球x轴速度,正为右，负为左
+			vy: 4, //小球y轴速度
+			height: 2, //小球高宽，其实为正方形，所以不宜太大
+			width: 2,
+			count: 200, //点个数
+			color: "228,228,228", //点颜色
+			stroke: "228,228,228", //线条颜色
+			dist: 30000, //点吸附距离
+			e_dist: 20000, //鼠标吸附加速距离
+			max_conn: 10 //点到点最大连接数
+		}
+		//调用
+		CanvasParticle(config);
+	}
+	// 地球滚动 直接复制.
+	$(window).scroll(function() {
+		if($(window).scrollTop() + 700 >= $('#mydiv').offset().top) {
+			$('#mydiv .box .dq>div').css({
+				'background-position-x': 'right'
+			});
+		}
+
+		if($(window).scrollTop() + 700 < $('#mydiv').offset().top) {
+			$('#mydiv .box .dq>div').css({
+				'background-position-x': 'left'
+			});
+		}
+	})
+	$('.boxs').hover(function () {
+		$(this).children('.hidden1').stop().fadeOut();
+		$(this).children('.hidden2').stop().fadeIn();
+	}, function (){
+		$(this).children('.hidden2').stop().fadeOut();
+		$(this).children('.hidden1').stop().fadeIn();
+	})
+	
+	$('.boxss').hover(function () {
+		$(this).children('.hidden11').stop().fadeOut();
+		$(this).children('.hidden22').stop().fadeIn();
+	}, function (){
+		$(this).children('.hidden22').stop().fadeOut();
+		$(this).children('.hidden11').stop().fadeIn();
+	})
+	$('.boxsss').hover(function () {
+		$(this).children('.hidden111').stop().fadeOut();
+		$(this).children('.hidden222').stop().fadeIn();
+	}, function (){
+		$(this).children('.hidden222').stop().fadeOut();
+		$(this).children('.hidden111').stop().fadeIn();
+	})
+</script>
+
+
+	<!-- 高中表单 -->
+	{include file="common/common_highSchool"/}
+	<style type="text/css">
+		.formFd button{border: none;color: #333333;margin: 0;}
+	</style>
+
+</html>

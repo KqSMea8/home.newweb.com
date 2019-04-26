@@ -1,0 +1,705 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/index/index.css">
+		
+		<!-- swiper -->
+		<link rel="stylesheet" href="/static/home/css/public/swiper/idangerous.swiper.css" />
+		<script src="/static/home/js/public/swiper/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<style>
+			
+			.swiper-container{
+				width: 100%;
+				height: 560px;
+				overflow: hidden;
+			}
+			.swiper-container .swiper-slide>a{
+				width: 100%;
+				height: 560px;
+				display: block;
+			}
+			.swiper-container img{
+				width: 100%;
+				height: 560px;
+			}
+			.w320{
+				width: 320px;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		
+		<!-- 公共导航 -->
+		{include file="common/common_navhead"/}
+		<!-- 公共导航 -->
+		
+		<!-- swiperBanner -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				{volist name="adv_list" id="val"}
+					<div class="swiper-slide">
+						<a href="{$val['url']}" style="background: url(<?=$val['pic']?>) no-repeat center center; background-size: cover;" {eq name="val.is_target" value="1"} target="_blank" {/eq}>
+						</a>
+					</div>
+				{/volist}
+			</div>
+			<div class="btnleft btn"><img src="/static/home/img/home/zuo.png" alt=""></div>
+			<div class="btnright btn"><img src="/static/home/img/home/you.png" alt=""></div>
+		</div>
+		
+		<!-- 导师服务一体 -->
+		<div class="daoshi_yiti clearfix">
+			<div class="fl" onclick="go()">
+				<h3>6+1</h3>
+				<div class="box">
+					<h4>高品质</h4>
+					<p>业内首创“6位1体”服务模式<br />客户满意度达100%</p>
+				</div>
+			</div>
+			<div class="fl" onclick="go()">
+				<h3>600<span class="jia">+</span></h3>
+				<div class="box">
+					<h4>全覆盖</h4>
+					<p>600+海外同专业导师<br />覆盖全美TOP100名校</p>
+				</div>
+			</div>
+			<div class="fl" onclick="go()">
+				<h3>1000<span class="jia">+</span></h3>
+				<div class="box">
+					<h4>广资源</h4>
+					<p>1000+美国学校独家代理<br />实地考察 真实可靠</p>
+				</div>
+			</div>
+			<div class="fl" onclick="go()">
+				<h3> 120000<span class="jia">+</span></h3>
+				<div class="box">
+					<h4>大数据</h4>
+					<p>120000+超大申请数据库<br />科学手段狂揽offer</p>
+				</div>
+			</div>
+			<div class="fl" onclick="go()">
+				<h3 style="text-align: left;margin-left: 113px;">5<span>+认证</span></h3>
+				<div class="box">
+					<h4>多重认证</h4>
+					<p>国内十佳品牌诚信留学机构<br />CSIET评审认证留学机构</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 服务项目 -->
+		<div class="fuwu_xiangmu">
+			<div class="gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>13年只专注于美国留学</h3>
+					<p>汇集国内外最优质教育资源 留美服务全覆盖</p>
+				</div>
+				<!-- count -->
+				<div class="count clearfix">
+					<a href="/middle">
+						<div class="fl">
+							<div class="img">
+								<img src="/static/home/img/home/diling.png" alt="美国低龄留学" title="美国低龄留学">
+							</div>
+							<h3>美国中学留学</h3>
+							<p>培养创造力和独立能力，申请名校更容易</p>
+							<!-- <div class="hidden">
+								<h3>美国低龄留学</h3>
+								<p>更高比例升入名校；迅速提高语言能力；培养独立自主人格；提高综合素质能力；小班高质量启发式教育；人生及职业规划更明晰。</p>
+								<a href="javascript:;">了解更多</a>
+							</div> -->
+						</div>
+					</a>
+					
+					<a href="/college">
+						<div class="fl">
+							<div class="img">
+								<img src="/static/home/img/home/benke.png" alt="美国本科留学" title="美国本科留学">
+							</div>
+							<h3>美国本科留学</h3>
+							<p>专业齐全，学制灵活，更注重学生综合发展</p>
+							<!-- <div class="hidden">
+								<h3>美国本科留学</h3>
+								<p>专业更广泛、更齐全；学制灵活，转学更容易；自由开放的专业选择；更加注重学生的全面发展；学生动手能力强，与职业接轨程度高；高薪就业机会多。</p>
+								<a href="javascript:;">了解更多</a>
+							</div> -->
+						</div>
+					</a>
+					
+					<a href="/graduate">
+						<div class="fl">
+							<div class="img">
+								<img src="/static/home/img/home/yanjisheng.png" alt="美国研究生留学" title="美国研究生留学">
+							</div>
+							<h3>美国研究生留学</h3>
+							<p>导师更权威，科研条件更优越，学历认可度高</p>
+							<!-- <div class="hidden">
+								<h3>美国研究生留学</h3>
+								<p style="margin-bottom: 20px;">拥有世界权威导师和顶级科研条件；学历全球认可，与社会需求结合紧密；就业竞争力强、学生多进入500强企业；软硬背景相结合，倾向全面发展人才；奖学金丰厚，有多种奖学金可供申请。</p>
+								<a href="javascript:;">了解更多</a>
+							</div> -->
+						</div>
+					</a>
+					
+				</div>
+			</div>
+			<!-- 表单 -->
+			<div class="form clearfix">
+				<div class="gWidth1170 clearfix">
+					<h3 class="fl">留学问题轻松问</h3>
+					<input type="text" class="name fl" placeholder="姓名:">
+					<input type="text" class="phone fl" placeholder="电话:">
+					<select name="" class="fl">
+						<option value="">申请阶段</option>
+						<option value="中学">中学</option>
+						<option value="本科">本科</option>
+						<option value="研究生">研究生</option>
+					</select>
+					<button class="button fl">提交</button>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 彬彬导师团队 -->
+		<div class="daoshi_team">
+			<div class="gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3><a href="/tutor/special/" target="_blank">六位一体导师团队</a></h3>
+					<p>独创六位一体服务模式，锤炼精锐留学专家，保障每位学子留学成功！</p>
+				</div>
+				<!-- count -->
+				<div class="count">
+					<!-- 选项 -->
+					<div class="clearfix t">
+						{volist name="list.type_list" id="vo"}
+							{neq name="key" value="5"}
+								<a href="/tutor/special/" target="_blank" class="fl">{$vo.tutor_type}</a><span class="fl">|</span>
+							{else/}
+								<a href="/tutor/special/" target="_blank" class="fl">{$vo.tutor_type}</a>
+							{/neq}
+						{/volist}
+					</div>
+					<!-- 内容 -->
+					<div class="clearfix b">
+						{volist name="list.type_list" id="vo"}
+							<div class="bBox clearfix">
+								<div class="fl leftb">
+									<h3>{$vo.tutor_type}</h3>
+									<p>{$vo.english_title}</p>
+									<span></span>
+									<em>{$vo.describe}</em>
+									<em>擅长：{$vo.adept}</em>
+									<div class="bBtn clearfix">
+										<a href="javascript:;" onclick="go()" class="fl">匹配专属导师</a>
+										<a href="/tutor/special/" class="fl" target="_blank">查看更多导师</a>
+									</div>
+								</div>
+								<div class="fr rightb">
+									{volist name="vo.teacher_list" id="val"}
+										<div class="fl">
+											<img src="{$admin_path}{$val['thumbnail']}" alt="{$val['title']}" title="{$val['title']}">
+											<div class="hiddenTitle">{$val['title']}</div>
+											<div class="hidden">
+												<h3>{$val['title']}</h3>
+												<span></span>
+												{notempty name="val.school"}
+													<p>{$val['school']}</p>
+												{/notempty}
+												{notempty name="val.major"}
+													<p>{$val['major']}</p>
+												{/notempty}
+												{notempty name="val.adept"}
+													<p>{$val['adept']}</p>
+												{/notempty}
+												{notempty name="$vo['rewrite']"}
+													<a href="/{$vo['rewrite']}/{$val['id']}.html" target="_blank">个人介绍</a>
+												{else/}
+													<a onclick="go()" target="_blank">与TA聊聊</a>
+												{/notempty}
+											</div>
+										</div>
+									{/volist}
+								</div>
+							</div>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 名校录取回顾 -->
+		<div class="luqu_huigu">
+			<div class="huigu">
+				<div class="gWidth1170">
+					<h3>彬彬实力展示</h3>
+					<div class="clearfix">
+						<div class="fl div1" style="width: 183px; text-align: left;">
+							<p class="p1"><span id="span1">3000</span>+</p>
+							<em class="em1"></em>
+							<i>海外监管低龄学生量</i>
+						</div>
+						<div class="fl div2" style="width: 160px;">
+							<p class="p2"><span id="span2">70</span>%</p>
+							<em class="em2"></em>
+							<i>70%学子进入美国TOP 80寄宿高中</i>
+						</div>
+						<div class="fl div3" style="width: 160px;">
+							<p class="p3"><span id="span3">90</span>%</p>
+							<em class="em3"></em>
+							<i>90%学子申请到美国TOP 60院校</i>
+						</div>
+						<div class="fl div4" style="width: 182px; text-align: center;">
+							<p class="p4"><span id="span4">12</span>亿+</p>
+							<em class="em4"></em>
+							<i>申请奖学金总额超过12亿+人民币</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 录取故事 -->
+		<div class="lqgs">
+			<div class="gWidth1170 ">
+				<div class="title">
+					<h3>彬彬学子圆梦时刻</h3>
+					<p>吸取学长学姐申请经验 助力留学梦</p>
+				</div>
+				<div class="content clearfix">
+					{volist name="case_list" id="val"}
+					<a href="/success/{$val.id}.html" target="_blank" class="clearfix">
+						<div class="box fl">
+							<img src="{$val['small_head_img']}" alt="{$val['student_name']}" title="{$val['student_name']}" />
+							<div class="fl">
+								<h4>{$val['student_name']}</h4>
+								<p>学校：{$val['xx_name']}</p>
+								<p>{eq name="$val.apply_stage" value="1"}申请年级：{else /} 录取专业： {/eq}{$val['xx_major']}</p>
+							</div>
+						</div>
+					</a>
+					{/volist}
+				</div>
+				<a href="/article/0-204-1.html" target="_blank">查看更多案例</a>
+			</div>
+		</div>
+		<!-- <div class="gWidth1170 lqgs clearfix" style="margin-top: 78px;">
+			<div class="title1 clearfix">
+				<p class="fl">2019首批</p>
+				<h3 class="fl">成功故事</h3>
+				<em></em>
+			</div>
+			<div class="fr more">
+				<a href="/article/0-204-1.html" rel="nofollow" target="_blank">MORE</a>
+			</div>
+		</div>
+		<div class="swiper-container2">
+			<div class="swiper-wrapper">
+				{volist name="case_list" id="val"}
+					<div class="swiper-slide clearfix">
+						<a href="/success/{$val.id}.html" target="_blank" class="clearfix">
+							<div class="img fl">
+								<div class="img1">
+									<img src="{$val['small_head_img']}" alt="{$val['student_name']}" title="{$val['student_name']}">
+								</div>
+								<img src="{$val['xx_logo']}" class="img2" alt="{$val['xx_name']}" title="{$val['xx_name']}">
+							</div>
+							<div class="p fl">
+								<p><span>学生姓名：</span>{$val['student_name']}</p>
+								<p><span>{eq name="$val.apply_stage" value="1"}申请年级：{else /} 录取专业： {/eq}</span>{$val['xx_major']}</p>
+								<p><span>考试成绩：</span><br />{$val['score']}</p>
+							</div>
+							<div class="gushi fr">
+								<h3>录取结果：</h3>
+								<p>{$val['xx_name']}</p>
+							</div>
+						</a>
+					</div>	
+				{/volist}
+			</div>
+			<div class="pagination"></div>
+		</div> -->
+		
+		<!-- 背景提升 -->
+		<div class="gWidth1170 bjts">
+			<!-- title -->
+			<div class="title">
+				<h3><a href="/project/0-0-1.html" target="_blank">全维度高品质背景提升项目</a></h3>
+				<p>全球顶尖TOP名校科研、500强名企实习等强大项目资源库为学生申请打造独一无二的优势。</p>
+			</div>
+			<!-- count -->
+			<div class="content clearfix">
+				<div class="ctop clearfix">
+					<div class="box fl" style="background-image: url({$bj_promote[0]['promote_home']});" id="box1">
+						<a href="/project/0-{$bj_promote[0]['id']}-1.html" target="_blank">
+							<div class="zg">
+								<img src="{$bj_promote[0]['promote_icon']}" alt="{$bj_promote[0]['bg_promote_type']}" title="{$bj_promote[0]['bg_promote_type']}">
+								<p>{$bj_promote[0]['bg_promote_type']}</p>
+							</div>
+							<div class="hidden">
+								<div>
+									<h3>{$bj_promote[0]['bg_promote_type']}</h3>
+									<p>{$bj_promote[0]['promote_brief']}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box fl" style="background-image: url({$bj_promote[1]['promote_home']});" id="box2">
+						<a href="/project/0-{$bj_promote[1]['id']}-1.html" target="_blank">
+							<div class="zg">
+								<img src="{$bj_promote[1]['promote_icon']}" alt="{$bj_promote[1]['bg_promote_type']}" title="{$bj_promote[1]['bg_promote_type']}">
+								<p>{$bj_promote[1]['bg_promote_type']}</p>
+							</div>
+							<div class="hidden">
+								<div>
+									<h3>{$bj_promote[1]['bg_promote_type']}</h3>
+									<p>{$bj_promote[1]['promote_brief']}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box fl" style="background-image: url({$bj_promote[2]['promote_home']});" id="box3">
+						<a href="/project/0-{$bj_promote[2]['id']}-1.html" target="_blank">
+							<div class="zg">
+								<img src="{$bj_promote[2]['promote_icon']}" alt="{$bj_promote[2]['bg_promote_type']}" title="{$bj_promote[2]['bg_promote_type']}">
+								<p>{$bj_promote[2]['bg_promote_type']}</p>
+							</div>
+							<div class="hidden">
+								<div>
+									<h3>{$bj_promote[2]['bg_promote_type']}</h3>
+									<p>{$bj_promote[2]['promote_brief']}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box fl" style="background-image: url({$bj_promote[3]['promote_home']});" id="box4">
+						<a href="/project/0-{$bj_promote[3]['id']}-1.html" target="_blank">
+							<div class="zg">
+								<img src="{$bj_promote[3]['promote_icon']}" alt="{$bj_promote[3]['bg_promote_type']}" title="{$bj_promote[3]['bg_promote_type']}">
+								<p>{$bj_promote[3]['bg_promote_type']}</p>
+							</div>
+							<div class="hidden">
+								<div>
+									<h3>{$bj_promote[3]['bg_promote_type']}</h3>
+									<p>{$bj_promote[3]['promote_brief']}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box fl" style="background-image: url({$bj_promote[4]['promote_home']});" id="box5">
+						<a href="/project/0-{$bj_promote[4]['id']}-1.html" target="_blank">
+							<div class="zg">
+								<img src="{$bj_promote[4]['promote_icon']}" alt="{$bj_promote[4]['bg_promote_type']}" title="{$bj_promote[4]['bg_promote_type']}">
+								<p>{$bj_promote[4]['bg_promote_type']}</p>
+							</div>
+							<div class="hidden">
+								<div>
+									<h3>{$bj_promote[4]['bg_promote_type']}</h3>
+									<p>{$bj_promote[4]['promote_brief']}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="box fl" style="background-image: url({$bj_promote[5]['promote_home']});" id="box6">
+						<a href="/page/polymerization.html" target="_blank">
+							<div class="zg">
+								<p style="line-height: 248px;">{$bj_promote[5]['bg_promote_type']}</p>
+							</div>
+							<div class="hidden">
+								<div>
+									<h3>{$bj_promote[5]['bg_promote_type']}</h3>
+									<p>{$bj_promote[5]['promote_brief']}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<style type="text/css">
+				.dong p{animation:mymove 0.8s infinite alternate-reverse;}
+				@keyframes mymove
+				{
+					from{transform: translateY(-10px);}
+					to{transform: translateY(0px);}
+				}
+			</style>
+			
+		</div>
+		<!-- <div class="count clearfix">
+			<div class="fl">
+				<img src="{$admin_path}{$bj_promote[0]['promote_map']}" alt="">
+				<div class="zg">
+					<img src="/static/home/img/home/icon{$bj_promote[0]['id']}.png" alt="">
+					<p>{$bj_promote[0]['pro_title']}</p>
+				</div>
+				<div class="hidden">
+					<h3>{$bj_promote[0]['pro_title']}</h3>
+					<p>{$bj_promote[0]['promote_brief']}</p>
+				</div>
+			</div>
+			<div class="fr">
+				{volist name="bj_promote" id="val"}
+					{neq name="key" value="0"}
+						<div class="fl">
+							<img src="{$admin_path}{$val['promote_map']}" alt="">
+							<div class="zg">
+								<img src="/static/home/img/home/icon{$val['id']}.png" alt="">
+								<p>{$val['pro_title']}</p>
+							</div>
+							<div class="hidden">
+								<h3>{$val['pro_title']}</h3>
+								<p>{$val['promote_brief']}</p>
+							</div>
+						</div>
+					{/neq}
+				{/volist}
+			</div>
+		</div> -->
+		
+		<!-- 新闻列表 -->
+		<div class="newslist">
+			<div class="box gWidth1170 clearfix">
+				<!-- 活动讲座 -->
+				<div class="fl huodong_jiangzuo">
+					<div class="title clearfix">
+						<h3 class="fl"><a href="/activity/0-0-1.html" target="_blank">活动讲座</a></h3>
+						<a href="/activity/0-0-1.html" class="fr" rel="nofollow" target="_blank">MORE</a>
+					</div>
+					<div class="count">
+						<div class="swiper-container3">
+							<div class="swiper-wrapper">
+
+								{volist name="activity_list" id="val"}
+									<div class="swiper-slide">
+										<a style="margin: 0;" href="/{$val['rewrite']}/{$val['id']}.html" target="_blank"><img src="{$val['home_pic']}" alt="{$val['title']}" title="{$val['title']}" /></a>
+										<h3><a href="/{$val['rewrite']}/{$val['id']}.html" target="_blank">{$val['title']}</a></h3>
+										<p>时间：{$val['lecture_time']}</p>
+										<p>主讲人：{$val['name']}</p>
+										<p>地点：{$val['lecture_venue']}</p>
+
+										<?php
+											if( time() <= strtotime(date('Y-m-d',$val['end_time']).' 23:59:59') ){
+											?>
+												<a href="javascript:;" onclick="go()" class="active">名额有限，点击报名</a>
+											<?php
+											}else{
+											?>
+												<a href="javascript:;" class="active" style="color: #ccc;">活动结束</a>
+											<?php
+											}
+										?>
+
+										
+									</div>	
+								{/volist}
+							</div>
+							<div class="pagination1"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 美国留学资讯 -->
+				<div class="fr liuxue_zixun">
+					<div class="title clearfix">
+						<h3 class="fl"><a href="/article/0-0-1.html" target="_blank">美国留学资讯</a></h3>
+						<a href="/article/0-0-1.html" class="fr" target="_blank">MORE</a>
+					</div>
+					<div class="count clearfix">
+
+						<!-- 高中 begin -->
+						<div class="fl box">
+							<div class="img">
+								<a href="/{$gao_article_list[0]['rewrite']}/{$gao_article_list[0]['id']}.html" target="_blank"><img src="{$gao_article_list[0]['cover_pic']}" alt="{$gao_article_list[0]['title']}" title="{$gao_article_list[0]['title']}" /></a>
+								<a href="/{$gao_article_list[0]['rewrite']}/{$gao_article_list[0]['id']}.html" title="{$gao_article_list[0]['title']}" target="_blank"><span>{$gao_article_list[0]['title']}</span></a>
+							</div>
+							<ul>
+							{volist name="gao_article_list" id="val"}
+								{neq name="key" value="0"}
+									<li><a href="/{$val['rewrite']}/{$val['id']}.html" title="{$val['title']}" target="_blank">{$val['title']}</a></li>
+								{/neq}
+							{/volist}
+						</div>
+						<!-- 高中 end -->
+
+						<!-- 本科 begin -->
+						<div class="fl box">
+							<div class="img">
+								<a href="/{$ben_article_list[0]['rewrite']}/{$ben_article_list[0]['id']}.html" target="_blank"><img src="{$ben_article_list[0]['cover_pic']}" alt="{$ben_article_list[0]['title']}" title="{$ben_article_list[0]['title']}"></a>
+								<a href="/{$ben_article_list[0]['rewrite']}/{$ben_article_list[0]['id']}.html" title="{$ben_article_list[0]['title']}" target="_blank"><span>{$ben_article_list[0]['title']}</span></a>
+							</div>
+							<ul>
+								{volist name="ben_article_list" id="val"}
+									{neq name="key" value="0"}
+										<li><a href="/{$val['rewrite']}/{$val['id']}.html" title="{$val['title']}" target="_blank">{$val['title']}</a></li>
+									{/neq}
+								{/volist}
+							</ul>
+						</div>
+						<!-- 本科 end -->
+
+						<!-- 研究生 begin -->
+						<div class="fl box">
+							<div class="img">
+								<a href="/{$yan_article_list[0]['rewrite']}/{$yan_article_list[0]['id']}.html" target="_blank"><img src="{$yan_article_list[0]['cover_pic']}" alt="{$yan_article_list[0]['title']}" title="{$yan_article_list[0]['title']}"></a>
+								<a href="/{$yan_article_list[0]['rewrite']}/{$yan_article_list[0]['id']}.html" title="{$yan_article_list[0]['title']}"><span>{$yan_article_list[0]['title']}</span></a>
+							</div>
+							<ul>
+								{volist name="yan_article_list" id="val"}
+									{neq name="key" value="0"}
+										<li><a href="/{$val['rewrite']}/{$val['id']}.html" title="{$val['title']}" target="_blank">{$val['title']}</a></li>
+									{/neq}
+								{/volist}
+							</ul>
+						</div>
+						<!-- 研究生 end -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="meiti">
+			<div class="gWidth1170 clearfix">
+				<div class="img fl">
+					<img src="/static/home/img/hz1.png" alt="彬彬教育腾讯官方号" title="彬彬教育腾讯官方号">
+					<em class="em1"></em>
+				</div>
+				<div class="img fl">
+					<img src="/static/home/img/hz2.png" alt="彬彬教育知乎官方号" title="彬彬教育知乎官方号">
+					<em class="em2"></em>
+				</div>
+				<div class="img fl">
+					<img src="/static/home/img/hz3.png" alt="百度百家号" title="百度百家号" >
+					<em class="em3"></em>
+				</div>
+				<div class="img fl">
+					<img src="/static/home/img/hz4.png" alt="彬彬教育小红书官方号" title="彬彬教育小红书官方号">
+					<em class="em4"></em>
+				</div>
+				<div class="img fl">
+					<img src="/static/home/img/hz5.png" alt="彬彬教育喜马拉雅官方号" title="彬彬教育喜马拉雅官方号">
+					<em class="em5"></em>
+				</div>
+			</div>
+		</div>
+		
+		<style type="text/css">
+			.meiti .img{
+				width: 148px;
+				height: 39px;
+				margin-right: 102px;
+				margin-top: 59px;
+			}
+			.meiti .img em{ width: 124px;height: 124px;position: absolute;left: 50%;top: -42px;margin-left: -62px;background: url(/static/home/img/weixin1.png) no-repeat center center; background-size: cover; opacity: 0;filter:alpha(opacity=0); transition: all 0.7s; transform: scale(1.1);}
+			.meiti .img:hover em{
+				transform: scale(1);
+				opacity: 1;
+				filter:alpha(opacity=100);
+			}
+			.meiti .img .em2{background-image: url(/static/home/img/zhihu.png);}
+			.meiti .img .em3{background-image: url(/static/home/img/baijiahao.png);}
+			.meiti .img .em4{background-image: url(/static/home/img/xiaohongshu.png);}
+			.meiti .img .em5{background-image: url(/static/home/img/ximalaya.png);}
+		</style>
+		
+		<!-- 公共底部 -->
+		{include file="common/common_bottom"/}
+		<!-- 公共底部 -->
+		
+		<!-- 数字滚动插件 -->
+		<script type="text/javascript" src="/static/home/js/public/countUp.min.js"></script>
+		<!-- top 底部公共文件 -->
+		<link rel="stylesheet" href="/static/home/css/index/public.css">
+		<script type="text/javascript" src="/static/home/js/index/public.js"></script>
+		<!-- 当前页面js -->
+		<script type="text/javascript" src="/static/home/js/index/home.js"></script>
+		<script type="text/javascript">
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.form .button').on('click', function () {
+				var Name = $('.form .name').val();
+				var Phone = $('.form .phone').val();
+				var Sclass = $('.form select').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == '' || Sclass == '' ){
+					alert('选项内容不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						sclass: Sclass ,// 低龄||高中 0  本科 1 研究生 2  -----> 初中-高中年级 7-12
+						urlsite: url,
+						path_source:path_source,
+						page_title: $('title').eq(0).html(),
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.form .name').val('');
+						$('.form .phone').val('');
+						$('.form select').val('');
+					}
+				})
+			})
+			// 
+			$('.bjts .content .ctop .box').hover(function () {
+				var index = $('.bjts .content .ctop .box').index($(this));
+				if( index == $('.bjts .content .ctop .box').length - 1 ){
+					$(this).addClass('dong');
+					return;
+				}
+				$(this).children('a').children('.zg').stop().fadeOut();
+				$(this).children('a').children('.hidden').css({'transform': 'scale(1)'});
+			}, function () {
+				var index = $('.bjts .content .ctop .box').index($(this));
+				if( index == $('.bjts .content .ctop .box').length - 1 ){
+					$(this).removeClass('dong');
+					return;
+				}
+				$(this).children('a').children('.zg').stop().fadeIn();
+				$(this).children('a').children('.hidden').css({'transform': 'scale(0)'});
+			})
+			// 如要传递参数,必须传递jquery对象.
+			var dom = $('.bjts .content .ctop .box .hidden h3');
+			ie8(dom);
+			$('.meiti .img:last-child').css({'margin-right': '0'});
+			// 
+			$('.meiti .img').hover(function () {
+				$(this).children('img').stop().fadeOut();
+			}, function () {
+				$(this).children('img').stop().fadeIn();
+			})
+			// 
+			var Val;
+			$('.form input').focus(function () {
+				if($(this).attr('placeholder')){
+					Val = $(this).attr('placeholder');
+				}
+				$(this).removeAttr('placeholder');
+			})
+			$('.form input').blur(function () {
+				if(Val){
+					$(this).attr('placeholder', Val);
+				}
+			})
+			
+			$('.lqgs .content>a:nth-child(3n) .box').css({'margin-right': '0'});
+		</script>
+		
+	</body>
+</html>

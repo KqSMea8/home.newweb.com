@@ -1,0 +1,7 @@
+#foot p{margin:0 auto;padding-bottom:40px;width:1024px;text-align:center;font-family:"瀹嬩綋";margin-top:25px;color:#010101;}
+#foot{background-color: #F3F3F3;  font: 12px/1.5 \5b8b\4f53, arial, sans-serif;}
+#foot b{display:block;width:1024px; margin:0 auto 20px;background-color: #d93c32;width:100%;height:4px;}
+.under_con{width:1024px;height:55px;margin:0 auto;margin-top:20px;}
+.under_con li{float:left;width:440px;font-weight:bold;height:25px;line-height:25px;padding-left:60px;}
+
+.under_con p{width:460px;font-weight:bold;height:45px;line-height:25px;margin:0 auto;background-color: #F3F3F3;}

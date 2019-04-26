@@ -1,0 +1,116 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/tutor/sister.css">
+	</head>
+	<body>
+		
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+
+
+		<!-- banner -->
+		<div class="topBanner">
+			<div class="gWidth1170 box">
+				<!-- 面包屑导航 -->
+				<div class="clearfix Mbnav">
+					<a href="/" class="fl">美国留学</a><span class="fl">&gt;</span>
+					<a href="/tutor/special" class="fl">服务团队</a><span class="fl">&gt;</span>
+					<a >{$sister_info['title']}</a>
+				</div>
+				<div class="xiangqing clearfix">
+					<img src="<?php echo config('admin_path');?>{$sister_info['details_portrait']}" class="fl" alt="">
+					<div class="fl">
+						<h3>{$sister_info['title']}</h3>
+						<p><b>在读学校：</b>{$sister_info['school']}</p>
+						<p><b>专业：</b>{$sister_info['major']}</p>
+						<p><b>学位：</b>{$sister_info['degree']}</p>
+						<a href="javascript:;" onclick="go()">预约申请留学</a>
+					</div>
+				</div>
+				<!-- 表单 -->
+				<div class="form">
+					<h3>预约导师，免费测录取率</h3>
+					<input type="text" class="name" placeholder="您的姓名">
+					<input type="text" class="phone" placeholder="联系方式">
+					<textarea placeholder="留言"></textarea>
+					<button class="button">马上预约</button>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var textpl='';
+			$('.form input').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.form input').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			$('.form textarea').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.form textarea').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.topBanner .box .form button').on('click', function () {
+				var Name = $('.topBanner .box .form input.name').val();
+				var Phone = $('.topBanner .box .form input.phone').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == ''){
+					alert('姓名电话不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						urlsite: url,
+						path_source:path_source,
+						page_title: $('title').eq(0).html(),
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.topBanner .box .form input.name').val('');
+						$('.topBanner .box .form input.phone').val('');
+					}
+				})
+			})
+		</script>
+		
+		<!-- content -->
+		<div class="content gWidth1170">
+			{notempty name="sister_info['personal_profile']"}
+				<h3 class="title">个人简介<span></span></h3>
+				{$sister_info['personal_profile']|raw}
+			{/notempty}
+			
+			{notempty name="sister_info['video']"}
+				<video src="<?php echo config('admin_path');?>{$sister_info['video']}"  poster="<?php echo config('admin_path');?>{$sister_info['cover_pic']}"  controls></video>
+			{/notempty}
+			
+			{notempty name="sister_info['student_evaluation']"}
+				<h3 class="title">学生评价<span></span></h3>
+				{$sister_info['student_evaluation']|raw}
+			{/notempty}
+			
+		</div>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+	</body>
+</html>

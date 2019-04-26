@@ -1,0 +1,1374 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/apply/high_school.css">
+		<!-- swiper -->
+		<link rel="stylesheet" href="/static/home/css/public/swiper/idangerous.swiper.css" />
+		<script src="/static/home/js/public/swiper/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	
+	<style type="text/css">
+		.banner .swiper-slide a{width: 100%;height: 100%;}
+	</style>
+	
+	<body> 
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- banner -->
+		<div class="swiper-container banner">
+			<div class="swiper-wrapper">
+				{volist name="pics" id="val"}
+					<div class="swiper-slide">
+						<a href="{$val['url']}" style="background: url({$val['pic']}) no-repeat center center;background-size: cover;" {eq name="val.is_target" value="1" } target="_blank" {/eq} >
+						</a>
+					</div>
+				{/volist}
+			</div>
+			<div class="pagination"></div>
+		</div>
+		
+		<!-- 数据 -->
+		<div class="sJ">
+			<div class="gWidth1170 clearfix">
+				<div class="fl div1">
+					<h3><span id="span1">100</span>%</h3>
+					<em></em>
+					<p>美国中学录取率高达100%</p>
+				</div>
+				<div class="fl div2">
+					<h3><span id="span2">10000</span>+</h3>
+					<em></em>
+					<p>拥有万余家精选寄宿家庭资源，覆盖全美各州</p>
+				</div>
+				<div class="fl div3">
+					<h3><span id="span3">500</span>+</h3>
+					<em></em>
+					<p>与五百余家美国优质高中保持密切合作关系</p>
+				</div>
+				<div class="fl div4">
+					<h3>独<span id="span4">1</span></h3>
+					<em></em>
+					<p>国内独1拥有海外监管服务中心和海外院校开发资质留学机构</p>
+				</div>
+				<div class="fl div5">
+					<h3>权威认证</h3>
+					<em></em>
+					<p>CSIET评审认证留学机构<br />iTEP官方授权指定考点</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 美国中学视讯 -->
+		<div class="video">
+			<div class="box gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>彬彬独家顶级资源</h3>
+				</div>
+				<!-- content -->
+				<div class="content">
+					<!-- 选项标题 -->
+					<div class="x_title clearfix">
+						<a>直面招生官</a>
+						<span>|</span>
+						<a>优质名校</a>
+					</div>
+					<!-- 选项content -->
+					<div class="x_content">
+						<p>彬彬教育定期引进校长团赴华面试，我们的学生享有优先录取、破格录取权。</p>
+						<div class="v clearfix">
+							{volist name="zsg_list" id="val"}
+								<div class="fl box">
+									<div class="hover" data-videoSrc="{$val['video']}">
+										<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}" />
+										<img src="/static/home/img/apply/high_school/baofang.png" class="bf" alt="">
+									</div>
+									<span>{$val['title']}</span>
+								</div>
+							{/volist}
+							<!-- 
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a>
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a>
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a>
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a>
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a>
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a>
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a>
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div> -->
+						</div>
+					</div>
+					<div class="x_content">
+						<p>彬彬教育直接与数百家美国优质中学达成合作，成为独家代理。</p>
+						<div class="v clearfix">
+							{volist name="js_list" id="val"}
+								<div class="fl box">
+									<div class="hover" data-videoSrc="{$val['video']}">
+										<img src="{$val['cover_pic']}" alt="" />
+										<img src="/static/home/img/apply/high_school/baofang.png" class="bf" alt="">
+									</div>
+									<a href="">
+										<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+									</a>
+									<span>{$val['title']}</span>
+								</div>
+							{/volist}
+							
+
+							<!-- <div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a href="">
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a href="">
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a href="">
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a href="">
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a href="">
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a href="">
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div>
+							<div class="fl box">
+								<div class="hover" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4">
+									<img src="/static/home/img/apply/high_school/shixun@2x.png" alt="" />
+									<img src="/static/home/img/apply/high_school/baofang@2x.png" class="bf" alt="">
+								</div>
+								<a href="">
+									<video class="video" autoplay="autoplay" loop="loop" muted="true" src=""></video>
+								</a>
+								<span>加尔塞斯纪念高中招生官寄语</span>
+							</div> -->
+						</div>
+					</div>
+					<!-- 了解近期校长来访计划 -->
+					<a href="javascript:;" onclick="go()">了解近期校长来访计划</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- A+级Top中学院校 -->
+		<div class="map gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3 style="margin-top: 23px;">彬彬名校资源库</h3>
+				<p>彬彬留学美国低龄优质名校资源非常丰富，与五百余家美国高中都持有紧密合作关系，涵盖走读，寄宿，蓝带和艺术高中。</p>
+			</div>
+			<!-- map -->
+			<div class="mapBox">
+				<div class="elgz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>俄勒冈州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>俄勒冈主教高中    Oregon Episcopal School</p>
+						</div>
+					</div>
+				</div>
+				<div class="jlfnyz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>加利福尼亚州</p>
+					<div class="hidden">
+						<div class="clearfix">
+							<div class="fl">
+								<p><b>寄宿高中</b></p>
+								<p>撒切尔学校    The Thacher School</p>
+								<p>凯特中学    Cate School</p>
+								<p>伍德赛德中学    Woodside Priory School</p>
+								<p>韦伯中学    The Webb Schools</p>
+								<p>雅典纳中学    The Athenian School</p>
+								<p>史蒂文森中学    Stevenson School</p>
+								<p>费尔蒙特预备中学     Fairmont Preparatory Academy</p>
+								<p>圣卡塔利娜学校    Santa Catalina School</p>
+								<p>福临特里奇圣心学院    Flintridge Sacred Heart Academy</p>
+								<p>朝圣者学校    Pilgrim School</p>
+								<p><b>走读高中</b></p>
+								<p>伯特利教会学校    Bethel Christian school</p>
+								<p>主教阿莱马尼高中    Bishop Alemany High school</p>
+								<p>莫罗天主教高中    Moreau Catholic High School</p>
+								<p>唐博斯克科技学院    Don Bosco Technical Institute</p>
+								<p>沙维尔学院预备高中    Xavier College Preparatory High School</p>
+								<p>圣杰纳维夫高中    St. Genevieve  High School</p>
+								<p>山谷基督学校     Valley Christian Schools(San Jose)</p>
+								<p>艾玛森私立中学    Eldorado Emerson Private School</p>
+								<p>维礼基督高中    Village Christian Schools</p>
+								<p>弗雷斯诺基督学校    Fresno Christian School</p>
+								<p>维卡维尔基督教学校    Vacaville Christian Schools</p>
+								<p>卡佩斯诺基督学校    Capistrano Valley Christian School</p>
+								<p>海瑞特基督高中    Heritage Christian School</p>
+								<p>罗马琳达学院    Loma Linda Academy</p>
+								<p>阿尔文诺高中    Alverno Height Academy</p>
+								<p>惠提尔基督高中    Whittier Christian High School</p>
+								<p>格雷斯兄弟    Grace Brethern High School</p>
+								<p>库埃里兰中学    The Quarry Lane School</p>
+								<p>三一古典学院    Trinity Classical Academy</p>
+								<p>主教多德高中    Bishop O'Dowd High School</p>
+								<p>乔治安娜布鲁斯科比预科学校    Georgiana Bruce Kirby Preparatory School</p>
+								<p>国王学院    The King's Acadamy</p>
+								<p>布坎南高中    Buchanan High School</p>
+								<p>克洛维斯北    Clovis Unified School District</p>
+								<p>旧金山基督    San Francisco Christian School</p>
+								<p>桑塔玛格丽特    Santa Margarita Catholic High School</p>
+								<p>杰赛拉    Jserra Catholic High School</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ylsnz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>亚利桑那州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>佛得谷学校    Verde Valley School</p>
+						</div>
+					</div>
+				</div>
+				<div class="klldz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>科罗拉多州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>科罗拉多喷泉谷学校    Fountain Valley School of Colorado</p>
+						</div>
+					</div>
+				</div>
+				<div class="xmxgz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>新墨西哥州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>世界联合学院    United World College USA</p>
+						</div>
+					</div>
+				</div>
+				<div class="dksxz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>德克萨斯州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>霍克黛女子学校    The Hockaday School</p>
+							<p>圣斯蒂芬教会学校    St. Stephen's Episcopal School</p>
+							<p>威利学校    The Village School</p>
+							<p>德克萨斯主教中学    TMI Episcopal</p>
+							<p><b>走读高中</b></p>
+							<p>主教林奇高中    Bishop Lynch High School</p>
+							<p>自由基督学校    Liberty Christian School </p>
+						</div>
+					</div>
+				</div>
+				<div class="xwyz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>夏威夷州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>伊奥拉尼学校    Iolani School</p>
+						</div>
+					</div>
+				</div>
+				<div class="flllz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>佛罗里达州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>圣安德鲁学校    Saint Andrew's School</p>
+							<p>博尔斯学校     The Bolles School</p>
+							<p><b>走读高中</b></p>
+							<p>韦罗特主教高中     Bishop Verot Catholic High School</p>
+						</div>
+					</div>
+				</div>
+				<div class="mnsdz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>明尼苏达州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>明尼苏达国际学校    The International School of Minnesota</p>
+							<p>圣约翰中学    Saint John's Preparatory School</p>
+						</div>
+					</div>
+				</div>
+				<div class="ahhz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>爱荷华州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>马赫西学校    Maharishi School</p>
+						</div>
+					</div>
+				</div>
+				<div class="adhz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>爱达荷州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>河石国际学校    Riverstone International School</p>
+						</div>
+					</div>
+				</div>
+				<div class="ylnz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>伊利诺伊州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>湖森中学    Lake Forest Academy</p>
+							<p>伍德兰兹圣心学院    Woodlands Academy of the Sacred Heart</p>
+							<p><b>走读高中</b></p>
+							<p>圣维克特高中    Saint Viator High School</p>
+							<p>娜泽瑞斯中学    Nazareth Academy</p>
+							<p>德拉萨学院    De La Salle Institute</p>
+							<p>绍姆堡基督高中    Schaumburg Christian School</p>
+							<p>普罗维登斯天主高中    Providence Catholic High School</p>
+							<p>芝加哥拉丁学校    Latin School of Chicago</p>
+							<p>北海滨日校    North Shore Country Day School</p>
+						</div>
+					</div>
+				</div>
+				<div class="mslz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>密苏里州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>托马斯杰斐逊学校    Thomas Jefferson School</p>
+						</div>
+					</div>
+				</div>
+				<div class="mxgz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>密歇根州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>克瑞布鲁克中学    Cranbrook Schools</p>
+						</div>
+					</div>
+				</div>
+				<div class="ydanz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>印地安那州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>柯尔沃学院    Culver Academies</p>
+							<p><b>走读高中</b></p>
+							<p>海瑞特基督学校    Heritage Christian School</p>
+						</div>
+					</div>
+				</div>
+				<div class="tnxz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>田纳西州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>麦卡利中学    McCallie School</p>
+							<p>韦伯中学    The Webb School</p>
+							<p>贝勒中学    Baylor School</p>
+						</div>
+					</div>
+				</div>
+				<div class="albmz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>阿拉巴马州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>印第安泉中学    Indian Springs School</p>
+							<p><b>走读高中</b></p>
+							<p>圣伯纳德中学    Saint Bernard School</p>
+							<p>汉姆顿学校    Hamden Hall Country Day School</p>
+							<p>马斯特学校    The Master's School</p>
+							<p>费斯预备学校    Faith  Preparatory Academy</p>
+							<p>圣约瑟夫高中    St. Joseph High School</p>
+						</div>
+					</div>
+				</div>
+				<div class="eyez clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>俄亥俄州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>西储学院    Western Reserve Academy</p>
+							<p>莫米谷走读中学    Maumee Valley Country Day School</p>
+							<p><b>走读高中</b></p>
+							<p>帕多瓦方济会高中    Padua Franciscan High School</p>
+							<p>惠灵顿学校    The Wellington School</p>
+						</div>
+					</div>
+				</div>
+				<div class="xhbsez clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>新罕布什尔州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>菲利普斯埃克塞特中学    Phillips Exeter Academy</p>
+							<p>圣保罗中学    St. Paul's School</p>
+							<p><b>走读高中</b></p>
+							<p>布雷迪主教高中    Bishop Brady High School</p>
+						</div>
+					</div>
+				</div>
+				<div class="mszsz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>马萨诸塞州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>菲利普斯学校安多佛    Phillips Academy</p>
+							<p>迪尔菲尔德学院    Deerfield Academy</p>
+							<p>米尔顿高中    Milton Academy</p>
+							<p>格里诺贵族学校    Noble and Greenough School</p>
+							<p>格罗顿学校    Groton School</p>
+							<p>米德尔塞克斯中学    Middlesex School</p>
+							<p>圣马克学校     St. Mark's School</p>
+							<p>康科德学院    Concord Academy</p>
+							<p>库欣高中    Cushing Academy</p>
+							<p>北野山高中    Northfield Mount Hermon School</p>
+							<p>布鲁克斯学校    Brooks School</p>
+							<p>达娜豪尔女子高中    Dana Hall School</p>
+							<p>伽文纳中学    The Governor's Academy</p>
+							<p>泰博学院    Tabor Academy</p>
+							<p>威斯顿剑桥中学    The Cambridge School of Weston</p>
+							<p>米斯豪司女子高中    Miss Hall's School</p>
+							<p>伍斯特学院    Worcester Academy</p>
+							<p>胡桃山艺术高中	    Walnut Hill School for the Arts</p>
+							<p><b>走读高中</b></p>
+							<p>怀延斯维尔基督中学	    Whitinsville Christian School</p>
+							<p>福莫斯学院	    Falmouth Academy</p>
+							<p>布拉德福德基督学校	    Bradford Christian Academy</p>
+							<p>芳邦女子中学	    Fontbonne Academy</p>
+							<p>伍德沃德女子学校	    The Woodward School</p>
+							<p>圣约瑟夫预备高中	    Saint Joseph Prep</p>
+							<p>布里梅尔学校	    Brimmer &amp; May Schools</p>
+							<p>品格里中学	    Pingree School</p>
+							<p>罗威尔天主教高中	    Lowell Catholic High School</p>
+							<p>纽曼中学	    The Newman School</p>
+						</div>
+					</div>
+				</div>
+				<div class="lddz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>罗得岛州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>圣乔治学校    St. George's School</p>
+							<p>朴茨茅斯修道院中学    Portsmouth Abbey School</p>
+						</div>
+					</div>
+				</div>
+				<div class="xzxz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>新泽西州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>劳伦斯威尔高中    The Lawrenceville School</p>
+							<p>佩迪中学    Peddie School</p>
+							<p>布莱尔学院    Blair Academy</p>
+							<p>普林斯顿胡恩中学    The Hun School of Princeton</p>
+							<p>潘宁顿中学    The Pennington School</p>
+							<p><b>走读高中</b></p>
+							<p>罗格斯中学    Rutgers Preparatory School </p>
+							<p>兰尼学院    Ranney School</p>
+							<p>兰尼学院    Saddle River Day School</p>
+							<p>普林斯顿圣心学院    Princeton Academy of the Scared Heart</p>
+						</div>
+					</div>
+				</div>
+				<div class="hsdtq clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>华盛顿特区</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>圣奥尔本斯中学    St. Albans School</p>
+							<p>西北中学    The Northwest School</p>
+							<p>福利斯特里奇女子中学    Forest Ridge School of the Sacred Heart</p>
+							<p><b>走读高中</b></p>
+							<p>贝尔维尤基督教学校    Bellevue Christian School</p>
+							<p>国王中学    King's Schools</p>
+							<p>贝拉明预备学校    Bellarmine Preparatory School</p>
+						</div>
+					</div>
+				</div>
+				<div class="mllz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>马里兰州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>乔治城预科学校    Georgetown Preparatory School</p>
+							<p>麦克多纳学校    McDonogh School</p>
+							<p>圣詹姆斯学校    Saint James School</p>
+							<p><b>走读高中</b></p>
+							<p>格莱内尔学校    Glenelg Country School</p>
+							<p>圣母古德康索    Our Lady of Good Counsel High School</p>
+						</div>
+					</div>
+				</div>
+				<div class="bkllnz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>北卡罗来纳州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>阿什维尔学校    Asheville School</p>
+							<p>美国希伯来学院    American Hebrew Academy</p>
+						</div>
+					</div>
+				</div>
+				<div class="nyz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>纽约州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>哈克里中学    Hackley School</p>
+							<p>艾玛威拉德女子中学    Emma Willard School</p>
+							<p>迈斯特中学    The Masters School</p>
+							<p>石溪中学     The Stony Brook School</p>
+							<p>湖沙克中学    Hoosac School</p>
+							<p><b>走读高中</b></p>
+							<p>劳伦斯伍德米尔学院    Lawrence Woodmere Academy</p>
+							<p>哈利学校    The Harley School</p>
+							<p>花园学校    Garden School</p>
+							<p>马丁路德学校    Martin Luther School</p>
+							<p>圣玛丽高中    Saint Mary’s High School</p>
+							<p>圣弗朗西斯预备学校    St. Francis Preparatory School</p>
+							<p>布法罗公园学校    The Park School of  Buffalo</p>
+							<p>斯泰顿岛学校    Staten Island Academy</p>
+							<p>布鲁克林友谊学校    Brooklyn Friends School</p>
+						</div>
+					</div>
+				</div>
+				<div class="kndgz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>康涅狄格州</p>
+					<div class="hidden">
+						<h4>寄宿高中</h4>
+						<div>
+							<p>乔特罗斯玛丽中学    Choate Rosemary Hall</p>
+							<p>鲁米斯查菲高中	 The Loomis Chaffee School</p>
+							<p>霍奇基斯中学	The Hotchkiss School</p>
+							<p>塔夫脱中学	The Taft School</p>
+							<p>肯特高中	Kent School</p>
+							<p>波特女子高中	Miss Porter's School</p>
+							<p>威斯敏斯特学院	 Westminster School</p>
+							<p>梳士巴利男子学校	Salisbury School</p>
+							<p>威斯多佛学校	Westover School</p>
+							<p>庞弗雷特中学	Pomfret School</p>
+						</div>
+					</div>
+				</div>
+				<div class="bxfnyz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>宾夕法尼亚州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>桑迪赛德学院	Shady Side Academy</p>
+							<p>摩尔西斯堡学院	Mercersburg Academy</p>
+							<p>希尔中学	The Hill School</p>
+							<p>乔治高中	George School</p>
+							<p>西城中学	Westtown School</p>
+							<p>格里尔女子中学	Grier School</p>
+							<p>林顿女子中学	Linden Hall</p>
+							<p>怀俄明高中	Wyoming Seminary College Preparatory School</p>
+							<p><b>走读高中</b></p>
+							<p>文森特学院	Vincentian Academy</p>
+							<p>哈里森堡学院	 Harrisburg Academy</p>
+							<p>考文垂基督学校	  Coventry Christian Schools</p>
+							<p>多克门诺高中	Dock Mennonite Academy</p>
+							<p>奎格利天主中学	    Quigley Catholic High School</p>
+							<p>三一高中	Trinity High School</p>
+							<p>西顿拉萨尔天主教高中	Seton LaSalle Catholic High School</p>
+							<p>特拉华基督	Delaware County Christian School</p>
+							<p>兰开斯特蒙诺学校	Lancaster Mennonite School - Lancaster Campus</p>
+						</div>
+					</div>
+				</div>
+				<div class="fjnyz clearfix box">
+					<img src="/static/home/img/apply/high_school/dingwei.png" alt="">
+					<p>弗吉尼亚州</p>
+					<div class="hidden">
+						<div>
+							<p><b>寄宿高中</b></p>
+							<p>主教高中	Episcopal High School</p>
+							<p>玛黛拉女子中学	The Madeira <School></School></p>
+							<p>乌德贝里森林学校	Woodberry Forest School</p>
+							<p>查塔姆霍尔学校	Chatham Hall</p>
+							<p><b>走读高中</b></p>
+							<p>沃星汉姆学校	Walsingham Academy</p>
+							<p>利伯蒂基督学院	  Liberty Christian Academy</p>
+							<p>弗林特山学校		Liberty Christian Academy</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="javascript:;" onclick="go()">你与名校只差一个彬彬教育，马上申名校</a>
+		</div>
+		
+		<!-- 彬彬海外监管服务 -->
+		<div class="haiwai_jianguan">
+			<div class="box gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3><a href="/page/overseashome.html" target="_blank">彬彬海外监管服务</a></h3>
+					<p>覆盖全美五十个州，24H全天候服务，海外监管服务导师1000+，服务在美留学生20000+，海外生活学习报告100万+，力保为每位学子提供定制化满分服务。</p>
+				</div>
+				<!-- 彬彬后期监管服务 -->
+				<div class="houqi_jianguan clearfix">
+					<h2>彬彬后期监管服务</h2>
+					<div class="box clearfix">
+						<div class="swiper-container2">
+							<div class="xian"></div>
+							<div class="swiper-wrapper clearfix">
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>海外安全培训</h3>
+										<p>为学生提供海外风俗、文化、法律、安全培训。让学生在美国保证百分百安全</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>保险办理</h3>
+										<p>协助学生办理健康、意外等保险，协助学生进行保险报销</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>接机服务</h3>
+										<p>学生到达后，安排地接人员接待学生，送达住宿地点</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>酒店安排</h3>
+										<p>为学生的短假期或亲友的探访短期住宿，酒店相关事宜的安排</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>入学适应</h3>
+										<p>通过培训及快速熟悉周边环境，让学生尽快适应学习进度及生活环境</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>生活报告</h3>
+										<p>定期为家长反馈学生在美生活情况报告</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>学习报告</h3>
+										<p>定期为家长反馈学生在美学习成绩单翻译、校方意见反馈等。</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>升学规划</h3>
+										<p>为学生将来的升学做好规划，针对性的学习方案</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="content">
+										<h3>24H紧急情况处理</h3>
+										<p>国内外负责人24H轮流值班，第一时间协调处理突发情况，及时解决和反馈家长需要紧急了解的情况</p>
+										<div class="dot"></div>
+										<span class="sj"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="leftBtn"></div>
+						<div class="rightBtn"></div>
+					</div>
+				</div>
+				<!-- 海外监管服务团队 -->
+				<div class="haiwai_jg">
+					<h2>海外监管服务团队</h2>
+					<div class="box">
+						<!-- 选项卡标题 -->
+						<div class="hw_title clearfix">
+							<a class="active">学业支持</a>
+							<a class="">生活指导</a>
+							<a class="">院校开发和家庭招募</a>
+						</div>
+						<!-- 选项内容 -->
+						<div class="hw_content clearfix">
+							<div class="swiper-container3 swiper2">
+								<div class="swiper-wrapper">
+
+									{volist name="zc_list" id="val"}
+										<div class="swiper-slide">
+											<img src="{$val['cover_pic']}" class="back" alt="{$val['title']}" title="{$val['title']}">
+											<div class="hidden">
+												<h3>{$val['title']}</h3>
+												<span></span>
+												<p>{$val['introduction']}</p>
+												<a href="javascript:;" onclick="go()">向TA咨询</a>
+											</div>
+											<img src="/static/home/img/apply/high_school/baofang2.png" data-videoSrc="{$val['video']}" class="bf" alt="">
+										</div>
+									{/volist}
+
+									<!-- <div class="swiper-slide">
+										<img src="/static/home/img/apply/high_school/shipin2.png" class="back" alt="">
+										<div class="hidden">
+											<h3>Sue Trimble访谈</h3>
+											<span></span>
+											<p>Aaron  获哈佛大学肯尼迪学院公共管理硕士学位，并获得全额奖学金。曾就职中华人民共和国外交部新闻司，任驻菲律宾使馆发言人。Aaron 有丰富的国际教育背景和经验。</p>
+											<a href="javascript:;">向TA咨询</a>
+										</div>
+										<img src="/static/home/img/apply/high_school/baofang2.png" data-videoSrc="/static/home/img/apply/high_school/video/6.mp4" class="bf" alt="">
+									</div> -->
+
+								</div>
+							</div>
+							<!-- <div class="leftBtn1" id="left1"></div>
+							<div class="rightBtn1" id="right1"></div> -->
+						</div>
+						<div class="hw_content clearfix">
+							<div class="swiper-container3 swiper3">
+								<div class="swiper-wrapper">
+
+									{volist name="zd_list" id="val"}
+										<div class="swiper-slide">
+											<img src="{$val['cover_pic']}" class="back" alt="{$val['title']}" title="{$val['title']}">
+											<div class="hidden">
+												<h3>{$val['title']}</h3>
+												<span></span>
+												<p>{$val['introduction']}</p>
+												<a href="javascript:;" onclick="go()">向TA咨询</a>
+											</div>
+											<img src="/static/home/img/apply/high_school/baofang2.png" data-videoSrc="{$val['video']}" class="bf" alt="">
+										</div>
+									{/volist}
+
+								</div>
+							</div>
+							<!-- <div class="leftBtn1" id="left2"></div>
+							<div class="rightBtn1" id="right2"></div> -->
+						</div>
+						<div class="hw_content clearfix">
+							<div class="swiper-container3 swiper4">
+								<div class="swiper-wrapper">
+
+									{volist name="zm_list" id="val"}
+										<div class="swiper-slide">
+											<img src="{$val['cover_pic']}" class="back" alt="{$val['title']}" title="{$val['title']}">
+											<div class="hidden">
+												<h3>{$val['title']}</h3>
+												<span></span>
+												<p>{$val['introduction']}</p>
+												<a href="javascript:;" onclick="go()">向TA咨询</a>
+											</div>
+											<img src="/static/home/img/apply/high_school/baofang2.png" data-videoSrc="{$val['video']}" class="bf" alt="">
+										</div>
+									{/volist}
+
+								</div>
+							</div>
+							<!-- <div class="leftBtn1" id="left3"></div>
+							<div class="rightBtn1" id="right3"></div> -->
+						</div>
+					</div>
+				</div>
+				<a href="/page/overseashome.html" target="_blank" class="lj">了解项目详情</a>
+			</div>
+		</div>
+		<!-- 弹出的视频 -->
+		<div class="tc_video">
+			<div class="video">
+				<video src="" autoplay="autoplay" controls="controls">
+					您的浏览器不支持video标签
+				</video>
+				<img src="/static/home/img/apply/high_school/video_gb.png" alt="">
+			</div>
+		</div>
+		
+		<!-- 彬彬海外照片集 -->
+		<div class="haiwai_zhaopian gWidth1170">
+			<!-- title -->
+			<div class="title">
+				<h3>看得见的实景 更放心的服务</h3>
+			</div>
+			<!-- content -->
+			<div class="content">
+				<!-- 选项标题 -->
+				<div class="content_title clearfix">
+					<a href="/fmfml/0-1.html" target="_blank" class="active">海外生活实景</a>
+					<span>|</span>
+					<a>重现温情瞬间</a>
+				</div>
+				<!-- 选项内容 -->
+				<div class="content_con clearfix">
+					<p style="text-align: center; font-size: 15px;margin: 20px 0 30px;">拥有万余家精选寄宿家庭资源，覆盖全美各州</p>
+					<div class="swiper-container4 swiper41">
+						<div class="swiper-wrapper">
+							
+							<div class="swiper-slide">
+								<!-- 三张小图 -->
+								<div class="top clearfix">
+									{volist name="sj_list['list1']" id="val"}
+										{lt name="key" value="3"}
+											<div class="img fl">
+												<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}">
+												<a href="/fmcontent/{$val.id}.html" target="_blank">
+													<div class="hidden">
+														<div class="p">
+															<p>{$val['title']}</p>
+														</div>
+													</div>
+												</a>
+											</div>
+										{/lt}
+									{/volist}
+								</div>
+								<!-- 两张大图 -->
+								<div class="bottom clearfix">
+									{volist name="sj_list['list1']" id="val"}
+										{egt name="key" value="3"}
+											<div class="img fl">
+												<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}">
+												<a href="/fmcontent/{$val.id}.html" target="_blank">
+													<div class="hidden">
+														<div class="p">
+															<p>{$val['title']}</p>
+														</div>
+													</div>
+												</a>
+											</div>
+										{/egt}
+									{/volist}
+								</div>
+							</div>
+							{notempty name="sj_list['list2']"}
+							<div class="swiper-slide">
+								<!-- 三张小图 -->
+								<div class="top clearfix">
+									{volist name="sj_list['list2']" id="val"}
+										{lt name="key" value="3"}
+											<div class="img fl">
+												<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}">
+												<a href="/fmcontent/{$val.id}.html" target="_blank">
+													<div class="hidden">
+														<div class="p">
+															<p>{$val['title']}</p>
+														</div>
+													</div>
+												</a>
+											</div>
+										{/lt}
+									{/volist}
+								</div>
+								<!-- 两张大图 -->
+								<div class="bottom clearfix">
+									{volist name="sj_list['list2']" id="val"}
+										{egt name="key" value="3"}
+											<div class="img fl">
+												<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}">
+												<a href="/fmcontent/{$val.id}.html" target="_blank">
+													<div class="hidden">
+														<div class="p">
+															<p>{$val['title']}</p>
+														</div>
+													</div>
+												</a>
+											</div>
+										{/egt}
+									{/volist}
+								</div>
+							</div>
+							{/notempty}
+						</div>
+					</div>
+					<div class="fr">
+						<div class="haiwaiLeft haiwaiLeft1"><span></span></div>
+						<div class="haiwaiRight haiwaiRight1"><span></span></div>
+					</div>
+				</div>
+				
+				<div class="content_con clearfix">
+					<p style="text-align: center; font-size: 15px;margin: 20px 0 30px;">完善的海外监管服务，让学生在国外也有家的感觉！</p>
+					<div class="swiper-container5 swiper42">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- 三张小图 -->
+								<div class="top clearfix">
+									{volist name="gh_list['list1']" id="val"}
+										{lt name="key" value="3"}
+											<div class="img fl">
+												<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}">
+													<div class="hidden">
+														<div class="p">
+															<p>{$val['title']}</p>
+														</div>
+													</div>
+											</div>
+										{/lt}
+									{/volist}
+								</div>
+								<!-- 两张大图 -->
+								<div class="bottom clearfix">
+									{volist name="gh_list['list1']" id="val"}
+										{egt name="key" value="3"}
+											<div class="img fl">
+												<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}">
+													<div class="hidden">
+														<div class="p">
+															<p>{$val['title']}</p>
+														</div>
+													</div>
+											</div>
+										{/egt}
+									{/volist}
+								</div>
+							</div>
+							{notempty name="gh_list['list2']"}
+							<div class="swiper-slide">
+								<!-- 三张小图 -->
+								<div class="top clearfix">
+									{volist name="gh_list['list2']" id="val"}
+										{lt name="key" value="3"}
+											<div class="img fl">
+												<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}">
+													<div class="hidden">
+														<div class="p">
+															<p>{$val['title']}</p>
+														</div>
+													</div>
+											</div>
+										{/lt}
+									{/volist}
+								</div>
+								<!-- 两张大图 -->
+								<div class="bottom clearfix">
+									{volist name="gh_list['list2']" id="val"}
+										{egt name="key" value="3"}
+										<div class="img fl">
+											<img src="{$val['cover_pic']}" alt="{$val['title']}" title="{$val['title']}">
+												<div class="hidden">
+													<div class="p">
+														<p>{$val['title']}</p>
+													</div>
+												</div>
+										</div>
+										{/egt}
+									{/volist}
+								</div>
+							</div>
+							{/notempty}
+						</div>
+					</div>
+					<div class="fr">
+						<div class="haiwaiLeft haiwaiLeft2"><span></span></div>
+						<div class="haiwaiRight haiwaiRight2"><span></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 彬彬低龄游学产品 -->
+		<div class="diling_youxue">
+			<div class="box gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>彬彬海外游学服务</h3>
+				</div>
+				<!-- content -->
+				<div class="content">
+					<!-- 选项标题 -->
+					<div class="diling_title clearfix">
+						<a class="active">插班</a>
+						<span>|</span>
+						<a >访校</a>
+						<span>|</span>
+						<a >夏令营</a>
+					</div>
+					<!-- 选择内容 -->
+					<div class="diling_content clearfix">
+							<p>插班是指中国学生利用不同国家学校放假和开学的时间差，赴国外走进当地的学校，进行短期学习，深度体验国外的课堂，感受多元文化。</p>
+							<div class="clearfix">
+								<div class="fl box">
+									<img src="/static/home/img/apply/high_school/chaban1.jpg" alt="收获全真学习证书" title="收获全真学习证书">
+									<div class="hidden">
+										<h3>收获全真学习证书</h3>
+										<p>实景浸泡体验海外优质小学课程，收获学校颁发的官方学习证书。</p>
+									</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/chaban2.jpg" alt="提升英语综合应用能力" title="提升英语综合应用能力">
+										<div class="hidden">
+											<h3>提升英语综合应用能力</h3>
+											<p>与海外课堂伙伴和老师密集交流，在过程中锻炼英语表达能力和跨文化交流沟通的能力。</p>
+										</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/chaban3.jpg" alt="体验原汁原味美式课堂" title="体验原汁原味美式课堂">
+										<div class="hidden">
+											<h3>体验原汁原味美式课堂</h3>
+											<p>为期三周的沉浸式学习项目，置身全英语言环境，全方位体验美式教育模式。</p>
+										</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/chaban4.jpg" alt="收获宝贵海外学习经历" title="收获宝贵海外学习经历">
+										<div class="hidden">
+											<h3>收获宝贵海外学习经历</h3>
+											<p>充分融入美国的教学体系和生活方式，受益海外先进的教育理念和文化熏陶，真正做到“游+学”一体化。</p>
+										</div>
+								</div>
+							</div>
+							<p style="margin-bottom: 0;margin-top: 50px;">彬彬教育提供私人一对一定制化插班服务，根据您孩子的实际情况和您的需求，为您孩子匹配最合适的海外插班课堂！</p>
+						</div>
+						<div class="diling_content clearfix">
+							<p>利用美国当地学校开放日，进入美国精英学校，让孩子体验美高课程，了解美国文化，提升跨文化交流的能力。</p>
+							<div class="clearfix">
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/fangxiao1.jpg" alt="获得真实感受" title="获得真实感受">
+										<div class="hidden">
+											<h3>获得真实感受</h3>
+											<p>深入学校了解真实校园氛围及师生交流现状，能够深切体会在美国求学的真实感受。更准确判断学校是否适合自己。</p>
+										</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/fangxiao2.jpg" alt="文化城市艺术采风" title="文化城市艺术采风">
+										<div class="hidden">
+											<h3>文化城市艺术采风</h3>
+											<p>寻访纽约、罗德岛、旧金山、洛杉矶等城市的文化艺术圣地，作为自己的《访校日志》，可作为作品集用于申请高校。</p>
+										</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/fangxiao3.jpg" alt="提升综合能力" title="提升综合能力">
+										<div class="hidden">
+											<h3>提升综合能力</h3>
+											<p>全面提高学生的英语应用能力、独立自主能力和跨文化交流能力，提高录取竞争力。</p>
+										</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/fangxiao4.jpg" alt="与学校招生官面对面交流" title="与学校招生官面对面交流">
+										<div class="hidden">
+											<h3>与学校招生官面对面交流</h3>
+											<p>与招生官进行面对面交流，在交流过程中能够了解学校招生偏好，发现自身不足，并锻炼学生逻辑思维能力。</p>
+										</div>
+								</div>
+							</div>
+							<p style="margin-bottom: 0;margin-top: 50px;">彬彬留学提供私人定制化访校服务，学习+游览，让您的孩子收获满满！</p>
+						</div>
+						<div class="diling_content clearfix">
+							<p>夏令营可以带领孩子们全真体验世界著名学府，拓宽国际视野，丰富人生阅历，增强主动性，培养个性以及国际化、多元化的文化理念和思维习惯。</p>
+							<div class="clearfix">
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/xialingying1.jpg" alt="提高英语应用能力" title="提高英语应用能力">
+										<div class="hidden">
+											<h3>提高英语应用能力</h3>
+											<p>从开始不敢开口说话、讲英文到整个夏令营结束后的侃侃而谈，能有效提高英语应用能力。</p>
+										</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/xialingying2.jpg" alt="开阔视野增长见识" title="开阔视野增长见识">
+										<div class="hidden">
+											<h3>开阔视野增长见识</h3>
+											<p>领略不一样的风光以及风土人情，通过与不同人的交流增长见识，是前进道路上的一笔宝贵的财富。</p>
+										</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/xialingying3.jpg" alt="培养独立能力" title="培养独立能力">
+										<div class="hidden">
+											<h3>培养独立能力</h3>
+											<p>参加夏令营，就等于离开了父母的怀抱，能够很好的培养同学们的独立生活及独立处事的能力。</p>
+										</div>
+								</div>
+								<div class="fl box">
+										<img src="/static/home/img/apply/high_school/xialingying4.jpg" alt="为未来留学打下基础" title="为未来留学打下基础">
+										<div class="hidden">
+											<h3>为未来留学打下基础</h3>
+											<p>提前适应美国的学习生活环境，提前适应留学生活，做好留学计划和准备，提高留学申请成功率。</p>
+										</div>
+								</div>
+							</div>
+							<p style="margin-bottom: 0;margin-top: 50px;">彬彬教育可提供私人定制路线，满足不同家长及学生的需求，切身体验外国学校生活，有效提高学生的综合能力。</p>
+						</div>
+					</div>
+				<!-- 按钮 -->
+				<a class="dingzhi" href="javascript:;" onclick="go()">点击定制</a>
+			</div>
+		</div>
+		
+		<!-- 美国低龄留学为什么选彬彬 -->
+		<div class="xuan gWidth1170">
+			<h3>美国低龄留学为什么选彬彬</h3>
+			<div class="content clearfix">
+				<div class="box fl">
+					<img src="/static/home/img/apply/high_school/bin1.jpg" alt="校方资源丰富 合作密切" title="校方资源丰富 合作密切">
+					<div class="hidden_a"><h4>校方资源丰富 合作密切</h4></div>
+					<div class="hidden_b">
+						<div>
+							<h4 style="margin-bottom: 5px;">校方资源丰富 合作密切</h4>
+							<p>彬彬与千余所美国高中合作密切，是众多学校的独家代理，其中包含百余所蓝带高中、寄宿高中，主要分布在加州、纽约州、波士顿、宾州等地区。<br />彬彬凭借丰富的校方资源为客户打造真正的"全美自由选择"的择校服务，并会定期引进校长团赴华为学生面试，我们的学生享有优先录取、破格录取权。</p>
+						</div>
+					</div>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/apply/high_school/bin2.jpg" alt="一站式申请服务" title="一站式申请服务">
+					<div class="hidden_a"><h4>一站式申请服务</h4></div>
+					<div class="hidden_b">
+						<div>
+							<h4>一站式申请服务</h4>
+							<p>彬彬教育提供出国考试辅导、背景提升、学业规划、职业规划、活动规划、寄宿家庭安置、海外监管等一系列留学申请服务及海外服务，直到学生顺利毕业，我们的服务才会停止。</p>
+						</div>
+					</div>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/apply/high_school/bin3.jpg" alt="10余年专注美国低龄申请" title="10余年专注美国低龄申请">
+					<div class="hidden_a"><h4>10余年专注美国低龄申请</h4></div>
+					<div class="hidden_b">
+						<div>
+							<h4 style="margin-bottom: 10px;">10余年专注美国低龄申请</h4>
+							<p>彬彬专注美国低龄留学申请十余年，平均每年斩获300多封蓝带高中offer，为了给学生们提供更极致的留学服务，十余年来我们不断研发迭代产品，从咨询、申校、文书、到游学、实习、名校科研，环环相扣，让学生全方位得到提升。彬彬留学致力于让每位“成功留学”的学生都能“留学成功”。</p>
+						</div>
+					</div>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/apply/high_school/bin4.jpg" alt="万余例成功案例  申请经验丰富" title="万余例成功案例  申请经验丰富">
+					<div class="hidden_a"><h4>万余例成功案例  申请经验丰富</h4></div>
+					<div class="hidden_b">
+						<div>
+							<h4>万余例成功案例，申请经验丰富</h4>
+							<p>彬彬教育积累了万余成功案例，拥有优质丰富的海外院校资源，是我们为广大学生提供专业留学规划服务的根本依托和优势所在。</p>
+						</div>
+					</div>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/apply/high_school/bin5.jpg" alt="选校精准  方案灵活" title="选校精准  方案灵活">
+					<div class="hidden_a"><h4>选校精准  方案灵活</h4></div>
+					<div class="hidden_b">
+						<div>
+							<h4>选校精准，方案灵活</h4>
+							<p>彬彬教育会系统化的评估学生情况，根据学生的具体情况制定针对性的留学方案，并匹配合适的院校。</p>
+						</div>
+					</div>
+				</div>
+				<div class="box fl">
+					<img src="/static/home/img/apply/high_school/bin7.jpg" alt="16家境外服务中心" title="16家境外服务中心">
+					<div class="hidden_a"><h4>16家境外服务中心</h4></div>
+					<div class="hidden_b">
+						<div>
+							<h4>16家境外服务中心</h4>
+							<p>彬彬教育的业务范围遍布在全球各主要城市，设有16家境外服务中心，其中包括芝加哥、华盛顿、洛杉矶、波士顿、纽约等主要城市。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 活动讲座 新闻列表 -->
+		<div class="news">
+			<div class="box gWidth1170 clearfix">
+				<!-- 讲座活动 -->
+				<div class="fl bL">
+					<h3 class="clearfix"><a href="/activity/1-0-1.html" target="_blank">讲座活动</a><a href="/activity/1-0-1.html" rel="nofollow" class="fr" target="_blank">MORE</a></h3>
+					<div class="content">
+						{volist name="activity_list" id="val"}
+							<div class="clearfix">
+								<div class="img fl"><img src="{$val['details_portrait']}" alt="{$val['title']}" title="{$val['title']}"></div>
+								<div class="fl cLeft">
+									<h4><a href="/{$val['rewrite']}/{$val['id']}.html" title="{$val['title']}" target="_blank">{$val['title']}</a></h4>
+									<p>时间：{$val['lecture_time']}</p>
+									<!-- <p>主讲人：{$val['name']}</p> -->
+									<!-- <p>地点：{$val['lecture_venue']}</p> -->
+								</div>
+								<?php
+									if( time() >= strtotime(date('Y-m-d',$val['end_time']).' 23:59:59') ){
+									?>
+										<a class="yyz" href="javascript:;" onclick="go()" style="background-color: #CCCCCC;">已结束</a>
+									<?php
+									}else{
+									?>
+										<a class="yyz" href="javascript:;" onclick="go()">预约中</a>
+									<?php
+									}
+								?>
+							</div>
+						{/volist}
+					</div>
+				</div>
+				<!-- 美国高中留学咨询 -->
+				<div class="fl bR">
+					<h3 class="clearfix"><a href="/article/1-0-1.html" target="_blank">美国高中留学资讯</a><a href="/article/1-0-1.html" rel="nofollow" class="fr" target="_blank">MORE</a></h3>
+					<div class="content1 clearfix">
+						<ul class="fl">
+							{volist name="article_type_list" id="val"}
+								{eq name="key" value="0"}
+									<li class="active">{$val['title']}</li>
+								{else/}
+									<li class="">{$val['title']}</li>
+								{/eq}
+							{/volist}
+						</ul>
+						{volist name="article_type_list" id="val1" key="key1"}
+							<div class="fl">
+								{volist name="val1.children" id="val2" key="key2"}
+									<div>
+										<h5><a href="/{$val1.rewrite}/{$val2.id}.html" target="_blank">{$val2['title']}</a></h5>
+										<p>{$val2['add_time']|date='Y-m-d'}</p>
+									</div>
+								{/volist}
+							</div>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 公共底部 -->
+		{include file="common/common_bottom"/}
+		<!-- 公共底部 -->
+		
+		
+		<!-- 高中表单 -->
+		{include file="common/common_highSchool"/}
+		
+		
+		<!-- 当前页面js -->	
+		<script type="text/javascript" src="/static/home/js/apply/lowage.js"></script>
+	</body>
+</html>

@@ -1,0 +1,346 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/article/list.css">
+		<!-- 分页样式 -->
+		<link rel="stylesheet" href="/static/common/css/page.css" />
+		<style>
+			body{
+				background-color: #F9FAFC;
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- banner -->
+		<div class="banner">
+			<img src="/static/home/img/article/banner.png" alt="">
+		</div>
+		
+		<!-- 筛选 -->
+		<div class="shaiXuan gWidth1170">
+			<!-- 面包屑导航 -->
+			<div class="m_nav clearfix">
+				<a href="/">美国留学</a><span>&gt;</span><a>留学资讯</a>
+			</div>
+			<!-- 筛选项 -->
+			<div class="x_x">
+				<div class="x_box clearfix">
+					<span class="fl">申请阶段:</span>
+					<div class="fl phase">
+						<a href="/article/0-0-1.html" class="fl active apply_stage_all">全部</a>
+						{notempty name="apply_stage_list"}
+							{volist name="apply_stage_list" id="val"}
+								<?php
+									if( $_GET['apply_stage_id'] && $_GET['apply_stage_id']==$val['id'] ){
+									?>
+										<a href="/article/{$val.id}-0-1.html" class="fl active change_apply_stage">{$val.title}</a>
+									<?php
+									}else{
+									?>
+										<a href="/article/{$val.id}-0-1.html" class="fl change_apply_stage">{$val.title}</a>
+									<?php
+									}
+								?>
+							{/volist}
+						{/notempty}
+					</div>
+				</div>
+				<div class="x_box x_box2 clearfix">
+					<span class="fl">文章类型:</span>
+					<div class="fl flag">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 列表 -->
+		<div class="listBox gWidth1170 clearfix">
+			<!-- 列表 -->
+			<div class="fl list">
+				{notempty name="list"}
+					{volist name="list" id="val"}
+						<a href="/{$val.rewrite}/{$val.id}.html" target="_blank">
+							<div class="box clearfix">
+								<div class="img fl">
+									<img src="{$val.cover_pic}" alt="{$val.title}">
+								</div>
+								<div class="fr">
+									<h3>{$val.title}</h3>
+									<p>{$val.describe}</p>
+									<div class="clearfix">
+										<div class="fl">
+											<span>标签：</span>
+											{volist name="$val['keyword']" id="vv"}
+											<i>{$vv}</i>
+											{/volist}
+											<em class="fr">{$val.add_time}</em>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					{/volist}
+				{else/}
+					<font color="red">数据为空</font>
+				{/notempty}
+				<div style="text-align: center;">
+					{$list|raw}
+				</div>
+				<!-- 分页 -->
+			</div>
+			<!-- 表单&&热门推荐 -->
+			<div class="fr hotAndForm">
+				<!-- 定制方案 -->
+				<div class="fa">
+					<h3>免费定制个性化申请方案</h3>
+					<span></span>
+					<input type="text" placeholder="姓名:" class="name">
+					<input type="text" placeholder="电话:" class="phone">
+					<select name="" id="">
+						<option value="">申请阶段:</option>
+						<option value="中学">中学</option>
+						<option value="本科">本科</option>
+						<option value="研究生">研究生</option>
+					</select>
+					<textarea placeholder="留言"></textarea>
+					<button>获取方案</button>
+				</div>
+				<!-- 成功案例 -->
+				<div class="huodong_jz">
+					<h3>成功案例</h3>
+					<span></span>
+					{volist name="case_list" id="val"}
+						<div class="box clearfix">
+							<a href="/success/{$val.id}.html" class="fl" rel="nofollow"><img src="{$val.head_img}" alt="{$val.title}" title="{$val.title}"></a>
+							<div class="fr">
+								<a href="/success/{$val.id}.html" target="_blank">{$val.title}</a>
+							</div>
+						</div>
+					{/volist}
+				</div>
+				<!-- 背景提升推荐 -->
+				<div class="bjts_tuijian">
+					<h3>背景提升推荐</h3>
+					<span></span>
+					{volist name="promote_info" id="promote_v"}
+						<div class="box clearfix">
+							<a href="/{$promote_v.rewrite}/{$promote_v.id}.html" rel="nofollow" class="fl"><img src="{$promote_v.thumbnail}" alt="{$promote_v.title}" title="{$promote_v.title}"></a>
+							<a href="/{$promote_v.rewrite}/{$promote_v.id}.html" target="_blank" class="fl">{$promote_v.title}</a>
+						</div>
+					{/volist}
+
+				</div>
+				<!-- 热门标签 -->
+				<div class="hot_bq">
+					<h3>热门标签</h3>
+					<span></span>
+					<div class="box clearfix">
+						{volist name="label_list" id="label_list_vo"}
+						<a href="{$label_list_vo.href}" target="_blank" class="fl">{$label_list_vo.title}</a>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript">
+			
+			// 字数限制 第一个参数传入的为一个jquery对象， 第二个参数为要限制的字数
+			function LimitNumber(txt,num) {
+				var str = txt.text();
+				if( str.length <= num ){
+					return;
+				}
+				str = str.substr(0,num) + '...' ;
+				txt.text(str);
+			}
+			//
+			var text = $('.listBox .list .box div.fr p');
+			for(var i=0; i<text.length; i++){
+				LimitNumber(text.eq(i),90);
+			}
+			
+			$('.huodong_jz .box:last-child').css({'margin-bottom': '0'});
+			$('.bjts_tuijian .box:last-child').css({'margin-bottom': '0'});
+			
+			// 申请阶段
+			apply_stage_id = "<?=$_GET['apply_stage_id']?>";
+			if(apply_stage_id){
+				$('.apply_stage_all').removeClass('active');
+			}
+
+			$(function(){
+				// 修改文章类型的展示信息
+				var apply_stage_id = "<?=$_GET['apply_stage_id']?>";
+				var url = "{:url('get_article_types')}";
+				var article_type_id = "<?=$_GET['article_type_id']?>";
+				$.ajax({
+					url : url,
+					data : {apply_stage_id:apply_stage_id},
+					type : 'post',
+					dataType : 'json',
+					success : function( msg ){
+						if(!article_type_id){
+							$str = '<a href="0" class="fl active article_type article_type_all">全部</a>';
+						}else{
+							$str = '<a href="0" class="fl article_type article_type_all">全部</a>';
+						}
+						if(msg.code==1){
+							$.each(msg.datas,function(key,val){
+								if(article_type_id==val.id){
+									$str += '<a href="'+val.id+'" class="fl active">'+val.title+'</a>';
+								}else{
+									$str += '<a href="'+val.id+'" class="fl">'+val.title+'</a>';
+								}
+							})
+						}
+						$('.flag').html($str);
+
+
+						//配置伪静态
+						var uRl = window.location.pathname; // 获取url的文件路径
+						function GetRequest(uRl) { // 这是一个把文件路径拆分成[0,1,2]的函数;  
+						   var url = uRl; // 传进来的值
+						   var theRequest = new Object();  
+						   if (url.indexOf("/") != -1) {  
+							  var str = url.substr(1); // 如果第一位是/的话 把它去掉。  
+							  strs = str.split("/");  // 把剩下的部分以 / 来拆分
+							  str2 = strs[1].split("."); // 后面的一位是 .html 所以用.再拆分一次
+							  str3 = str2[0].split("-"); // 第一位是 0-1-2 所以用- 进行最后一次拆分
+						   }  
+						   return str3;  // 得到一个值 并返回
+						}  
+						var urlHtml = GetRequest(uRl); // 把url的文件路径传进函数 进行拆分并已变量存储
+
+						$('.shaiXuan .x_x .x_box>div.phase a').eq(urlHtml[0]).addClass('active').siblings('a').removeClass('active'); // 给申请阶段附加当前项
+						$('.shaiXuan .x_x .x_box>div.phase a').on('click', function () {
+							sessionStorage.removeItem('active');
+						})
+
+						var aUrl = $('.shaiXuan .x_x .x_box2>div.flag a'); // 获取文章类型的所有a标签
+
+						if( urlHtml[0] == 0 ){ // 如果刚刚拆分的路径的 第一位是0 那么代表着 申请阶段为全部
+							for( var i=0; i<aUrl.length; i++ ){ // 进行遍历,并挨个赋值路径.
+								aUrl.eq(i).removeClass('active');
+								var type = aUrl.eq(i).attr('href'); // 获取最开始的url 因为当中储存着 文章类型的唯一id
+								aUrl.eq(i).attr('href', '/article/0-'+ type +'-1.html'); // 赋值路径
+							}
+						}else{ // 如果不是0 说明申请阶段 不是全部
+							for( var i=0; i<aUrl.length; i++ ){
+								aUrl.eq(i).removeClass('active');
+								var type = aUrl.eq(i).attr('href'); // 获取id
+								aUrl.eq(i).attr('href', '/article/'+ urlHtml[0] +'-'+ type +'-1.html'); // 赋值路径
+							}
+						}
+
+						// 给分页动态更改路径
+						var pageUrl = $('.pagination .x a');
+						for(var i=0; i<pageUrl.length; i++){
+							var uuu = pageUrl.eq(i).attr('href');
+							var uUrl = uuu.split('?');
+							var page = uUrl[1].split("=");
+							var pU = GetRequest(uUrl[0]);
+							pageUrl.eq(i).attr('href', '/article/'+ pU[0] +'-'+ pU[1] +'-'+ page[1] +'.html')
+						}
+						
+						// 文章类型当前项
+						if(urlHtml[0] == 0){
+							var arrGet = [urlHtml[0],urlHtml[1]].join();
+							var arr = [];
+							for(var i=0; i<aUrl.length; i++){
+								arr.push(GetRequest(aUrl.eq(i).attr('href')).slice(0,2).join());
+							}
+							sessionStorage.setItem('active', arr.indexOf(arrGet));
+						}else{
+							var arrGet = [urlHtml[0],urlHtml[1]].join();
+							var arr = [];
+							for(var i=0; i<aUrl.length; i++){
+								arr.push(GetRequest(aUrl.eq(i).attr('href')).slice(0,2).join());
+							}
+							sessionStorage.setItem('active', arr.indexOf(arrGet));
+						}
+						
+						// 给文章类型附加当前项
+						var wzlx = $('.shaiXuan .x_x .x_box2>div.fl a');
+
+						wzlx.on('click', function () {
+							var index = wzlx.index($(this));
+							sessionStorage.setItem('active', index);
+						})
+						if( !sessionStorage.getItem('active') ){
+							wzlx.eq(0).addClass('active');
+						}else{
+							wzlx.eq(sessionStorage.getItem('active')).addClass('active');
+						}
+					}
+				});
+			});
+			
+			var textpl='';
+			$('.hotAndForm input').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.hotAndForm input').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			$('.hotAndForm textarea').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.hotAndForm textarea').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.hotAndForm .fa button').on('click', function () {
+				var Name = $('.hotAndForm .fa input.name').val();
+				var Phone = $('.hotAndForm .fa input.phone').val();
+				var Sclass = $('.hotAndForm .fa select').val();
+				var Question = $('.hotAndForm .fa textarea').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == '' ){
+					alert('姓名电话不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						sclass: Sclass ,// 低龄||高中 0  本科 1 研究生 2  -----> 初中-高中年级 7-12
+						question: Question,
+						urlsite: url,
+						path_source:path_source,
+						page_title: $('title').eq(0).html(),
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.hotAndForm .fa input.name').val('');
+						$('.hotAndForm .fa input.phone').val('');
+						$('.hotAndForm .fa select').val('');
+						$('.hotAndForm .fa textarea').val('');
+					}
+				})
+			})
+		</script>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+	</body>
+</html>

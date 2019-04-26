@@ -1,0 +1,309 @@
+{include file="common/common_head"/}
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/family/index.css">
+		<!-- 分页样式 -->
+		<link rel="stylesheet" href="/static/common/css/page.css" />
+		
+		<style>
+			body{
+				background-color: #F9FAFC;
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- banner -->
+		<div class="banner">
+			<img src="/static/home/img/family/banner.png" alt="">
+		</div>
+		
+		<!-- 筛选 -->
+		<div class="shaiXuan gWidth1170">
+			<!-- 面包屑导航 -->
+			<div class="m_nav clearfix">
+				<a href="/">美国留学</a><span>&gt;</span><a>寄宿家庭</a>
+			</div>
+			<!-- 筛选项 -->
+			<style type="text/css">
+				.active{
+					color: red;
+				}
+			</style>
+			<div class="x_x clearfix">
+				<div class="fl">
+					<a href="/fmfml/0-1.html">全部</a>
+				</div>
+				{notempty name="address_list"}
+					{foreach $address_list as $key=>$vo }
+						<div class="fl">
+							{eq name="vo.id" value="$state_id"}
+								<a href="{$vo.id}-1.html" class="fl active" data-id="{$vo.id}"><em>{$vo.title}{eq name="vo.is_hot" value="1"}<span></span>{/eq}</em></a>
+								{else/}
+								<a href="{$vo.id}-1.html" class="fl" data-id="{$vo.id}"><em>{$vo.title}{eq name="vo.is_hot" value="1"}<span></span>{/eq}</em></a>
+							{/eq}
+						</div>
+					{/foreach}
+				{/notempty}
+			</div>
+		</div>
+		
+		<!-- 列表 -->
+		<div class="listBox gWidth1170 clearfix">
+			<!-- 列表 -->
+			<div class="fl list">
+				{notempty name="list['data']"}
+					{volist name="list['data']" id="val"}
+						<a href="/fmcontent/{$val['id']}.html">
+							<div class="box clearfix">
+								<div class="img fl">
+									<img src="{$val.cover_pic}" alt="{$val.title}" title="{$val.title}">
+								</div>
+								<div class="fr">
+									<h3>{$val.title}</h3>
+									<div class="clearfix fl">
+											<a href="javascript:;">{$val.s_title}</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;">{$val.c_title}</a>
+									</div>
+									<p>{$val.introduction}</p>
+								</div>
+							</div>
+						</a>
+					{/volist}
+				{else /}
+					<div class="box clearfix" style="text-align: center;">
+						<font color="red">数据为空</font>
+					</div>
+				{/notempty}
+				<!-- 分页 -->
+				<div style="text-align: center;">
+					{$page_list|raw}
+				</div>
+			</div>
+			<!-- 表单&&热门推荐 -->
+			<div class="fr hotAndForm">
+				<!-- 定制方案 -->
+				<div class="fa">
+					<h3>只需5秒，<br />快速匹配寄宿家庭</h3>
+					<span></span>
+					<input type="text" class="name" placeholder="姓名:">
+					<input type="text" class="phone" placeholder="电话:">
+					<textarea placeholder="留言"></textarea>
+					<button>提交</button>
+				</div>
+				<!-- 高中名校推荐 -->
+				<div class="tuijian">
+					<h3>高中名校推荐</h3>
+					<span></span>
+					{volist name="video_list" id="val"}
+						<div class="box" data-video="{$val.video}">
+							<a href="javascript:;">
+								<img src="{$val.cover_pic}" alt="{$val.title}" title="{$val.title}">
+								<div class="poa">
+									{$val.title}
+								</div>
+								<img src="/static/home/img/family/icon.png" class="bff" alt="">
+							</a>
+						</div>
+					{/volist}
+					
+					<!-- <div class="box">
+						<a href="">
+							<img src="/static/home/img/family/tu1.png" alt="">
+							<div class="poa">
+								加尔塞斯纪念高中招生官寄语
+							</div>
+							<img src="/static/home/img/family/icon.png" class="bff" alt="">
+						</a>
+					</div>
+					<div class="box">
+						<a href="">
+							<img src="/static/home/img/family/tu1.png" alt="">
+							<div class="poa">
+								加尔塞斯纪念高中招生官寄语
+							</div>
+							<img src="/static/home/img/family/icon.png" class="bff" alt="">
+						</a>
+					</div> -->
+				</div>
+				<!-- 热门标签 -->
+				<div class="hot_bq">
+					<h3>热门标签</h3>
+					<span></span>
+					<div class="box clearfix">
+						{volist name="label_list" id="label_list_vo"}
+						<a href="{$label_list_vo.href}" target="_blank" class="fl">{$label_list_vo.title}</a>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 弹出的视频 -->
+		<div class="tc_video">
+			<div class="video">
+				<video src="" autoplay="autoplay" controls="controls">
+					您的浏览器不支持video标签
+				</video>
+				<img src="/static/home/img/apply/high_school/video_gb.png" alt="">
+			</div>
+		</div>
+		<style type="text/css">
+			/* 弹出的视频层 */
+			.tc_video{
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.5);
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+			.tc_video .video{
+				width: 1100px;
+				height: 540px;
+				background-color: #000000;
+				position: absolute;
+				left: 50%;
+				top:  50%;
+				margin-top: -270px;
+				margin-left: -550px;
+			}
+			.tc_video .video video{
+				width: 100%;
+				height: 100%;
+				background-color: #000000;
+			}
+			.tc_video .video img{
+				width: 18px;
+				height: 18px;
+				position: absolute;
+				right: 15px;
+				top: 15px;
+				cursor:pointer;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			$('.tuijian .box').on('click', function () {
+				var videoSrc = $(this).attr('data-video');
+				console.log(videoSrc);
+				$('.tc_video').children('.video').children('video').attr('src', videoSrc);
+				$('.tc_video').fadeIn();
+			})
+			$('.tc_video .video img').on('click', function () {
+				$('.tc_video').fadeOut();
+				$(this).siblings('video').removeAttr('src');
+			})
+		</script>
+		
+		<script type="text/javascript">
+			
+			// 字数限制 第一个参数传入的为一个jquery对象， 第二个参数为要限制的字数
+			function LimitNumber(txt,num) {
+				var str = txt.text();
+				if(str.length<=num){
+					return;
+				}
+				str = str.substr(0,num) + '...' ;
+				txt.text(str);
+			}
+			//
+			var text = $('.listBox .list .box div.fr p');
+			for(var i=0; i<text.length; i++){
+				LimitNumber(text.eq(i),90);
+			}
+			
+			$('.huodong_jz .box:last-child').css({'margin-bottom': '0'});
+			$('.bjts_tuijian .box:last-child').css({'margin-bottom': '0'});
+			
+			var textpl='';
+			$('.hotAndForm input').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.hotAndForm input').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			$('.hotAndForm textarea').focus(function () {
+				textpl = $(this).attr('placeholder');
+				$(this).removeAttr('placeholder');
+			})
+			$('.hotAndForm textarea').blur(function () {
+				$(this).attr('placeholder', textpl);
+			})
+			// 验证手机号
+			function isPhoneNo(phone) { 
+				var pattern = /^1[34578]\d{9}$/; 
+				return pattern.test(phone); 
+			}
+			$('.hotAndForm .fa button').on('click', function () {
+				var Name = $('.hotAndForm input.name').val();
+				var Phone = $('.hotAndForm input.phone').val();
+				var Question = $('.hotAndForm textarea').val();
+				var url = window.location.href;
+				var path_source = document.referrer;
+				if( Name == '' || Phone == '' || Question == '' ){
+					alert('选项内容不能为空！');
+					return;
+				}
+				// 判断手机号是否合法
+				if( !isPhoneNo(Phone) ){
+					alert('请您输入正确的号码');
+					return;
+				}
+				$.ajax({
+					'url': '/home/form/addform',
+					'dataType': 'json',
+					'type': 'post',
+					'data': {
+						name: Name,
+						phone: Phone,
+						question: Question ,// 低龄||高中 0  本科 1 研究生 2  -----> 初中-高中年级 7-12
+						urlsite: url,
+						path_source:path_source
+					},
+					success: function (res) {
+						alert(res.datas);
+						$('.hotAndForm input.name').val('');
+						$('.hotAndForm input.phone').val('');
+						$('.hotAndForm textarea').val('');
+					}
+				})
+			})
+			
+			
+		</script>
+		<script type="text/javascript">
+			var uRl = window.location.pathname; // 获取url的文件路径
+			function GetRequest(uRl) { // 这是一个把文件路径拆分成[0,1,2]的函数;  
+			   var url = uRl; // 传进来的值
+			   var theRequest = new Object();  
+			   if (url.indexOf("/") != -1) {  
+				  var str = url.substr(1); // 如果第一位是/的话 把它去掉。  
+				  strs = str.split("/");  // 把剩下的部分以 / 来拆分
+				  str2 = strs[1].split("."); // 后面的一位是 .html 所以用.再拆分一次
+				  str3 = str2[0].split("-"); // 第一位是 0-1-2 所以用- 进行最后一次拆分
+			   }  
+			   return str3;  // 得到一个值 并返回
+			}  
+			var urlHtml = GetRequest(uRl); // 把url的文件路径传进函数 进行拆分并已变量存储
+			console.log(urlHtml);
+			if(urlHtml[0] == 0){
+				$('.shaiXuan .x_x>div.fl').eq(0).children('a').addClass('active');
+			}
+			// 给分页动态更改路径
+			var pageUrl = $('.pagination .x a');
+			for(var i=0; i<pageUrl.length; i++){
+				var uuu = pageUrl.eq(i).attr('href');
+				var uUrl = uuu.split('?');
+				var page = uUrl[1].split("=");
+				var pU = GetRequest(uUrl[0]);
+				pageUrl.eq(i).attr('href', '/fmfml/'+ pU[0] +'-'+ page[1] +'.html')
+			}
+			$('.shaiXuan .x_x>div.fl:nth-child(7n)').css({'margin-right': '0'});
+		</script>
+		{include file="common/common_bottom"/}
+	</body>
+</html>

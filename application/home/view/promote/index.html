@@ -1,0 +1,235 @@
+{include file="common/common_head"/} 
+		<!-- 当前网页样式 -->
+		<link rel="stylesheet" href="/static/home/css/promote/index.css">
+		
+	</head>
+	<body>
+		
+		<!-- 导航 -->
+		{include file="common/common_navhead"/}
+		<!-- banner -->
+		<div class="banner" style="background: url(/static/home/img/promote/banner.jpg) no-repeat center center;background-size: cover;">
+			<a href="javascript:;" onclick="go()">匹配适合你的项目</a>
+		</div>
+		
+		<style type="text/css">
+			.banner a{
+				width: 252px;
+				height: 44px;
+				border-radius: 3px;
+				background-color: #ff7062;
+				color: #FFFFFF;
+				text-align: center;
+				line-height: 44px;
+				position: absolute;
+				left: 50%;
+				margin-left: -126px;
+				bottom: 160px;
+			}
+			.banner a:hover{
+				opacity: 0.8;
+			}
+		</style>
+		
+		<!-- 背景提升的重要性 -->
+		<div class="bjts_zyx">
+			<div class="box gWidth1170 clearfix">
+				<div class="fl">
+					<div>
+						<h3>背景提升的重要性</h3>
+						<span></span>
+						<p>据统计，彬彬教育千余名收获名校offer的学员全部都具备实习/科研软性背景等，其中约90%的学员具备3份以上的实习/科研背景。由此可见在留学申请中，实习/科研背景非常重要。加入彬彬背景提升项目，你也可以变得像他们一样优秀!</p>
+						<a href="javascript:;" onclick="go()">私人定制背景提升项目</a>
+					</div>
+				</div>
+				<div class="fr">
+					<div class="fl box">
+						<h3>申请世界名校的标准配备</h3>
+						<p>不论申请美国大学的本科还是硕士，课外活动和社会实践都是申请材料里必不可少的，也日渐成为名校招生官对申请者的重要考核之一。</p>
+						<div class="hidden"></div>
+					</div>
+					<div class="fl box">
+						<h3>留学文书写作必备材料</h3>
+						<p>文书既要写的充实，还要突出个性，这就需要背景提升的内容来支撑文书的论点，通过具体经验与感想向招生官展示自己的各项能力和经验。</p>
+						<div class="hidden"></div>
+					</div>
+					<div class="fl box">
+						<h3>提升全面能力的重要途径</h3>
+						<p>背景提升活动不仅可以提高自身的专业素质与能力，还能锻炼自身领导能力、沟通协调能力以及团队协作能力，同时也提升了个人在留学申请过程中的竞争力。</p>
+						<div class="hidden"></div>
+					</div>
+					<div class="fl box">
+						<h3>职业能力规划的宝贵实践</h3>
+						<p>参加不同类别的课外活动和社会实践，会让参与者更加清楚自己的兴趣和特长，尽早为自己做规划职业。了解海外名校录取标准 评估适合的背景提升方案</p>
+						<div class="hidden"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{volist name="promote_arr" id="vo" key="k"}
+		<!-- 名企实习 -->
+		<!--                                                                              如果有背景图片 把image的路径改过去 -->
+		<div class="bjts" style="background-position: center;background-repeat: no-repeat;background-image: url('{$vo.promote_map}');">
+			<div class="box gWidth1170">
+				<!-- title -->
+				<div class="title">
+					<h3>{$vo.bg_promote_type}</h3>
+					<p>{$vo.promote_brief}</p>
+				</div>
+				<!-- content -->
+				<div class="content clearfix">
+					<div class="fl">
+						{volist name="$vo['hot']" id="hot_v" offset="0" length='1'}
+						<img src="{$hot_v['thumbnail']}" alt="{$hot_v.title}" title="{$hot_v.title}">
+						<span class="hidden_a">{$hot_v.title}</span>
+						<div class="hidden_b">
+							<div class="juzhong">
+								<h3>{$hot_v.title}</h3>
+								<p class="qfr1">针对对象：{$hot_v.target_object}</p>
+								<a href="/{$vo.rewrite}/{$hot_v.id}.html" target="_blank">查看详情</a>
+							</div>
+						</div>
+						{/volist}
+					</div>
+					<div class="fr">
+						{volist name="$vo['cool']" id="cool_v" key="kk" offset="0" length='4'}
+						<div class="box fl">
+							<img src="{$cool_v['thumbnail']}" alt="{$cool_v.title}" title="{$cool_v.title}">
+							<span class="hidden_a">{$cool_v.title}</span>
+							<div class="hidden_b">
+								<div class="juzhong">
+									<h3>{$cool_v.title}</h3>
+									<p class="qfr">针对对象：{$cool_v.target_object}</p>
+									<a href="/{$vo.rewrite}/{$cool_v.id}.html" target="_blank">查看详情</a>
+								</div>
+							</div>
+						</div>
+						{/volist}
+					</div>
+				</div>
+				<!-- <a href="/home/promote/list?type={$k}" target="_blank" class="fr more">
+					<span></span>
+				</a> -->
+				<a href="/project/0-{$k}-1.html" target="_blank" rel="nofollow" class="fr more">
+					<span></span>
+				</a>
+			</div>
+		</div>
+		{/volist}
+		<!-- 成功案例 -->
+		<div class="cgyl gWidth1170">
+			<h3>成功案例</h3>
+			<div class="clearfix">
+				{volist name="case_list" id="val"}
+					{if $key%2==0}
+						<div class="fl box">
+							<a href="/informationbjal/{$val['id']}.html" target="_blank">
+								<div class="img">
+									<img src="{$val.cover_pic}" alt="{$val.title}" title="{$val.title}">
+								</div>
+								<div>
+									<h3>{$val.title}</h3>
+									<!-- <p>参加项目：经济研究项目</p> -->
+									<span></span>
+								</div>
+							</a>
+						</div>
+					{else /}
+						<div class="fl box">
+							<a href="/informationbjal/{$val['id']}.html" target="_blank">
+								<div>
+									<h3>{$val.title}</h3>
+									<!-- <p>参加项目：经济研究项目</p> -->
+									<span></span>
+								</div>
+								<div class="img">
+									<img src="{$val.cover_pic}" alt="{$val.title}" title="{$val.title}">
+								</div>
+							</a>
+						</div>
+					{/if}
+				{/volist}
+				<!--<div class="fl box">
+					<a href="">
+						<div class="img">
+							<img src="/static/home/img/promote/tu3.png" alt="">
+						</div>
+						<div>
+							<h3>我来自马里兰，我参加美国科研</h3>
+							<p>参加项目：经济研究项目</p>
+							<span></span>
+						</div>
+					</a>
+				</div>
+				<div class="fl box">
+					<a href="">
+						<div>
+							<h3>我来自马里兰，我参加美国科研</h3>
+							<p>参加项目：经济研究项目</p>
+							<span></span>
+						</div>
+						<div class="img">
+							<img src="/static/home/img/promote/tu3.png" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="fl box">
+					<a href="">
+						<div class="img">
+							<img src="/static/home/img/promote/tu3.png" alt="">
+						</div>
+						<div>
+							<h3>我来自马里兰，我参加美国科研</h3>
+							<p>参加项目：经济研究项目</p>
+							<span></span>
+						</div>
+					</a>
+				</div> -->
+			</div>
+		</div>
+		
+		<!-- 彬彬服务流程 -->
+		<div class="fuwu_liucheng">
+			<div class="box gWidth1170">
+				<h3>彬彬服务流程</h3>
+				<div class="clearfix">
+					<div class="d fl">
+						<span class="bjtsImg pinggu"></span>
+						<!-- <img src="/static/home/img/pinggu.png" alt=""> -->
+						<p>测试评估</p>
+					</div>
+					<div class="d fl">
+						<span class="bjtsImg fenxi"></span>
+						<!-- <img src="/static/home/img/fenxi.png" alt=""> -->
+						<p>沟通分析</p>
+					</div>
+					<div class="d fl">
+						<span class="bjtsImg goutong"></span>
+						<!-- <img src="/static/home/img/goutong.png" alt=""> -->
+						<p>选择建议</p>
+					</div>
+					<div class="d fl">
+						<span class="bjtsImg fangan"></span>
+						<!-- <img src="/static/home/img/fangan.png" alt=""> -->
+						<p>方案实施</p>
+					</div>
+					<div class="d fl">
+						<span class="bjtsImg chengguo"></span>
+						<!-- <img src="/static/home/img/chengguo.png" alt=""> -->
+						<p>反馈成果</p>
+					</div>
+					<div class="d fl">
+						<span class="bjtsImg quanweirongyu"></span>
+						<!-- <img src="/static/home/img/quanweirongyu.png" alt=""> -->
+						<p>权威认证</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 当前页面js -->
+		<script type="text/javascript" src="/static/home/js/promote/index.js"></script>
+		<!-- 底部 -->
+		{include file="common/common_bottom"/}
+	</body>
+</html>

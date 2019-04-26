@@ -1,0 +1,66 @@
+<!-- 导师 -->
+<div class="gWidth1170">
+				<!-- title -->
+				<h3 class="title">强大的国内外导师团队</h3>
+				<!-- count -->
+					<div class="count">
+						<!-- 选项 -->
+						<div class="clearfix t">
+							<div class="tbox">
+						{volist name="tutor_arr" id="tutor_vo"}
+							{neq name="key" value="5"}
+								<a href="javascript:;" class="fl">{$tutor_vo.tutor_type}</a><span class="fl">|</span>
+							{else/}
+								<a href="javascript:;" class="fl">{$tutor_vo.tutor_type}</a>
+							{/neq}
+						{/volist}
+							</div>
+
+						</div>
+						<!-- 内容 -->
+							<div class="clearfix b">
+								{volist name="$tutor_arr" id="val"}
+								<div class="bBox clearfix">
+									<div class="fl leftb">
+										<h3>{$val.tutor_type}</h3>
+										<p>{$val.english_title}</p>
+										<span></span>
+										<em>{$val.describe}</em>
+										<em>擅长：{$val.adept}</em>
+										<div class="bBtn clearfix">
+											<a href="javascript:;" onclick="go()" class="fl">匹配专属导师</a>
+											<a href="/tutor/special/" target="_blank" class="fl">查看更多导师</a>
+										</div>
+									</div>
+									<div class="fr rightb">
+										{volist name="val.tree" id="tree_val"}
+										<div class="fl">
+											<img src="<?php echo config('admin_path');?>{$tree_val['thumbnail']}" alt="Will Zhang" title="Will Zhang">
+											<div class="hiddenTitle">{$tree_val.title}</div>
+											<div class="hidden">
+												<h3>{$tree_val.title}</h3>
+												<span></span>
+												{notempty name="tree_val.school"}
+													<p>{$tree_val['school']}</p>
+												{/notempty}
+												{notempty name="tree_val.major"}
+													<p>{$tree_val['major']}</p>
+												{/notempty}
+												{notempty name="tree_val.adept"}
+													<p>{$tree_val['adept']}</p>
+												{/notempty}
+												{notempty name="$val['rewrite']"}
+													<a href="/{$val['rewrite']}/{$tree_val['id']}.html" target="_blank">个人介绍</a>
+												{else/}
+													<a onclick="go()" target="_blank">与TA聊聊</a>
+												{/notempty}
+											</div>
+										</div>
+										{/volist}
+									</div>
+								</div>
+								{/volist}
+							</div>
+					</div>
+
+			</div>
